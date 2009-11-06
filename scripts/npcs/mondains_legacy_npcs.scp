@@ -1,0 +1,408 @@
+[CHARDEF 0100]
+DEFNAME=c_chief_paroxysmus
+NAME=Chief Paroxysmus
+CAN=mt_walk|mt_usehands|mt_equip
+MOVERATE=100
+ICON=i_pet_chief_paroxysmus
+SOUND=snd_monster_daemon1
+DAM=15,18
+ARMOR=75,85
+RESOURCES=
+FOODTYPE=16 t_food
+SHELTER=
+AVERSIONS=t_trap, t_eerie_stuff
+DESIRES=i_gold, e_notoriety
+BLOODCOLOR=0
+//ALIGNMENT=Evil
+RESLEVEL=5
+RESDISPDNID=c_daemon
+RESDISPDNHUE=colors_skin
+
+TEVENTS=//Eats pets and summoned creatures and regains health, area screen lethal poison, summons targets to him, 16 magic items
+
+CATEGORY=Monsters
+SUBSECTION=Mondains Legacy
+DESCRIPTION=Chief Paroxysmus
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=160.0
+ TAG.SLAYER.VULNERABILITY1=
+ TAG.SLAYER.VULNERABILITY2=abyss_slayer
+ TAG.CONTROL.SLOTS=0
+
+ RESCOLD={45 55}
+ RESENERGY={50 60}
+ RESFIRE={40 50}
+ RESPOISON={55 65}
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=20
+
+ FAME=10,000
+ KARMA=-10,000
+
+ STR={1200 1500}
+ DEX={75 100}
+ INT={75 100}
+ MAXHITS={100,000 100,000}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING=120.0
+ TACTICS=120.0
+ MAGICRESISTANCE=120.0
+ ANATOMY=120.0
+ POISONING=120.0
+ MAGERY=0.0
+ MEDITATION=0.0
+ EVALUATINGINTEL=0.0
+
+ON=@DEATH
+ NEWLOOT=loot_chief_paroxysmus
+ NEWLOOT=add_loot_chief_paroxysmus
+
+
+[CHARDEF 0101]
+DEFNAME=c_dread_horn
+NAME=Dread Horn
+CAN=mt_walk
+MOVERATE=100
+ICON=i_pet_dread_horn
+SOUND=snd_monster_daemon1
+DAM=
+ARMOR=40,55//51
+RESOURCES=
+FOODTYPE=32 t_fruit, t_grain, t_meat_raw
+SHELTER=r_forests
+AVERSIONS=t_trap,t_eerie_stuff
+DESIRES=i_gold, e_notoriety
+BLOODCOLOR=0
+RESLEVEL=5
+RESDISPDNID=c_m_nightmare
+RESDISPDNHUE=colors_black
+
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Mondains Legacy
+DESCRIPTION=Dread Horn
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=160.0
+ TAG.SLAYER.VULVERABILITY1=
+ TAG.SLAYER.VULNERABILITY2=bovine_slayer
+
+ RESCOLD=50 56
+ RESENERGY=51 65
+ RESFIRE=60 75
+ RESPOISON=62 66
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=60
+
+ FAME=
+ KARMA=
+
+ STR={1000 1200}
+ DEX={589}
+ INT={1275}
+ MAXHITS={50000 50000}
+ MAXSTAM=<DEX>
+ MAXMANA=INT>
+
+ WRESTLING={90.0 110.0}
+ TACTICS={90.0 110.0}
+ MAGICRESISTANCE=110.0
+ ANATOMY=55.0
+ POISONING=120.0
+ MAGERY=110.0
+ MEDITATION=110.0
+ EVALUATINGINTEL=110.0
+
+ON=@DEATH
+ NEWLOOT=loot_dread_horn
+ NEWLOOT=add_loot_dread_horn
+
+
+[CHARDEF 0102]
+DEFNAME=c_lady_melisande
+NAME=Lady Melisande
+CAN=mt_walk|mt_usehands|mt_equip
+MOVERATE=100
+ICON=i_pet_lady_melisande
+SOUND=
+DAM=
+ARMOR=
+RESOURCES=
+FOODTYPE=
+SHELTER=
+AVERSIONS=
+DESIRES=
+BLOODCOLOR=0
+
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Mondains Legacy
+DESCRIPTION=Lady Melisande
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=160.0
+ TAG.SLAYER.VULVERABILITY1=
+ TAG.SLAYER.VULNERABILITY2=
+ TAG.CONTROL.SLOTS=
+
+ RESCOLD=
+ RESENERGY=
+ RESFIRE=
+ RESPOISON=
+
+ TAG.COLDDAMAGE=
+ TAG.ENERGYDAMAGE=
+ TAG.FIREDAMAGE=
+ TAG.POISONDAMAGE=
+
+ FAME=
+ KARMA=
+
+ STR={}
+ DEX={}
+ INT={}
+ MAXHITS={}
+ MAXSTAM={}
+ MAXMANA={}
+
+ WRESTLING=
+ TACTICS=
+ MAGICRESISTANCE=
+ ANATOMY=
+ POISONING=
+ MAGERY=
+ MEDITATION=
+ EVALUATINGINTEL=
+
+ON=@DEATH
+ NEWLOOT=loot_lady_melisande
+ NEWLOOT=add_loot_lady_melisande
+
+
+[CHARDEF 259]//259
+DEFNAME=c_interred_grizzle
+NAME=Interred Grizzle
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+ICON=i_pet_interred_grizzle
+SOUND=snd_monster_daemon1
+DAM=16,19
+ARMOR=8,16
+RESOURCES=
+FOODTYPE=
+SHELTER=
+AVERSIONS=
+DESIRES=
+BLOODCOLOR=
+RESLEVEL=5
+RESDISPDNID=c_man
+RESDISPDNHUE=033
+
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Mondains Legacy
+DESCRIPTION=Interred Grizzle
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=96.8
+ TAG.SLAYER=slayer_none
+ TAG.SUPERSLAYER=slayer_none
+ TAG.CONTROL.SLOTS=0
+
+ RESCOLD={55 65}
+ RESENERGY={65 70}
+ RESFIRE={55 65}
+ RESPOISON={30 35}
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=70
+ TAG.POISONDAMAGE=0
+
+ FAME=10000
+ KARMA=-10000
+
+ STR={459 475}
+ DEX={90 100}
+ INT={50 60}
+ MAXHITS=<STR>
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={100.1 110.0}
+ TACTICS={100.1 110.0}
+ MAGICRESISTANCE={50.0 90.0}
+ ANATOMY=0.0
+ POISONING=
+ MAGERY={80.1 90.0}
+ MEDITATION={80.1 90.0}
+ EVALUATINGINTEL={70.1 80.0}
+
+ON=@DEATH
+ NEWLOOT=loot_interred_grizzle
+ NEWLOOT=add_loot_interred_grizzle
+
+
+[CHARDEF c_monstrous_interred_grizzle]
+DEFNAME=c_monstrous_interred_grizzle
+NAME=Monstrous Interred Grizzle
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+ICON=i_pet_interred_grizzle
+SOUND=snd_monster_daemon1
+DAM=11,18
+ARMOR=
+RESOURCES=
+FOODTYPE=
+SHELTER=
+AVERSIONS=
+DESIRES=
+BLOODCOLOR=
+RESLEVEL=5
+RESDISPDNID=c_man
+RESDISPDNHUE=033
+
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Mondains Legacy
+DESCRIPTION=Monstrous Interred Grizzle
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=160.0
+ TAG.SLAYER=slayer_none
+ TAG.SUPERSLAYER=slayer_none
+
+ RESCOLD={65 75}
+ RESENERGY={75 80}
+ RESFIRE={65 75}
+ RESPOISON={40 45}
+
+// TAG.COLDDAMAGE=0
+// TAG.ENERGYDAMAGE=20
+// TAG.FIREDAMAGE=20
+// TAG.POISONDAMAGE=0
+
+ FAME=10000
+ KARMA=-10000
+
+ STR={1300 1400}
+ DEX={140 150}
+ INT={700 725}
+ MAXHITS=50000
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={100.1 115.0}
+ TACTICS={100.1 115.0}
+ MAGICRESISTANCE={100.0 100.0}
+ ANATOMY={100.0 110.0}
+ POISONING=
+ MAGERY={100.0 100.0}
+ MEDITATION={100.0 100.0}
+ EVALUATINGINTEL={100.0 100.0}
+
+ON=@DEATH
+ NEWLOOT=loot_monstrous_interred_grizzle
+ NEWLOOT=add_loot_monstrous_interred_grizzle
+//16 magic items.
+//
+//curruption, taint, blight, putrefaction, scourge, muculent (8)
+//grizzle bones (c), monstrous interred grizzle armor set (r), monstrous interred grizzle maggots (u), glob of monstrous grizzle (c), grizzled mare statuette (r), grizzled skull collection (u), tombstone of the damned (c), crimson cincture (?)
+//drops puddles of acid, confalg spell
+
+
+[CHARDEF c_ilhenir_the_stained]
+DEFNAME=c_ilhenir_the_stained
+NAME=Ilhenir the Stained
+ID=c_interred_grizzle
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+ICON=i_pet_interred_grizzle
+SOUND=snd_monster_daemon1
+DAM=16,23
+ARMOR=
+RESOURCES=
+FOODTYPE=
+SHELTER=
+AVERSIONS=
+DESIRES=
+BLOODCOLOR=
+RESLEVEL=5
+RESDISPDNID=c_man
+RESDISPDNHUE=033
+
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Mondains Legacy
+DESCRIPTION=Ilhenir the Stained
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=colors_green//dryad green?
+
+ TAG.BARDING.DIFFICULTY=160.0
+ TAG.SLAYER=slayer_none
+ TAG.SUPERSLAYER=slayer_none
+ TAG.CONTROL.SLOTS=0
+
+ RESCOLD={55 65}
+ RESENERGY={65 70}
+ RESFIRE={55 65}
+ RESPOISON={30 35}
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=40
+ TAG.POISONDAMAGE=0
+
+ FAME=10000
+ KARMA=-10000
+
+ STR={1200 1300}
+ DEX={130 140}
+ INT={600 650}
+ MAXHITS=9000
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={100.1 120.0}
+ TACTICS={100.1 120.0}
+ MAGICRESISTANCE={100.0 120.0}
+ ANATOMY={100.0 120.0}
+ POISONING={50.0 60.0}
+ MAGERY={100.0 100.0}
+ MEDITATION={100.0 100.0}
+ EVALUATINGINTEL={100.0 100.0}
+
+ON=@DEATH
+ NEWLOOT=loot_ilhenir_the_stained
+ NEWLOOT=add_loot_ilhernir_the_stained

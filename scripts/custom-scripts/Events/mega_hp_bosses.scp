@@ -1,0 +1,72 @@
+[comment blah]
+//set this on any boss you want to have more then 32k life in the @create block.
+
+tag.maxhits = <value of maxhits you desire>
+tag.hits = <eval <tag.maxhits>>
+
+//Add this event to npc.
+
+[defname megahits_control]
+megahits_on		1//1 is yes, 0 is no.
+megahits_max		300000//Any value.
+
+
+[events e_megahits]
+on=@gethit
+ if <def.megahits_on>
+   if <tag.maxhits> > <def.megahits_max>
+    tag.maxhits = <eval <def.megahits_max>>
+   endif
+  local.damage.inflicted = <eval <argn1>>
+  argn1 = 0
+  tag.hits -= <eval <local.damage.inflicted>>
+  update_hp_percentage
+  sayu @025 <local.damage.inflicted>
+   if (<eval <tag.hits>> <= 0)
+    hits = 0
+    update
+   endif
+  return 1
+ else
+  return 0
+ endif
+
+
+[function update_hp_percentage]
+LOCAL.PERCENT=<muldiv <tag.hits>,100,<tag.maxhits>>
+HITS=<muldiv <maxhits>,<LOCAL.PERCENT>,100>
+update
+
+
+[comment casey's event to fire more then one dmg tick]
+on=@hit
+Src.Damage <Local.Dam> <Argn2> <Uid> 
+
+CombatSys_AOS_WeaponSpells 
+CombatSys_AOS_WeaponLeech <Local.Dam> 
+CombatSys_AOS_WepAttkDefMod 
+CombatSys_AOS_AreaDamage 
+CombatSys_AOS_PhysicalReflect <Argn1>,<Src.Uid> 
+Argn1=0 
+
+//damage 
+If <Poisoning> && ((<NPC>==brain_animal) || (<NPC>==brain_monster)) 
+     Tag.Poisoning=<Poisoning> 
+     Poisoning = 0 
+Endif 
+Src.Tag.Hit.Prevent = 1 
+
+
+ON=@GetHit 
+//Serv.Log GetHit Actdiff = <Actdiff> 
+ACTDIFF=0 
+If (<FLAGS>&statf_freeze) && !(<argn2>&dam_nounparalyze) 
+     FLAGS = <FLAGS> ^ 04 //unparalyzed 
+Endif 
+If <Tag0.Hit.Prevent> 
+     Tag.Hit.Prevent= 
+     If <Src.Tag0.Poisoning> 
+          Src.Poisoning=<Src.Tag0.Poisoning> 
+     Endif 
+Return 1 
+Endif

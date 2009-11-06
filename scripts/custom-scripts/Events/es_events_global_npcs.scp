@@ -1,0 +1,9 @@
+[EVENTS e_es_npcs]
+ON=@SpellEffect
+ IF (!<IsPlayer>)
+  IF (!<IsDamageSpell>)
+   Return 0
+  ELSE
+   ARGN3 *= 2
+  ENDIF
+ ENDIF

@@ -1,0 +1,672 @@
+[DEFNAME gargoyle_color_hues]
+COLORS_GARGOYLE_SHOPKEEP		{04 1 021 1 040 1 080 1}
+
+
+[CHARDEF c_shopkeeper_gargoyle_baker]
+DEFNAME=c_shopkeeper_gargoyle_baker
+NAME=#NAMES_GARGOYLE the Baker
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Baker)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@DCLICK
+ RETURN 1
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_Baker_template
+ SELL=VENDOR_S_Baker_template
+
+[CHARDEF c_shopkeeper_gargoyle_Butcher]
+DEFNAME=c_shopkeeper_gargoyle_Butcher
+NAME=#NAMES_GARGOYLE the Butcher
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Butcher)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_BUTCHER_TEMPLATE
+ SELL=VENDOR_S_BUTCHER_TEMPLATE
+
+[CHARDEF c_shopkeeper_gargoyle_CARPENTER]
+DEFNAME=c_shopkeeper_gargoyle_CARPENTER
+NAME=#NAMES_GARGOYLE the Carpenter
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Carpenter)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_Carpenter
+ SELL=VENDOR_S_CARPENTER
+
+[CHARDEF c_shopkeeper_gargoyle_ALCHEMIST]
+DEFNAME=c_shopkeeper_gargoyle_ALCHEMIST
+NAME=#NAMES_GARGOYLE the Alchemist
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Alchemist)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_ALCHEMIST
+ SELL=VENDOR_S_ALCHEMIST
+
+[CHARDEF c_shopkeeper_gargoyle_MAGE]
+DEFNAME=c_shopkeeper_gargoyle_MAGE
+NAME=#NAMES_GARGOYLE the Mage
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Mage)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_MAGE_SHOP
+ SELL=VENDOR_S_MAGE_SHOP
+
+[CHARDEF c_shopkeeper_gargoyle_TAILOR]
+DEFNAME=c_shopkeeper_gargoyle_TAILOR
+NAME=#NAMES_GARGOYLE the Tailor
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Tailor)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_TAILOR
+ SELL=VENDOR_S_TAILOR
+
+
+[CHARDEF c_shopkeeper_gargoyle_TINKER]
+DEFNAME=c_shopkeeper_gargoyle_TINKER
+NAME=#NAMES_GARGOYLE the Tinker
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Tinker)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_TINKER
+ SELL=VENDOR_S_TINKER
+
+
+[CHARDEF c_shopkeeper_gargoyle_HEALER]
+DEFNAME=c_shopkeeper_gargoyle_HEALER
+NAME=#NAMES_GARGOYLE the Healer
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Healer)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_HEALER_SHOP
+ SELL=VENDOR_S_HEALER_SHOP
+
+
+[CHARDEF c_shopkeeper_gargoyle_PROVISIONER]
+DEFNAME=c_shopkeeper_gargoyle_PROVISIONER
+NAME=#NAMES_GARGOYLE the Provisioner
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Provisioner)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_PROVISIONER
+ SELL=VENDOR_S_PROVISIONER
+
+
+[CHARDEF c_shopkeeper_gargoyle_Jeweler]
+DEFNAME=c_shopkeeper_gargoyle_Jeweler
+NAME=#NAMES_GARGOYLE the Jeweler
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Jeweler)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_JEWELER
+ SELL=VENDOR_S_JEWELER
+
+
+[CHARDEF c_shopkeeper_gargoyle_ARMORER]
+DEFNAME=c_shopkeeper_gargoyle_ARMORER
+NAME=#NAMES_GARGOYLE the Armorer
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Armorer)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_ARMORER_LEATHER
+ SELL=VENDOR_S_ARMORER_LEATHER
+ BUY=VENDOR_B_ARMORER_RING
+ SELL=VENDOR_S_ARMORER_RING
+ BUY=VENDOR_B_ARMORER_CHAIN
+ SELL=VENDOR_S_ARMORER_CHAIN
+ BUY=VENDOR_B_ARMORER_PLATE
+ SELL=VENDOR_S_ARMORER_PLATE
+ BUY=VENDOR_B_ARMORER_SHEILDS
+ SELL=VENDOR_S_ARMORER_SHEILDS
+
+
+[CHARDEF c_shopkeeper_gargoyle_weaponsmith]
+DEFNAME=c_shopkeeper_gargoyle_weaponsmith
+NAME=#NAMES_GARGOYLE the Weaponsmith
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_human_prime
+TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (Weaponsmith)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|colors_gargoyle_shopkeep
+
+ INVUL=1
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@SPELLEFFECT
+ RETURN 1
+
+ON=GETHIT
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+
+ BUY=VENDOR_B_WEAPONS_BLADED
+ SELL=VENDOR_S_WEAPONS_BLADED
+ BUY=VENDOR_B_WEAPONS_BLUNT
+ SELL=VENDOR_S_WEAPONS_BLUNT
+ BUY=VENDOR_B_BLACKSMITH
+ SELL=VENDOR_S_BLACKSMITH

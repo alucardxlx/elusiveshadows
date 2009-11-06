@@ -1,0 +1,878 @@
+
+
+
+
+
+
+
+
+
+
+[CHARDEF 09E]	//158
+DEFNAME=c_elem_acid
+NAME=Acid Elemental
+DAM=13,21	//26,42
+ARMOR={22 27}//45-55
+CAN=mt_walk|mt_swim|mt_usehands
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_bog_of_desolation, r_central_ilshenar_swamp, r_despise_level_4, r_destard_swamps, r_fens_of_the_dead, r_kirin_passage, r_nox_tereg, r_rock_dungeon_level_2, r_shame_level_5, r_sorcerer_dungeon_level_1, r_wind
+BLOODCOLOR=colors_green
+
+//TEVENTS=e_corrode_weapons
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Acid Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=83.9
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=10000
+ KARMA=-10000
+
+ STR={326 355}
+ DEX={66 85}
+ INT={271 295}
+ MAXHITS={196 213}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={70.1 90.0}
+ TACTICS={80.1 90.0}
+ MAGICRESISTANCE={60.1 75.0}
+ ANATOMY={30.1 60.0}
+ MAGERY={70.1 85.0}
+ EVALUATINGINTEL={70.1 85.0}
+ MEDITATION=0.0
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,7
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_acid
+ NEWLOOT=add_loot_elem_acid
+
+[EVENTS e_corrode_weaponS]
+ON=@GETHIT
+ LOCAL.X=<R1,10>
+ IF <EVAL <LOCAL.X>> == 1
+  ARGO.HITPOINTS -= <r1,4>
+  RETURN 0
+ ENDIF
+
+
+[CHARDEF 09F]	//159
+DEFNAME=c_elem_blood
+NAME=Blood Elemental
+DAM=28,45	//57,91
+ARMOR={27 32}//55-65
+CAN=mt_walk|mt_swim|mt_usehands
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_ankh_dungeon, r_blood_dungeon, r_pass_of_karnaugh, r_shame_level_5, r_sorcerer_dungeon_level_1, r_sorcerer_dungeon_level_2, r_sorcerer_dungeon_level_3, r_wind
+BLOODCOLOR=colors_green
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Blood Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=93.5
+ TAG.SLAYER=blood_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=12500
+ KARMA=-12500
+
+ STR={526 615}
+ DEX={66 85}
+ INT={271 295}
+ MAXHITS={316 369}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={80.1 100.0}
+ TACTICS={80.1 100.0}
+ MAGICRESISTANCE={80.1 95.0}
+ ANATOMY=0.0
+ MAGERY={85.1 100.0}
+ EVALUATINGINTEL={85.1 100.0}
+ MEDITATION={10.1 50.0}
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,7
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_blood
+ NEWLOOT=add_loot_elem_blood
+
+
+[CHARDEF 0A0]	//160
+DEFNAME=c_elem_blood2
+NAME=Blood Elemental
+DAM=28,45	//57,91
+ARMOR={27 32}//55-65
+CAN=mt_walk|mt_swim|mt_usehands
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_ankh_dungeon, r_blood_dungeon, r_pass_of_karnaugh, r_shame_level_5, r_sorcerer_dungeon_level_1, r_sorcerer_dungeon_level_2, r_sorcerer_dungeon_level_3, r_wind
+BLOODCOLOR=colors_green
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Blood Elemental 2
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=93.5
+ TAG.SLAYER=blood_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=12500
+ KARMA=-12500
+
+ STR={526 615}
+ DEX={66 85}
+ INT={271 295}
+ MAXHITS={316 369}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={80.1 100.0}
+ TACTICS={80.1 100.0}
+ MAGICRESISTANCE={80.1 95.0}
+ ANATOMY=0.0
+ MAGERY={85.1 100.0}
+ EVALUATINGINTEL={85.1 100.0}
+ MEDITATION={10.1 50.0}
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,7
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_blood2
+ NEWLOOT=add_loot_elem_blood2
+
+
+[CHARDEF 083]	//131
+DEFNAME=c_elem_efreet
+NAME=Efreet
+DAM=13,16	//27,32
+ARMOR={25 30}//50-60
+CAN=mt_walk|mt_run|mt_fly|mt_usehands
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_burned_forest, r_central_ilshenar_desert, r_delucia_passage, fire_level_1, r_fire_level_2, r_meteor_crater, r_montor_ r_montor_desert, r_sak_teb, r_sorcerer_dungeon_level_2, r_sorcerer_dungeon_level_3
+BLOODCOLOR=colors_green
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Efreet
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=85.0
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=10000
+ KARMA=-10000
+
+ STR={326 355}
+ DEX={266 285}
+ INT={171 195}
+ MAXHITS={196 213}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 80.0}
+ TACTICS={60.1 80.0}
+ MAGICRESISTANCE={60.1 75.0}
+ ANATOMY=0.0
+ MAGERY={60.1 75.0}
+ EVALUATINGINTEL={60.1 75.0}
+ MEDITATION=0.0
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,6
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_efreet
+ NEWLOOT=add_loot_elem_efreet
+
+
+[CHARDEF 0A1]	//161
+DEFNAME=c_elem_ice
+NAME=Ice Elemental
+DAM=11,22	//22,45
+ARMOR={17 22}//35,45
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_compassion_glacier, r_ice_level_1, r_winter_spur
+BLOODCOLOR=
+
+TEVENTS=e_cold_aura
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Ice Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=76.9
+ TAG.SLAYER=snow_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=4000
+ KARMA=-4000
+
+ STR={156 185}
+ DEX={96 115}
+ INT={171 192}
+ MAXHITS={94 111}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={70.1 100.0}
+ MAGICRESISTANCE={30.1 80.0}
+ ANATOMY=0.0
+ MAGERY={10.5 60.0}
+ EVALUATINGINTEL={10.5 60.0}
+ MEDITATION=0.0
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,5
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_ice
+ NEWLOOT=add_loot_elem_ice
+
+[EVENTS e_cold_aura]
+//2 tile radius, 5-10 second intervals, reveals. Target switch.
+
+
+[CHARDEF 0A2]	//162
+DEFNAME=c_elem_poison
+NAME=Poison Elemental
+DAM=11,22	//22,45
+ARMOR={30 35}//60,70
+CAN=mt_walk|mt_usehands|mt_run|mt_fly
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_arachnid_champion_spawn, r_kirin_passage, r_pass_of_karnaugh, r_rock_dungeon_level_2, r_shame_level_3, r_srocerer_dungeon_level_2
+BLOODCOLOR=
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Poison Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=105.1
+ TAG.SLAYER=poison_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=12500
+ KARMA=-125000
+
+ STR={426 515}
+ DEX={166 185}
+ INT={361 435}
+ MAXHITS={256 309}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={70.1 90.0}
+ TACTICS={80.1 100.0}
+ MAGICRESISTANCE={85.2 115.0}
+ ANATOMY=0.0
+ POISONING={90.1 100.0}
+ MAGERY={80.1 95.0}
+ EVALUATINGINTEL={80.1 95.0}
+ MEDITATION={80.2 120.0}
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,7
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_poison
+ NEWLOOT=add_loot_elem_poison
+
+
+[CHARDEF 0A3]	//163
+DEFNAME=c_elem_snow
+NAME=Snow Elemental
+DAM=15,22	//31,45
+ARMOR={22 27}//45,55
+CAN=mt_walk|mt_usehands|mt_run|mt_fly
+MOVERATE=100
+ICON=
+SOUND=
+SHELTER=r_compassion_glacier, r_ice_level_1, r_kos_heb_west, r_kos_heb_east, r_winter_spur
+BLOODCOLOR=
+
+TEVENTS=e_cold_aura
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Snow Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=78.2
+ TAG.SLAYER=snow_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=5000
+ KARMA=-5000
+
+ STR={326 355}
+ DEX={166 185}
+ INT={71 95}
+ MAXHITS={196 213}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={80.1 100.0}
+ TACTICS={80.1 100.0}
+ MAGICRESISTANCE={50.1 65.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_snow
+ NEWLOOT=add_loot_elem_snow
+
+
+[CHARDEF 06B]	//107
+DEFNAME=c_elem_agapite
+NAME=Agapite Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=29,34//59,69
+ARMOR={15 20}//30,40
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_none
+
+TEVENTS=e_auto_dispel
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Agapite Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=72.9
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=3500
+ KARMA=-3500
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_agapite
+ NEWLOOT=add_loot_elem_agapite
+
+[EVENTS e_auto_dispel]
+
+
+[CHARDEF 06C]	//108
+DEFNAME=c_elem_bronze
+NAME=Bronze Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=10,18//20,37
+ARMOR={15 20}//30,40
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_none
+
+TEVENTS=e_auto_dispel
+TEVENTS=e_gas_attack
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Bronze Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=71.8
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=5000
+ KARMA=-5000
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_bronze
+ NEWLOOT=add_loot_elem_bronze
+
+[EVENTS e_gas_attack]
+
+
+[CHARDEF 06D]	//109
+DEFNAME=c_elem_copper
+NAME=Copper Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=10,18//20,37
+ARMOR={15 20}//30 40
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_none
+
+TEVENTS=e_reflect_half_damage
+TEVENTS=e_half_reflect_spell_damage
+TEVENTS=e_auto_dispel
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Copper Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=73.3
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=4800
+ KARMA=-4800
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_copper
+ NEWLOOT=add_loot_elem_copper
+
+
+[CHARDEF 06E]	//110
+DEFNAME=c_elem_dull_copper
+NAME=Dull Copper Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=9,18//19,37
+ARMOR={15 20}//30 40
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_desert_of_compassion. r_shame_level_2, r_shame_level_3, r_shame_level_5, r_sorcerer_dungeon_level_2, r_yomotsu_mines
+
+TEVENTS=e_auto_dispel
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Dull Copper Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=73.8
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=3500
+ KARMA=-3500
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_dull_copper
+ NEWLOOT=add_loot_elem_dull_copper
+
+
+[CHARDEF 06F]	//111
+DEFNAME=c_elem_shadow_iron
+NAME=Shadow Iron Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=10,18//20 37
+ARMOR={15 20}//30 40
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_yomotsu_mines
+
+TEVENTS=e_magic_immunity
+TEVENTS=e_pet_dmg_immunity
+TEVENTS=e_provocation_damage_immunity
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Shadow Iron Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=72.3
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=4500
+ KARMA=-4500
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_shadow_iron
+ NEWLOOT=add_loot_elem_shadow_iron
+
+
+[CHARDEF 070]	//112
+DEFNAME=c_elem_valorite
+NAME=Valorite Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=29,34//59 69
+ARMOR={32 37}//65 75
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_none
+
+TEVENTS=//Magic immune, most. Immune to pet dmg and provoked creature dmg. reflects all magic dmg. gas attack. equipment dmg as well
+TEVENTS=e_auto_dispel
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Valorite Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=74.0
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=3500
+ KARMA=-3500
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_valorite
+ NEWLOOT=add_loot_elem_valorite
+
+
+[CHARDEF 071]	//113
+DEFNAME=c_elem_verite
+NAME=Verite Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=10,18//20 37
+ARMOR={15 20}//30 40
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_none
+
+TEVENTS=e_auto_dispel
+//equipment dmg as well
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Verite Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=72.9
+ TAG.SLAYER=eart_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=3500
+ KARMA=-3500
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_verite
+ NEWLOOT=add_loot_elem_verite
+
+
+[CHARDEF 0A6]	//166
+DEFNAME=c_elem_golden
+NAME=Golden Elemental
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=10,17//20 37
+ARMOR={30 37}//60 75
+ICON=
+SOUND=
+RESOURCES=
+FOODTYPE=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_none
+
+TEVENTS=e_auto_dispel
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Golden Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=73.9
+ TAG.SLAYER=earth_elemental_slayer
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=3500
+ KARMA=-3500
+
+ STR={226 255}
+ DEX={126 145}
+ INT={71 92}
+ MAXHITS={136 153}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.1 100.0}
+ TACTICS={60.1 100.0}
+ MAGICRESISTANCE={50.1 95.0}
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_golden
+ NEWLOOT=add_loot_elem_golden
+
+
+[CHARDEF 012C]	//300
+DEFNAME=c_elem_crystal
+NAME=Crystal Elemental
+CAN=mt_walk
+MOVERATE=100
+DAM=10,14//20 29
+ARMOR={25 30}//50 60
+FOODTYPE=
+RESOURCES=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_crystal_fens
+
+TEVENTS=e_bleed_attack
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Crystal Elemental
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=83.6
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=6500
+ KARMA=-6500
+
+ STR={136 160}
+ DEX={51 65}
+ INT={86 110}
+ MAXHITS=150
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={65.1 75.0}
+ TACTICS={75.1 85.0}
+ MAGICRESISTANCE={80.1 90.0}
+ ANATOMY=0.0
+ MAGERY={70.1 75.0}
+ EVALUATINGINTEL={70.1 75.0}
+ MEDITATION={65.1 75.0}
+
+ SPELLCIRCLES=1,6
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_elem_crystal
+ NEWLOOT=add_loot_elem_crystal
+
+
+[CHARDEF 0316]	//790
+DEFNAME=c_sand_vortex
+NAME=Sand Vortex
+CAN=mt_walk
+MOVERATE=100
+DAM=2,13//5,27
+ARMOR={40 45}//80 90
+FOODTYPE=15 t_meat
+RESOURCES=
+//AVERSIONS=
+DESIRES=
+SHELTER=r_central_ilshenar_desert, r_desert_of_compassion, r_desert_of_malas
+
+TEVENTS=e_bleed_attack
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Sand Vortex
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=75.6
+ TAG.SUPER.SLAYER=elemental_slayer
+
+ FAME=4500
+ KARMA=-4500
+
+ STR={171 195}
+ DEX={171 195}
+ INT={76 100}
+ MAXHITS={51 62}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING=80.0
+ TACTICS=70.0
+ MAGICRESISTANCE=150.0
+ ANATOMY=0.0
+
+ON=@NPCRESTOCK
+ NEWLOOT=loot_sand_vortex
+ NEWLOOT=add_loot_sand_vortex
+
+[EVENTS e_sand_attack]
+ON=@GETHIT
+ LOCAL.SAND.ATTACK=<R1,10>
+ IF (<EVAL <LOCAL.SAND.ATTACK>> == 1)
+  EMOTE blasts <SRC.NAME> with sand.
+  SRC.DAMAGE=<R5,10>
+  SRC.EMOTE has been hit by a powerful blast of sand.
+ ENDIF
+ RETURN 0

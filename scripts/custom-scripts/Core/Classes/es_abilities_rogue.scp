@@ -1,0 +1,170 @@
+[DEFNAME def_abiliy_variables]
+def_backstab_dmg	50//percentage to multiply.
+def_poison_strike_min	500//Min skill needed to poison strike and min it will use if you dont have higher skill.
+
+[PLEVEL 1]
+Backstab
+MultiStrike
+PoisonStrike
+
+[FUNCTION Backstab]
+IF (<SRC.TAG.BACKSTAB> > 0)
+ IF !<src.findid.i_memory_backstab>
+  SRC.MSG You ready yourself to backstab your opponent.
+  SRC.EVENTS +e_es_backstab
+ ELSE
+  SRC.MSG @33 You have to wait <eval <src.findid.i_memory_backstab.timer>> seconds til you can use this ability again.
+ ENDIF
+ELSE
+ SRC.MSG You cannot use the Backstab Ability.
+ENDIF
+RETURN 1
+
+[FUNCTION PoisonStrike]
+IF (<SRC.TAG.POISONSTRIKE> > 0)
+ IF !<src.findid.i_memory_poison_strike>
+  SRC.MSG You ready yourself to Poison Strike your opponent.
+  SRC.EVENTS +e_es_poison_strike
+ ELSE
+  SRC.MSG @33 You have to wait <eval <src.findid.i_memory_poison_strike.timer>> seconds til you can use this ability again.
+ ENDIF
+ELSE
+ SRC.MSG You cannot use the Poison Strike Ability.
+ENDIF
+RETURN 1
+
+[EVENTS e_es_back_stab]
+ON=@Hit
+IF (<FLAGS&statf_hidden>)
+ IF (<STAM> >= 10)
+  IF ((<DIR>==<SRC.DIR>) && (<ARGO.TYPE> == t_weapon_fencing))
+   LOCAL.BACKSTAB.LEVEL=<Eval <TAG0.BACKSTAB.LEVEL>>
+   LOCAL.Backstab=<MulDiv <ARGN1>,<eval (<def0.def_backstab_damage> * <LOCAL.BACKSTAB.LEvEL>)>,100> 
+   ARGN1=<EVAL (<ARGN1> + <LOCAL.Backstab>)>
+   STAM-=10
+   MSG @33 <EVAL <LOCAL.Backstab>> Backstab Damage
+   SRC.MSG @33 <EVAL <LOCAL.Backstab>> Backstab Damage
+   SRC.EFFECT=3,i_fx_glow_spike,6,15,1
+   EVENTS= -e_es_backstab
+   SERV.NEWITEM=i_memory_backstab
+   NEW.EQUIP <CONT>
+   RETURN 0
+  ELIF ((<DIR> == <SRC.DIR>) && (!<ARGO.TYPO> == t_weapon_fencing>)
+   MSG You need to use a fencing weapon to backstab an opponent.
+   EVENTS -e_es_back_stab
+   ARGN1=<ARNG1>
+   RETURN 0
+  ELSE
+   MSG You need to be behind your opponent to pull of a backstab.
+   EVENTS -e_es_back_stab
+   ARGN1=<ARGN1>
+   RETURN 0
+  ENDIF
+ ELSE
+  MSG You lack the Stamina to use the Backstab ability.
+  EVENTS -e_es_backstab
+  ARGN1=<ARGN1>
+  RETURN 0
+ ENDIF
+ELSE
+ MSG You must be hidden to use the Backstab ability.
+ EVENTS -e_es_back_stab
+ ARGN1=<ARGN1>
+ RETURN 0
+ENDIF
+
+[EVENTS e_es_poison_strike]
+ON=@Hit
+IF (<STAM> >= 10)
+ IF (<ARGO.TYPE> == t_weapon_fencing)
+  IF !(<SRC.FLAGS> &statf_poisoned)
+   MSG You strike your target with a poisonous blow.
+   SRC.MSG You have been struck with a poisonous blow.
+    IF (<POISONING> > <eval (<def0.def_poison_strike_min>)>)
+     SRC.SPELLEFFECT= S_POISON,<Eval <POISONING>>,<UID>
+    ELSE
+     SRC.SPELLEFFECT=S_POISON,<eval <def0.(def_poison_strike_min>)>,<UID>
+    ENDIF
+   ARGN1=<ARGN1>
+   STAM-=10
+   EVENTS= -e_es_poison_strike
+   SERV.NEWITEM=i_memory_poison_strike
+   NEW.EQUIP <CONT>
+  ELSE
+   MSG Your opponent is already poisoned!
+   EVENTS -e_es_poison_strike
+   ARGN1=<ARGN1>
+   RETURN 0
+  ENDIF
+ ELSE
+  MSG You need to use a fencing weapon to inflict Poison Strike on an opponent.
+  EVENTS= -e_es_poison_strike
+  ARGN1=<ARGN1>
+  RETURN 0
+ ENDIF
+ELSE
+ MSG You lack the Stamina to use the Poison Strike ability.
+ ARGN1=<ARGN1>
+ RETURN 0
+ENDIF
+
+[ITEMDEF i_memory_backstab]
+DEFNAME=i_memory_backstab
+NAME=Backstab Memory Item (Don't Remove)
+ID=i_memory
+TYPE=t_eq_script
+
+CATEGORY=Abilities
+SUBSECTION=Ability Memory Items
+DESCRIPTION=Backstab Memory Item
+
+ON=@CREATE
+ TIMER=30
+
+ON=@TIMER
+ CONT.SMSG=You can now use Backstab again.
+ REMOVE
+ RETURN 1
+
+[ITEMDEF i_memory_poison_strike]
+DEFNAME=i_memory_poison_strike
+NAME=Poison Strike Memory Item (Don't Remove)
+ID=i_memory
+TYPE=t_eq_script
+
+CATEGORY=ES Level System
+SUBSECTION=Ability Memory Items
+DESCRIPTION=Poison Strike
+
+ON=@CREATE
+ TIMER=60
+
+ON=@TIMER
+ CONT.SMSG=You can now use Poison Strike again.
+ REMOVE
+ RETURN 1
+
+
+[EVENTS E_ES_DODGE]
+ON=@GETHIT
+ LOCAL.DODGE_CHANCE=<EVAL <R100>>
+ IF <LOCAL.DODGE_CHANCE> <= <EVAL (<TAG.CLASS_LVL> * 2>)
+  MSG The blow is dodged.
+  SRC.MSG The blow is dodged.
+  RETURN 1
+ ELSE
+  RETURN 0
+ ENDIF
+
+[EVENTS E_ES_DODGE_IMPROVED]
+ON=@GETHIT
+ LOCAL.DODGE_CHANCE=<EVAL <R1,100>>
+ IF <LOCAL.DODGE_CHANCE> <= <EVAL (<TAG.CLASS_LVL> * 3>)
+  MSG The blow is dodged.
+  SRC.MSG The blow is dodged.
+  RETURN 1
+ ELSE
+  RETURN 0
+ ENDIF
+ 
+[EOF]

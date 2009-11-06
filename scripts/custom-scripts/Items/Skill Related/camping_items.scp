@@ -1,0 +1,193 @@
+[TYPEDEF t_kindling]
+ON=@DCLICK
+IF <BASEID> == i_kindling_healing
+ SERV.NEWITEM = i_campfire_healing
+ NEW.P = <P>
+ NEW.TIMER = 3
+ NEW.USE
+ REMOVE
+ UPDATE
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+[ITEMDEF i_kindling_healing]
+NAME= Kindling of Healing
+ID=i_kindling
+TYPE=t_kindling
+WEIGHT=1.0
+RESOURCES=i_kindling, 5 i_garlic
+SKILLMAKE=CAMPING
+VALUE=3
+
+CATEGORY=ES New Skill Items
+SUBSECTION=Camping
+DESCRIPTION=Kindling of Healing
+
+ON=@CREATE
+ COLOR=
+
+[ITEMDEF i_kindling_mana]
+NAME= Kindling of Mana Retoration
+ID=i_kindling
+TYPE=t_kindling
+WEIGHT=1.0
+RESOURCES=i_kindling, 5 i_garlic
+SKILLMAKE=CAMPING
+VALUE=3
+
+CATEGORY=ES New Skill Items
+SUBSECTION=Camping
+DESCRIPTION=Kindling of Mana
+
+ON=@CREATE
+ COLOR=
+
+[ITEMDEF i_kindling_stam]
+NAME= Kindling of Refreshment
+ID=i_kindling
+TYPE=t_kindling
+WEIGHT=1.0
+RESOURCES=i_kindling, 5 i_garlic
+SKILLMAKE=CAMPING
+VALUE=3
+
+CATEGORY=ES New Skill Items
+SUBSECTION=Camping
+DESCRIPTION=Kindling of Refreshment
+
+ON=@CREATE
+ COLOR=
+
+[ITEMDEF i_campfire_healing]
+NAME=Campfire of Healing
+ID=i_campfire
+TYPE=t_campfire
+WEIGHT=1.0
+RESOURCES=i_kindling_healing
+
+ON=@CREATE
+ATTR=010
+F_CAMPFIRE_HEALING
+
+ON=@DCLICK
+IF !<TAG.CLICK>
+ TAG.CLICK=1
+ TAG.HEAL.COUNTS=<EVAL (<SRC.CAMPING> / 10)>
+  IF <TAG.HEAL.COUNTS> < 10
+   TAG.HEAL.COUNTS=10
+  ENDIF
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@TIMER
+IF <TAG.HEAL.COUNTS> >= 1
+ F_CAMPFIRE_HEALING
+ TAG.HEAL.COUNTS -= 1
+ TIMER=3
+ELSE
+ REMOVE
+ENDIF
+ RETURN 1
+
+[FUNCTION f_campfire_healing]
+FORCLIENTS 5
+IF (<BRAIN> == 0) && (<HITS> < <MAXHITS>)
+ HITS += <R1,3>
+ IF (<HITS> > <MAXHITS>)
+  HITS == <MAXHITS>
+ ENDIF
+ENDIF
+ENDFOR
+
+
+[ITEMDEF i_campfire_mana]
+NAME=Campfire of mana
+ID=i_campfire
+TYPE=t_campfire
+WEIGHT=1.0
+RESOURCES=i_kindling_mana
+
+ON=@CREATE
+ATTR=010
+F_CAMPFIRE_MANA
+
+ON=@DCLICK
+IF !<TAG.CLICK>
+ TAG.CLICK=1
+ TAG.MANA.COUNTS=<EVAL (<SRC.CAMPING> / 10)>
+  IF <TAG.MANA.COUNTS> < 10
+   TAG.MANA.COUNTS=10
+  ENDIF
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@TIMER
+IF <TAG.MANA.COUNTS> >= 1
+ F_CAMPFIRE_MANA
+ TAG.MANA.COUNTS -= 1
+ TIMER=3
+ELSE
+ REMOVE
+ENDIF
+ RETURN 1
+
+[FUNCTION f_campfire_mana]
+FORCLIENTS 5
+IF (<BRAIN> == 0) && (<HITS> < <MAXMANA>)
+ MANA += <R1,3>
+ IF (<MANA> > <MAXMANA>)
+  HITS == <MAXMANA>
+ ENDIF
+ENDIF
+ENDFOR
+
+
+[ITEMDEF i_campfire_stam]
+NAME=Campfire of Refreshment
+ID=i_campfire
+TYPE=t_campfire
+WEIGHT=1.0
+RESOURCES=i_kindling_stam
+
+ON=@CREATE
+ATTR=010
+F_CAMPFIRE_STAM
+
+ON=@DCLICK
+IF !<TAG.CLICK>
+ TAG.CLICK=1
+ TAG.STAM.COUNTS=<EVAL (<SRC.CAMPING> / 10)>
+  IF <TAG.STAM.COUNTS> < 10
+   TAG.STAM.COUNTS=10
+  ENDIF
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@TIMER
+IF <TAG.STAM.COUNTS> >= 1
+ F_CAMPFIRE_STAM
+ TAG.STAM.COUNTS -= 1
+ TIMER=3
+ELSE
+ REMOVE
+ENDIF
+ RETURN 1
+
+[FUNCTION f_campfire_stam]
+FORCLIENTS 5
+IF (<BRAIN> == 0) && (<STAM> < <MAXSTAM>)
+ STAM += <R1,3>
+ IF (<STAM> > <MAXSTAM>)
+  STAM == <MAXSTAM>
+ ENDIF
+ENDIF
+ENDFOR

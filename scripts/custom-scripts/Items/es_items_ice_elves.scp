@@ -1,0 +1,498 @@
+//Backpack
+[ITEMDEF i_backpack_ice_elf]
+DEFNAME=i_backpack_ice_elf
+NAME=ice elf's backpack
+ID=i_backpack
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Backpack
+
+ON=@CREATE
+ COLOR=047f
+
+
+[ITEMDEF i_custom_mem_ele]
+ID=i_memory
+NAME=elemental memory!
+
+ON=@Create
+TIMER=1
+
+ON=@Timer
+CONT.SUICIDE
+
+
+//Weapons
+[ITEMDEF i_dagger_ice_elf]
+DEFNAME=i_dagger_ice_elf
+NAME=icy elven dagger
+ID=i_dagger
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Dagger
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+ MOREY=60.0
+
+[ITEMDEF i_staff_gnarled_ice_elf]
+DEFNAME=i_staff_gnarled_ice_elf
+NAME=icy elven gnarled staff
+ID=i_staff_gnarled
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Gnarled Staff
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+ MOREY=60.0
+
+
+[ITEMDEF i_bow_ice_elf]
+DEFNAME=i_bow_ice_elf
+NAME=icy elven bow
+ID=i_bow
+TDATA3=i_arrow_ice_elf
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Bow
+
+ON=@Create
+ COLOR=047f
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+ MOREY=60.0
+
+
+[ITEMDEF i_arrow_ice_elf]
+DEFNAME=i_arrow_ice_elf
+NAME=icy elven arrow%s
+ID=i_arrow
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Arrow%s
+
+ON=@CREATE
+ COLOR=047f
+
+
+[ITEMDEF i_sword_viking_ice_elf]
+DEFNAME=i_sword_viking_ice_elf
+NAME=icy elven viking sword
+ID=i_sword_viking
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Viking Sword
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+ MOREY=60.0
+
+
+//Clothes
+[ITEMDEF i_robe_ice_elf]
+DEFNAMEi_robe_ice_elf
+NAME=icy elven robe
+ID=i_robe
+ARMOR=30
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Robe
+
+ON=@create
+ COLOR=047f
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+ MOREY=60.0
+
+ON=@DCLICK
+ IF <DISPID>==i_death_shroud
+  DISPID=i_robe
+  UPDATEX
+  RETURN 1
+ ELSEIF <DISPID>==i_robe
+  DISPID=i_death_shroud
+  UPDATEX
+  RETURN 1
+ ENDIF
+
+ON=@UNEQUIP
+ DISPID=i_robe
+ UPDATEX
+ RETURN 0
+
+
+// bone
+[ITEMDEF i_bone_chest_ice_elf]
+DEFNAME=i_bone_chest_ice
+NAME=icy elven bone chest
+ID=i_bone_chest
+ARMOR=40
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Bone Chest
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+[ITEMDEF i_bone_gloves_ice_elf]
+DEFNAME=
+NAME=icy elven bone gloves
+ID=i_bone_gloves
+ARMOR=40
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Bone Gloves
+
+ON=@create
+ COLOR=047f
+ HITPOINTS={80 100}
+
+[ITEMDEF i_bone_leggings_ice_elf]
+DEFNAME=i_bone_leggings_ice_elf
+NAME=icy elven bone leggings
+ID=i_bone_leggings
+ARMOR=40
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Bone Leggings
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+[ITEMDEF i_bone_helmet_ice_elf]
+DEFNAME=
+NAME=icy elven bone helmet
+ID=i_bone_helmet
+ARMOR=
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Bone Helmet
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_bone_arms_ice_elf]
+DEFNAME=
+NAME=icy elven bone arms
+ID=i_bone_arms
+ARMOR=
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Bone Arms
+
+ON=@create
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+//Platemail 
+[ITEMDEF i_platemail_chest_ice_elf]
+DEFNAME=i_platemail_chest_ice_elf
+NAME=icy elven platemail chest
+ID=i_platemail_chest
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Platemail Chest
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_shield_heater_ice_elf]
+DEFNAME=i_shield_heater_ice_elf
+NAME=icy elven heater shield
+ID=i_shield_heater
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Heater Shield
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_platemail_leggings_ice_elf]
+DEFNAME=i_platemail_leggings_ice_elf
+NAME=icy elven platemail leggings
+ID=i_platemail_leggings
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Platemail Leggings
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_platemail_gloves_ice_elf]
+DEFNAME=i_platemail_gloves_ice_elf
+NAME=icy elven platemail gloves
+ID=i_platemail_gloves
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Platemail Gloves
+
+ON=@create
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_platemail_arms_ice_elf]
+DEFNAME=i_platemail_arms_ice_elf
+NAME=icy elven platemail arms
+ID=i_platemail_arms
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Platemail Arms
+
+ON=@CREATE
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_platemail_gorget_ice_elf]
+DEFNAME=i_platemail_gorget_ice_elf
+NAME=icy elven platemail gorget
+ID=i_platemail_gorget
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Platemail Gorget
+
+ON=@create
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_platemail_helm_ice_elf]
+DEFNAME=i_platemail_helm_ice_elf
+NAME=icy elven platemail helm
+ID=i_platemail_helm
+ARMOR=45
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Icy Elven Platemail Helm
+
+ON=@create
+ COLOR=047f
+ HITPOINTS={80 100}
+
+
+[ITEMDEF i_ice_cougar_summoning_pot]
+DEFNAME=i_ice_cougar_summoning_pot
+NAME=pot of near frozen liquid
+ID=i_pot_of_wax
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Cougar Summoning Pot
+
+ON=@Create
+ MORE=5
+ COLOR=047f
+
+ON=@CLICK
+ MSG=<NAME> <EVAL <MORE>> Charges
+
+ON=@DCLICK
+ IF (<MORE>==0)
+  MSG The <NAME> is out of charges.
+  REMOVE
+  RETURN 1
+ ENDIF
+ IF <SRC.RESTEST 1 i_summon_timer_ice>
+  MSG You cant use this again yet.
+  RETURN 1
+ ENDIF
+
+ MORE -= 1
+ NAME=<NAME> <EVAL <MORE>> Charges
+ SRC.NEWITEM=i_summon_timer_ice
+ NEW.BOUNCE
+ SRC.SMSG You scatter some of the cold, almost frozen, liquid contents on the ground.
+ SRC.NEWITEM=i_frozen_contents
+ NEW.COLOR=047f
+ NEW.P=<SRC.P>
+ NEW.ATTR=attr_decay|010
+ NEW.TIMER=10
+ NEW.LINK=<SRC.UID>
+ RETURN 1
+
+[ITEMDEF i_frozen_contents]
+NAME=Ice Helper Stuff
+ID=01036
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Frozen Contents
+
+ON=@TIMER
+ LINK.NEWNPC=c_ice_cougar
+ LINK.NEW.P=<P>
+ LINK.NEW.FLAGS=04000000
+ LINK.TAG.ELE=<LINK.ACT.UID>
+ LINK.NEW.UPDATE
+ LINK.NEWITEM=i_custom_mem_ele
+ LINK.NEW.COLOR memory_ipet
+ LINK.NEW.LINK <LINK.UID>
+ LINK.NEW.MORE <LINK.UID>
+ LINK.NEW.MORE2 memory_ipet
+ LINK.NEW.TIMER 300
+ LINK.NEW.CONT <EVAL <LINK.TAG.ELE>>
+ LINK.MSG An ice cougar spawns. It seems to obey you.
+ LINK.MSG You must wait an hour before making another.
+ LINK.TAG.ELE=
+ LINK.UPDATE
+ REMOVE
+ RETURN 1
+
+
+[ITEMDEF i_summon_timer_ice]
+NAME=Delay Ice Cougar Summon Timer
+ID=i_memory
+LAYER=layer_special
+
+CATEGORY=NPC Item Packs
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Cougar Delay Timer
+
+ON=@Create
+ TIMER=3600
+
+ON=@TIMER
+ REMOVE
+
+[EOF]
+
+
+Monsters 
+ Ancient Reaper 
+ Banshee 
+ Basilisk 
+ Blood Cap 
+ Cave Troll Scout 
+ Centaur 
+ Chimera 
+ Corpser 
+ Crypt Ghoul 
+ Cyclops 
+ Death Knight 
+ Demon 
+ Desert Ophidian 
+ Djinn 
+ Doppelganger 
+ Dragon 
+ Dragon Centaur 
+ Earth Elemental 
+ Efreet 
+ Ettin 
+ Fire Giant 
+ Flesh Golem 
+ Fortress Ophidian 
+ Frost Giant 
+ Frost Giant Warlock 
+ Frost Spider 
+ Fungus Groper 
+ Gazer 
+ Geck Warrior 
+ Ghoul 
+ Gnoll Shaman 
+ Gnoll Warrior 
+ Goblin 
+ Gremlin 
+ Griffon 
+ Harpy 
+ Harpy Queen 
+ Harvest Lord 
+ Headless 
+ Headless Warrior 
+ Hellhound 
+ Hellion 
+ Horror Demon 
+ Hydra 
+ Ice Elemental 
+ Ice Salamander 
+ Imp 
+ Imp Mage 
+ Kraken 
+ Lesser Manticore 
+ Lich 
+ Lizardman Mage 
+ Lizardman Necro. 
+ Lizardman Warrior 
+ Magma Elemental 
+ Manticore 
+ Medusa 
+ Mimic 
+ Minotaur 
+ Mongbat 
+ Mummy 
+ Naga 
+ Ogre 
+ Orc Necromancer 
+ Ratman 
+ Ratman Scout 
+ Reaper 
+ Rhinork 
+ Satyr 
+ Seeker 
+ Siren 
+ Skeleton 
+ Small Beholder 
+ Sm. Frost Salamander 
+ Small Gazer 
+ Sobekar 
+ Stone Golem 
+ Succubus 
+ Swamp Elemental 
+ Swamp Ophidian 
+ Swamp Troll 
+ Terathan 
+ Tree Spirit 
+ Troll 
+ Two-Headed Dog 
+ Two-Headed Pup 
+ Undead Garg. Mage 
+ Undead Garg. Warrior 
+ Werewolf 
+ Wraith 
+ Yeti 
+ Zombie 
+ Zorn 
+ 

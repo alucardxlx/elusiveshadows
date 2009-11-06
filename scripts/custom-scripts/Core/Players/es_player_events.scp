@@ -1,0 +1,77 @@
+//Functions for this are in the core functions script.
+
+[EVENTS e_es_players]
+ON=@LOGIN
+IF (!<tag.firstlogin> == 1)
+ tag.regen_hits = 40
+ tag.regen_stam = 10
+ tag.regen_mana = 20
+ tag.regenVal_hits = 1
+ tag.regenVal_stam = 1
+ tag.regenVal_mana = 1
+ENDIF
+
+tag.firstlogin = 1
+
+Timerf <Tag0.Regen_Stam>,Regen_Stam
+Timerf <Tag0.Regen_Hits>,Regen_Hits
+Timerf <Tag0.Regen_Mana>,Regen_Mana
+
+ON=@UserStats
+maxhits = <eval (<str>/2) + <modstr> + 50 + <tag0.modmaxhits>> 
+maxmana = <eval <int> + <modint> + <tag0.modmaxmana>>
+maxstam = <eval <dex> + <moddex> + <tag0.modmaxstam>>
+
+
+ON=@Death
+FORCONT <UID> 0
+	IF (!(<ATTR>&ATTR_NEWBIE))
+		IF (<ISARMOR>) || (<ISWEAPON>) || (<TYPE> == T_CLOTHING) || (<TYPE> == T_JEWELRY)
+		TAG.THIS.WASEQUIPPED=1
+		ENDIF
+	ENDIF
+ENDFOR
+
+
+
+//[EVENTS e_wrestling_swing_speed]
+//Wrestling swing speed is supposedly 50/3.0 base speed. OSI Based. Minus SSI calcs.
+//This is rounded up timers on the swing speeds. Works fine though.
+ON=@HITTRY
+IF <ARGO> != <ISWEAPON>
+ IF <DEX> <= 14
+  ARGN1 = 30// 1/10 seconds. Default with 10
+ ELIF <DEX> <= 23
+  ARGN1 = 28//2.75
+ ELIF <DEX> <= 33
+  ARGN1 = 25//
+ ELIF <DEX> <= 45
+  ARGN1 = 23//2.25
+ ELIF <DEX> <= 60
+  ARGN1 = 20//
+ ELIF <DEX> <= 77
+  ARGN1 = 18//1.75
+ ELIF <DEX> <= 100
+  ARGN1 = 15//1.5
+ ELIF <DEX> <= 125
+  ARGN1 = 13//1.25
+ ELSE
+  RETURN 0
+ ENDIF
+ENDIF
+
+//[EVENTS e_stealth]
+ON=@STEPSTEALTH
+argn2=<eval (<flags>&statf_fly)>
+
+IF !<ARGN2>
+ ctag0.stealthsteps += 1
+ELSE
+ ctag0.stealthsteps += 2
+ENDIF
+
+IF <ctag0.stealthsteps> > <ctag0.stealthsteps.max>
+ ARGN1=1
+ ctag0.stealthsteps=0
+ return 1
+ENDIF

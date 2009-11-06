@@ -1,0 +1,145 @@
+[CHARDEF c_orc_man]
+ID=c_man
+NAME=#NAMES_ORC
+SOUND=snd_MONSTER_ORC1
+ICON=i_pet_ORC
+DAM=1,4
+ARMOR=0
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP|MT_MALE
+MOVERATE=100
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+SHELTER=r_caves,r_dungeon,r_orc_camp
+DESIRES=i_gold,spk_orc
+TSPEECH=spk_orc
+TEVENTS=e_es_orc_hair_helm
+
+CATEGORY=ES Race System
+SUBSECTION=New Races
+DESCRIPTION=Orc, Male (W/Pdoll)
+
+ON=@Create
+ COLOR=08a7
+
+ OBody=c_man
+ Body=c_orc
+
+ FAME={100 1000}
+ KARMA={-1000 -5000}
+
+ STR={96 120}
+ DEX={81 105}
+ INT={36 60}
+ Maxhits={110 120}
+ Maxstam=<dex>
+ Maxmana=<int>
+
+ PARRYING={50.0 75.0}
+ MAGICRESISTANCE={50.0 75.0}
+ TACTICS={55.0 80.0}
+ WRESTLING={50.0 70.0}
+
+ON=@NPCRestock
+ ITEMNEWBIE=i_es_orc_head
+ ITEMNEWBIE=i_woodland_belt
+ COLOR=08aa
+ ITEMNEWBIE=i_boots_calf
+ COLOR=0	//08aa
+ ITEM=i_backpack
+ ITEM=loot_ORC
+
+ON=@DeathCorpse
+ ARGO=c_orc
+ Return 0
+
+[CHARDEF c_orc_woman]
+ID=c_woman
+NAME=#NAMES_ORC
+SOUND=snd_MONSTER_ORC1
+ICON=i_pet_ORC
+DAM=1,4
+ARMOR=0
+CAN=MT_WALK|MT_RUN|MT_USEHANDS|MT_EQUIP|MT_FEMALE
+MOVERATE=100
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+SHELTER=r_caves,r_dungeon,r_orc_camp
+DESIRES=i_gold,spk_orc
+TSPEECH=spk_orc
+TEVENTS=e_es_orc_hair_helm
+
+CATEGORY=ES Race System
+SUBSECTION=New Races
+DESCRIPTION=Orc, Female (W/Pdoll)
+
+ON=@Create
+ COLOR=08a7
+
+ OBody=c_man
+ Body=c_orc
+
+ FAME={100 1000}
+ KARMA={-1000 -5000}
+
+ STR={96 120}
+ DEX={81 105}
+ INT={36 60}
+ Maxhits={110 120}
+ Maxstam=<dex>
+ Maxmana=<int>
+
+ PARRYING={50.0 75.0}
+ MAGICRESISTANCE={50.0 75.0}
+ TACTICS={55.0 80.0}
+ WRESTLING={50.0 70.0}
+
+ON=@NPCRestock
+ ITEMNEWBIE=i_es_orc_head
+ ITEMNEWBIE=i_woodland_belt
+ COLOR=08aa
+ ITEMNEWBIE=i_boots_calf
+ COLOR=0	//08aa
+ ITEM=i_backpack
+ ITEM=loot_ORC
+
+ON=@DeathCorpse
+ ARGO=c_orc
+ Return 0
+
+
+[ITEMDEF i_es_orc_head]
+NAME=Orc Head
+ID=0141b
+TYPE=T_hair
+LAYER=layer_hair
+
+CATEGORY=ES Race System
+SUBSECTION=Orcs
+DESCRIPTION=Orc Head (Hair for NPC)
+
+ON=@Create
+ ATTR=attr_newbie|attr_move_never
+
+ON=@EQUIP
+ COLOR=<SRC.COLOR>
+ RETURN 0
+
+[EVENTS e_es_orc_hair_helm]
+ON=@ItemEquip
+ IF ((<SRC.FINDLAYER(11)>) && (<SRC.BASEID> == i_helm_orc))
+  TAG.HairID=<SRC.FINDLAYER(11).ID>
+  TAG.HairColor=<SRC.FINDLAYER(11).color>
+  FINDLAYER(11).REMOVE
+  Return 0
+ ELSE
+  Return 1
+ ENDIF
+
+ON=@ItemUnequip
+ IF !(<SRC.TAG0.HairID> == 0)
+  SERV.NEWITEM=<SRC.TAG0.HairID>
+  NEW.EQUIP
+  FINDLAYER(11).color=<src.tag.HairColor>
+  TAG.HairColor=
+  TAG.HairID=
+ ENDIF

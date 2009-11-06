@@ -1,0 +1,28 @@
+[ITEMDEF i_trash_barrel]
+DEFNAME=i_trash_barrel
+ID=i_barrel_open
+NAME=Trash Barrel
+TYPE=t_container
+WEIGHT=1000.0
+
+CATEGORY=ES Server Items
+SUBSECTION=Utilities
+DESCRIPTION=Trash Barrel
+
+ON=@CREATE
+ COLOR=0
+ ATTR=08010
+
+ON=@DROPON_SELF
+// ARGO.REMOVE//If we want instant deletion.
+ TIMER 60
+ RETURN 0
+
+ON=@TIMER
+ EMPTY
+ SOUND 01ef
+ SAYU The trash barrel is being emptied!
+ TIMER -1
+ RETURN 1
+
+[EOF]

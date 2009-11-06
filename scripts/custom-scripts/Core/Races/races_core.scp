@@ -1,0 +1,15 @@
+[defname races_body_defs]
+race_human_male			c_man
+race_human_female		c_woman
+race_elf_male			c_elf_man
+race_elf_female			c_elf_woman
+race_gargoyle_male		c_gargoyle_man
+race_gargoyle_female		c_gargoyle_woman
+
+[defname races_racial_group]
+race_humans			{c_man c_woman}
+race_elf			{c_elf_man c_elf_woman}
+race_gargoyles			{c_gargoyle_man c_gargoyle_woman}
+
+
+[EOF]

@@ -1,0 +1,261 @@
+[COMMENT NPC EVENTS NOTES]
+This note file lists each event in here and what it does.
+e_summon_target
+	1 in 4 chance. This summons the aggresor hitting the npc to it.
+e_eat_pet_max
+	1 in 4 chance. Any pet hitting or hit by npc is eaten. Killing the pet. Giving npc full life.
+e_eat_pet_norm
+	1 in 4 chance. Any pet hitting or hit by npc is eaten. Killing the pet. Giving npc life = pets maxhits.
+e_area_poison_lethal
+	All on the screen has is hit with a large area poison effect. The effect poisons everything and everyone. Poison is str 120.0.
+e_corrosive_blood
+	When hitting the creature in question. Players weapons takes dmg from the corrosive blood on top normal dmg to weapon. This is constant. 1 - 4 additional weapon dmg.
+e_dispel_<strength>
+	Dispels summoned creatures when npc hits or is hit by them. The chance is based on event strength.
+
+[EVENTS e_immune_bard_skills]
+
+[EVENTS e_poison_immune_lvl1]
+
+[EVENTS e_poison_immune_lvl2]
+
+[EVENTS e_poison_immune_lvl3]
+
+[EVENTS e_poison_immune_lvl4]
+
+[EVENTS e_poison_immune_lvl5]
+
+[EVENTS e_summon_target_weak]
+ON=GETHIT
+ IF (!<R4>)
+  SRC.P=<P>
+  SRC.MSG You have been dragged to <NAME>
+  EMOTE <SRC.NAME> dragged back to <NAME>
+  ATTACK
+  UPDATE
+  RETURN 0
+ ELSE
+  RETURN 0
+ ENDIF
+
+[EVENTS e_eat_pet_max]
+ON=@GETHIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ HITS=<MAXHITS>
+ UPDATE
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@HIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ HITS=<MAXHITS>
+ UPDATE
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+[EVENTS e_megahp_eat_pet_max]
+ON=@GETHIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ tag.HITS=<tag.MAXHITS>
+ update_hp_percentage
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@HIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ tag.HITS=<tag.MAXHITS>
+ update_hp_percentage
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+[EVENTS e_eat_pet_norm]
+ON=@GETHIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ HITS=<SRC.MAXHITS>
+  IF (<HITS> > <MAXHITS>)
+   HITS=<MAXHITS>
+  ENDIF
+ UPDATE
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@HIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ HITS=<SRC.MAXHITS>
+  IF (<HITS> > <MAXHITS>)
+   HITS=<MAXHITS>
+  ENDIF
+ UPDATE
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+[EVENTS e_megahp_eat_pet_norm]
+ON=@GETHIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ tag.HITS=<SRC.MAXHITS>
+  IF (<tag.HITS> > <tag.MAXHITS>)
+   tag.HITS=<tag.MAXHITS>
+  ENDIF
+ update_hp_percentage
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@HIT
+IF (<SRC.ISPET> && <R1,4> == 1)
+ ARGN1=0
+ EMOTE eat <SRC.NAME>
+ SRC.HITS=0
+ tag.HITS=<SRC.MAXHITS>
+  IF (<tag.HITS> > <tag.MAXHITS>)
+   tag.HITS=<tag.MAXHITS>
+  ENDIF
+ update_hp_percentage
+ RETURN 0
+ELSE
+ RETURN 0
+ENDIF
+
+[EVENTS e_area_poison_lethal]
+//
+
+[EVENTS e_corrosive_blood]
+ON=@GETHIT
+IF !<ARGO.UID>
+ RETURN 0
+ELSE
+ ARGO.MORE1L -= <R1,4>
+ SRC.SMSG Your weapon takes acid damage from hitting the <NAME>.
+  IF (<ARGO.MORE1L> <= 0)
+   ARGO.REMOVE
+   SRC.MSG Your weapon breaks in your hand.
+   SRC.SMSG You weapon was destroyed by the the acid damage from hitting the <NAME>.
+  ENDIF
+ UPDATE
+ RETURN 0
+ENDIF
+
+[EVENTS e_dispel_strong]
+ON=@GETHIT
+IF (<SRC.FLAGS> &STATF_CONJURED)
+ SRC.SPELLEFFECT s_dispel,100.0
+ENDIF
+
+ON=@HIT
+IF (<SRC.FLAGS> &STATF_CONJURED)
+ SRC.SPELLEFFECT s_dispel,100.0
+ENDIF
+
+[EVENTS e_dispel_normal]
+ON=@GETHIT
+IF (<SRC.FLAGS> &STATF_CONJURED)
+ IF !<R2>
+  SRC.SPELLEFFECT s_dispel,100.0
+ ENDIF
+ENDIF
+
+ON=@HIT
+IF (<SRC.FLAGS> &STATF_CONJURED)
+ IF !<R2>
+  SRC.SPELLEFFECT s_dispel,100.0
+ ENDIF
+ENDIF
+
+[EVENTS e_dispel_weak]
+ON=@GETHIT
+IF (<SRC.FLAGS> &STATF_CONJURED)
+ IF !<R4>
+  SRC.SPELLEFFECT s_dispel,100.0
+ ENDIF
+ENDIF
+
+ON=@HIT
+IF (<SRC.FLAGS> &STATF_CONJURED)
+ IF !<R4>
+  SRC.SPELLEFFECT s_dispel,100.0
+ ENDIF
+ENDIF
+
+[EVENTS e_aura_fire]
+//as cold aura
+
+
+
+[EVENTS e_leech_life]
+ON=@HIT
+ HITS += <EVAL (<ARGN1>/3)*2>
+ IF (<HITS> > <MAXHITS>)
+  HITS=<MAXHITS>
+ ENDIF
+
+[EVENTS e_dismount_attack]
+ON=@HIT
+ IF (<SRC.FLAGS> & STATF_MOUNT)
+  SRC.DISMOUNT
+  SRC.EVENTS +e_nomount
+  SRC.TIMERF 30,EVENTS=-nomount
+ ENDIF
+
+[EVENTS e_nomount]
+ON=@MOUNT
+ RETURN 1
+
+[EVENTS e_paralyzing_attack]
+
+[EVENTS e_anti_provoke_first]
+
+[EVENTS e_anti_peace_area]
+
+[EVENTS e_crushing_blow]
+
+[EVENTS e_mortal_strike]
+
+[EVENTS e_dismount_attack]
+
+[EVENTS e_bleed_attack]
+
+[EVENTS e_concussion_attack]
+
+[EVENTS e_summon_patchwork]
+
+[EVENTS e_whirlwind_attack]
+
+[EVENTS e_double_strike]
+
+[EVENTS e_increased_speed]
+
+[EVENTS e_unholy_bones]

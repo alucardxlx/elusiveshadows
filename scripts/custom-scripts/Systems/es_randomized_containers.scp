@@ -1,0 +1,103 @@
+Brenden Rheaume
+851 Coventry Lane APT T3
+Norwood, MA 02062
+
+
+
+[comment randomized_containers]
+LAYOUT:
+
+* new typedef for chests/containers and items which might be locked, trapped, or a mimic. All holding information on rand chance of each happenstance. (Note: Mimic removes lock and trap chances).
+	* Level variables.
+	* Loot variables. (Based on loot level)
+	* Trap chance variables. (Based on loot level)
+	* Lock chance variables. (Based on loot level)
+	* Mimic chance. (Dungeon chests only. Level based. If it's a mimic, there will be no lock or trap.)
+
+* New container Defs.
+	* This is more a range of items to be used in the containers and terrain.
+	* These will also have a redone item for each type in some cases (Bone containers, etc.).
+	* All "containers" per se, won't be movable.
+
+* Random chance to spawn an NPC!
+	* Yes, another variable will be added, depending on another variable. Chance to spawn npcs. This is terrain/area based. Can be good or bad.
+
+* Mimics.
+	* 5 total variants, so far.
+	* Each variant has a progressive status structure. Minor, Lesser, Mimic, Greater, and Epic.
+	* Mimics use a seperate loot template then the containers.
+	* Mimics just use the mimic dispid. Only ones exempt is the Epic. Greater might get the same benefits (Not sure yet)!
+	* Warning!: Epic Variant is not a light battle indeed. Could take several players to maintain and defeat. They are to be put to the same cautions as a champion. If not 	  worse.
+		* They have double the loot of all champions/peerless.
+		* They are formidable and summon stronger NPC's then a dark father.
+		* They can take the forms of several NPC's. They get attribute and special attack differences based on appearance.
+		* Possibly might make a special room to be teleported to, to fight this mimic. Innocent bystanders won't stand a chance.
+		* Assimilate: New ability. When a player or pet is killed by this mimic, it creates a Minor - normal mimic. The loot on said minion is just the gold/2. Creature is 		  spawned on spot of player death. Chance of occurence is 1 in 5.
+
+* Loot templates for each container and the mimics. (Mimics templates are done, epic = epic loot!)
+	* Loot templates. Level 1 - level 6. Note: 6 Normally contains an artifact.
+	* Junk templates should also be made. Containing bare minimum beneficial items.
+	* Mimics use seperate loot templates compared to standard container templates. When a mimic is found, the container disappears.
+	* Variant templates should be made per map. (Each map. Different cultures)
+
+
+
+
+
+
+
+[defname random_loot_containers]
+random_dungeon_container			{random_dungeon_crate 1, random_dungeon_barrel 1}
+random_dungeon_chests				{i_dungeon_chest_01 1, i_dungeon_chest_02 1, i_dungeon_chest_03 1, i_dungeon_chest_04 1, i_dungeon_chest_05 1}
+
+random_town_container_indoors			{}
+random_town_container_outdoors			{}
+random_city_container_indoors			{}
+random_city_container_outdoors			{}
+random_tokuno_container_indoors			{}
+random_tokuno_container_outdoors		{}
+random_elven_container_indoors			{}
+random_elven_container_outdoors			{}
+random_gargoyle_container_indoors		{}
+random_gargoyle_container_outdoors		{}
+
+random_seafarer_container			{}
+random_forest_container				{}
+random_desert_container				{}
+random_mountain_container			{}
+random_deadlands_container			{}
+
+random_tokuno_seafarer_container		{}
+random_tokuno_forest_container			{}
+random_tokuno_desert_container			{}
+random_tokuno_mountain_container		{}
+random_tokuno_deadlands_container		{}
+
+random_malas_seafarer_container			{}
+random_malas_forest_container			{}
+random_malas_desert_container			{}
+random_malas_mountain_container			{}
+random_malas_deadlands_container		{}
+
+random_ilshenar_seafarer_container		{}
+random_ilshenar_forest_container		{}
+random_ilshenar_desert_container		{}
+random_ilshenar_mountain_container		{}
+random_ilshenar_deadlands_container		{}
+
+
+
+
+
+
+
+
+
+/////////////////////////
+//New Container Typedef//
+/////////////////////////
+
+[typedef t_container_information]
+on=@create
+ local.level = 
+

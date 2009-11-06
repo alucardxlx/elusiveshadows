@@ -1,0 +1,20 @@
+19:55:ERROR:(spherechar_evil.scp,1462)Undefined symbol 'c_orc_lord'
+19:55:ERROR:(spherechar_evil.scp,1467)Undefined keyword 'ALIGNMENT'
+19:55:ERROR:(spherechar_evil.scp,1468)Undefined keyword 'SPELLCIRCLES'
+19:55:ERROR:(spherechar_evil.scp,1469)Undefined keyword 'SHELTER'
+19:55:WARNING:(spherechar_evil.scp,1473)Char script 'c_m_orc_captain' has bad DISPID 00. Defaulting to 0400.
+
+
+
+19:55:ERROR:(spherechar_aos.scp,221)Undefined symbol 'e_carnivore3'
+19:55:ERROR:(spherechar_aos.scp,221)Bad resource list id 'e_carnivore3'
+19:55:ERROR:(spherechar_aos.scp,223)Undefined keyword 'SHELTER'
+19:55:ERROR:(spherechar_aos.scp,923)Undefined keyword 'SHELTER'
+19:55:ERROR:(spherechar_aos.scp,575)Undefined keyword 'SHELTER'
+19:55:ERROR:(spherechar.scp,298)Undefined keyword 'SHELTER'
+19:55:ERROR:(spherechar_aos.scp,1111)Undefined keyword 'SHELTER'
+19:55:ERROR:(spherechar_aos.scp,102)Undefined keyword 'SHELTER'
+19:55:ERROR:(spherechar.scp,244)Undefined symbol 't_fish_raw'
+19:55:ERROR:(spherechar.scp,244)Bad resource list id '30 t_fish_raw'
+
+

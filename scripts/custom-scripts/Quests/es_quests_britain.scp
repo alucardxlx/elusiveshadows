@@ -1,0 +1,290 @@
+[COMMENT standard setup]
+//Elusive Shadows Quest System.
+//Speech based.
+
+Set a quest tag using the following syntax " tag.quest.* "
+
+Functions for the system messages have been made. Def's would be argued to be better, but I would have to run much more code to get the speech and then color for it. Functions seemed more reliant and less consuming in memory.
+
+Loot templates will be setup with axiscats:
+CATEGORY=Loot Templates - Quests
+SUBSECTION=(Town, dunngeon, area name, etc)
+DESCRIPTION=(Name of quest)
+
+[FUNCTION say_accept]
+smsg @02C Say "accept" if you wish to do this quest.
+
+[FUNCTION say_reward]
+smsg @02C Say "reward' or "complete" when you have completed the quest.
+
+[FUNCTION say_complete]
+smsg @02c You have completed the quest. Please return for your reward.
+
+
+[FUNCTION give_gold_small]
+serv.newitem i_gold,{10 50},<new>
+
+
+[SPEECH spk_quest_giant_rats]
+DEFAULT Huh? What are thou talking about?
+RANDOM Damn those vermin.. always eating everything..
+
+ON=*mission*
+ON=*task*
+ON=*quest*
+ say Mi'<SRC.SEX Lord/Lady>, I have been having quite a rat problem lately in my house. Big ones, giant ones... If you can dispose of ten of them. I shall reward you. Else they will just keep me from my work..
+ src.say_accept
+
+ON=*accept*
+ say Thank you <SRC.NAME>, I have faith that you can complete this task for me.
+ src.say_reward
+ src.tag.quest.giant.rat = 0
+ src.tag.quest.giant.rat.killed = 0
+
+ON=*where*
+ IF (!<src.tag.quest.giant.rat>)
+  say what do you mean where? We are in <region>.
+ ELSE
+  say In my house, of course. You should be able to tell which one it is with all the vermin running in it.
+ ENDIF
+
+ON=*complete*
+ON=*reward*
+IF (<src.tag.quest.giant.rat> == 1)
+ SAY Thank you for disposing of those pests! I hope this meager reward is some what helpful. T'was all I could afford to give.
+ serv.newitem loot_quest_giant_rat
+ new.bounce <src.uid>
+ src.tag.quest.giant.rat=
+ BYE
+ELIF (<src.tag.quest.giant.rat> == 0)
+ say You have not fulfilled your duties yet.
+ELSE
+ Say Huh, you want a reward for what?
+ENDIF
+
+ON=Bye
+ON=Farewell
+ SAY Farewell to thee.
+ BYE
+ RETURN 1
+
+[comment add this to rats]
+ON=@DEATH
+IF (<src.act.tag.quest.giant.rat> = 0)
+ src.act.tag.quest.giant.rat.killed += 1
+ return 0
+ELIF (<src.tag.quest.giant.rat> == 1)
+ src.act.say_complete
+ return 0
+ELIF (<src.act.tag.quest.giant.rat.killed> == 10)
+ src.act.tag.quest.giant.rat = 1
+ src.act.tag.quest.giant.rat.killed=
+ src.act.say_complete
+ return 0
+ELSE
+ return 0
+ENDIF
+
+
+[TEMPLATE loot_quest_giant_rat]
+DEFNAME=loot_quest_giant_rat
+CATEGORY=Loot Templates - Quests
+SUBSECTION=Britain
+DESCRIPTION=Giant Rat
+CONTAINER=i_bag
+ITEM=i_gold,{200 300}
+ITEM=random_jewel,{1 2}
+ITEM=random_jewel,{1 2}
+
+
+[CHARDEF c_q_farmer_male]
+DEFNAME=c_q_farmer_male
+NAME=#names_humanmale
+ID=c_man
+CAN=mt_walk|mt_male|mt_run|mt_equip|mt_usehands
+MOVERATE=100
+DAM=1,8
+ARMOR=0,0
+RESOURCES=2 i_ribs_raw
+SHELTER=r_farm
+AVERSIONS=t_trap, e_carnivores3
+DESIRES=i_gold, t_crop
+TSPEECH=spk_human_prime
+//TSPEECH=spk_shopkeep
+TSPEECH=spk_needs
+TSPEECH=spk_human_default
+TSPEECH=spk_quest_giant_rats
+TEVENTS=e_Human_HearUnk
+TEVENTS=e_Human_ConvInit
+TEVENTS=e_Human_Needs
+TEVENTS=e_Human_Greet
+TEVENTS=e_Human_Space
+TEVENTS=e_Human_Refuse
+TEVENTS=e_Human_Environ
+
+CATEGORY=Quest NPCs
+SUBSECTION=Giant Rat
+DESCRIPTION=Farmer
+
+ON=@CREATE
+NPC=brain_human
+COLOR=colors_skin
+FLAGS=05
+NEED=i_gold
+
+FAME=2000
+KARMA=2000
+
+STR={65 90}
+DEX={60 80}
+INT={40 65}
+MAXHITS={45 65}
+MAXSTAM=<dex>
+MAXINT=<int>
+
+WRESTLING={35.0 50.0}
+TACTICS={35.0 50.0}
+MAGICRESISTANCE={15.0 30.0}
+ANATOMY=0.0
+HERDING={65.0 80.0}
+TAMING={65.0 85.0}
+ANIMALLORE={65.0 85.0}
+COOKING={35.0 65.0}
+
+ITEMNEWBIE=random_hair_male
+COLOR=COLORS_HAIR
+ITEMNEWBIE=random_facial_hair
+COLOR=match_hair
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=random_male_tops
+ COLOR=colors_neutral
+ ITEMNEWBIE=random_pants
+ COLOR=colors_neutral
+ ITEMNEWBIE=random_hats
+ COLOR=colors_neutral
+ ITEMNEWBIE=random_footwear
+ ITEMNEWBIE=i_pitchfork
+ ITEMNEWBIE=i_lantern
+
+[CHARDEF c_q_rat_giant]
+DEFNAME=c_q_rat_giant
+NAME=giant rat
+ID=c_rat_giant
+SOUND=snd_MONSTER_GRAT1
+ICON=i_pet_RAT_2
+DAM=3,9
+ARMOR=9
+RESOURCES=1 i_ribs_raw,2 i_fur_dark
+CAN=MT_WALK|MT_RUN
+FOODTYPE=9 t_meat_raw
+//SHELTER=r_dungeon,r_DARKNESS,r_spooky
+DESIRES=c_rat,c_a_rat_sewer,c_rat_giant,r_spooky
+AVERSIONS=t_TRAP
+
+CATEGORY=Quest NPCs
+SUBSECTION=Giant Rat
+DESCRIPTION=Giant Rat
+
+ON=@Create
+NPC=brain_monster
+
+STR={32 74}
+DEX={46 65}
+INT={16 30}
+
+PARRYING={45.0 55.0}
+MAGICRESISTANCE={25.0 30.0}
+TACTICS={29.0 44.0}
+WRESTLING={29.0 44.0}
+TAMING=45.0
+
+FAME=20
+KARMA={-1 -99}
+
+ON=@DEATH
+IF (<src.act.tag.quest.giant.rat> = 0)
+ src.act.tag.quest.giant.rat.killed += 1
+  IF (<eval <src.act.tag.quest.giant.rat.killed>> == 10)
+   src.act.tag.quest.giant.rat = 1
+   src.act.tag.quest.giant.rat.killed=
+   src.act.say_complete
+  ENDIF
+ return 0
+ELIF (<src.tag.quest.giant.rat> == 1)
+ src.act.say_complete
+ return 0
+ELSE
+ return 0
+ENDIF
+
+
+[CHARDEF c_rat_giant_mother]
+DEFNAME=c_rat_giant_mother
+NAME=Giant Rat Mother
+ID=c_rat_giant
+CAN=MT_WALK|MT_RUN
+MOVERATE=100
+DAM=6,14
+ARMOR=15,20
+RESOURCES=2 i_ribs_raw,2 i_fur_dark
+FOODTYPE=30 t_meat_raw
+SHELTER=r_dungeon,r_DARKNESS,r_spooky
+DESIRES=c_rat,c_a_rat_sewer,c_rat_giant,r_spooky
+AVERSIONS=t_TRAP
+
+CATEGORY=Animals
+SUBSECTION=Land (Wild)
+DESCRIPTION=Giant Rat Mother
+
+ON=@Create
+ NPC=brain_monster
+ COLOR=colors_brown
+
+ FAME=2000
+ KARMA=-2000
+
+ STR={60 120}
+ DEX={65 85}
+ INT={20 35}
+ MAXHITS={200 300}
+ MAXSTAM=<dex>
+ MAXMANA=0
+
+ MAGICRESISTANCE={35.0 45.0}
+ TACTICS={50.0 60.0}
+ WRESTLING={50.0 60.0}
+ ANATOMY=0.0
+
+ON=@DEATH
+NEWLOOT=loot_giant_rat_mother
+NEWLOOT=add_loot_giant_rat_mother
+
+
+[TEMPLATE loot_giant_rat_mother]
+DEFNAME=loot_giant_rat_mother
+CATEGORY=Loot Templates - NPC
+SUBECTION=Vermin
+DESCRIPTION=Giant Rat Mother
+CONTAINER=i_backpack
+ITEM=i_gold,{250 325}
+ITEM=random_jewel,{1 2}
+ITEM=random_jewel,{1 2}
+ITEM={i_cheese_cut 1 i_cheese_wheel 1 i_cheese_wedge 1 0 3}
+ITEM=random_food
+
+[TEMPLATE add_loot_giant_rat_mother]
+DEFNAME=add_loot_giant_rat_mother
+CATEGORY=Loot Templates - NPC (Custom)
+SUBECTION=Vermin
+DESCRIPTION=Giant Rat Mother
+ITEM=
+
+
+[SPAWN spawn_quest_giant_rat]
+DEFNAME=spawn_quest_giant_rat
+CATEGORY=Spawn Groups - Quests
+SUBECTION=Britain
+DESCRIPTION=Giant Rat Spawn
+ID=c_q_rat_giant 19
+ID=c_rat_giant_mother 1

@@ -1,0 +1,43 @@
+//I think this was from GM jimbo with my editting.
+//.gotarg
+[PLEVEL 4]
+gotarg
+
+[FUNCTION gotarg]
+SERV.NEWITEM i_gotarg
+NEW.EQUIP
+
+[ITEMDEF i_gotarg]
+NAME=Pointer
+ID=i_memory
+TYPE=t_eq_script
+LAYER=layer_special
+WEIGHT=0.0
+
+ON=@CREATE
+ ATTR=attr_invis
+ TIMER=30
+
+ON=@EQUIP
+ TARGET Where would you like to go?
+// SRC.SMSG Where would you like to go?
+ RETURN 0
+  
+ON=@TARGON_ITEM
+ SRC.GO <SRC.TARG.P>
+ REMOVE
+ RETURN 1
+
+ON=@TARGON_CHAR
+ SRC.SMSG This only works when targeted on an item.
+ REMOVE
+ RETURN 1
+
+ON=@TARGON_GROUND
+ SRC.SMSG This only works when targeted on an item.
+ REMOVE
+ RETURN 1
+
+ON=@TIMER
+ REMOVE
+ RETURN 1

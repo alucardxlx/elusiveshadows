@@ -1,0 +1,109 @@
+[comment credits]
+This script will stack items when dropped.
+
+Installation:
+
+-Add the event e_dropstack to all your players.
+
+Scripted by Skul,
+    www.marchadium.ca
+
+[events e_dropstack]
+on=@itemdropon_ground
+if !(<cannotdrop <args>>)
+    act.fixdrop <args>
+else
+    act.cont=<findlayer.21>
+endif
+
+on=@itempickup_ground
+act.fixstack
+
+[function fixdrop]
+if (<type>=t_gold)
+    if (<amount>==1)
+        sound 53
+    elseif (<amount> < 5)
+        sound 54
+    else
+        sound 55
+    endif
+elseif (<type>=t_gem)
+    sound 52
+else
+    sound 66
+endif
+p=<args>
+if (<uid.<region.uid>.type>==t_multi) || (<uid.<region.uid>.type>==t_multi_custom) || (<uid.<region.uid>.type>==t_ship)
+    fix
+    timer=-1
+else
+    fixz
+    if !( <attr> & attr_move_never ) && !( <attr> & attr_static )
+        attr=<attr> | attr_decay
+        timer=<eval <serv.decaytimer> *60>
+    endif
+endif
+if !( <can> & 04 ) && !( <can> & 08 )
+    z=<z> +<sameitemcount>
+endif
+
+[function sameitemcount]
+local.uid=<uid>
+foritems 0
+    if !(<uid>==<local.uid>)
+        if (<serv.itemdef.<baseid>.dispid>==<serv.itemdef.<uid.<local.uid>.baseid>.dispid>)
+            local.z += 1
+        endif
+    endif
+endfor
+return <eval <local.z>>
+
+[function fixstack]
+local.uid=<uid>
+foritems 0
+    if !(<uid>==<local.uid>)
+        if (<eval <eval <z> /20> *20>==<eval <eval <uid.<local.uid>.z> /20> *20>)
+            if (<serv.itemdef.<baseid>.dispid>==<serv.itemdef.<uid.<local.uid>.baseid>.dispid>)
+                if (<z> > <uid.<local.uid>.z>)
+                    z -= 1
+                endif
+            endif
+        endif
+    endif
+endfor
+
+[function fixz]
+local.z=none
+if (<p.statics>)
+    for 0 <eval <p.statics> +-1>
+        if (<eval <eval <p.statics.<local._for>.z> /20> *20>==<eval <eval <z> /20> *20>)
+            local.z=<p.statics.<local._for>.z>
+        endif
+    endfor
+endif
+if (strmatch(<local.z>,none))
+    local.z=<p.terrain.z>
+endif
+z=<local.z>
+
+[function cannotdrop]
+serv.newitem=i_memory
+new.p=<args>
+local.return=<new.f_cannotdrop>
+new.remove
+return <eval <local.return>>
+
+[function f_cannotdrop]
+if (<p.statics>)
+    for 0 <eval <p.statics> +-1>
+        if (<p.statics.<local._for>.z> >= <eval <z> +-3>) && (<p.statics.<local._for>.z> <= <eval <z> +3>)
+            if ( <p.statics.<local._for>.can> & 08 )
+                local.return=1
+            endif
+        endif
+    endfor
+endif
+return <eval <local.return>>
+
+[eof]

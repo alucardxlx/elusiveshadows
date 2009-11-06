@@ -1,0 +1,1203 @@
+//****************************************************************************
+// SPHERE by : Menasoft ©1997-2007
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+//Age of Shadows NPC Pack.
+//Scripted by Khaotic Solitaire
+//Property of Menace Designs, LLC.
+//Concept, EA. Ultima Online. All rights reserved.
+//File Formatting is copyright of Menasoft & Partners.
+//Layout is personal, Menace Designs,LLC, formatting.
+//****************************************************************************
+
+VERSION=0.56b
+
+[COMMENT Disclaimer]
+Slight, and I mean slight modifications were made in the statistics blocks to avoid copyright infringement. As well as modification to their main information blocks.
+This should break from any infringement rights.
+
+[CHARDEF 312]
+DEFNAME=c_abyssmal_horror
+NAME=Abyssmal Horror
+CAN=mt_walk|mt_run|mt_usehands|mt_nonhum|mt_fire_immune
+MOVERATE=100
+DAM=13,17
+ARMOR=30,35
+ICON=i_pet_Abyssmal_Horror
+SOUND=
+RESOURCES=2 i_ribs_raw, {8 12} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=c_man, c_woman
+DESIRES=i_gold,e_notoriety
+SHELTER=r_dungeon
+TEVENTS=e_mortal_strike
+TEVENTS=e_whirlwind_attack
+TEVENTS=e_anti_provoke_first
+TEVENTS=e_anti_peace_area
+BLOODCOLOR=020
+
+CATEGORY=Champions
+SUBSECTION=Doom
+DESCRIPTION=Abyssmal Horror
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=160.0
+TAG.SUPER.SLAYER=slayer_abyss
+
+KARMA=-26000
+FAME=26000
+
+//TAG.POISONDAMAGE=50
+
+//MODAR=30,35
+RESFIRE=100
+RESCOLD=50,55
+RESPOISON=60,65
+RESENERGY=77,80
+
+STR={401 421}
+DEX={81 90}
+INT={401 420}
+MAXHITS=6000
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={80.0 90.0}
+TACTICS={100.0 100.0}
+MAGICRESISTANCE={115.0 120.0}
+ANATOMY={0.0 0.0}
+POISONING={0 0}
+MAGERY={110.0 120.0}
+EVALUATINGINTEL={200.0 200.0}
+MEDITATION={200.0 200.0} 
+
+ADDCIRCLES=1,7
+
+ON=@DEATH
+NEWLOOT=LOOT_ABYSSMAL_HORROR
+NEWLOOT=ADD_LOOT_ABYSSMAL_HORROR
+
+
+[CHARDEF 308]
+DEFNAME=c_bone_daemon
+NAME=Bone Daemon
+CAN=mt_walk|mt_run|mt_equip|mt_usehands
+MOVERATE=100
+DAM=34,36
+ARMOR=75
+ICON=i_pet_Bone_Daemon
+Sound=
+RESOURCES={12 20} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=
+DESIRES=i_gold,e_notoriety
+SHELTER=r_dungeon, r_spooky
+TEVENTS=e_summon_patchwork
+TEVENTS=e_anti_provoke_first
+TEVENTS=e_anti_peace_area
+BLOODCOLOR=020
+
+CATEGORY=Champions
+SUBSECTION=Doom
+DESCRIPTION=Bone Daemon
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=160.0
+TAG.SLAYER=
+TAG.SUPER.SLAYER=slayer_abyss,slayer_undead
+
+KARMA=-20000
+FAME=20000
+
+//TAG.COLDDAMAGE=50
+
+//MODAR=75
+RESFIRE=60
+RESCOLD=90
+RESPOISON=100
+RESENERGY=60
+
+STR=1000
+DEX={151 175}
+INT={171 220}
+MAXHITS=3600
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={100.0 100.0}
+TACTICS={100.0 100.0}
+MAGICRESISTANCE={50.1 75.0}
+ANATOMY={0.0 0.0}
+MAGERY={77.6 87.5}
+EVALUATINGINTEL={77.6 87.5}
+MEDITATION={100.0 100.0}
+
+on=@death
+newloot=loot_bone_daemon
+newloot=add_loot_bone_daemon
+
+
+[CHARDEF 300]
+DEFNAME=c_crystal_elemental
+NAME=Crystal Elemental
+CAN=mt_walk|mt_run|mt_nonhum
+MOVERATE=100
+DAM=10,15
+ARMOR=50,60
+ICON=i_pet_Crystal_Elemental
+Sound=
+FOODTYPE=30 t_fish
+AVERSIONS=t_trap
+DESIRES=i_gold, t_gem
+SHELTER=r_dungeon, r_forests
+TEVENTS=e_bleed_attack
+BLOODCOLOR=020
+
+CATEGORY=Monsters
+SUBSECTION=Elementals
+DESCRIPTION=Crystal Elemental
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=83.6
+TAG.SLAYER=
+TAG.SUPER.SLAYER=slayer_elemental
+
+KARMA=-6500
+FAME=6500
+
+//TAG.ENERGYDAMAGE=20
+
+//MODAR=50,60
+RESFIRE=40,50
+RESCOLD=40,50
+RESPOISON=100
+RESENERGY=55,70
+
+STR={136 160}
+DEX={51 65}
+INT={86 110}
+MAXHITS={86 110}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={65.1 75.0}
+TACTICS={75.1 85.0}
+MAGICRESISTANCE={80.1 90.0}
+ANATOMY={0.0 0.0}
+MAGERY={70.1 75.0}
+EVALUATINGINTEL={70.1 75.0}
+MEDITATION={65.1 75.0}
+
+ON=@death
+NEWLOOT=LOOT_CRYSTAL_ELEMENTAL
+NEWLOOT=ADD_LOOT_CRYSTAL_ELEMENTAL
+
+
+[CHARDEF 302]
+DEFNAME=c_Skittering_Hopper
+NAME=Skittering Hopper
+CAN=mt_walk|mt_run|mt_nonhum
+MOVERATE=100
+DAM=3,5
+ARMOR=5,10
+ICON=i_pet_Skittering_Hopper
+Sound=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=30 t_meat_raw, t_food
+AVERSIONS=e_carnivore3
+DESIRES=t_food, c_skittering_hopper
+SHELTER=r_forests
+BLOODCOLOR=colors_red
+
+CATEGORY=Monsters
+SUBSECTION=Giant Insects
+DESCRIPTION=Skittering Hopper
+
+on=@create
+NPC=brain_animal
+COLOR=0
+
+TAG.CONTROL.SLOTS=1
+TAG.BARDING.DIFFICULTY=38.8
+TAG.SUPER.SLAYER=
+
+KARMA=0
+FAME=300
+
+//MODAR=5,10
+RESFIRE=0
+RESCOLD=10,20
+RESPOISON=0
+RESENERGY=5,10
+
+STR={41 65}
+DEX={91 115}
+INT={26 50}
+MAXHITS={31 45}
+MAXSTAM={91 115}
+MAXMANA={26 50}
+
+WRESTLING={40.1 60.0}
+TACTICS={45.1 70.0}
+MAGICRESISTANCE={30.1 45.0}
+ANATOMY={0.0 0.0}
+
+TAMING=12.9
+
+ON=@DEATH
+NEWLOOT=LOOT_SKITTERING_HOPPER
+NEWLOOT=ADD_LOOT_SKITTERING_HOPPER
+
+
+[CHARDEF 304]
+DEFNAME=c_Flesh_Golem
+NAME=Flesh Golem
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=18,22
+ARMOR=50,60
+ICON=i_pet_Flesh_Golem
+SOUND=
+RESOURCES=1 i_ribs_raw, {4 10} i_reag_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=
+DESIRES=t_blood, c_man, c_woman
+SHELTER=r_dungeon, r_spooky
+TEVENTS=e_bleed_attack
+BLOODCOLOR=colors_red
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Flesh Golem
+
+on=@create
+NPC=brain_undead
+COLOR=0
+
+TAG.CONTROL.SLOTS=1
+TAG.BARDING.DIFFICULTY=57.0
+TAG.SUPER.SLAYER=slayer_undead
+
+FAME=1000
+KARMA=-1800
+
+//MODAR=50,60
+RESFIRE=25,35
+RESCOLD=15,25
+RESPOISON=60,70
+RESENERGY=30,40
+
+STR={176 200}
+DEX={51 75}
+INT={46 70}
+MAXHITS={106 120}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={60.1 70.0}
+TACTICS={55.1 80.0}
+MAGICRESISTANCE={50.1 75.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_FLESH_GOLEM
+NEWLOOT=ADD_LOOT_FLESH_GOLEM
+
+
+[CHARDEF 303]
+DEFNAME=c_Devourer_Souls
+NAME=Devourer of Souls
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=22,26
+ARMOR=45,55
+ICON=i_pet_Devourer_Souls
+SOUND=
+RESOURCES=1 i_ribs_raw, {8 12} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=t_trap
+DESIRES=i_gold, e_notoriety
+SHELTER=r_dungeon, r_caves
+TEVENTS=e_poison_immune_lvl5
+BLOODCOLOR=020
+
+CATEGORY=Monsters
+SUBSECTION=Aos
+DESCRIPTION=Devourer of Souls
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=114.3
+TAG.SUPER.SLAYER=slayer_abyss
+
+KARMA=-9500
+FAME=9500
+
+//TAG.COLDDAMAGE=20
+//TAG.ENERGYDAMAGE=20
+
+//MODAR=45,55
+RESFIRE=25,35
+RESCOLD=15,25
+RESPOISON=60,70
+RESENERGY=40,50
+
+STR={801 950}
+DEX={126 175}
+INT={201 250}
+MAXHITS={650 650}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={80.1 100.0}
+TACTICS={75.1 85.0}
+MAGICRESISTANCE={90.1 105.0}
+ANATOMY={0.0 0.0}
+MAGERY={90.1 100.0}
+EVALUATINGINTEL={90.1 100.0}
+MEDITATION={90.1 100.0}
+
+SPELLCIRCLE=1,7
+
+ON=@DEATH
+NEWLOOT=LOOT_IMPALER
+NEWLOOT=ADD_LOOT_IMPALER
+
+
+[CHARDEF 305]
+DEFNAME=c_Gore_Fiend
+NAME=Gore Fiend
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=15,21
+ARMOR=35,45
+ICON=i_pet_Gore_Fiend
+Sound=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=30 t_meat_raw
+AVERSIONS=t_trap
+DESIRES=
+SHELTER=r_dungeon, r_spooky, r_caves
+TEVENTS=e_concussion_attack
+BLOODCOLOR=020
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Gore Fiend
+
+on=@create
+NPC=brain_monster, brain_undead
+COLOR=
+
+TAG.BARDING.DIFFICULTY=48.8
+TAG.SUPER.SLAYER=slayer_undead
+
+KARMA=-1500
+FAME=1500
+
+//TAG.POISONDAMAGE=15
+
+//MODAR={35 45}
+RESFIRE={25 35}
+RESCOLD={15 25}
+RESPOISON={5 15}
+RESENERGY={30 40}
+
+STR={161 185}
+DEX={41 65}
+INT={46 70}
+MAXHITS={97 111}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={50.1 70.0}
+TACTICS={45.1 70.0}
+MAGICRESISTANCE={40.1 55.0}
+ANATOMY={0.0 0.0}
+//POISONING={0 0}
+
+ON=@DEATH
+NEWLOOT=LOOT_GORE_FIEND
+NEWLOOT=ADD_LOOT_GORE_FIEND
+
+
+[CHARDEF 306]
+DEFNAME=c_Impaler
+NAME=#NAMES_IMPALER
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=31,35
+ARMOR=90
+ICON=i_pet_Impaler
+Sound=
+RESOURCES=1 i_ribs_raw, {8 10} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=t_trap
+DESIRES=e_notoriety, i_gold, t_wand, t_gem, c_man, c_woman
+SHELTER=r_dungeon
+TEVENTS=e_mortal_wound
+TEVENTS=e_bleed_attack
+TEVENTS=e_anti_provoke_first
+TEVENTS=e_anti_peace_area
+BLOODCOLOR=020
+
+CATEGORY=Champions
+SUBSECTION=Doom
+DESCRIPTION=Impaler
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=160.0
+TAG.SUPER.SLAYER=slayer_abyss
+
+KARMA=-24000
+FAME=24000
+
+// TAG.FIREDAMAGE=0
+//TAG.COLDDAMAGE=0
+//TAG.POISONDAMAGE=15
+//TAG.ENERGYDAMAGE=0
+
+//MODAR={25 35}
+RESFIRE=90
+RESCOLD=60
+RESPOISON=75
+RESENERGY=100
+
+STR=190
+DEX=45
+INT=190
+MAXHITS=5000
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING=80.0
+TACTICS=100.0
+MAGICRESISTANCE=100.0
+ANATOMY=0.0
+POISONING=160.0
+
+ON=@DEATH
+NEWLOOT=LOOT_IMPALER
+NEWLOOT=ADD_LOOT_IMPALER
+
+
+[CHARDEF 307]
+DEFNAME=c_Gibberling
+NAME=Gibberling
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=12,17
+ARMOR=45, 55
+ICON=i_pet_Gibberling
+Sound=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=30 t_meat_raw
+AVERSIONS=
+DESIRES=
+SHELTER=r_dungeon, r_caves
+TEVENTS=e_dismount_attack
+BLOODCOLOR=colors_red
+
+CATEGORY=Mobs
+SUBSECTION=Aos
+DESCRIPTION=Gibberling
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=58.7
+TAG.SUPER.SLAYER=slayer_abyss
+
+KARMA=-1500
+FAME=1500
+
+// TAG.FIREDAMAGE=40
+//TAG.COLDDAMAGE=0
+//TAG.POISONDAMAGE=0
+//TAG.ENERGYDAMAGE=60
+
+//MODAR={45 55}
+RESFIRE={25 35}
+RESCOLD={25 35}
+RESPOISON={10 20}
+RESENERGY={30 40}
+
+STR={141 165}
+DEX={101 125}
+INT={56 80}
+MAXHITS={85 99}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={60.1 80.0}
+TACTICS={67.6 92.5}
+MAGICRESISTANCE={45.1 70.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_GIBBERLING
+NEWLOOT=ADD_LOOT_GIBBERLING
+
+
+[CHARDEF 309]
+DEFNAME=c_Patchwork_Skeleton
+NAME=Patchwork Skeleton
+CAN=mt_walk|mt_run|mt_equip|mt_usehands|mt_nonhum
+MOVERATE=100
+DAM=8,18//estimated from 31,41
+ARMOR=55,65
+ICON=i_pet_Patchwork_Skeleton
+Sound=
+RESOURCES=i_reag_bone {4 8}
+FOODTYPE=30 t_magic
+AVERSIONS=
+DESIRES=
+SHELTER=r_dungeon, r_spooky
+TEVENTS=e_dismount_attack
+BLOODCOLOR=
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Patchwork Skeleton
+
+on=@create
+NPC=brain_undead
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=59.7
+TAG.SUPER.SLAYER=slayer_undead
+
+KARMA=-500
+FAME=500
+
+//TAG.COLDDAMAGE=15
+
+//MODAR={55 65}
+RESFIRE={50 60}
+RESCOLD={70 80}
+RESPOISON=100
+RESENERGY={40 50}
+
+STR={96 120}
+DEX={71 95}
+INT={16 40}
+MAXHITS={58 72}
+MAXSTAM={71 95}
+MAXMANA={16 40}
+
+WRESTLING={50.1 70.0}
+TACTICS={55.1 80.0}
+MAGICRESISTANCE={70.1 95.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_PATCHWORK_SKELETON
+NEWLOOT=ADD_LOOT_PATCHWORK_SKELETON
+
+
+[CHARDEF 310]
+DEFNAME=c_Wailing_Banshee
+NAME=Wailing Banshee
+CAN=mt_walk|mt_run|mt_equip|mt_usehands
+MOVERATE=100
+DAM=10,14
+ARMOR=50,60
+ICON=i_pet_Wailing_Banshee
+Sound=
+RESOURCES=
+FOODTYPE=30 t_blood, t_meat_raw
+AVERSIONS=
+DESIRES=c_man, c_woman, t_blood, t_magic
+SHELTER=r_dungeon, r_caves, r_spooky
+TEVENTS=E_LEECH_LIFE
+TEVENTS=E_MORTAL_STRIKE
+BLOODCOLOR=COLORS_GREEN
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Wailing Banshee
+
+on=@create
+NPC=brain_undead
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=59.7
+TAG.SUPER.SLAYER=slayer_undead
+
+KARMA=-1500
+FAME=1500
+
+//TAG.COLDDAMAGE=60
+//TAG.POISONDAMAGE=20
+
+//MODAR=50,60
+RESFIRE=25,30
+RESCOLD=70,80
+RESPOISON=30,40
+RESENERGY=40,50
+
+STR={126 150}
+DEX={76 100}
+INT={86 110}
+MAXHITS={76 90}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={30.0 55.0}
+TACTICS={55.0 80.0}
+MAGICRESISTANCE={70.1 95.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_WAILING_BANSHEE
+NEWLOOT=ADD_LOOT_WAILING_BANSHEE
+
+
+[CHARDEF c_wailing_banshee_2]
+DEFNAME=c_Wailing_Banshee_2
+NAME=Wailing Banshee
+ID=c_wailing_banshee
+CAN=mt_walk|mt_run|mt_equip|mt_usehands
+MOVERATE=100
+DAM=10,14
+ARMOR=50,60
+ICON=i_pet_Wailing_Banshee
+Sound=
+RESOURCES=
+FOODTYPE=30 t_blood, t_meat_raw
+AVERSIONS=
+DESIRES=
+SHELTER=r_dungeon, r_spooky, r_caves
+TEVENTS=E_LEECH_LIFE
+TEVENTS=E_MORTAL_STRIKE
+BLOODCOLOR=COLORS_GREEN
+
+CATEGORY=Monsters
+SUBSECTION=Undead
+DESCRIPTION=Wailing Banshee (2)
+
+on=@create
+NPC=brain_undead
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=59.7
+TAG.SUPER.SLAYER=slayer_undead
+
+KARMA=-1500
+FAME=1500
+
+//TAG.COLDDAMAGE=60
+//TAG.POISONDAMAGE=20
+
+//MODAR=50,60
+RESFIRE=25,30
+RESCOLD=70,80
+RESPOISON=30,40
+RESENERGY=40,50
+
+STR={126 150}
+DEX={76 100}
+INT={86 110}
+MAXHITS={76 90}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={50.0 70.0}
+TACTICS={45.0 70.0}
+MAGICRESISTANCE={70.1 95.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_WAILING_BANSHEE
+NEWLOOT=ADD_LOOT_WAILING_BANSHEE
+
+
+[CHARDEF 313]
+DEFNAME=c_Darknight_Creeper
+NAME=#NAMES_DARKNIGHT_CREEPER
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=22,26
+ARMOR=60
+ICON=i_pet_Darknight_Creeper
+Sound=
+RESOURCES=2 i_ribs_raw
+FOODTYPE=30 t_meat_raw
+AVERSIONS=
+DESIRES=
+SHELTER=r_dungeon, r_spooky
+TEVENTS=e_anti_provoke_first
+TEVENTS=e_anti_peace_area
+BLOODCOLOR=020
+
+CATEGORY=Champions
+SUBSECTION=Aos
+DESCRIPTION=Darknight Creeper
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=160.0
+TAG.SUPER.SLAYER=slayer_undead
+
+KARMA=-22000
+FAME=22000
+
+//TAG.POISONDAMAGE=15
+
+//MODAR=60
+RESFIRE=60
+RESCOLD=100
+RESPOISON=90
+RESENERGY=75
+
+STR={301 330}
+DEX={101 110}
+INT={301 330}
+MAXHITS={4000 4000}
+MAXSTAM={101 110}
+MAXMANA={301 330}
+
+WRESTLING={90.0 100.0}
+TACTICS=100.0
+MAGICRESISTANCE={90..0 100.0}
+ANATOMY=0.0
+POISONING=120.0
+MAGERY={110.0 120.0}
+EVALUATINGINTEL={110.0 120.0}
+MEDITATION=150.0
+
+SPELLCIRCLE=1,7
+
+ON=@DEATH
+NEWLOOT=LOOT_DARKNIGHT_CREEPER
+NEWLOOT=ADD_LOOT_DARKNIGHT_CREEPER
+
+
+[CHARDEF 314]
+DEFNAME=c_Ravager
+NAME=Ravager
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=15,20
+ARMOR=50,60
+ICON=i_pet_Ravager
+Sound=
+RESOURCES=1 i_ribs_raw, {4 10} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw, t_food, t_food_raw
+AVERSIONS=
+DESIRES=
+SHELTER=r_dungeon
+TEVENTS=E_CRUSHING_BLOW
+BLOODCOLOR=
+
+CATEGORY=Mobs
+SUBSECTION=Aos
+DESCRIPTION=Ravager
+
+on=@create
+NPC=brain_monster
+COLOR=
+
+TAG.BARDING.DIFFICULTY=62.8
+TAG.SUPER.SLAYER=slayer_abyss
+
+KARMA=-3500
+FAME=3500
+
+//MODAR=50,60
+RESFIRE={50 60}
+RESCOLD={60 70}
+RESPOISON={30 40}
+RESENERGY={20 30}
+
+STR={251 275}
+DEX={101 125}
+INT={66 90}
+MAXHITS={161 175}
+MAXSTAM={101 125}
+MAXMANA={66 90}
+
+WRESTLING={70.1 90.0}
+TACTICS={75.1 100.0}
+MAGICRESISTANCE={50.1 75.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_RAVAGER
+NEWLOOT=ADD_LOOT_RAVAGER
+
+
+[CHARDEF 315]
+DEFNAME=c_Flesh_Renderer
+NAME=Flesh Renderer
+CAN=mt_walk|mt_run|mt_nonhum
+MOVERATE=60
+DAM=16,20
+ARMOR=80,90
+ICON=i_pet_Flesh_Renderer
+Sound=
+RESOURCES=2 i_ribs_raw
+FOODTYPE=30 t_meat_raw
+AVERSIONS=
+DESIRES=
+SHELTER=r_dungeon
+TEVENTS=e_dismount_attack
+TEVENTS=e_paralyzing_attack
+TEVENTS=e_anti_provoke_first
+TEVENTS=e_anti_peace_area
+BLOODCOLOR=020
+
+CATEGORY=Champions
+SUBSECTION=Doom
+DESCRIPTION=Flesh Renderer
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=160.0
+
+KARMA=-23000
+FAME=23000
+
+//TAG.POISONDAMAGE=20
+
+//MODAR=80,90
+RESFIRE=50,60
+RESCOLD=50,60
+RESPOISON=100
+RESENERGY=70,80
+
+STR={401 460}
+DEX={201 210}
+INT={221 260}
+MAXHITS=4500
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={90.1 100.0}
+TACTICS={100.0 100.0}
+MAGICRESISTANCE={155.1 160.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=LOOT_FLESH_RENDERER
+NEWLOOT=ADD_LOOT_FLESH_RENDERER
+
+
+[CHARDEF 316]
+DEFNAME=c_Wanderer_Void
+NAME=Wanderer of the Void
+CAN=mt_walk|mt_run|mt_nonhum
+MOVERATE=100
+DAM=20, 27
+ARMOR=40,50
+ICON=i_pet_Wanderer_Void
+Sound=
+RESOURCES={8 10} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=
+DESIRES=t_magic
+SHELTER=r_dungeon, r_caves
+BLOODCOLOR=020
+
+CATEGORY=Monsters
+SUBSECTION=Aos
+DESCRIPTION=Wanderer of the Void
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=99.3
+
+KARMA=-20000
+FAME=20000
+
+//TAG.ENERGYDAMAGE=85
+
+//MODAR=40,50
+RESFIRE=15,25
+RESCOLD=40,50
+RESPOISON=40,50
+RESENERGY=50,75
+
+STR={111 200}
+DEX={101 125}
+INT={301 390}
+MAXHITS={351 400}
+MAXSTAM={101 125}
+MAXMANA={301 390}
+
+WRESTLING={60.1 70.0}
+TACTICS={60.1 70.0}
+MAGICRESISTANCE={50.1 75.0}
+ANATOMY={0.0 0.0}
+POISONING={0 0}
+MAGERY={60.1 70.0}
+EVALUATINGINTEL={60.1 70.0}
+MEDITATION={60.1 70.0}
+
+SPELLCIRCLE=1,7
+
+ON=@DEATH
+NEWLOOT=LOOT_WANDERER_VOID
+NEWLOOT=ADD_LOOT_WANDERER_VOID
+
+
+[CHARDEF 317]
+DEFNAME=c_Vampire_Bat
+NAME=Vampire Bat
+CAN=mt_walk|mt_run|mt_fly|mt_nonhum
+MOVERATE=100
+DAM=7,9
+ARMOR=35,45
+ICON=i_pet_Vampire_Bat
+Sound=
+RESOURCES=1 i_ribs_raw, 2 i_reag_batwing
+FOODTYPE=30 t_fish
+AVERSIONS=c_man, c_woman
+DESIRES=t_fish
+SHELTER=r_dungeon, r_caves, r_spooky
+TEVENTS=e_leech_life
+BLOODCOLOR=020
+
+CATEGORY=Monsters
+SUBSECTION=Aos
+DESCRIPTION=Vampire Bat
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=48.4
+TAG.SUPER.SLAYER=slayer_bat
+
+KARMA=-1000
+FAME=1000
+
+//TAG.POISONDAMAGE=20
+
+//MODAR=35,45
+RESFIRE=15,25
+RESCOLD=15,25
+RESPOISON=60,70
+RESENERGY=40,50
+
+STR={91 110}
+DEX={91 115}
+INT={26 50}
+MAXHITS={55 66}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={30.1 55.0}
+TACTICS={55.1 80.0}
+MAGICRESISTANCE={70.1 95.0}
+ANATOMY=0.0
+
+ON=@DEATH
+NEWLOOT=LOOT_VAMPIRE_BAT
+NEWLOOT=ADD_LOOT_VAMPIRE_BAT
+
+
+[CHARDEF 013E]
+DEFNAME=c_Dark_Father
+NAME=#NAMES_DARK_FATHER
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=17,21
+ARMOR=30
+ICON=i_pet_Dark_Father
+SOUND=snd_monster_daemon1
+RESOURCES=1 i_ribs_raw, {8 12} i_reag_daemon_bone
+FOODTYPE=30 t_meat_raw
+AVERSIONS=t_trap, t_magic
+DESIRES=e_notoriety, i_gold, t_gem, t_wand, t_magic
+SHELTER=r_dungeon
+TEVENTS=e_unholy_bones
+TEVENTS=e_DOUBLE_STRIKE
+TEVENTS=e_WHIRLWIND_ATTACK
+TEVENTS=e_CRUSHING_BLOW
+TEVENTS=e_INCREASED_SPEED
+TEVENTS=e_anti_provoke_first
+TEVENTS=e_anti_peace_area
+BLOODCOLOR=020
+
+CATEGORY=Champions
+SUBSECTION=Doom
+DESCRIPTION=Dark Father
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.NAME.SUFFIX=, the Dark Father
+TAG.BARDING.DIFFICULTY=160.0
+TAG.SUPER.SLAYER=slayer_abyss
+
+KARMA=-28000
+FAME=28000
+
+//TAG.FIREDAMAGE=20
+//TAG.COLDDAMAGE=20
+//TAG.POISONDAMAGE=20
+//TAG.ENERGYDAMAGE=20
+
+//MODAR=30
+RESFIRE=30
+RESCOLD=30
+RESPOISON=30
+RESENERGY=30
+
+STR=500
+DEX=100
+INT=1000
+MAXHITS=30000
+MAXSTAM=100
+MAXMANA=5000
+
+WRESTLING=120.0
+TACTICS=100.0
+MAGICRESISTANCE=150.0
+ANATOMY=0.0
+MAGERY=100.0
+EVALUATINGINTEL=100.0
+MEDITATION=120.0
+
+SPELLCIRCLE=1,7
+
+ON=@DEATH
+ NEWLOOT LOOT_DARK_FATHER
+ NEWLOOT ADD_LOOT_DARK_FATHER
+
+
+
+[CHARDEF 319]
+DEFNAME=c_Mound_Maggots
+NAME=Mound of Maggots
+CAN=mt_walk|mt_nonhum
+MOVERATE=100
+DAM=2,10
+ARMOR=90
+ICON=i_pet_Mound_Maggots
+Sound=
+RESOURCES=
+FOODTYPE=30 t_meat_raw
+AVERSIONS=c_man, c_woman
+DESIRES=t_corpse
+SHELTER=r_dungeon, r_spooky, r_caves
+BLOODCOLOR=020
+
+CATEGORY=Summons
+SUBSECTION=Necromancy
+DESCRIPTION=Mound of Maggots
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.CONTROL.SLOTS=1
+TAG.BARDING.DIFFICULTY=10.0
+
+KARMA=-1000
+FAME=1000
+
+//TAG.POISONDAMAGE=50
+
+//MODAR=90
+RESPOISON=100
+
+STR={61 70}
+DEX={61 70}
+INT=10
+MAXHITS=<STR>
+MAXSTAM=<DEX>
+MAXMANA=0
+
+WRESTLING={50.1 60.0}
+TACTICS=50.0
+MAGICRESISTANCE=0.0
+ANATOMY=0.0
+
+ON=@DEATH
+NEWLOOT=LOOT_MOUND_MAGGOTS
+NEWLOOT=ADD_LOOT_MOUND_MAGGOTS
+
+
+[CHARDEF 301]
+DEFNAME=c_treefellow
+NAME=Treefellow
+CAN=mt_walk|mt_run|mt_usehands
+MOVERATE=100
+DAM=12,16
+ARMOR=20,25
+ICON=i_pet_treefellow
+SOUND=
+RESOURCES={5 10} i_log
+FOODTYPE=30 t_fruit
+AVERSIONS=r_forests
+DESIRES=i_log, e_notoriety, r_forests
+SHELTER=r_forests
+TEVENTS=e_dismount_attack
+BLOODCOLOR=020
+
+CATEGORY=Monsters
+SUBSECTION=AoS
+DESCRIPTION=Treefellow
+
+on=@create
+NPC=brain_monster
+COLOR=0
+
+TAG.BARDING.DIFFICULTY=58.9
+TAG.SUPER.SLAYER=slayer_fey
+
+FAME=500
+KARMA=1500
+
+//MODAR=20,25
+RESFIRE=0
+RESCOLD=50,60
+RESPOISON=30,35
+RESENERGY=20,30
+
+STR={196 220}
+DEX={31 55}
+INT={66 90}
+MAXHITS={118 132}
+MAXSTAM=<DEX>
+MAXMANA=<INT>
+
+WRESTLING={65.0 85.0}
+TACTICS={65.0 90.0}
+MAGICRESISTANCE={40.0 55.0}
+ANATOMY={0.0 0.0}
+
+ON=@DEATH
+NEWLOOT=loot_treefellow
+NEWLOOT=ADD_LOOT_TREEFELLOW
+
+[EOF]

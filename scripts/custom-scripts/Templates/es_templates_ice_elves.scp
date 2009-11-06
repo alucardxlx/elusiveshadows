@@ -1,0 +1,42 @@
+//Loot Templates
+[TEMPLATE loot_ice_elf_mage]
+CATEGORY=NPC Loot Templates
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Mage
+CONTAINER=i_backpack_ice_elf
+ITEM={i_robe_ice_elf 1 0 99}
+ITEM={i_staff_gnarled_ice_elf 1 0 99}
+ITEM=i_gold,{150 250}
+
+
+[TEMPLATE loot_ice_elf_captain]
+CATEGORY=NPC Loot Templates
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Captain
+CONTAINER=i_backpack_ice_elf
+item=i_gold, {300 425}
+ITEM={i_platemail_gloves_ice_elf 1, i_platemail_arms_ice_elf 1, i_platemail_chest_ice_elf 1, i_platemail_gorget_ice_elf 1, i_shield_heater_ice_elf 1, i_platemail_legs_ice_elf 1, i_platemail_helm_ice_elf 1 0 74}
+Item={i_sword_viking_ice_elf 1 0 180}
+Item={ Ice_Helper 1 0 190 }
+
+
+[TEMPLATE loot_ice_elf_archer]
+CATEGORY=NPC Loot Templates
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Archer
+CONTAINER=i_backpack_ice_elf
+ITEM=i_gold,{100 200}
+ITEM={i_bone_helmet_ice_elf 1, i_bone_leggings_ice_elf 1, i_bone_gloves_ice_elf 1, i_bone_arms_ice_elf 1, i_bone_chest_ice_elf 1 0 99}
+ITEM={i_bow_ice_elf 1, i_dagger_ice_elf 1 0 99}
+ITEM=i_arrow_ice_elf,{40 50}
+
+
+[TEMPLATE loot_ice_elf_warrior]
+DEFNAME=loot_ice_elf_warrior
+CATEGORY=NPC Loot Templates
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Warrior
+CONTAINER=i_backpack_ice_elf
+ITEM={i_platemail_gloves_ice_elf 1, i_platemail_arms_ice_elf 1, i_platemail_chest_ice_elf 1, i_platemail_gorget_ice_elf 1, i_shield_heater_ice_elf 1, i_platemail_legs_ice_elf 1, i_platemail_helm_ice_elf 1 0 149}
+ITEM={i_sword_viking_ice_elf 1 0 99}
+ITEM=i_gold, {100 200}

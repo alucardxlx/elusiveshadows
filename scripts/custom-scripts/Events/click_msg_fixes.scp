@@ -1,0 +1,83 @@
+[DEFNAME Noto_Colors]
+NotoFlag_1 = 05
+NotoFlag_2 = 72
+NotoFlag_3 = 0
+NotoFlag_4 = 0
+NotoFlag_5 = 49
+NotoFlag_6 = 32
+
+
+
+ON=@ITEMCONTEXTMENUREQUEST
+Act.Message <Act.Name>
+Act.Trigger @Click
+
+ON=@CONTEXTMENUREQUEST
+Message @<Def0.NotoFlag_<NOTOGETFLAG>> <Name>
+Trigger @Click
+
+
+
+
+
+
+
+
+
+[FUNCTION f_packet_0xbf]
+LOCAL.HEXID=((<LOCAL.8> | (<LOCAL.7> * 256)) | (( <LOCAL.6> | (<LOCAL.5> * 256)) * 65536))
+OBJ=<LOCAL.HEXID>
+REF1=<LOCAL.CHAR>
+IF (<REF1.ISCHAR>)
+    IF (<REF1.ISPLAYER>) && (<REF1.ISONLINE>)
+        IF (<LOCAL.4>==013)
+            IF !(<REF1.CTAG0.CLICK_TIME<OBJ.UID>>)
+                VAR.RETURN=1
+                OBJ.f_packet_0xbf_click <REF1.UID>
+                REF1.CTAG.CLICK_TIME<OBJ.UID>=<SERV.TIME>
+                REF1.TIMERF 5, ERASECTAG CTAG.CLICK_TIME<OBJ.UID>=
+            ENDIF
+            LOCAL.RETURN=<VAR0.RETURN>
+            VAR.RETURN=
+            RETURN <EVAL <LOCAL.RETURN>>
+        ENDIF
+    ENDIF
+ENDIF
+
+[FUNCTION f_packet_0xbf_click]
+SERV.NEWITEM=i_packet_0xbf_click_message
+NEW.LINK=<UID>
+UID.<ARGN1>.EQUIP=<NEW.UID>
+
+[ITEMDEF i_packet_0xbf_click_message]
+DEFNAME=i_packet_0xbf_click_message
+ID=i_memory
+TYPE=t_eq_script
+
+ON=@CREATE
+ATTR=attr_move_never
+
+ON=@EQUIP
+LOCAL.ACT=<SRC.ACT.UID>
+SRC.ACT=<LINK.UID>
+IF !(<LINK.TRIGGER @CLICK>==1)
+    IF (<LINK.ISITEM>)
+        LINK.MESSAGE <QVAL <LINK.TAG0.NAME.HUE> ?@<LINK.TAG0.NAME.HUE>:@946> <QVAL <LINK.AMOUNT> < 2 ?<LINK.NAME>:<LINK.AMOUNT> <LINK.NAME>>
+    ELSE
+        IF (<LINK.TAG0.NAME.HUE>)
+            LINK.MESSAGE @<LINK.TAG0.NAME.HUE> <LINK.NAME>
+        ELSEIF (<LINK.NOTOGETFLAG>==1)
+            LINK.MESSAGE @99 <LINK.NAME>
+        ELSEIF (<LINK.NOTOGETFLAG>==2)
+            LINK.MESSAGE @67 <LINK.NAME>
+        ELSEIF (<LINK.NOTOGETFLAG>==5)
+            LINK.MESSAGE @43 <LINK.NAME>
+        ELSEIF (<LINK.NOTOGETFLAG>==6)
+            LINK.MESSAGE @38 <LINK.NAME>
+        ELSE
+            LINK.MESSAGE <LINK.NAME>
+        ENDIF
+    ENDIF
+ENDIF
+SRC.ACT=<LOCAL.ACT>
+REMOVE

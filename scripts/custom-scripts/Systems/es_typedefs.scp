@@ -1,0 +1,282 @@
+[typedef t_hair]
+on=@create
+ Timer -1
+
+[typedef t_beard]
+on=@create
+ Timer -1
+
+[TYPEDEF t_scissors]
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.BASEID> == i_hide)
+  LOCAL.AMOUNT=<SRC.TARG.AMOUNT>
+  SRC.TARG.REMOVE
+  SERV.NEWITEM=i_hides_cut
+  NEW.AMOUNT=<LOCAL.AMOUNT>
+  NEW.BOUNCE <SRC.UID>
+  RETURN 1
+ ELIF (<SRC.TARG.BASEID> == i_hide_spined)
+  LOCAL.AMOUNT=<SRC.TARG.AMOUNT>
+  SRC.TARG.REMOVE
+  SERV.NEWITEM=i_hides_cut_spined
+  NEW.AMOUNT=<LOCAL.AMOUNT>
+  NEW.BOUNCE <SRC.UID>
+  RETURN 1
+ ELIF (<SRC.TARG.BASEID> == i_hide_horned)
+  LOCAL.AMOUNT=<SRC.TARG.AMOUNT>
+  SRC.TARG.REMOVE
+  SERV.NEWITEM=i_hides_cut_horned
+  NEW.AMOUNT=<LOCAL.AMOUNT>
+  NEW.BOUNCE <SRC.UID>
+  RETURN 1
+ ELIF (<SRC.TARG.BASEID> == i_hide_barbed)
+  LOCAL.AMOUNT=<SRC.TARG.AMOUNT>
+  SRC.TARG.REMOVE
+  SERV.NEWITEM=i_hides_cut_barbed
+  NEW.AMOUNT=<LOCAL.AMOUNT>
+  NEW.BOUNCE <SRC.UID>
+  RETURN 1
+ ELIF (<SRC.TARG.TYPE> == t_bone)
+  LOCAL.AMOUNT=<EVAL <SRC.TARG.WEIGHT> / 10>
+  SRC.TARG.REMOVE
+  SERV.NEWITEM=i_reag_bone
+  NEW.AMOUNT=<LOCAL.AMOUNT>
+  NEW.BOUNCE <SRC.UID>
+  RETURN 1
+ ELSE
+  RETURN 0
+ ENDIF
+
+[TYPEDEF t_ancient_forge]
+
+
+//ID returns ID, ID returns def, ID returns id.def
+[TYPEDEF t_armor]
+ON=@EQUIP
+IF <DISPID> == i_ringmail_sleeves
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_ringmail_leggings
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_ringmail_gloves
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_ringmail_tunic
+ SRC.MODDEX -= 2
+ELIF <DISPID> == i_chainmail_leggings
+ SRC.MODDEX -= 3
+ELIF <DISPID> == i_chainmail_tunic
+ SRC.MODDEX -= 5
+ELIF <DISPID> == i_platemail_arms
+ SRC.MODDEX -= 2
+ELIF <DISPID> == i_platemail_chest
+ SRC.MODDEX -= 8
+ELIF <DISPID> == i_platemail_gloves
+ SRC.MODDEX -= 2
+ELIF <DISPID> == i_platemail_leggings
+ SRC.MODDEX -= 6
+ELIF <DISPID> == i_platemail_gorget
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_platemail_helm
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_dragon_helm
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_dragon_sleeves
+ SRC.MODDEX -= 2
+ELIF <DISPID> == i_dragon_leggings
+ SRC.MODDEX -= 6
+ELIF <DISPID> == i_dragon_gloves
+ SRC.MODDEX -= 2
+ELIF <DISPID> == i_dragon_chest
+ SRC.MODDEX -= 8
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@UNEQUIP
+IF <DISPID> == i_ringmail_sleeves
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_ringmail_leggings
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_ringmail_gloves
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_ringmail_tunic
+ SRC.MODDEX += 2
+ELIF <DISPID> == i_chainmail_leggings
+ SRC.MODDEX += 3
+ELIF <DISPID> == i_chainmail_tunic
+ SRC.MODDEX += 5
+ELIF <DISPID> == i_platemail_arms
+ SRC.MODDEX += 2
+ELIF <DISPID> == i_platemail_chest
+ SRC.MODDEX += 8
+ELIF <DISPID> == i_platemail_gloves
+ SRC.MODDEX += 2
+ELIF <DISPID> == i_platemail_leggings
+ SRC.MODDEX += 6
+ELIF <DISPID> == i_platemail_gorget
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_platemail_helm
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_dragon_helm
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_dragon_sleeves
+ SRC.MODDEX += 2
+ELIF <DISPID> == i_dragon_leggings
+ SRC.MODDEX += 6
+ELIF <DISPID> == i_dragon_gloves
+ SRC.MODDEX += 2
+ELIF <DISPID> == i_dragon_chest
+ SRC.MODDEX += 8
+ELSE
+ RETURN 0
+ENDIF
+
+
+[TYPEDEF t_armor_leather]
+ON=@EQUIP
+IF <DISPID> == i_bone_arms
+ SRC.MODDEX -= 2
+ELIF <DISPID> == i_bone_leggings
+ SRC.MODDEX -= 3
+ELIF <DISPID> == 01457
+ SRC.MODDEX -= 3
+ELIF <DISPID> == i_bone_gloves
+ SRC.MODDEX -= 1
+ELIF <DISPID> == i_bone_chest
+ SRC.MODDEX -= 6
+ELSE
+ RETURN 0
+ENDIF
+
+ON=@UNEQUIP
+IF <DISPID> == i_bone_arms
+ SRC.MODDEX += 2
+ELIF <DISPID> == i_bone_leggings
+ SRC.MODDEX += 3
+ELIF <DISPID> == 01457
+ SRC.MODDEX += 3
+ELIF <DISPID> == i_bone_gloves
+ SRC.MODDEX += 1
+ELIF <DISPID> == i_bone_chest
+ SRC.MODDEX += 6
+ELSE
+ RETURN 0
+ENDIF
+
+
+
+[TYPEDEF t_potion]
+ON=@DCLICK
+ IF (( <SRC.FINDLAYER.LAYER_HAND1.UID> ) && ( <SRC.FINDLAYER.LAYER_HAND1.TWOHANDS> == 1 ))
+  SRC.MSG You cannot use a potion while using a two-handed weapon.
+  RETURN 1
+ ELIF (( <SRC.FINDLAYER.LAYER_HAND1.UID> ) && ( <SRC.FINDLAYER.LAYER_HAND2.UID> ))
+  SRC.MSG You cannot use a potion while both hands are equipped.
+  RETURN 1
+ ELSE
+  RETURN 0
+ ENDIF
+
+
+[COMMENT t_tool_uses USAGE]
+You have to set TAG.USES on an item to get the effect and TAG.USES.MAX
+TAG.REPLENISHING and TAG.USES.TIMER are used for replenishing items.
+
+
+
+[TYPEDEF t_tool_uses]
+ON=@CLICK
+ MSG <NAME> [Uses: <TAG.USES>/<TAG.USES.MAX>]
+ RETURN 1
+
+ON=@DCLICK
+//IF <TYPE> == t_dye_tub || <DISPID> = i_shovel || <DISPID> = i_pickaxe
+IF (<TAG.REPLENISHING> == 1)
+ IF (<TAG.USES> > 0)
+  TAG.USES-=1
+   IF ((!<TIMER> > 0) && (!<TAG.USES.MAX>))
+    TIMER=<TAG.USES.TIMER>
+   ELSE
+    TIMER=<TIMER>
+   ENDIF
+  RETURN 0
+ ELSE
+  SRC.MSG You cannot use this yet.
+  RETURN 1
+ ENDIF
+ELSE
+ TAG.USES-=1
+  IF (<TAG.USES> == 0)
+   REMOVE
+   SRC.MSG The <NAME> has been destroyed.
+   RETURN 0
+  ELSE
+   RETURN 0
+  ENDIF
+ENDIF
+
+on=@targon_item
+IF (<TAG.REPLENISHING> == 1)
+ IF (<TAG.USES> > 0)
+  TAG.USES-=1
+   IF ((!<TIMER> > 0) && (!<TAG.USES.MAX>))
+    TIMER=<TAG.USES.TIMER>
+   ELSE
+    TIMER=<TIMER>
+   ENDIF
+  RETURN 0
+ ELSE
+  SRC.MSG You cannot use this yet.
+  RETURN 1
+ ENDIF
+ELSE
+ TAG.USES-=1
+  IF (<TAG.USES> == 0)
+   REMOVE
+   SRC.MSG The <NAME> has been destroyed.
+   RETURN 0
+  ELSE
+   RETURN 0
+  ENDIF
+ENDIF
+
+ON=TIMER
+ IF (!<TAG.USES.MAX>)
+  TAG.USES ++
+  TIMER=<TAG.USES.TIMER>
+ ELSE
+  TIMER=-1
+ ENDIF
+ RETURN 1
+
+
+[TYPEDEF t_feather]
+ON=@Create
+more2=0
+
+[TYPEDEF t_wool]
+ON=@CREATE
+MORE2=0
+
+[TYPEDEF t_fur]
+ON=@CREATE
+MORE2=0
+
+[comment TYPEDEF t_blood]
+ON=@CREATE
+MORE2=0
+
+[TYPEDEF t_bone]
+ON=@CREATE
+MORE2=0
+
+[TYPEDEF t_leather]
+ON=@CREATE
+MORE2=0
+
+[typedef t_fletcher_tools]
+on=@dclick
+ src.skillmenu sm_bowcraft
+
+
+
+[EOF]

@@ -1,0 +1,61 @@
+[CHARDEF 090]
+//144
+DEFNAME=c_sea_horse
+NAME=sea horse
+DAM=8,15
+ARMOR={15 25}
+CAN=mt_swim
+MOVERATE=100
+ICON=i_pet_sea_horse
+SOUND=
+RESOURCES=4 i_ribs_raw, 5 i_hide_spined
+FOODTYPE=15 i_fish
+AVERSIONS=e_carnivores
+DESIRES=r_water, t_fish
+SHELTER=r_water
+BLOODCOLOR=0
+
+TEVENTS=
+
+CATEGORY=Animals
+SUBSECTION=Aquatic - Wild
+DESCRIPTION=Sea Horse
+
+ON=@CREATE
+ NPC=brain_animal
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=88.5
+ TAG.CONTROL.SLOTS=2
+
+ FAME=1000
+ KARMA=1000
+
+ STR={85 115}
+ DEX={75 110}
+ INT={20 25}
+ MAXHITS={100 145}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.0 80.0}
+ TACTICS={65.0 75.0}
+ MAGICRESISTANCE={30.0 50.0}
+ ANATOMY=0.0
+ TAMING=85.0
+
+ON=@NPCRESTOCK
+ ITEM=loot_sea_horse
+
+[TEMPLATE loot_sea_horse]
+DEFNAME=loot_sea_horse
+CATEGORY=NPC Loot Templates
+SUBSECTION=Animals-Aquatic-Wild
+DESCRIPTION=Sea Horse
+ITEM=
+
+
+
+
+
+[eof]

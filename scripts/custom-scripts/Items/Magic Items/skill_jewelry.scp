@@ -1,0 +1,295 @@
+//**********************************************
+//*Scripted By:big_boy_uk89 and my MSN friends.*
+//**********************************************
+//*Revision 2.1 By Admin Khaotic Solitaire     *
+//**********************************************
+
+[comment changelog]
+x Broke each item down to to 4 categories.
+ x 1-5 skill gain on first item.
+ x 6-10 skill gain on second item.
+ x 11-15 Skill gain on third item.
+ x 16-20 Skill gain on third item.
+x Shortened "some" syntax.
+x Added Axis Cats
+x Changed tag.amnt to tag.amnt1 in skill ring script for clarification purposes.
+x All @equip and @UnEquip Triggers tags were missing there proper #'s in there respective tag.amnt's. Corrected.
+x Cleaned unneeded Parenthesis off coded lines.
+x Removed the color={3 1000}. I found the range too incredible. Specify your own colors.
+
+
+[itemdef i_ring_skill_1]
+defname=i_ring_skill_1
+name=Skill Ring
+id=i_ring_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Ring (1-5)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R1,5>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_ring_skill_2]
+defname=i_ring_skill_2
+name=Skill Ring
+id=i_ring_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Ring (6-10)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R6,10>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_ring_skill_3]
+defname=i_ring_skill_3
+name=Skill Ring
+id=i_ring_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Ring (11-15)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R11,15>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_ring_skill_4]
+defname=i_ring_skill_4
+name=Skill Ring
+id=i_ring_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Ring (16-20)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R16,20>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+//Earrings
+[itemdef i_earrings_skill_1]
+defname=i_earrings_skill_1
+name=Skill Earrings
+id=i_earrings_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Earrings (1-5)
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R1,5>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_earrings_skill_2]
+defname=i_earrings_skill_2
+name=Skill Earrings
+id=i_earrings_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Earrings (6-10)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R6,10>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_earrings_skill_3]
+defname=i_earrings_skill_3
+name=Skill Earrings
+id=i_earrings_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Earrings (11-15)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R11,15>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_earrings_skill_4]
+defname=i_earrings_skill_4
+name=Skill Earrings
+id=i_earrings_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Earrings (16-20)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R16,20>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+//Bracelet
+[itemdef i_bracelet_skill_1]
+defname=i_bracelet_skill_1
+name=Skill Bracelet
+id=i_bracelet_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Bracelet (1-5)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R1,5>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_bracelet_skill_2]
+defname=i_bracelet_skill_2
+name=Skill Bracelet
+id=i_bracelet_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Bracelet (6-10)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R6,10>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_bracelet_skill_3]
+defname=i_bracelet_skill_3
+name=Skill Bracelet
+id=i_bracelet_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Bracelet (11-15)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R11,15>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"
+
+
+[itemdef i_bracelet_skill_4]
+defname=i_bracelet_skill_4
+name=Skill Bracelet
+id=i_bracelet_gold
+
+category=Magic Items
+subsection=Skill Jewelry
+description=Skill Bracelet (16-20)
+
+on=@create
+tag.skill=<serv.skill(<eval(rand(49)>).key>
+tag.skill.amount=<R16,20>
+name="+<eval <tag.skill.amount>> <tag.skill> <name>"
+
+on=@equip
+tryp 0 src.<tag.skill>+=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel more skilled in <tag.skill>"
+
+on=@unequip
+tryp 0 src.<tag.skill>-=<eval(<tag.skill.amount>*10)>
+src.smsg "You feel less skilled in <tag.skill>"

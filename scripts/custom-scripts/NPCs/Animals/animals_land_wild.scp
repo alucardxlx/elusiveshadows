@@ -1,0 +1,48 @@
+[CHARDEF 05F]   //95 In mobtypes.def
+DEFNAME=c_a_turkey
+NAME=turkey
+DAM=1,4
+ARMOR={5 8}
+CAN=mt_walk|mt_run
+MOVERATE=80
+RESOURCES=1 i_bird_raw, 35 i_feather
+FOODTYPE=15 t_food
+SHELTER=r_farm, r_forest
+
+CATEGORY=Animals
+SUBSECTION=Land - Wild
+DESCRIPTION=Turkey
+
+ON=@CREATE
+ NPC=brain_animal
+ COLOR=0
+
+ FAME=100
+ KARMA=0
+
+ STR={25 30}
+ DEX={50 80}
+ INT={5 10}
+ MAXHITS={30 36}
+ MAXSTAM=<DEX>
+ MAXMANA=0
+
+ WRESTLING={25.0 35.0}
+ TACTICS={30.0 40.0}
+ ANATOMY=0.0
+ MAGICRESISTANCE={10.0 20.0}
+
+ON=@DEATH
+ NEWLOOT=loot_turkey
+
+[TEMPLATE loot_turkey]
+CATEGORY=NPC Loot Templates
+SUBSECTION=Animals-Land-Wild
+DESCRIPTION=Turkey
+ITEM=
+
+
+
+
+
+[eof]

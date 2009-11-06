@@ -1,0 +1,378 @@
+[ITEMDEF i_skill_stone]
+DEFNAME=i_skill_stone
+NAME=Magic Skill Stone [Unidentified]
+ID=i_virtstone_3
+type=t_normal
+weight=1.0
+value=10
+pile=0
+
+CATEGORY=ES Core Systems
+SUBSECTION=Skill Stones
+DESCRIPTION=Skill Stone
+
+on=@create
+ color=0
+ tag.skill=<serv.skill(<eval(rand(49)>).key>
+ tag.identified = 0
+
+
+on=@Dclick
+ IF <tag.identified> == 1
+  function_skill_stone 1.0
+ ENDIF
+
+ IF <tag.identified> == 0
+  NAME = Magic Skill Stone [<tag.skill> +1.0]
+  SRC.MSG You Identify the Magic Skill Stone
+  tag.identified = 1
+  update
+ ENDIF
+ return 1
+
+
+[ITEMDEF i_skill_ball]
+DEFNAME=i_skill_ball
+NAME=Magic Skill Ball
+ID=i_crystal_ball
+type=t_script
+weight=1.0
+value=100
+pile=0
+
+CATEGORY=ES Core Systems
+SUBSECTION=Skill Stones
+DESCRIPTION=Skill Ball
+
+on=@create
+ color=0
+
+on=@dclick
+ menu m_skill_stone_1
+ return 1
+
+[menu m_skill_stone_1]
+Please choose a skill to increase.
+
+on=0 Alchemy
+local.skill=alchemy
+function_skill_ball 1.0
+
+on=0 Anatomy
+local.skill=anatomy
+function_skill_ball 1.0
+
+on=0 Animal Lore
+local.skill=animallore
+function_skill_ball 1.0
+
+on=0 Item Identification
+local.skill=itemid
+function_skill_ball 1.0
+
+on=0 Arms Lore
+local.skill=armslore
+function_skill_ball 1.0
+
+on=0 Parrying
+local.skill=parrying
+function_skill_ball 1.0
+
+on=0 Begging
+local.skill=begging
+function_skill_ball 1.0
+
+on=0 Blacksmithing
+local.skill=blacksmithing
+function_skill_ball 1.0
+
+on=0 Bowcrafting/Fletching
+local.skill=bowcraft
+function_skill_ball 1.0
+
+on=0 Peacemaking
+local.skill=peacemaking
+function_skill_ball 1.0
+
+on=0 Page 2
+menu m_skill_stone_2
+
+
+[menu m_skill_stone_2]
+Please choose a skill to increase.
+
+on=0 Camping
+local.skill=camping
+function_skill_ball 1.0
+
+on=0 Carpentry
+local.skill=carpentry
+function_skill_ball 1.0
+
+on=0 Cartography
+local.skill=cartography
+function_skill_ball 1.0
+
+on=0 Cooking
+local.skill=cooking
+function_skill_ball 1.0
+
+on=0 Detecting Hidden
+local.skill=detectinghidden
+function_skill_ball 1.0
+
+on=0 Enticement (Discordance)
+local.skill=enticement
+function_skill_ball 1.0
+
+on=0 Evaluating Intelligence
+local.skill=evaluatingintel
+function_skill_ball 1.0
+
+on=0 Healing
+local.skill=healing
+function_skill_ball 1.0
+
+on=0 Fishing
+local.skill=fishing
+function_skill_ball 1.0
+
+on=0 Forensic Evaluation
+local.skill=forensics
+function_skill_ball 1.0
+
+on=0 Page 3
+menu m_skill_stone_3
+
+on=0 Page 1
+menu m_skill_stone_1
+
+
+[menu m_skill_stone_3]
+Please choose a skill to increase.
+
+on=0 Herding
+local.skill=herding
+function_skill_ball 1.0
+
+on=0 Hiding
+local.skill=hiding
+function_skill_ball 1.0
+
+on=0 Provocation
+local.skill=provocation
+function_skill_ball 1.0
+
+on=0 Inscription
+local.skill=inscription
+function_skill_ball 1.0
+
+on=0 Lock Picking
+local.skill=lockpicking
+function_skill_ball 1.0
+
+on=0 Magery
+local.skill=magery
+function_skill_ball 1.0
+
+on=0 Magic Resistance
+local.skill=magicresistance
+function_skill_ball 1.0
+
+on=0 Tactics
+local.skill=tactics
+function_skill_ball 1.0
+
+on=0 Snooping
+local.skill=snooping
+function_skill_ball 1.0
+
+on=0 Musicianship
+local.skill=musicianship
+function_skill_ball 1.0
+
+on=0 Page 4
+menu m_skill_stone_4
+
+on=0 Page 2
+menu m_skill_stone_2
+
+
+[menu m_skill_stone_4]
+Please choose a skill to increase.
+
+on=0 Poisoning
+local.skill=poisoning
+function_skill_ball 1.0
+
+on=0 Archery
+local.skill=archery
+function_skill_ball 1.0
+
+on=0 Spirit Speak
+local.skill=spiritspeak
+function_skill_ball 1.0
+
+on=0 Stealing
+local.skill=stealing
+function_skill_ball 1.0
+
+on=0 Tailoring
+local.skill=tailoring
+function_skill_ball 1.0
+
+on=0 Taming
+local.skill=taming
+function_skill_ball 1.0
+
+on=0 Taste Identification
+local.skill=tasteid
+function_skill_ball 1.0
+
+on=0 Tinkering
+local.skill=tinkering
+function_skill_ball 1.0
+
+on=0 Tracking
+local.skill=tracking
+function_skill_ball 1.0
+
+on=0 Veterinary
+local.skill=veterinary
+function_skill_ball 1.0
+
+on=0 Page 5
+menu m_skill_stone_5
+
+on=0 Page 3
+menu m_skill_stone_3
+
+
+[menu m_skill_stone_5]
+Please choose a skill to increase.
+
+on=0 Swordsmanship
+local.skill=swordsmanship
+function_skill_ball 1.0
+
+on=0 Macefighting
+local.skill=macefighting
+function_skill_ball 1.0
+
+on=0 Fencing
+local.skill=fencing
+function_skill_ball 1.0
+
+on=0 Wrestling
+local.skill=wrestling
+function_skill_ball 1.0
+
+on=0 Lumberjacking
+local.skill=lumberjacking
+function_skill_ball 1.0
+
+on=0 Mining
+local.skill=mining
+function_skill_ball 1.0
+
+on=0 Meditation
+local.skill=meditation
+function_skill_ball 1.0
+
+on=0 Stealth
+local.skill=stealth
+function_skill_ball 1.0
+
+on=0 function_skill_ball 1.0 Traps
+local.skill=function_skill_ball 1.0trap
+function_skill_ball 1.0
+
+//on=0 Necromancy
+//local.skill=necromancy
+//function_skill_ball 1.0
+
+//on=0 Page 6
+//menu m_skill_stone_6
+
+on=0 Page 1
+menu m_skill_stone_1
+
+on=0 Page 4
+menu m_skill_stone_4
+
+
+[comment menu m_skill_stone_6]
+Please choose a skill to increase.
+
+on=0 Focus
+local.skill=focus
+function_skill_ball 1.0
+
+on=0 Chivalry
+local.skill=chivalry
+function_skill_ball 1.0
+
+on=0 Bushido
+local.skill=bushido
+function_skill_ball 1.0
+
+on=0 Ninjitsu
+local.skill=ninjitsu
+function_skill_ball 1.0
+
+on=0 Spellweaving
+local.skill=spellweaving
+function_skill_ball 1.0
+
+on=0 Throwing (SA)
+local.skill=throwing
+function_skill_ball 1.0
+
+on=0 Mysticism (SA)
+local.skill=mysticism
+function_skill_ball 1.0
+
+//on=0 
+
+//on=0 
+
+//on=0 
+
+on=0 Page 1
+menu m_skill_stone_1
+
+on=0 Page 5
+menu m_skill_stone_5
+
+
+[function function_skill_stone]
+if ((<src.<tag.skill>>) >= 100.0)
+ src.smsg @025 You cannot raise a skill past 100.0 with this item.
+ return 1
+else
+ src.<tag.skill> += <args>
+  if (<src.<tag.skill>>) > 100.0
+   src.<tag.skill> = 100.0
+   src.smsg @04 <serv.skill(<tag.skill>).key> is now 100.0
+  endif
+ remove
+endif
+
+[function function_skill_ball]
+if ((<src.<local.skill>>) >= 100.0)
+ src.smsg @025 You cannot raise a skill past 100.0 with this item.
+ return 1
+else
+ src.<local.skill> += <args>
+  if (<src.<local.skill>>) > 100.0
+   src.<local.skill> = 100.0
+   src.smsg @04 <serv.skill(<local.skill>).key> is now 100.0
+  endif
+ remove
+endif
+
+
+[comment backup code, incase of failure]
+//skillstone @dclick
+//  tryp 0 src.<tag.skill> = <src.<tag.skill>> + 1.0
+//  src.smsg "You feel more skilled in <tag.skill>"

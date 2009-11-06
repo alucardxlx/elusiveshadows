@@ -1,0 +1,85 @@
+//Scripted by Skul
+//01/05/2009
+[comment credits]
+Enticement script similar to pre-AoS
+This script will lower creature stats when enticement is used.
+
+Installation:
+-Add the event e_enticement to all your players.
+
+Scripted by Skul,
+    www.marchadium.ca
+
+[defname defnames_enticement]
+enticement_effect_str        15    //15% str reduced if bard has maximum enticement skill (gm enticement) / discordance
+enticement_effect_dex        25    //25% dex reduced    --etc--
+enticement_effect_int        25    //25% int reduced    --etc--
+
+[events e_enticement]
+on=@skillselect
+if (<serv.skill.<action>.key>==enticement)
+    if !(<findtype.t_musical>)
+        sysmessage You need a musical instrument to do this.
+        return 1
+    endif
+endif
+
+on=@skillsuccess
+if (<serv.skill.<action>.key>==enticement)
+    local.uid=<uid>
+    forchars 8
+        if (<npc>)
+            if !(<findid.i_memory_enticement>)
+                serv.newitem=i_memory_enticement
+                new.link=<local.uid>
+                equip=<new.uid>
+                local.enticed += 1
+            else
+                findid.i_memory_enticement.timer=<eval 30 +<eval <uid.<local.uid>.enticement> /4>>
+            endif
+        endif
+    endfor
+    if (<local.enticed>)
+        emote entices the surrounding <qval <dlocal.enticed>==1 ?creature:creatures>
+    endif
+endif
+
+[itemdef i_memory_enticement]
+defname=i_memory_enticement
+name=enticement memory
+id=i_memory
+type=t_eq_script
+
+on=@create
+attr=attr_move_never|attr_invis
+
+on=@equip
+tag.old_str=<eval <eval <src.str> *<eval <eval <link.enticement> *<def0.enticement_effect_str>> /<link.skillclass.enticement>>> /100>
+tag.old_dex=<eval <eval <src.dex> *<eval <eval <link.enticement> *<def0.enticement_effect_dex>> /<link.skillclass.enticement>>> /100>
+tag.old_int=<eval <eval <src.int> *<eval <eval <link.enticement> *<def0.enticement_effect_int>> /<link.skillclass.enticement>>> /100>
+src.modstr -= <tag0.old_str>
+src.moddex -= <tag0.old_dex>
+src.modint -= <tag0.old_int>
+more1=<eval 30 +<eval <link.enticement> /4>>
+timer=1
+
+on=@unequip
+src.emote=is no longer enticed
+src.modstr += <tag0.old_str>
+src.moddex += <tag0.old_dex>
+src.modint += <tag0.old_int>
+
+on=@timer
+if (<link.distance <topobj.uid>> <= 8)
+    if (<more1>)
+        more1 -= 1
+        timer=1
+    else
+        remove
+    endif
+else
+    remove
+endif
+return 1
+
+[eof]

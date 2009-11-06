@@ -1,0 +1,168 @@
+[Function Trap_Item_Explosion]
+Say @55,,1 Explosion Trap!
+Effect 2,i_fx_explode,16,10,0
+Sound snd_spell_explosion
+Local.Difficulty = <tag0.trap.difficulty>
+Forplayers 3
+Damage <eval ({4 9} * <Local.Difficulty>) / 100> 0010 <Uid>
+Effect 3,i_fx_explode,16,10,0
+Endfor
+
+[Function Trap_Item_Dart]
+Say @11,,1 Dart Trap!
+Sound 556
+Local.Difficulty = <tag0.trap.difficulty>
+
+Src.Damage <eval ({15 20} * <Local.Difficulty>) / 400> 0002 <Uid>
+
+
+[Function Trap_Item_Poison]
+Effect 2,i_fx_smoke,16,10,0,72,7
+Sound 1330
+Local.Difficulty = <tag0.trap.difficulty>
+Say @72,,1 Poison Trap!
+Src.Poison <Local.Difficulty>)
+Src.Effect 3,i_fx_smoke,16,10,0,72,7
+
+[Function Trap_Item_Teleportation]
+Effect 2,i_fx_sparkle,16,0,0
+Sound 1297
+Say @8,,1 Teleportation Trap!
+Src.Timerf 2,Effect 2,i_fx_smoke,46,40,0,0,2
+Src.Timerf 3,Go <tag0.trap.origin>
+
+
+[Function Trap_Item_Fire]
+Effect 2,i_fire,16,10,0
+Sound snd_spell_fireball
+Src.Consume i_trap_fire_memory
+Serv.Newitem = i_trap_fire_memory
+New.More = <tag0.trap.difficulty>
+Src.Equip <New.Uid>
+Say @49,,1 Fire Trap!
+Src.Effect 3,i_fire,16,10,0
+
+[Itemdef i_trap_fire_memory]
+ID=i_memory
+TYPE=t_eq_script
+NAME=Fire Trap Memory
+
+ON=@Equip
+More2=<eval {5 8}>
+Src.Sysmessage @49,,1 Burning!
+Src.Damage <eval (<more>/25) + 1> 0010 <Src.Uid>
+More2 -= 1
+More /= 2
+Timer = 1
+
+On=@Timer
+Cont.Sound 477
+Cont.Effect 3,i_fire,16,10,0
+Cont.Sysmessage @49,,1 Burning!
+Cont.Damage <eval (<more>/25) + 1> 0010 <Cont.Uid>
+More2 -= 1
+More /= 2
+Timer = 1
+If <Cont.Hits> <= 0
+Remove
+Endif
+If <More2> <= 0
+Remove
+Endif
+Return 1
+
+
+[Function Trap_Item_Bladed]
+Sound 1311
+Say @36,,1 Bladed Trap!
+Local.Difficulty = <tag0.trap.difficulty>
+
+Forplayers 3
+Consume i_trap_bladed_memory
+Serv.Newitem = i_trap_bladed_memory
+New.More = <Local.Difficulty>
+Equip <New.Uid>
+Effect 3,i_fx_smoke,16,10,0,32,2
+Endfor
+
+
+[Itemdef i_trap_bladed_memory]
+ID=i_memory
+TYPE=t_eq_script
+NAME=Bladed Trap Memory
+
+ON=@Equip
+More2=<eval {8 11}>
+Src.Sysmessage @32,,1 Bleeding!
+Src.Damage <eval (<more>/50) + 1> 0010 <Src.Uid>
+More2 -= 1
+More /= 2
+Timer = 1
+
+On=@Timer
+Cont.Effect 2,i_blood_pool_large,56,50,0
+Cont.Sysmessage @32,,1 Bleeding!
+Cont.Damage <eval (<more>/50) + 1> 0010 <Cont.Uid>
+More2 -= 1
+More -= <More>/3
+Timer = 1
+If <Cont.Hits> <= 0
+Remove
+Endif
+If <More2> <= 0
+Remove
+Endif
+Return 1
+
+[Function Trap_Floor_Fireball]
+Ref1=<More>
+Ref2=<Src.Uid>
+Ref1.Morep=<Ref1.Tag0.Trap.Origin>
+Ref2.Say @49,,1 Fireball Trap!
+If <Ref1.Tag.Trap.Delay.Detect> != 1
+Ref1.Tag.Trap.Delay.Detect=1
+Timerf 3,Uid.<Ref1.UID>.Tag.Trap.Delay.Detect = 0
+ForItems 10
+If <More>==<Ref1.Uid>
+Detected <Ref2.Uid>,32
+Endif
+Endfor
+Endif
+Ref2.Sound snd_spell_fireball
+FORCLIENTS 11
+sendpacket 0c0 00 D0 D<ref2.uid> W<serv.itemdef.i_fx_fireball.ID> W<EVAL <Ref1.Morex>> W<eval <Ref1.Morey>> B<EVAL <Ref1.Morez>+15> W<EVAL <Ref1.Morex>> W<EVAL <Ref1.Morey>> B<EVAL <Ref1.Morez> + 15> B10 B020 00 00 00 B1 D0 D0
+ENDFOR
+Ref2.Damage <eval (<Ref1.tag0.trap.difficulty> / 50) + 1> 0010 <Ref2.Uid>
+
+
+[Function Trap_Floor_Firefield]
+Ref1=<More>
+Ref2=<Src.Uid>
+Ref1.Tag.Trap.Delay = 1
+Timerf 15,Uid.<Ref1.UID>.Tag.Trap.Delay = 0
+Ref2.Say @49,,1 Firefield Trap!
+ForItems 10
+If <More>==<Ref1.Uid>
+Serv.Newitem = i_trap_firefield
+New.P = <P>
+New.More = <Ref1.tag0.trap.difficulty>
+New.Timer = 15
+Endif
+Endfor
+Ref2.Sound 1210
+
+
+[ITEMDEF i_trap_firefield]
+ID=i_fire
+TYPE=t_script
+NAME=fire
+
+ON=@Step
+Src.Damage <eval (<More>/{40 70}) + 1> 0010 <Src.Uid>
+Src.Sound 477
+
+ON=@Timer
+Sound 1208
+Remove
+Return 1
+

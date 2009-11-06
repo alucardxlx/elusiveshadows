@@ -1,0 +1,816 @@
+////////////
+//Clothing//
+////////////
+
+[itemdef 04000]
+defname=i_gargish_robe
+name=gargish robe
+type=t_clothing
+armor=0
+reqstr=0
+resources=
+skillmake=tailoring, t_sewing_kit
+weight=
+
+dupelist=04001
+
+category=Provisions - Clothing
+subsection=Gargoyle Clothing
+description=Gargish Robe
+
+on=@create
+ hitpoints={30 50}
+ color=0
+
+[itemdef 04001]
+dupeitem=04000
+
+[itemdef 04002]
+defname=i_gargish_fancy_robe
+name=gargish fancy robe
+type=t_clothing
+armor=0
+reqstr=0
+resources=
+skillmake=tailoring, t_sewing_kit
+weight=
+
+dupelist=04001
+
+category=Provisions - Clothing
+subsection=Gargoyle Clothing
+description=Gargish Fancy Robe
+
+on=@create
+ hitpoints={30 50}
+ color=0
+
+[itemdef 04003]
+dupeitem=0
+
+/////////
+//Armor//
+/////////
+
+[itemdef 04047]
+defname=i_garg_leather_arms
+name=gargish leather arms
+type=t_armor
+armor=30
+reqstr=10
+resources=
+skillmake=tailoring, t_sewing_kit
+weight=4.0
+
+dupelist=0301
+
+category=Provisions - Armor
+subsection=Gargoyle Leather Armor
+description=Gargish Leather Arms
+
+on=@create
+ hitpoints={30 50}
+ color=0
+
+[itemdef 0301]
+dupeitem=04047
+
+
+//////////////////
+//Creature Icons//
+//////////////////
+
+[itemdef 0422D]
+defname=i_pet_gargoyle_male
+name=gargoyle male
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Gargoyle Male
+
+[itemdef 0422E]
+defname=i_pet_gargoyle_female
+name=gargoyle female
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Gargoyle Female
+
+[itemdef 0422F]
+defname=i_pet_birds_phoenix_red
+name=phoenix (red)
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Phoenix (Red)
+
+[itemdef 04230]
+defname=i_pet_birds_phoenix_blue
+name=phoenix (blue)
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Phoenix (Blue)
+
+[itemdef 04287]
+defname=i_pet_abyssal_infernal
+name=abyssal infernal
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Abyssal Infernal
+
+[itemdef 04288]
+defname=i_pet_beetle_iron
+name=iron beetle
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Iron Beetle
+
+[itemdef 04289]
+defname=i_pet_boura
+name=boura
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Boura
+
+[itemdef 0428A]
+defname=i_pet_chicke_lizard
+name=chicken lizard
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Chicken Lizard
+
+[itemdef 0428B]
+defname=i_pet_clockwork_scorpion
+name=clockwork scorpion
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Clockwork Scorpion
+
+[itemdef 0428C]
+defname=i_pet_dragon_faerie
+name=dragon faerie
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Dragon Faerie
+
+[itemdef 0428D]
+defname=i_pet_dragon_wolf
+name=dragon wolf
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Dragon Wolf
+
+[itemdef 0428E]
+defname=i_pet_elem_lava
+name=lava elemental
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Lava Elemental
+
+[itemdef 0428F]
+defname=i_pet_flayer
+name=flayer
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Flayer
+
+[itemdef 04290]
+defname=i_pet_gargoyle_pet
+name=gargoyle pet
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Gargoyle Pet
+
+[itemdef 04291]
+defname=i_pet_gargoyle_undead
+name=undead gargoyle
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Undead Gargoyle
+
+[itemdef 04292]
+defname=i_pet_goblin_green
+name=green goblin
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Green Goblin
+
+[itemdef 04293]
+defname=i_pet_goblin_grey
+name=grey goblin
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Grey Goblin
+
+[itemdef 04294]
+defname=i_pet_gremlin
+name=gremlin
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Gremlin
+
+[itemdef 04295]
+defname=i_pet_humunculous
+name=humunculous
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Humunculous
+
+[itemdef 04296]
+defname=i_pet_kepetch
+name=kepetch
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Kepetch
+
+[itemdef 04297]
+defname=i_pet_kepetch_shorn
+name=kepetch (shorn)
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Kepetch, shorn
+
+[itemdef 04298]
+defname=i_pet_medusa
+name=medusa
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=medusa
+
+[itemdef 04299]
+defname=i_pet_mimic
+name=mimic
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Mimic
+
+[itemdef 0429A]
+defname=i_pet_primevil_lich
+name=primevil lich
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Primevil Lich
+
+[itemdef 0429B]
+defname=i_pet_raptor
+name=raptor
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Raptor
+
+[itemdef 0429C]
+defname=i_pet_rising_colossus
+name=rising colossus
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Rising Colossus
+
+[itemdef 0429D]
+defname=i_pet_rotworm
+name=rotworm
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Rotworm
+
+[itemdef 0429E]
+defname=i_pet_shadow_dweller
+name=shadow dweller
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Shadow Dweller
+
+[itemdef 0429F]
+defname=i_pet_skree
+name=skree
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Skree
+
+[itemdef 042A0]
+defname=i_pet_slasher_of_the_veils
+name=slasher of the veils
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Slasher of the Veils
+
+[itemdef 042A1]
+defname=i_pet_slith
+name=slith
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Slith
+
+[itemdef 042A2]
+defname=i_pet_spider_female
+name=spider female
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Spider Female
+
+[itemdef 042A3]
+defname=i_pet_spider_male
+name=spider male
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Spider Male
+
+[itemdef 042A4]
+defname=i_pet_spider_trapdoor
+name=spider trapdoor
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Spider Trapdoor
+
+[itemdef 042A5]
+defname=i_pet_stone_form
+name=stone form
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Stone Form
+
+[itemdef 042A6]
+defname=i_pet_stygian_dragon
+name=stygian dragon
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Stygian Dragon
+
+[itemdef 042A7]
+defname=i_pet_trapdoor_creature
+name=trapdoor creature
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Trapdoor Creature
+
+[itemdef 042A8]
+defname=i_pet_tunnel_spirit_body
+name=tunnel spirit body
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Tunnel Spirit Body
+
+[itemdef 042A9]
+defname=i_pet_wolf_leather
+name=wolf leather
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Wolf Leather
+
+
+///////////////
+//Quest Items//
+///////////////
+
+[itemdef 0571C]
+defname=i_essence_of_virtue
+name=essence of virtue
+type=t_normal
+weight=1.0
+dupelist=0751D,0571E,0571F
+
+category=
+subsection=
+description=Essence Of Virtue
+
+[itemdef 0571D]
+dupeitem=0571C
+
+[itemdef 0571E]
+dupeitem=0571C
+
+[itemdef 0571F]
+dupeitem=0571C
+
+[itemdef 05720]
+defname=i_spider_carapace
+name=spider carapace
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Spider Carapace
+
+[itemdef 05721]
+defname=i_daemon_claw
+name=daemon claw
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Daemon Claw
+
+[itemdef 05722]
+defname=i_vial_of_vitriol
+name=vial of vitriol
+type=t_normal
+weight=1.0
+dupelist=05723,05724,05725
+
+category=
+subsection=
+description=Vial of Vitriol
+
+[itemdef 05723]
+dupeitem=05722
+
+[itemdef 05724]
+dupeitem=05722
+
+[itemdef 05725]
+dupeitem=05722
+
+[itemdef 05726]
+defname=i_fey_wings
+name=fey wings
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Fey Wings
+
+[itemdef 05727]
+defname=i_vile_tentacles
+name=vile tentacles
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Vile Tentacles
+
+[itemdef 05728]
+defname=i_void_core
+name=void core
+type=t_normal
+weight=1.0
+dupelist=05729,0572A,0572B
+
+category=
+subsection=
+description=Void Core
+
+[itemdef 05729]
+dupeitem=05728
+
+[itemdef 0572A]
+dupeitem=05728
+
+[itemdef 0572B]
+dupeitem=05728
+
+[itemdef 0572C]
+defname=i_goblin_blood
+name=goblin blood
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Goblin Blood
+
+[itemdef 0572D]
+defname=i_lava_serpent_crust
+name=lava serpent crust
+type=t_normal
+weight=1.0
+dupelist=0572E,0572F,05730
+
+category=
+subsection=
+description=Lava Serpent Crust
+
+[itemdef 0572E]
+dupeitem=0572D
+
+[itemdef 0572F]
+dupeitem=0572D
+
+[itemdef 05730]
+dupeitem=0572D
+
+[itemdef 05731]
+defname=i_undying_flesh
+name=undying flesh
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Undying Flesh
+
+[itemdef 05732]
+defname=i_crystalline_blackrock
+name=crystalline blackrock
+type=t_normal
+weight=1.0
+dupelist=05733,05734,05735
+
+category=
+subsection=
+description=Crystalline Blackrock
+
+[itemdef 05733]
+dupeitem=05732
+
+[itemdef 05734]
+dupeitem=05732
+
+[itemdef 05735]
+dupeitem=05732
+
+[itemdef 05736]
+defname=i_seed_of_renewal
+name=seed of renewal
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Seed of Renewal
+
+[itemdef 05737]
+defname=i_elven_fletching
+name=elven fletching
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Elven Fletching
+
+[itemdef 05738]
+defname=i_crystal_shards
+name=crystal shards
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Crystal Shards
+
+[itemdef 05739]
+defname=i_lodestone
+name=lodestone
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Lodestone
+
+[itemdef 0573A]
+defname=i_delicate_scales
+name=delicate scales
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Delicate Scales
+
+[itemdef 0573B]
+defname=i_crushed_glass
+name=crushed glass
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Crushed Glass
+
+[itemdef 0573C]
+defname=i_arcanic_rune_stone
+name=arcanic rune stone
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Arcanic Rune Stone
+
+[itemdef 0573D]
+defname=i_powdered_iron
+name=powdered iron
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Powdered Iron
+
+[itemdef 0573E]
+defname=i_void_orb_01
+name=void orb
+type=t_normal
+weight=1.0
+dupelist=0573F,05740,05741
+
+category=
+subsection=
+description=Void Orb (1)
+
+[itemdef 0573F]
+dupeitem=0573E
+
+[itemdef 05740]
+dupeitem=0573E
+
+[itemdef 05741]
+dupeitem=0573E
+
+[itemdef 05742]
+defname=i_boura_pelt
+name=boura pelt
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Boura Pelt
+
+[itemdef 05743]
+defname=i_chaga_mushroom
+name=chaga mushroom
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Chaga Mushroom
+
+[itemdef 05744]
+defname=i_silver_snake_skin
+name=silver snake skin
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Silver Snake Skin
+
+[itemdef 05745]
+defname=i_faery_dust
+name=faery dust
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Faery Dust
+
+[itemdef 05746]
+defname=i_slith_tongue
+name=slith tongue
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Slith Tongue
+
+[itemdef 05747]
+defname=i_raptor_tooth
+name=raptor tooth
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Raptor Tooth
+
+[itemdef 05748]
+defname=i_bottle_of_ichor
+name=bottle of ichor
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Bottle of Ichor
+
+[itemdef 05749]
+defname=i_reflective_wolf_eye
+name=reflective wolf eye
+type=t_normal
+weight=1.0
+
+category=
+subsection=
+description=Reflective Wolf Eye

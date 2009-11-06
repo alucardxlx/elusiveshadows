@@ -1,0 +1,289 @@
+// This script has been made by -Ax- and belongs to sphere.
+// First of all, place the portal mage by using .add c_portal_mage or use Axis.
+// Then Approach him and Talk to him, A menu will appear. Each Travel costs 100gp.
+// Have fun, If you have ANY question. Private Message me on sphere. (UserName: alphanatix)
+
+//Edited by: ElPlagueO
+//Removed travel cost
+//Changed a few of the locations, added Nujel'm
+
+[ITEMDEF i_portal_stone]
+ID=i_gravestone_7
+
+ON=@Create
+ATTR = 010
+NAME = Portal Stone
+
+ON=@DCLICK
+DIALOG d_x_travelmenu 
+return 1
+
+
+[CHARDEF c_portal_mage] 
+DEFNAME=C_portal_mage
+NAME=#NAMES_HUMANMALE the Portal Mage
+ID=C_MAN
+CAN=MT_NONMOVER
+moverate=100
+DESIRES=i_gold,e_notoriety 
+AVERSIONS=t_TRAP,t_eerie_stuff 
+
+CATEGORY=ES Core Systems
+SUBSECTION=Portal Mages
+DESCRIPTION=Portal Mage (Ax)
+
+TSPEECH=spk_human_prime 
+TSPEECH=job_portal_mage
+TSPEECH=spk_needs 
+TSPEECH=spk_rehello 
+TSPEECH=spk_human_default
+TSPEECH=spk_shopkeep
+
+TEVENTS=e_Human_HearUnk 
+TEVENTS=e_Human_Needs 
+TEVENTS=e_Human_ConvInit  
+TEVENTS=e_Human_Space 
+TEVENTS=e_Human_Refuse 
+TEVENTS=e_Human_Environ 
+
+ON=@Create 
+COLOR=colors_skin
+NPC=brain_vendor
+
+FLAGS=028000001
+NEED=i_gold
+
+STR={70 80} 
+DEX={10 20} 
+INT={50 100} 
+
+MAGERY={50.0 70.0} 
+
+ON=@SEENEWPLAYER
+ Sayu Say "travel" and I will take you all over the world. I also Sell scrolls and runes.just say "buy"
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=i_robe
+ COLOR=0527
+ ITEMNEWBIE=i_hat_wizards
+ COLOR=0527
+ ITEMNEWBIE=i_pants_short
+ COLOR=0527
+ ITEMNEWBIE=i_shoes_plain
+ COLOR=0527
+ ITEMNEWBIE=i_cape
+ COLOR=0527
+ ITEMNEWBIE=i_spellbook
+ COLOR=00
+
+SELL=i_scroll_resurrection,5
+PRICE=750
+SELL=i_rune_marker,5
+SELL=i_scroll_recall,10
+PRICE=200
+SELL=i_scroll_gate_travel,10
+PRICE=300
+SELL=i_scroll_mark,10
+PRICE=300
+
+[SPEECH job_portal_mage]
+ON=*Hey*
+ON=*Hello*
+ON=*Hi* 
+ON=*sell* 
+ON=*Hail*
+SAY Hello, I'm a portal mage, ask me to travel and I'll see what I can do for you.
+
+ON=*guards* 
+SAY Hmmm do you really think that I'm a criminal?
+
+ON=*gate*
+ON=*go*
+ON=*travel* 
+DIALOG d_x_travelmenu 
+
+[DIALOG d_x_travelmenu] 
+0, 0 
+resizepic 75 100 2620 500 300 
+text 151 130 1153 0 
+text 151 135 1153 1
+text 170 171 1153 2 
+text 170 196 1153 3 
+text 170 221 1153 4 
+text 170 246 1153 5 
+text 170 271 1153 6 
+text 170 296 1153 7 
+text 370 171 1153 8 
+text 370 196 1153 9 
+text 370 221 1153 10 
+text 370 246 1153 11 
+text 370 271 1153 12 
+text 370 296 1153 13
+text 170 321 1153 14
+text 370 321 1153 15
+button 150 175 1209 1210 1 0 1 
+button 150 200 1209 1210 1 0 2 
+button 150 225 1209 1210 1 0 3 
+button 150 250 1209 1210 1 0 4 
+button 150 275 1209 1210 1 0 5 
+button 150 300 1209 1210 1 0 6 
+button 350 175 1209 1210 1 0 7 
+button 350 200 1209 1210 1 0 8 
+button 350 225 1209 1210 1 0 9 
+button 350 250 1209 1210 1 0 10 
+button 350 275 1209 1210 1 0 11 
+button 350 300 1209 1210 1 0 12
+button 150 325 1209 1201 1 0 13
+button 350 325 1209 1210 1 0 14
+
+[DIALOG d_x_travelmenu TEXT] 
+My services are free.
+_______________
+Britain 
+Trinsic 
+Yew 
+Moonglow 
+Buc's Den 
+Minoc 
+Occlo 
+Serpent's Hold 
+Skara Brae 
+Vesper 
+Cove 
+Magincia
+Jhelom
+Nujel'm
+
+[DIALOG d_x_travelmenu BUTTON] 
+ONBUTTON=0 
+ src.smsg Travel menu closed.
+
+ONBUTTON=1 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 1432,1699 
+  src.smsg Welcome to Britain! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ENDIF
+
+ONBUTTON=2 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 1820,2822 
+  src.smsg Welcome to Trinsic! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=3 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 546,991 
+  src.smsg Welcome to Yew!
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=4 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 4453,1157
+  src.smsg Welcome to Moonglow! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=5 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 2735,2166 
+  src.smsg Welcome to Buc's Den! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=6 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 2503,562 
+  src.smsg Welcome to Minoc!
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=7 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 3686,2522 
+  src.smsg Welcome to Occlo! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=8 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 2881,3472,15
+  src.smsg Welcome to Serpent's Hold!
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=9 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 597,2154 
+  src.smsg Welcome to Skara Brae! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+ 
+ONBUTTON=10 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 2900,675 
+  src.smsg Welcome to Vesper!
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=11 
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 2269,1212 
+  src.smsg Welcome to Cove! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+ 
+ONBUTTON=12
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 3784,2250,20
+  src.smsg Welcome to Magincia! 
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+ 
+ONBUTTON=13
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 1383,3815
+  src.smsg Welcome to Jhelom!  
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+ONBUTTON=14
+ IF ((<SRC.HITS>) >= (<src.maxhits>))
+  src.go 3762,1299
+  src.smsg Welcome to Nujel'm!
+ ELSE
+  src.smsg You must be at full health to travel!
+ ENDIF
+
+[ITEMDEF portalmage]
+DEFNAME=i_deed_portalmage
+NAME=Deed to a Portal Mage
+ID=i_deed
+RESOURCES=i_deed,c_portal_mage
+VALUE=15000
+
+CATEGORY=Provisions - Deeds
+SUBSECTION=Vendor Deeds
+DESCRIPTION=Portal Mage
+
+ON=@DCLICK
+ SRC.Msg Your Portal Mage has been created.
+ SRC.NEWNPC c_portal_mage
+ REMOVE //get rid of the deed
+ 
+[EOF]

@@ -1,0 +1,11 @@
+[SPEECH spk_open_pack]
+ON=*Open Pack*
+TARGET Choose the pet you wish to open their pack.
+
+ON=@TARGON_CHAR
+ IF <SRC.TARG.TAG.MOUNT.PACK> == 1
+  SRC.TARG.FINDLAYER.LAYER_PACK.OPEN
+ ELSE
+  SRC.MSG The mount does not have a pack to open.
+ ENDIF
+ RETURN 1

@@ -1,0 +1,2389 @@
+// ****************************************************************************
+// SPHERE by : Menasoft ©1997-2007
+// www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+// ****************************************************************************
+// FILE LAST UPDATED: Saturday, April 8, 2006
+// by ClouD_BR & Ellessar
+VERSION=0.56b
+
+[COMMENT CHANGE LOG]
+Several Changes were done to this file.
+ALL non hex code, changed to hex.
+Icons from ALL other scripts dragged here.
+Made Unique icons for non listed creatures.
+Samurai Empire items and creatures match.
+
+
+
+////////////////////////
+//The Second Age (T2A)//
+////////////////////////
+
+
+[ITEMDEF 021F1]
+DEFNAME=i_pet_fire_steed
+NAME=Fire Steed
+TYPE=T_FIGURINE
+TDATA3=c_fire_steed
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Fire Steed
+
+
+[ITEMDEF 02580]
+DEFNAME=i_pet_billy_goat
+NAME=Billy Goat
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Billy Goat
+
+
+[ITEMDEF 02581]
+DEFNAME=i_pet_centaur
+NAME=Centaur
+TYPE=T_FIGURINE
+TDATA3=c_centaur
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Centaur
+
+
+[ITEMDEF 02582]
+DEFNAME=i_pet_corpser
+NAME=Corpser
+TYPE=T_FIGURINE
+TDATA3=c_corpser
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Corpser
+
+
+[ITEMDEF 02583]
+DEFNAME=i_pet_cougar
+NAME=Cougar
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Cougar
+
+
+[ITEMDEF 02584]
+DEFNAME=i_pet_daemon_lbr
+NAME=Daemon
+TYPE=T_FIGURINE
+TDATA3=c_daemon_lbr
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Daemon
+
+
+[ITEMDEF 02585]
+DEFNAME=i_pet_black_gate_daemon
+NAME=Black Gate Daemon
+TYPE=T_FIGURINE
+TDATA3=c_black_gate_daemon
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Black Gate Daemon
+
+
+[ITEMDEF 02586]
+DEFNAME=i_pet_balron
+NAME=Balron
+TYPE=T_FIGURINE
+TDATA3=c_balron
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Balron
+
+
+[ITEMDEF i_pet_exodus]
+DEFNAME=i_pet_exodus
+NAME=Exodus
+ID=i_pet_exodus
+TYPE=T_FIGURINE
+TDATA3=c_exodus
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Exodus
+
+ON=@CREATE
+COLOR=021
+
+
+[ITEMDEF 02587]
+DEFNAME=i_pet_ice_fiend
+NAME=Ice Fiend
+TYPE=T_FIGURINE
+TDATA3=c_ice_fiend
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ice Fiend
+
+[ITEMDEF 02588]
+DEFNAME=i_pet_dog_hound
+NAME=Dog Hound
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dog Hound
+
+
+[ITEMDEF 02589]
+DEFNAME=i_pet_ethereal_warrior
+NAME=Ethereal Warrior
+TYPE=T_FIGURINE
+TDATA3=c_ethereal_warrior
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ethereal Warrior
+
+
+[ITEMDEF i_pet_forest_lord]
+DEFNAME=i_pet_forest_lord
+NAME=Forest Lord
+ID=i_pet_ethereal_warrior
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Forest Lord
+
+
+[ITEMDEF 0258A]
+DEFNAME=i_pet_evil_mage
+NAME=Evil Mage
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Evil Mage
+
+
+[ITEMDEF 0258B]
+DEFNAME=i_pet_evil_mage_lord
+NAME=Evil Mage Lord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Evil Mage Lord
+
+
+[ITEMDEF 0258C]
+DEFNAME=i_pet_giant_toad_lbr
+NAME=Giant Toad
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Toad
+
+
+[ITEMDEF 0258D]
+DEFNAME=i_pet_gargoyle_lbr
+NAME=Gargoyle
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gargoyle
+
+
+[ITEMDEF i_pet_gargoyle_shop_keeper]
+DEFNAME=i_pet_gargoyle_shop_keeper
+NAME=Gargoyle Shop Keeper
+ID=i_pet_gargoyle_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gargoyle Shop Keeper
+
+
+[ITEMDEF i_pet_gargoyle_enforcer]
+DEFNAME=i_pet_gargoyle_enforcer
+NAME=Gargoyle Enforcer
+ID=i_pet_gargoyle_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gargoyle Enforcer
+
+
+[ITEMDEF i_pet_gargoyle_destroyer]
+DEFNAME=i_pet_gargoyle_destroyer
+NAME=Gargoyle Destroyer
+ID=i_pet_gargoyle_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gargoyle Destroyer
+
+
+[ITEMDEF i_pet_gargoyle_enslaved]
+DEFNAME=i_pet_gargoyle_enslaved
+NAME=Enslaved Gargoyle
+ID=i_pet_gargoyle_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Enslaved Gargoyle
+
+
+[ITEMDEF i_pet_gargoyle_fire]
+DEFNAME=i_pet_gargoyle_fire
+NAME=Fire Gargoyle
+ID=i_pet_gargoyle_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Fire Gargoyle
+
+
+[ITEMDEF 0258E]
+DEFNAME=i_pet_stone_gargoyle
+NAME=Stone Gargoyle
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Stone Gargoyle
+
+
+[ITEMDEF 0258F]
+DEFNAME=i_pet_gazer_lbr
+NAME=Gazer
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gazer
+
+
+[ITEMDEF 02590]
+DEFNAME=i_pet_djinni
+NAME=Djinni
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Djinni
+
+
+[ITEMDEF 02591]
+DEFNAME=i_pet_ghoul_lbr
+NAME=Ghoul
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ghoul
+
+
+[ITEMDEF 02592]
+DEFNAME=i_pet_silverback_gorilla
+NAME=Silverback Gorilla
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Silverback Gorilla
+
+
+[ITEMDEF 02593]
+DEFNAME=i_pet_great_worm
+NAME=Great Worm
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Great Worm
+
+
+[ITEMDEF 02594]
+DEFNAME=i_pet_stone_harpy
+NAME=Stone Harpy
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Stone Harpy
+
+
+[ITEMDEF 02595]
+DEFNAME=i_pet_headless_lbr
+NAME=Headless
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Headless
+
+
+[ITEMDEF 02596]
+DEFNAME=i_pet_hell_hound_lbr
+NAME=Hell Hound
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Hell Hound
+
+
+[ITEMDEF 02597]
+DEFNAME=i_pet_hellcat_lbr
+NAME=Hellcat
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Hellcat
+
+
+[ITEMDEF 02598]
+DEFNAME=i_pet_dappled_brown_horse
+NAME=Dappled Brown Horse
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dappled Brown Horse
+
+
+[ITEMDEF 02599]
+DEFNAME=i_pet_dappled_gray_horse
+NAME=Dappled Gray Horse
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dappled Gray Horse
+
+
+[ITEMDEF 0259A]
+DEFNAME=i_pet_dark_brown_horse
+NAME=Dark Brown Horse
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dark Brown Horse
+
+
+[ITEMDEF 0259B]
+DEFNAME=i_pet_dark_steed
+NAME=Dark Steed
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dark Steed
+
+
+[ITEMDEF 0259C]
+DEFNAME=i_pet_nightmare_lbr
+NAME=Nightmare
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Nightmare
+
+
+[ITEMDEF 0259D]
+DEFNAME=i_pet_silver_steed
+NAME=Silver Steed
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Silver Steed
+
+
+[ITEMDEF 0259E]
+DEFNAME=i_pet_tan_horse
+NAME=Tan Horse
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Tan Horse
+
+
+[ITEMDEF 0259F]
+DEFNAME=i_pet_imp_lbr
+NAME=Imp
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Imp
+
+
+[ITEMDEF 025A0]
+DEFNAME=i_pet_kirin
+NAME=Ki-Rin
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ki-Rin
+
+
+[ITEMDEF 025A1]
+DEFNAME=i_pet_komodo_dragon
+NAME=Komodo Dragon
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Komodo Dragon
+
+
+[ITEMDEF 025A2]
+DEFNAME=i_pet_kraken_lbr
+NAME=Kraken
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Kraken
+
+
+[ITEMDEF 025A3]
+DEFNAME=i_pet_snow_leopard_lbr
+NAME=Snow Leopard
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Snow Leopard
+
+
+[ITEMDEF 025A4]
+DEFNAME=i_pet_liche_lbr
+NAME=Liche
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Liche
+
+
+[ITEMDEF 025A5]
+DEFNAME=i_pet_liche_lord_lbr
+NAME=Liche Lord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Liche Lord
+
+
+[ITEMDEF i_pet_ancient_liche_lord]
+DEFNAME=i_pet_ancient_liche_lord
+NAME=Ancient Liche Lord
+ID=i_pet_liche_lord_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ancient Liche Lord
+
+
+[ITEMDEF 025A6]
+DEFNAME=i_pet_mongbat_lbr
+NAME=Mongbat
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Mongbat
+
+
+[ITEMDEF 025A7]
+DEFNAME=i_pet_mummy_lbr
+NAME=Mummy
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Mummy
+
+
+[ITEMDEF 025A8]
+DEFNAME=i_pet_ogre_lord_lbr
+NAME=Ogre Lord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ogre Lord
+
+
+[ITEMDEF i_pet_arctic_ogre_lord]
+DEFNAME=i_pet_arctic_ogre_lord
+NAME=Arctic Ogre Lord
+ID=i_pet_ogre_lord_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Arctic Ogre Lord
+
+ON=@CREATE
+COLOR=
+
+
+[ITEMDEF 025A9]
+DEFNAME=i_pet_ophidian_archmage_lbr
+NAME=Ophidian Archmage
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ophidian Archmage
+
+
+[ITEMDEF 025AA]
+DEFNAME=i_pet_ophidian_knight_lbr
+NAME=Ophidian Knight
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ophidian Knight
+
+
+[ITEMDEF 025AB]
+DEFNAME=i_pet_ophidian_mage_lbr
+NAME=Ophidian Mage
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ophidian Mage
+
+
+[ITEMDEF 025AC]
+DEFNAME=i_pet_ophidian_queen_lbr
+NAME=Ophidian Queen
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ophidian Queen
+
+
+[ITEMDEF 025AD]
+DEFNAME=i_pet_ophidian_warrior_lbr
+NAME=Ophidian Warrior
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ophidian Warrior
+
+
+[ITEMDEF 025AE]
+DEFNAME=i_pet_orc_lbr
+NAME=Orc
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Orc
+
+
+[ITEMDEF 025AF]
+DEFNAME=i_pet_orc_captain_lbr
+NAME=Orc Captain
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Orc Captain
+
+
+[ITEMDEF 025B0]
+DEFNAME=i_pet_orc_lord_lbr
+NAME=Orc Lord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Orc Lord
+
+
+[ITEMDEF 025B1]
+DEFNAME=i_pet_orc_shaman_lbr
+NAME=Orc Shaman
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Orc Shaman
+
+
+[ITEMDEF 025B2]
+DEFNAME=i_pet_desert_ostard_lbr
+NAME=Desert Ostard
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Desert Ostard
+
+
+[ITEMDEF 025B3]
+DEFNAME=i_pet_forest_ostard_lbr
+NAME=Forest Ostard
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Forest Ostard
+
+
+[ITEMDEF 025B4]
+DEFNAME=i_pet_frenzied_ostard_lbr
+NAME=Frenzied Ostard
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Frezied Ostard
+
+
+[ITEMDEF 025B5]
+DEFNAME=i_pet_panther_lbr
+NAME=Panther
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Panther
+
+
+[ITEMDEF 025B6]
+DEFNAME=i_pet_pixie
+NAME=Pixie
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Pixie
+
+
+[ITEMDEF i_pet_forest_queen]
+DEFNAME=i_pet_forest_queen
+NAME=Forest Queen
+ID=i_pet_pixie
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Forest Queen
+
+
+[ITEMDEF 025B7]
+DEFNAME=i_pet_rat_man_lbr
+NAME=Rat Man
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rat Man
+
+
+[ITEMDEF i_pet_rat_man_archer]
+DEFNAME=i_pet_rat_man_archer
+NAME=Rat Man Archer
+ID=i_pet_rat_man_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rat Man Archer
+
+
+[ITEMDEF i_pet_rat_man_mage]
+DEFNAME=i_pet_rat_man_mage
+NAME=Rat Man Mage
+ID=i_pet_rat_man_lbr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rat Man Mage
+
+
+[ITEMDEF 025B8]
+DEFNAME=i_pet_rotting_corpse
+NAME=Rotting COrpse
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rotting Corpse
+
+
+[ITEMDEF 025B9]
+DEFNAME=i_pet_giant_scorpion_lbr
+NAME=Giant Scorpion
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Scorpion
+
+
+[ITEMDEF 025BA]
+DEFNAME=i_pet_sea_horse
+NAME=Sea Horse
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Sea Horse
+
+
+[ITEMDEF 025BB]
+DEFNAME=i_pet_shadowlord
+NAME=Shadowlord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Shadowlord
+
+
+[ITEMDEF 025BC]
+DEFNAME=i_pet_skeleton_lbr
+NAME=Skeleton
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skeleton
+
+
+[ITEMDEF 025BD]
+DEFNAME=i_pet_skeleton_knight_lbr
+NAME=Skeleton Knight
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skeleton Knight
+
+
+[ITEMDEF 025BE]
+DEFNAME=i_pet_skeleton_mage_lbr
+NAME=Skeleton Mage
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skeleton Mage
+
+
+[ITEMDEF 025BF]
+DEFNAME=i_pet_giant_snake_lbr
+NAME=Giant Snake
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Snake
+
+
+[ITEMDEF 025C0]
+DEFNAME=i_pet_giant_ice_snake_lbr
+NAME=Giant Ice Snake
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Ice Snake
+
+
+[ITEMDEF 025C1]
+DEFNAME=i_pet_giant_lava_snake_lbr
+NAME=Giant Lava SNake
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Lava Snake
+
+
+[ITEMDEF 025C2]
+DEFNAME=i_pet_silver_serpent_lbr
+NAME=Silver Serpent
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Silver Serpent
+
+
+[ITEMDEF 025C3]
+DEFNAME=i_pet_black_widow_spider
+NAME=Black Widow Spider
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Black Widow Spider
+
+
+[ITEMDEF 025C4]
+DEFNAME=i_pet_dread_spider
+NAME=Dread Spider
+TYPE=T_FIGURINE
+TDATA3=c_dread_spider
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dread Spider
+
+
+[ITEMDEF 025C5]
+DEFNAME=i_pet_frost_spider
+NAME=Frost Spider
+TYPE=T_FIGURINE
+TDATA3=c_frost_spider
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Frost Spider
+
+
+[ITEMDEF 025C6]
+DEFNAME=i_pet_giant_spider_lbr
+NAME=Giant Spider
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Spider
+
+
+[ITEMDEF 025C7]
+DEFNAME=i_pet_wraith_lbr
+NAME=Wraith
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Wraith
+
+
+[ITEMDEF 025C8]
+DEFNAME=i_pet_swamp_tentacles_lbr
+NAME=Swamp Tentacles
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Swamp Tentacles
+
+
+[ITEMDEF 025C9]
+DEFNAME=i_pet_terathan_drone_lbr
+NAME=Terathan Drone
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Terathan Drone
+
+
+[ITEMDEF 025CA]
+DEFNAME=i_pet_terathan_avenger_lbr
+NAME=Terathan Avenger
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Terathan Avenger
+
+
+[ITEMDEF 025CB]
+DEFNAME=i_pet_terathan_queen_lbr
+NAME=Terathan Queen
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Terathan Queen
+
+
+[ITEMDEF 025CC]
+DEFNAME=i_pet_terathan_warrior_lbr
+NAME=Terathan Warrior
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Terathan Warrior
+
+
+[ITEMDEF 025CD]
+DEFNAME=i_pet_titan_lbr
+NAME=Titan
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Titan
+
+
+[ITEMDEF 025CE]
+DEFNAME=i_pet_unicorn
+NAME=Unicorn
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Unicorn
+
+
+[ITEMDEF 025CF]
+DEFNAME=i_pet_wolf_lbr
+NAME=Wolf
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Wolf
+
+
+[ITEMDEF 025D0]
+DEFNAME=i_pet_dire_wolf_lbr
+NAME=Dire Wolf
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dire Wolf
+
+
+[ITEMDEF 025D1]
+DEFNAME=i_pet_gray_wolf_lbr
+NAME=Gray Wolf
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gray Wolf
+
+
+[ITEMDEF 025D2]
+DEFNAME=i_pet_silver_wolf_lbr
+NAME=Silver Wolf
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Silver Wolf
+
+
+[ITEMDEF 025D3]
+DEFNAME=i_pet_timber_wolf_lr
+NAME=Timber WOlf
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Timber Wolf
+
+
+[ITEMDEF 025D4]
+DEFNAME=i_pet_wyvern_lbr
+NAME=Wyvern
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Wyvern
+
+
+[ITEMDEF 025D5]
+DEFNAME=i_pet_zombie_lbr
+NAME=Zombie
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Zombie
+
+
+[ITEMDEF 025D6]
+DEFNAME=i_pet_acid_elem_lbr
+NAME=Acid Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Acid Elemental
+
+
+[ITEMDEF 025D7]
+DEFNAME=i_pet_air_elem_lbr
+NAME=Air Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Air Elemental
+
+
+[ITEMDEF 025D8]
+DEFNAME=i_pet_blood_elem_lbr
+NAME=Blood Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Blood Elemental
+
+
+[ITEMDEF 025D9]
+DEFNAME=i_pet_fire_elem_lbr
+NAME=Fire Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Fire Elemental
+
+
+[ITEMDEF 025DA]
+DEFNAME=i_pet_ice_elem_lbr
+NAME=Ice Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ice Elemental
+
+
+[ITEMDEF 025DB]
+DEFNAME=i_pet_poison_elem_lbr
+NAME=Poison Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Poison Elemental
+
+
+[ITEMDEF 025DC]
+DEFNAME=i_pet_snow_elem_lbr
+NAME=Snow Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Snow Elemental
+
+
+[ITEMDEF 025DD]
+DEFNAME=i_pet_water_elem_lbr
+NAME=Water Elemental
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Water Elemental
+
+
+//////////////////////////////
+//Lord Blackthorne's Revenge//
+//////////////////////////////
+
+
+[ITEMDEF 025F8]
+DEFNAME=i_pet_meer_eternal
+NAME=Meer Eternal
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Meer Eternal
+
+
+[ITEMDEF 025F9]
+DEFNAME=i_pet_lord_blackthorne
+NAME=Lord Blackthorne
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Lord Blackthorne
+
+
+[ITEMDEF 025FA]
+DEFNAME=i_pet_meer_captain
+NAME=Meer Captain
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Meer Captain
+
+
+[ITEMDEF 025FB]
+DEFNAME=i_pet_dawn
+NAME=Dawn
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dawn
+
+
+[ITEMDEF 025FC]
+DEFNAME=i_pet_juka_lord
+NAME=Juka Lord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Juka Lord
+
+
+[ITEMDEF 02602]
+DEFNAME=i_pet_solen_queen
+NAME=Solen Queen
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Solen QUeen
+
+
+[ITEMDEF 02603]
+DEFNAME=i_pet_solen_warrior
+NAME=Solen Warrior
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Solen Warrior
+
+
+[ITEMDEF 02604]
+DEFNAME=i_pet_solen_worker
+NAME=Solen Worker
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Solen Worker
+
+
+[ITEMDEF 02605]
+DEFNAME=i_pet_arcane_daemon
+NAME=Arcane Daemon
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Arcane Daemon
+
+
+[ITEMDEF 02606]
+DEFNAME=i_pet_betrayer
+NAME=Betrayer
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Betrayer
+
+
+[ITEMDEF 02607]
+DEFNAME=i_pet_bogling
+NAME=Bogling
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Bogling
+
+
+[ITEMDEF 02608]
+DEFNAME=i_pet_bog_thing
+NAME=Bog Thing
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Bog Thing
+
+
+[ITEMDEF 02609]
+DEFNAME=i_pet_chaos_daemon
+NAME=Chaos Daemon
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Chaos Daemon
+
+
+[ITEMDEF 0260A]
+DEFNAME=i_pet_chariot
+NAME=Chariot
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Chariot
+
+
+[ITEMDEF 0260B]
+DEFNAME=i_pet_exodus_minion
+NAME=Exodus Minion
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Exodus Minion
+
+
+[ITEMDEF i_pet_exodus_minion_lord]
+DEFNAME=i_pet_exodus_minion_lord
+NAME=Exodus Minion Lord
+ID=i_pet_exodus_minion
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Exodus Minion Lord
+
+
+[ITEMDEF 0260C]
+DEFNAME=i_pet_exodus_overseer
+NAME=Exodus Overseer
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Exodus Overseer
+
+
+[ITEMDEF 0260D]
+DEFNAME=i_pet_doppleganger
+NAME=Doppleganger
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Doppleganger
+
+
+[ITEMDEF 0260E]
+DEFNAME=i_pet_moloch
+NAME=Moloch
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Moloch (Four-armed Daemon)
+
+
+[ITEMDEF 0260F]
+DEFNAME=i_pet_giant_beetle
+NAME=Giant Beetle
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Giant Beetle
+
+
+[ITEMDEF 02610]
+DEFNAME=i_pet_golem
+NAME=Golem
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Golem
+
+
+[ITEMDEF 02611]
+DEFNAME=i_pet_horde_daemon
+NAME=Horde Daemon
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Horde Daemon
+
+
+[ITEMDEF 02612]
+DEFNAME=i_pet_juggernaut
+NAME=Juggernaut
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Juggernaut
+
+
+[ITEMDEF 02613]
+DEFNAME=i_pet_plague_beast
+NAME=Plague Beast
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Plague Beast
+
+
+[ITEMDEF 02614]
+DEFNAME=i_pet_quagmire
+NAME=Quagmire
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Quagmire
+
+
+[ITEMDEF 02615]
+DEFNAME=i_pet_ridgeback
+NAME=Ridgeback
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ridgeback
+
+
+[ITEMDEF 02616]
+DEFNAME=i_pet_sand_vortex
+NAME=Sand Vortex
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Sadn Vortex
+
+
+[ITEMDEF 02617]
+DEFNAME=i_pet_skeletal_mount
+NAME=Skeletal Mount
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skeletal Mount
+
+
+[ITEMDEF 02618]
+DEFNAME=i_pet_sphinx
+NAME=Sphinx
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Sphinx
+
+
+[ITEMDEF 02619]
+DEFNAME=i_pet_swamp_dragon
+NAME=Swamp Dragon
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Swamp Dragon
+
+
+[ITEMDEF 0261A]
+DEFNAME=i_pet_gazer_larva
+NAME=Gazer Larva
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gazer Larva
+
+
+[ITEMDEF 0261B]
+DEFNAME=i_pet_plague_beast_lord
+NAME=Plague Beast Lord
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Plague Beast Lord
+
+
+[ITEMDEF 0261C]
+DEFNAME=i_pet_meer_mage
+NAME=Meer Mage
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Meer Mage
+
+
+[ITEMDEF 0261D]
+DEFNAME=i_pet_meer_warrior
+NAME=Meer Warrior
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Meer Warrior
+
+
+[ITEMDEF 0261E]
+DEFNAME=i_pet_juka_mage
+NAME=Juka Mage
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Juka Mage
+
+
+[ITEMDEF 0261F]
+DEFNAME=i_pet_juka_warrior
+NAME=Juka Warrior
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Juka Warrior
+
+
+//////////////////
+//Age Of Shadows//
+//////////////////
+
+
+[ITEMDEF 02632]
+DEFNAME=i_pet_dark_father
+NAME=Dark Father
+TYPE=T_FIGURINE
+TDATA3=c_dark_father
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dark Father
+
+
+[ITEMDEF 0262F]
+DEFNAME=i_pet_flesh_renderer
+NAME=Flesh Renderer
+TYPE=T_FIGURINE
+TDATA3=c_flesh_renderer
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Flesh Renderer
+
+
+[ITEMDEF 0262D]
+DEFNAME=i_pet_darknight_creeper
+NAME=Darknight Creeper
+TYPE=T_FIGURINE
+TDATA3=c_darknight_creeper
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Darknight Creeper
+
+
+[ITEMDEF 0262B]
+DEFNAME=i_pet_shadow_knight
+NAME=Shadow Knight
+TYPE=T_FIGURINE
+TDATA3=c_shadow_knight
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Shadow Knight
+
+
+[ITEMDEF 02626]
+DEFNAME=i_pet_impaler
+NAME=Impaler
+TYPE=T_FIGURINE
+TDATA3=c_impaler
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Impaler
+
+
+[ITEMDEF 0262A]
+DEFNAME=i_pet_wailing_banshee
+NAME=Wailing Banshee
+TYPE=T_FIGURINE
+TDATA3=c_wailing_banshee
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Wailing Banshee
+
+
+[ITEMDEF 02631]
+DEFNAME=i_pet_vampire_bat
+NAME=Vampire Bat
+TYPE=T_FIGURINE
+TDATA3=c_vampire_bat
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Vampire Bat
+
+
+[ITEMDEF 02621]
+DEFNAME=i_pet_treefellow
+NAME=Treefellow
+TYPE=T_FIGURINE
+TDATA3=c_treefellow
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Treefellow
+
+
+[ITEMDEF 02622]
+DEFNAME=i_pet_skittering_hopper
+NAME=Skittering Hopper
+TYPE=T_FIGURINE
+TDATA3=c_skittering_hopper
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Skittering Hopper
+
+
+[ITEMDEF 0262E]
+DEFNAME=i_pet_ravager
+NAME=Ravager
+TYPE=T_FIGURINE
+TDATA3=c_ravager
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ravager
+
+
+[ITEMDEF 02629]
+DEFNAME=i_pet_patchwork_skeleton
+NAME=Patchwork Skeleton
+TYPE=T_FIGURINE
+TDATA3=c_patchwork_skeleton
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Patchwork Skeleton
+
+
+[ITEMDEF 02633]
+DEFNAME=i_pet_mound_maggots
+NAME=Mound of Maggots
+TYPE=T_FIGURINE
+TDATA3=c_mound_maggots
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Mound of Maggots
+
+
+[ITEMDEF 02625]
+DEFNAME=i_pet_gore_fiend
+NAME=Gore Fiend
+TYPE=T_FIGURINE
+TDATA3=c_gore_fiend
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gore Fiend
+
+
+[ITEMDEF 02630]
+DEFNAME=i_pet_wanderer_void
+NAME=wanderer of the void
+TYPE=T_FIGURINE
+TDATA3=c_wanderer_void
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Wanderer of the Void
+
+
+[ITEMDEF 02624]
+DEFNAME=i_pet_flesh_golem
+NAME=Flesh Golem
+TYPE=T_FIGURINE
+TDATA3=c_flesh_golem
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Flesh Golem
+
+
+[ITEMDEF 02623]
+DEFNAME=i_pet_devourer_souls
+NAME=devourer of souls
+TYPE=T_FIGURINE
+TDATA3=c_devourer_souls
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Devourer of Souls
+
+
+[ITEMDEF 02628]
+DEFNAME=i_pet_bone_daemon
+NAME=Bone Daemon
+TYPE=T_FIGURINE
+TDATA3=c_bone_daemon
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Bone Daemon
+
+
+[ITEMDEF 0262C]
+DEFNAME=i_pet_abyssmal_horror
+NAME=Abyssmal Horror
+TYPE=T_FIGURINE
+TDATA3=c_abyssmal_horror
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Abyssmal Horror
+
+
+[ITEMDEF 02620]
+DEFNAME=i_pet_crystal_elemental
+NAME=Crystal Elemental
+TYPE=T_FIGURINE
+TDATA3=c_crystal_elemental
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Crystal Elemental
+
+
+[ITEMDEF 02627]
+DEFNAME=i_pet_gibberling
+NAME=Gibberling
+TYPE=T_FIGURINE
+TDATA3=c_gibberling
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gibberling
+
+
+//////////////////
+//Samurai Empire//
+//////////////////
+
+
+[ITEMDEF 0281C]
+DEFNAME=i_pet_fire_beetle
+NAME=Fire Beetle
+TYPE=T_FIGURINE
+TDATA3=c_fire_beetle
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Fire Beetle
+
+
+[ITEMDEF 0276a]
+DEFNAME=i_pet_hiryu
+NAME=Hiryu
+TYPE=T_FIGURINE
+TDATA3=c_hiryu
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Hiryu
+
+
+[ITEMDEF i_pet_lesser_hiryu]
+DEFNAME=i_pet_lesser_hiryu
+NAME=Lesser Hiryu
+ID=i_pet_hiryu
+TYPE=T_FIGURINE
+TDATA3=c_lesser_hiryu
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Lesser Hiryu
+
+
+[ITEMDEF 0276F]
+DEFNAME=i_pet_rune_beetle
+NAME=Rune Beetle
+TYPE=T_FIGURINE
+TDATA3=c_rune_beetle
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rune Beetle
+
+
+[ITEMDEF 0281B]
+DEFNAME=i_pet_yomotsu_warrior
+NAME=Yomotsu Warrior
+TYPE=T_FIGURINE
+TDATA3=c_yomotsu_warrior
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Yomotsu Warrior
+
+
+[ITEMDEF 02773]
+DEFNAME=i_pet_yomotsu_priest
+NAME=Yomotsu Priest
+TYPE=T_FIGURINE
+TDATA3=c_yomotsu_priest
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Yomotsu Priest
+
+
+[ITEMDEF 02772]
+DEFNAME=i_pet_yomotsu_elder
+NAME=Yomotsu Elder
+TYPE=T_FIGURINE
+TDATA3=c_yomotsu_elder
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Yomotsu Elder
+
+
+[ITEMDEF 0276B]
+DEFNAME=i_pet_kappa
+NAME=Kappa
+TYPE=T_FIGURINE
+TDATA3=c_kappa
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Kappa
+
+
+[ITEMDEF 02765]
+DEFNAME=i_pet_deathwatch_beetle
+NAME=Deathwatch Beetle
+TYPE=T_FIGURINE
+TDATA3=c_deathwatch_beetle
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Deathwatch Beetle
+
+
+[ITEMDEF i_pet_deathwatch_beetle_hatchling]
+DEFNAME=i_pet_deathwatch_beetle_hatchling
+NAME=Deathwatch Beetle
+ID=i_pet_deathwatch_beetle
+TYPE=T_FIGURINE
+TDATA3=c_deathwatch_beetle_hatchling
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Deathwatch Beetle Hatchling
+
+
+[ITEMDEF 02763]
+DEFNAME=i_pet_bake_kitsune
+NAME=Bake Kitsune
+TYPE=T_FIGURINE
+TDATA3=c_bake_kitsune
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Bake Kitsune
+
+
+[ITEMDEF 02764]
+DEFNAME=i_pet_crane
+NAME=Crane
+TYPE=T_FIGURINE
+TDATA3=c_crane
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Crane
+
+
+[ITEMDEF 02767]
+DEFNAME=i_pet_fan_dancer
+NAME=Fan Dancer
+TYPE=T_FIGURINE
+TDATA3=c_fan_dancer
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Fan Dancer
+
+
+[ITEMDEF 02768]
+DEFNAME=i_pet_gaman
+NAME=Gaman
+TYPE=T_FIGURINE
+TDATA3=c_gaman
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Gaman
+
+
+[ITEMDEF 02771]
+DEFNAME=i_pet_yamandon
+NAME=Yamandon
+TYPE=T_FIGURINE
+TDATA3=c_yamandon
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Yamandon
+
+
+[ITEMDEF 02770]
+DEFNAME=i_pet_tsuki_wolf
+NAME=Tsuki Wolf
+TYPE=T_FIGURINE
+TDATA3=c_tsuki_wolf
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Tsuki Wolf
+
+
+[ITEMDEF 0276E]
+DEFNAME=i_pet_revenant_lion
+NAME=Revenant Lion
+TYPE=T_FIGURINE
+TDATA3=c_revenant_lion
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Revenant Lion
+
+
+[ITEMDEF 02766]
+DEFNAME=i_pet_rai_ju
+NAME=Rai-Ju
+TYPE=T_FIGURINE
+TDATA3=c_rai_ju
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Rai-Ju
+
+
+[ITEMDEF 0276C]
+DEFNAME=i_pet_lady_of_snow
+NAME=Lady of the Snow
+TYPE=T_FIGURINE
+TDATA3=c_lady_of_snow
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Lady of the Snow
+
+
+[ITEMDEF 02769]
+DEFNAME=i_pet_kaze_kemono
+NAME=Kaze Kemono
+TYPE=T_FIGURINE
+TDATA3=c_kaze_kemono
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Kaze Kemono
+
+
+[ITEMDEF 0276D]
+DEFNAME=i_pet_oni
+NAME=Oni
+TYPE=T_FIGURINE
+TDATA3=c_oni
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Oni
+
+
+////////////////////
+//Mondain's Legacy//
+////////////////////
+
+
+[ITEMDEF 02D82]
+DEFNAME=i_pet_chief_paroxysmus
+NAME=Chief Paroxysmus
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Chief Paroxysmus
+
+
+[ITEMDEF 02D83]
+DEFNAME=i_pet_dread_horn
+NAME=Dread Horn
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Dread Horn
+
+
+[ITEMDEF 02D84]
+DEFNAME=i_pet_lady_melisande
+NAME=Lady Melisande
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Lady Melisande
+
+
+[ITEMDEF 02D85]
+DEFNAME=i_pet_monstrous_interred_grizzle
+NAME=Monstrous Interred Grizzle
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Monstrous Interred Grizzle
+
+
+[ITEMDEF 02D86]
+DEFNAME=i_pet_travesty
+NAME=Travesty
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Travesty (Don't use)
+
+
+[ITEMDEF 02D87]
+DEFNAME=i_pet_shimmering_effusion
+NAME=Shimmering Effusion
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Shimmering Effusion
+
+
+[ITEMDEF 0]
+DEFNAME=i_pet_tormented_minotaur
+NAME=Tormented Minotaur
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Tormented Minotaur
+
+
+[ITEMDEF 02D89]
+DEFNAME=i_pet_minotaur
+NAME=Minotaur
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Minotaur
+
+
+[ITEMDEF 02D8A]
+DEFNAME=i_pet_changeling
+NAME=Changeling
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Changeling
+
+
+[ITEMDEF 02D8B]
+DEFNAME=i_pet_hydra
+NAME=Hydra
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Hydra
+
+
+[ITEMDEF 02D8C]
+DEFNAME=i_pet_insane_dryad
+NAME=Insane Dryad
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Insane Dryad
+
+
+[ITEMDEF 02D8D]
+DEFNAME=i_pet_troglodyte
+NAME=Troglodyte
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Troglodyte
+
+
+[ITEMDEF 02D8E]
+DEFNAME=i_pet_thorn_bat
+NAME=Thorn Bat
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Thorn Bat (Don't use)
+
+
+[ITEMDEF 02D8F]
+DEFNAME=i_pet_bulbous_putrifaction
+NAME=Bulbous Putrifaction
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Bulbous Putrifaction (Don't use)
+
+
+[ITEMDEF 02D90]
+DEFNAME=i_pet_enslaved_satyr
+NAME=Enslaved Satyr
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Enslaved Satyr
+
+
+[ITEMDEF 02D91]
+DEFNAME=i_pet_interred_grizzle
+NAME=Interred Grizzle
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Interred Grizzle (Don't use)
+
+
+[ITEMDEF 02D92]
+DEFNAME=i_pet_fetid_essence
+NAME=Fetid Essence
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Fetid Essence
+
+
+[ITEMDEF 02D93]
+DEFNAME=i_pet_mantra_effervescence
+NAME=Mantra Effervescence
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Mantra Effervescence
+
+
+[ITEMDEF 02D94]
+DEFNAME=i_pet_corporeal_brume
+NAME=Corporeal Brume
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Corporeal Brume
+
+
+[ITEMDEF 02D95]
+DEFNAME=i_pet_reptalon
+NAME=Reptalon
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Reptalon
+
+
+[ITEMDEF 02D96]
+DEFNAME=i_pet_cu_sidhe
+NAME=Cu Sidhe
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Cu Sidhe
+
+
+[ITEMDEF 02D97]
+DEFNAME=i_pet_squirrel
+NAME=Squirrel
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Squirrel
+
+
+[ITEMDEF 02D98]
+DEFNAME=i_pet_ferret
+NAME=Ferret
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Ferret
+
+
+[ITEMDEF 02D99]
+DEFNAME=i_pet_minotaur_scout
+NAME=Minotaur Scout
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Minotaur Scout
+
+
+[ITEMDEF 02D9A]
+DEFNAME=i_pet_armored_minotaur
+NAME=Armored Minotaur
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Armored Minotaur
+
+
+[ITEMDEF 02D9B]
+DEFNAME=i_pet_parrot
+NAME=Parrot
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Parrot
+
+
+[ITEMDEF 02D9C]
+DEFNAME=i_pet_charger
+NAME=Charger
+TYPE=T_FIGURINE
+TDATA3=
+
+CATEGORY=Miscellaneous
+SUBSECTION=Character Icons
+DESCRIPTION=Charger
+
+
+[EOF]

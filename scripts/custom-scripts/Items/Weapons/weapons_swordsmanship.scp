@@ -1,0 +1,113 @@
+[ITEMDEF i_murasame]
+DEFNAME=i_murasame
+NAME=Murasame
+ID=i_katana
+TYPE=t_weapon_sword
+DAM=14,16
+SPEED=50
+RANGE=2
+SKILL=Swordsmanship
+TWOHANDS=Y
+REQSTR=55
+WEIGHT=7.0
+SKILLMAKE=Blacksmithing 95.0
+RESOURCES=14 i_ingot_iron
+VALUE=2500
+
+CATEGORY=Provisions - Weapons
+SUBSECTION=Elite Weapons
+DESCRIPTION=Murasame
+
+ON=@CREATE
+ COLOR=
+ HITPOINTS={50 80}
+
+
+[ITEMDEF i_masamune]
+DEFNAME=i_masamune
+NAME=Masamune
+ID=i_katana
+TYPE=t_weapon_sword
+DAM=16,20
+SPEED=50
+RANGE=1
+SKILL=Swordsmanship
+TWOHANDS=Y
+REQSTR=65
+WEIGHT=8.0
+SKILLMAKE=Blacksmithing 100.0
+RESOURCES=16 i_ingot_iron
+VALUE=3000
+
+CATEGORY=Provisions - Weapons
+SUBSECTION=Elite Weapons
+DESCRIPTION=Masamune
+
+ON=@CREATE
+ COLOR=
+ HITPOINTS={75 100}
+
+
+[ITEMDEF i_masamune_ancient]
+DEFNAME=i_masamune_ancient
+NAME=Ancient Masamune
+ID=i_no_daichi
+TYPE=t_weapon_sword
+DAM=20,24
+SPEED=50
+RANGE=2
+SKILL=Swordsmanship
+TWOHANDS=Y
+REQSTR=80
+WEIGHT=5.0
+SKILLMAKE=Blacksmithing 100.0, t_ancient_forge
+RESOURCES=16 i_ingot_iron, 4 i_ingot_mytheril, 2 i_ingot_gold, 2 i_ingot_silver
+VALUE=25000
+
+CATEGORY=Provisions - Weapons
+SUBSECTION=Elite Weapons
+DESCRIPTION=Ancient Masamune
+
+ON=@CREATE
+ COLOR=
+ HITPOINTS={175 200}
+
+
+//Optimized By Khaotic Solitaire
+//Jerridavoyles
+[ITEMDEF i_heavens_fury]
+DEFNAME=i_heavens_fury
+ID=i_paladin_sword
+NAME=Heaven's Fury
+TYPE=t_weapon_sword
+DAM=20,30
+WEIGHT=5.0
+SPEED=45
+REQSTR=45
+DYE=0
+VALUE=120000
+
+CATEGORY=Magic Items
+SUBSECTION=Bladed Weapons
+DESCRIPTION=Heaven's Fury
+
+ON=@CREATE
+ COLOR=066
+ HITPOINTS=255
+ ATTR=attr_magic
+ MOREY=80.0
+
+ON=@EQUIP
+ IF (<SRC.KARMA> >= 7000)
+  SRC.TACTICS += 15.0
+  SRC.SWORDSMANSHIP += 15.0
+  RETURN 0
+ ELSE
+  SRC.SMSG You are not worthy enough to use this weapon.
+  RETURN 1
+ ENDIF
+
+ON=@UNEQUIP
+ SRC.TACTICS -= 15.0
+ SRC.SWORDSMANSHIP -= 15.0
+ RETURN 0

@@ -1,0 +1,223 @@
+[ITEMDEF i_pepsi]
+DEFNAME=i_pepsi
+NAME=Pepsi
+ID=i_bottle
+TYPE=t_normal
+RESOURCES=
+WEIGHT=0.5
+VALUE=15
+
+CATEGORY=ES Fun Items
+SUBSECTION=Pepsi Items
+DESCRIPTION=Pepsi
+
+ON=@Create
+ COLOR=000c1
+
+ON=@DCLICK
+ SRC.SAY Aah, a refreshing beverage!
+ SOUND 0030
+ REMOVE
+ RETURN 1
+
+[ITEMDEF i_pepsi_machine]
+DEFNAME=i_pepsi_machine
+NAME=Pepsi Machine
+ID=I_grave_stone_4
+TYPE=t_normal
+RESOURCES=
+WEIGHT=500.0
+VALUE=55000
+
+CATEGORY=ES Fun Items
+SUBSECTION=Pepsi Items
+DESCRIPTION=Pepsi Vending Machine
+
+ON=@Create
+ COLOR=000c1
+ ATTR=attr_static
+
+ON=@TIMER
+ RETURN 1
+
+ON=@DCLICK
+ IF <SRC.RESTEST 15 i_gold>
+  SERV.NEWITEM={i_pepsi}
+  NEW.BOUNCE <SRC.UID>
+  SRC.CONSUME=15 i_gold
+  SRC.MSG 15 gold was removed from your person.
+  SOUND 0F7
+ ELSE
+  MSG You lack 15 gold pieces to purchase a pepsi. Try Coke, cheapskate.
+ ENDIF
+ RETURN 1
+
+
+
+
+[comment ITEMDEF i_pepsi]
+DEFNAME=i_pepsi
+NAME=Pepsi
+ID=I_bottle
+RESOURCES=8 i_weed
+WEIGHT=1
+TYPE=T_normal
+VALUE=15
+
+ON=@Create
+COLOR=009a4
+
+ON=@DCLICK
+IF  <SRC.RESTEST i_pepsi>
+    SRC.SAY=Aah, a refreshing beverage!
+    SOUND=0030
+    SRC.CONSUME=i_pepsi
+ELSE
+    SRC.MESSAGE=This needs to be in your backpack for you to drink it. 
+ENDIF
+RETURN=1
+
+[comment ITEMDEF i_pepsi_machine]
+DEFNAME=i_pepsi_machine
+NAME=Pepsi Machine
+ID=I_grave_stone_4
+RESOURCES=1008 i_weed
+WEIGHT=5000
+TYPE=T_pepsi_machine
+VALUE=55000
+
+ON=@Create
+COLOR=009a4
+
+RETURN=1
+
+[comment TYPEDEF T_pepsi_MACHINE]
+// Some other trigger.
+// Vending machine.
+
+ON=@DCLICK
+IF <SRC.RESTEST 15 i_gold>
+    SRC.NEWITEM={i_pepsi}
+    SRC.ACT.BOUNCE // put it in your pack.
+    SRC.CONSUME=15 i_gold
+    SRC.MESSAGE That will be 15 Gold for the fine Pepsi, Thank Thee.
+    SOUND 0F7
+ELSE
+    MESSAGE You lack 15 Gold to pay for the Pepsi, try Coke cheap ass.
+ENDIF
+RETURN 1
+
+
+//Spammer chair script. Place in public area. Acts like a player.
+//Speech fires when sat on, or dclicked, or just when left alone.
+//
+[FUNCTION SPAMMER_CHAIR_TALK]
+IF !(0<SRC.TAG.SPAMMER_CHAIR_TALK>)
+    DORAND 38
+    SAY Quite a lot of weather we're having, eh?
+    SAY Beats me how they never seem to run out of orcs.
+    EMOTE Mutters to self
+    SAY Bowers charge too much for elvens. Im gonna GM it just so i dont have to pay nemore
+    SAY Anyone up for poetry?
+    SAY Ur z0 uB3r 1337 d00d!
+    SAY CASTLE DEED 1 MIL GP!
+    SAY I just recalled in from Shame, and BOY ARE MY RUNES TIRED!
+    SAY I hate how everyone has money now. If everyone else has money its worthless :/
+    SAY d00d i gust 0pned daT ore 3l3, h3 wuz liek "D00D!!!1!
+    SAY Wonder when theyre gonna fix the bugs with PVP
+    SAY How much drow would a drow elf drow if a drow elf could elf drow?
+    SAY Man I need rares. Anyone got some for sale?
+    SAY Anyone got some money or magic weaps I can have?
+    SAY AFK a sec
+    SAY Is anyone a GM smith yet? My armor is beat up.
+    SAY Hey I found this great shard. Its really buggy so my char has like 80 castles set up. It roxx0r
+    SAY brb
+    SAY Hey are there any new craftables?
+    SAY Woot ENTERPRISE is on!
+    SAY Yo homie! My g-dog!
+    SAY What time is it where you are?
+    SAY KEWL
+    SAY Nup
+    SAY nope
+    SAY yeah
+    SAY mm-hm
+    SAY keep talkin, i'm listening
+    SAY pizza man! brb
+    SAY i so laggy!
+    SAY laaaaaaaaag
+    SAY im soo bored ... we need an event ...
+    SAY Well now, arent we all such an exciting bunch?
+    SAY What do you mean?!
+    SAY bite me
+    SAY I need a GM carp for my house.
+    SAY Of course i'm really talking
+    SAY Sometimes it seems like I'm saying random things. I just have hearall on i)
+    SAY Sometimes it seems like I'm saying random things. I just have hearall on i)
+    ENDRAND
+ELSE
+    SAY Faulty Script. If this continues, please contact staff.
+ENDIF
+RETURN=1
+
+[FUNCTION SPAMMER_CHAIR_TOUCH]
+IF !(0<SRC.TAG.SPAMMER_CHAIR>)
+    DORAND 6
+    SRC.ACT.SAY You had better not chip the finish bud ...
+    SRC.ACT.SAY Stop touching me!
+    SRC.ACT.SAY *TAP*
+    SRC.ACT.EMOTE raspberry <SRC.NAME>
+    SRC.ACT.SAY Mom! <SRC.NAME> won't stop poking me!
+    SRC.ACT.SAY If you don't quit it I'm calling a GM
+    ENDRAND
+ELSE
+    SRC.ACT.SAY Faulty script. If this continues please contact staff.
+ENDIF
+SRC.TAG.SPAMMER_CHAIR_TOUCH=0
+RETURN=1
+
+//
+[FUNCTION SPAMMER_CHAIR_SIT]
+IF !(0<SRC.TAG.SPAMMER_CHAIR_SIT>)
+    DORAND 30
+    SRC.ACT.SAY OOPH! Get off, mate!
+    SRC.ACT.SAY Woah there, pardner. Ease off ol' IBS a tad!
+    SRC.ACT.EMOTE Groaaan!
+    SRC.ACT.EMOTE Creeeak!
+    SRC.ACT.EMOTE Pthbbbt
+    SRC.ACT.EMOTE OUCH! <SRC.NAME> bit me!
+    SRC.ACT.SAY STEP OFF THE IBS THIS INSTANT! I'm talking to YOU, <SRC.NAME>!
+    SRC.ACT.SAY This load weighs <EVAL{332 451}> pounds, without equipment.
+    SRC.ACT.SAY You shall be in House Hufflepuff! Now go eat a muffin or something.
+    SRC.ACT.SAY BLAST! Why does everyone stand on ME?!
+    ENDRAND
+ELSE
+    SRC.ACT.SAY Faulty script. If this continues please contact staff.
+ENDIF
+SRC.TAG.SPAMMER_CHAIR_TOUCH=0
+RETURN=1
+
+//
+[ITEMDEF i_spammer]//seat that says things. meant to be near bank.
+DEFNAME=i_bank_sitter
+NAME=Inane Bank Sitter
+ID=i_bench_sandstone
+TYPE=t_normal
+
+ON=@CREATE
+TIMER=10
+RETURN=1
+
+ON=@STEP
+SRC.SPAMMER_CHAIR_SIT
+RETURN=1
+
+ON=@DCLICK
+SRC.SPAMMER_CHAIR_TOUCH
+RETURN=1
+
+ON=@TIMER
+SPAMMER_CHAIR_TALK
+TIMER=12
+RETURN=1
+ 
+[EOF]

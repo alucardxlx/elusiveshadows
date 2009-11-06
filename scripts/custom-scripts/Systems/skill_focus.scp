@@ -1,0 +1,177 @@
+//Scripted by Skul
+//01/05/2009
+//Needs modding to the new system.
+[comment credits]
+This script will allow players to utilize the focus skill.
+Set to OSI standards, enjoy!
+
+Installation:
+-Add the event e_focus to all your players.
+
+Scripted by Skul,
+    www.marchadium.ca
+
+[defname defnames_focus]
+focus_use_hp        0    //boolean 1 = yes, 0 = no
+focus_use_mana        1    //boolean --etc--
+focus_use_stam        1    //boolean --etc--
+
+focus_regen_hp        15    //amount to regen in %
+focus_regen_mana    5    // --etc--
+focus_regen_stam    10    // --etc--
+
+focus_regen_wait    20    //time in seconds to restart focus regen (after being attacked)
+focus_regen_time    10    //time is seconds to regen when regen starts (after no combat)
+
+[events e_focus]
+on=@login
+if (<def0.focus_use_hp>)
+    if !(<findid.i_memory_regen_hp>)
+        serv.newitem=i_memory_regen_hp
+        equip=<new.uid>
+    endif
+endif
+if (<def0.focus_use_mana>)
+    if !(<findid.i_memory_regen_mana>)
+        serv.newitem=i_memory_regen_mana
+        equip=<new.uid>
+    endif
+endif
+if (<def0.focus_use_stam>)
+    if !(<findid.i_memory_regen_stam>)
+        serv.newitem=i_memory_regen_stam
+        equip=<new.uid>
+    endif
+endif
+
+on=@skillstart
+if (<def0.focus_use_hp>)
+    if !(<findid.i_memory_regen_hp>)
+        serv.newitem=i_memory_regen_hp
+        equip=<new.uid>
+    endif
+    if (<findid.i_memory_regen_hp.timer> < 0)
+        findid.i_memory_regen_hp.timer=<def0.focus_regen_time>
+    endif
+endif
+if (<def0.focus_use_mana>)
+    if !(<findid.i_memory_regen_mana>)
+        serv.newitem=i_memory_regen_mana
+        equip=<new.uid>
+    endif
+    if (<findid.i_memory_regen_mana.timer> < 0)
+        findid.i_memory_regen_mana.timer=<def0.focus_regen_time>
+    endif
+endif
+if (<def0.focus_use_stam>)
+    if !(<findid.i_memory_regen_stam>)
+        serv.newitem=i_memory_regen_stam
+        equip=<new.uid>
+    endif
+    if (<findid.i_memory_regen_stam.timer> < 0)
+        findid.i_memory_regen_stam.timer=<def0.focus_regen_time>
+    endif
+endif
+
+on=@gethit
+findid.i_memory_regen_hp.timer=<def0.focus_regen_wait>
+findid.i_memory_regen_mana.timer=<def0.focus_regen_wait>
+findid.i_memory_regen_stam.timer=<def0.focus_regen_wait>
+
+on=@spelleffect
+if ( <serv.spell.<argn1>.flags> & spellflag_harm )
+    if !( <flags> & statf_reflection )
+        findid.i_memory_regen_hp.timer=<def0.focus_regen_wait>
+        findid.i_memory_regen_mana.timer=<def0.focus_regen_wait>
+        findid.i_memory_regen_stam.timer=<def0.focus_regen_wait>
+    endif
+endif
+
+[itemdef i_memory_regen_hp]
+defname=i_memory_regen_hp
+name=Focus HP
+id=i_memory
+type=t_eq_script
+
+on=@create
+attr=attr_move_never|attr_invis
+
+on=@equip
+timer=<def0.focus_regen_time>
+
+on=@timer
+if !( <topobj.flags> & statf_dead )
+    if (<topobj.hitpoints> < <topobj.maxhits>)
+        topobj.hitpoints += <eval 5 +<eval <eval <topobj.focus> *<def0.focus_regen_hp>> /<topobj.skillclass.focus>>>
+        if (<topobj.hitpoints> > <topobj.maxhits>)
+            topobj.hitpoints=<topobj.maxhits>
+        endif
+        topobj.skillgain focus <eval <topobj.focus> /10>
+    endif
+endif
+if (<def0.focus_use_hp>)
+    timer=<def0.focus_regen_time>
+else
+    remove
+endif
+return 1
+
+[itemdef i_memory_regen_mana]
+defname=i_memory_regen_mana
+name=Focus Mana
+id=i_memory
+type=t_eq_script
+
+on=@create
+attr=attr_move_never|attr_invis
+
+on=@equip
+timer=<def0.focus_regen_time>
+
+on=@timer
+if !( <topobj.flags> & statf_dead )
+    if (<topobj.mana> < <topobj.maxmana>)
+        topobj.mana += <eval 5 +<eval <eval <topobj.focus> *<def0.focus_regen_mana>> /<topobj.skillclass.focus>>>
+        if (<topobj.mana> > <topobj.maxmana>)
+            topobj.mana=<topobj.maxmana>
+        endif
+        topobj.skillgain focus <eval <topobj.focus> /10>
+    endif
+endif
+if (<def0.focus_use_mana>)
+    timer=<def0.focus_regen_time>
+else
+    remove
+endif
+return 1
+
+[itemdef i_memory_regen_stam]
+defname=i_memory_regen_stam
+name=Focus Stam
+id=i_memory
+type=t_eq_script
+
+on=@create
+attr=attr_move_never|attr_invis
+
+on=@equip
+timer=<def0.focus_regen_time>
+
+on=@timer
+if !( <topobj.flags> & statf_dead )
+    if (<topobj.stamina> < <topobj.maxstam>)
+        topobj.stamina += <eval 5 +<eval <eval <topobj.focus> *<def0.focus_regen_stam>> /<topobj.skillclass.focus>>>
+        if (<topobj.stamina> > <topobj.maxstam>)
+            topobj.stamina=<topobj.maxstam>
+        endif
+        topobj.skillgain focus <eval <topobj.focus> /10>
+    endif
+endif
+if (<def0.focus_use_stam>)
+    timer=<def0.focus_regen_time>
+else
+    remove
+endif
+return 1
+
+[eof]

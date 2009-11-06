@@ -1,0 +1,521 @@
+//////////////////////////////////////////////////////////////////////////////////// 
+//Graphic Moongate Sytem v1.4
+//Scripted by Mordaunt 
+//Created for First Sundering: The Legends of Albion 
+// 
+//Covers ALL OSI "Travel" Moongate positions 
+// 
+//Credit to -Ax- who's mapdlg equations were used to plot the moongate on the gump 
+//////////////////////////////////////////////////////////////////////////////////// 
+//PLEASE LEAVE HEADER INTACT! 
+////////////////////////////////////////////////////////////////////////////////////
+//Edited by Admin Khaotic Solitaire.
+[COMMENT Instructions] 
+Set up: 
+This script will enable you to place ALL moongates on every plane of the map using the function 
+.makegates 
+
+
+!!!BY DEFAULT ALL GATES ARE ON!!! 
+Check the defs before you use the makegates command if you don't want them all! 
+
+To prevent gates being made on any plane(s) you don't want them, set the plane in mapenable to 0 
+Gates may be placed and then deactivated on the gump by switching the gateactive toggle for the plane to 0 
+This enables admins to choose which plains have gates and are active to their liking. 
+
+The make gates function is set under PLEVEL 6, and should not be moved. 
+Repeated use of the function WILL create more gates at the same locations, however, if only "some" planes 
+have gates and you wish to add more later to other planes you may do so by switching th toggle for 
+planes which already have the gates to 0, this will then only create gates in the new areas you want them. 
+
+The menu has a timer of 10 seconds after which it will disappear from screen, player will have to re-ente 
+
+buc's den (fel) & haven_tram (tram) gates are available if set to place these gates are auto active. 
+
+//EDIT FOR GATE PLACEMENT 
+[DEFNAME mapenable] 
+
+trammel 1 //enable/disable placing of gates on this plane 1 = on 0 = off 
+fellucia 0 //enable/disable placing of gates on this plane 1 = on 0 = off 
+ilshenar 1 //enable/disable placing of gates on this plane 1 = on 0 = off 
+malas 1 //enable/disable placing of gates on this plane 1 = on 0 = off 
+tokuno 1 //enable/disable placing of gates on this plane 1 = on 0 = off 
+
+//EDIT FOR GATE ACTIVATION (GUMP) 
+[DEFNAME gateactive] 
+
+trammel_on 1 //activate/deactivate gates on travel gump 1= active 0 = not active 
+fellucia_on 0 //activate/deactivate gates on travel gump 1= active 0 = not active 
+ilshenar_on 1 //activate/deactivate gates on travel gump 1= active 0 = not active 
+malas_on 1 //activate/deactivate gates on travel gump 1= active 0 = not active 
+tokuno_on 1 //activate/deactivate gates on travel gump 1= active 0 = not active 
+
+//EDIT FOR BUC'S DEN/HAVEN GATES 
+[DEFNAME autogate] 
+
+bucs_den_fel 1 //This gate if placed is automatically turned ON 1= place 0= don't place 
+haven_tram 1 //This gate if placed is automatically turned ON 1= place 0= don't place 
+
+//EDIT FOR MENU ON SCREEN TIME 
+[DEFNAME menu_active] 
+
+menu_timer 10 //time in seconds menu remains on screen after stepping into the moongate 
+
+
+[DEFNAME moongate_coord] 
+
+britain_tram 1336,1997,5,0 
+britain_fel 1336,1997,5,1 
+moonglow_tram 4467,1283,5,0 
+moonglow_fel 4467,1283,5,1 
+jhelom_tram 1499,3771,5,0 
+jhelom_fel 1499,3771,5,1 
+yew_tram 771,752,5,0 
+yew_fel 771,752,5,0 
+trinsic_tram 1828,2948,-20,0 
+trinsic_fel 1828,2948,-20,1 
+skara_tram 643,2067,5,0 
+skara_fel 643,2067,5,1 
+magincia_tram 3564,2140,34,0 
+magincia_fel 3564,2140,34,1 
+vesper_tram 2701,692,5,0 
+vesper_fel 2701,692,5,1 
+ish_chaos 1749,236,58,2 
+ish_compassion 1215,467,-13,2 
+ish_honesty 722,1366,-60,2 
+ish_honor 752,724,-27,2 
+ish_humility 281,1016,0,2 
+ish_justice 987,1011,-32,2 
+ish_sacrifice 1183,1287,-30,2 
+ish_spirituality 1525,1341,2,2 
+ish_valor 523,217,-46,2 
+malas_luna 1015,527,-65,3 
+malas_umbra 1997,1386,-85,3 
+tokuno_isamu_jima 1169,998,42,4 
+tokuno_homare_jima 270,628,15,4 
+tokuno_makoto_jima 802,1204,25,4 
+bucs_den_fel 2711,2234,0,0 
+haven_tram 3763,2771,51,0//was 50 not 51 
+
+[function ilshkey_check] 
+if !(<tag0.ilshkey>&<argn1>) 
+tag0.ilshkey &= <argn1> 
+endif 
+
+
+[PLEVEL 6] 
+.makegates 
+
+[FUNCTION makegates] 
+IF (<def.trammel>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.britain_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.moonglow_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.jhelom_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.yew_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.trinsic_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.skara_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.magincia_tram> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.vesper_tram> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+IF (<def.fellucia>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.britain_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.moonglow_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.jhelom_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.yew_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.trinsic_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.skara_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.magincia_fel> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.vesper_fel> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+IF (<def.ilshenar>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_chaos> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_compassion> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_honor> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_honesty> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_humility> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_justice> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_sacrifice> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_spirituality> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.ish_valor> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+IF (<def.malas>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.malas_luna> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.malas_umbra> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+IF (<def.tokuno>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.tokuno_isamu_jima> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.tokuno_homare_jima> 
+NEW.ATTR attr_static|attr_move_never 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.tokuno_makoto_jima> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+IF (<def.haven_tram>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.haven_tram> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+IF (<def.bucs_den_fel>) 
+SERV.NEWITEM i_moongate_ss 
+NEW.P <def.bucs_den_fel> 
+NEW.ATTR attr_static|attr_move_never 
+ENDIF 
+
+[itemdef i_moongate_SS] 
+NAME=moongate 
+ID=i_moongate_blue 
+TYPE=0 
+
+ON=@step 
+IF (<ARGN1>==0) 
+SRC.NEWITEM i_mem_moongate 
+NEW.EQUIP <SRC.UID> 
+RETURN 1 
+ENDIF 
+
+[ITEMDEF i_mem_moongate] 
+ID=i_handr_1 
+NAME=moongate memory 
+TYPE=t_EQ_script 
+LAYER=layer_special 
+
+ON=@CREATE 
+ATTR=attr_decay 
+
+ON=@EQUIP 
+TIMER=<eval <def.menu_timer>> 
+CONT.DIALOG moongatemenu 
+SRC.SOUND=snd_spell_gate_travel 
+
+ON=@TIMER 
+IF <CONT.RESTEST 1 i_mem_moongate> 
+CONT.CONSUME i_mem_moongate 
+RETURN 1 
+ENDIF 
+
+
+ON=@UNEQUIP 
+CONT.DIALOGCLOSE moongatemenu 
+RETURN 1 
+
+[DIALOG moongatemenu] 
+90,90 
+PAGE 0 
+resizepic 0 0 2620 520 470 
+CHECKERTRANS 0 0 525 471 
+dtext 20 10 455// Mordaunt's Moongate system 
+IF (<def.trammel_on>) 
+button 400 100 2117 2118 0 1 1 
+dtext 420 100 455 Felluca//Trammel 
+ENDIF 
+IF (<def.fellucia_on>) 
+button 400 130 2117 2118 0 2 2 
+dtext 420 130 455 Fellucia 
+ENDIF 
+IF (<def.ilshenar_on>) 
+button 400 190 2117 2118 0 3 3 
+dtext 420 190 455 Ilshenar 
+ENDIF 
+IF (<def.malas_on>)// && (<SRC.ACCOUNT.TOTALCONNECTTIME> > 30000)
+button 400 220 2117 2118 0 4 4 
+dtext 420 220 455 Malas 
+ENDIF 
+IF (<def.tokuno_on>) 
+button 400 250 2117 2118 0 5 5 
+dtext 420 250 455 Tokuno Islands 
+ENDIF 
+
+PAGE 1 
+dtext 250 10 455 Moongate Menu: (Felluca)//(Trammel) 
+gumppic 10 29 5528 
+button <EVAL (10+((1336*100)/1337))> <EVAL (10+((1997*100)/1067))> 2117 2118 1 0 6  //brit 
+dtext <EVAL (10+((1336*100)/1337))> <EVAL (((1997*100)/1067)-5)> 80 Britain    
+button <EVAL (10+((4467*100)/1337))> <EVAL (10+((1283*100)/1067))> 2117 2118 1 0 7//Moonglow 
+dtext <EVAL (((4467*100)/1337)-20)> <EVAL (((1283*100)/1067)-5)> 80 Moonglow 
+button <EVAL (10+((1499*100)/1337))> <EVAL (10+((3771*100)/1067))> 2117 2118 1 0 8//Jhelom 
+dtext <EVAL (10+((1499*100)/1337))> <EVAL (((3771*100)/1067)-5)> 80 Jhelom 
+button <EVAL (10+((771*100)/1337))> <EVAL (10+((753*100)/1067))> 2117 2118 1 0 9//Yew 
+dtext <EVAL (10+((771*100)/1337))> <EVAL (((753*100)/1067)-5)> 80 Yew 
+button <EVAL (10+((1828*100)/1337))> <EVAL (10+((2948*100)/1067))> 2117 2118 1 0 10//Trinsic 
+dtext <EVAL (10+((1828*100)/1337))> <EVAL (((2948*100)/1067)-5)> 80 Trinsic 
+button <EVAL (10+((643*100)/1337))> <EVAL (10+((2067*100)/1067))>  2117 2118 1 0 11//Skara Brae 
+dtext <EVAL (10+((643*100)/1337))> <EVAL (20+((2067*100)/1067))> 80 Skara Brae 
+button <EVAL (10+((3564*100)/1337))> <EVAL (10+((2140*100)/1067))> 2117 2118 1 0 12//Magincia 
+dtext <EVAL (10+((3564*100)/1337))> <EVAL (((2140*100)/1067)-5)> 80 Magincia 
+button <EVAL (10+((2702*100)/1337))> <EVAL (10+((692*100)/1067))> 2117 2118 1 0 13//Vesper/Minoc 
+dtext <EVAL (10+((2702*100)/1337))> <EVAL (((692*100)/1067)-5)> 80 Vesper/Minoc 
+IF (<def.haven_tram>) 
+button <EVAL (10+((3763*100)/1337))> <EVAL (((2771*100)/1067))> 2117 2118 1 0 37//haven_tram 
+dtext <EVAL (10+((3763*100)/1337))> <EVAL (((2771*100)/1067)-15)> 80 Occlo//Haven (Occlo) 
+ENDIF 
+IF (<def.bucs_den_fel>) 
+button <EVAL (10+((2711*100)/1337))> <EVAL (((2234*100)/1067))> 2117 2118 1 0 36//Buc's Den 
+dtext <EVAL (10+((2711*100)/1337))> <EVAL (((2234*100)/1067)+15)> 80 Buc's Den 
+ENDIF 
+dtext 20 410 455 You are in <REGION.NAME>. 
+
+
+PAGE 2 
+dtext 250 10 455 Moongate Menu: (Fellucia) 
+gumppic 10 29 5528 
+button <EVAL (10+((1336*100)/1337))> <EVAL (10+((1997*100)/1067))> 2117 2118 1 0 14  //brit 
+dtext <EVAL (10+((1336*100)/1337))> <EVAL (((1997*100)/1067)-5)> 80 Britain    
+button <EVAL (10+((4467*100)/1337))> <EVAL (10+((1283*100)/1067))> 2117 2118 1 0 15//Moonglow 
+dtext <EVAL (((4467*100)/1337)-20)> <EVAL (((1283*100)/1067)-5)> 80 Moonglow 
+button <EVAL (10+((1499*100)/1337))> <EVAL (10+((3771*100)/1067))> 2117 2118 1 0 16//Jhelom 
+dtext <EVAL (10+((1499*100)/1337))> <EVAL (((3771*100)/1067)-5)> 80 Jhelom 
+button <EVAL (10+((771*100)/1337))> <EVAL (10+((753*100)/1067))> 2117 2118 1 0 17//Yew 
+dtext <EVAL (10+((771*100)/1337))> <EVAL (((753*100)/1067)-5)> 80 Yew 
+button <EVAL (10+((1828*100)/1337))> <EVAL (10+((2948*100)/1067))> 2117 2118 1 0 18//Trinsic 
+dtext <EVAL (10+((1828*100)/1337))> <EVAL (((2948*100)/1067)-5)> 80 Trinsic 
+button <EVAL (10+((643*100)/1337))> <EVAL (10+((2067*100)/1067))>  2117 2118 1 0 19//Skara Brae 
+dtext <EVAL (10+((643*100)/1337))> <EVAL (20+((2067*100)/1067))> 80 Skara Brae 
+button <EVAL (10+((3564*100)/1337))> <EVAL (10+((2140*100)/1067))> 2117 2118 1 0 20//Magincia 
+dtext <EVAL (10+((3564*100)/1337))> <EVAL (((2140*100)/1067)-5)> 80 Magincia 
+button <EVAL (10+((2702*100)/1337))> <EVAL (10+((692*100)/1067))> 2117 2118 1 0 21//Vesper/Minoc 
+dtext <EVAL (10+((2702*100)/1337))> <EVAL (((692*100)/1067)-5)> 80 Vesper/Minoc 
+IF (<def.bucs_den_fel>) 
+button <EVAL (10+((2711*100)/1337))> <EVAL (((2234*100)/1067))> 2117 2118 1 0 36//Buc's Den 
+dtext <EVAL (10+((2711*100)/1337))> <EVAL (((2234*100)/1067)+15)> 80 Buc's Den 
+ENDIF 
+dtext 20 410 455  You are in <REGION.NAME>. 
+
+PAGE 3 
+gumppic 80 100 104 
+dtext 250 10 455 Moongate Menu: (Ilshenar) 
+//IF <TAG0.ILSHKEY> & 001 
+BUTTON 261 191 105 105 1 0 22//comp 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 002 
+BUTTON 170 280 106 106 1 0 23//honet 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 004 
+BUTTON 235 130 107 107 1 0 24//honor 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 008 
+BUTTON 111 130 108 108 1 0 25//hum 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 010 
+BUTTON 235 255 109 109 1 0 26//just 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 020 
+BUTTON 85 195 110 110 1 0 27// sac 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 040 
+BUTTON 111 255 111 1111 0 28// spir 
+//ENDIF 
+//IF <TAG0.ILSHKEY> & 080 
+BUTTON 174 105 112 112 1 0 29   //val 
+//ENDIF 
+//IF <TAG0.ILSHKEY> = 0ff 
+BUTTON 190 210 113 113 1 0 30//chaos 
+//ENDIF 
+
+
+PAGE 4 
+dtext 250 10 455 Moongate Menu: (Malas) 
+button 100 200 2117 2118 1 0 31 
+dtext 120 200 80 Luna 
+button 100 230 2117 2118 1 0 32 
+dtext 120 230 80 Umbra 
+
+PAGE 5 
+dtext 250 10 455 Moongate Menu: (Tokuno Islands) 
+button 100 200 2117 2118 1 0 33 
+dtext 120 200 80 Homare-jima 
+button 100 230 2117 2118 1 0 34 
+dtext 120 230 80 Isamu-jima 
+button 100 260 2117 2118 1 0 35 
+dtext 120 260 80 Makoto-jima 
+
+[DIALOG moongatemenu BUTTON] 
+ON=0 
+DIALOGCLOSE moongatemenu 
+SRC.CONSUME i_mem_moongate 
+
+ON=6 
+GO <def.britain_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=7 
+GO <def.moonglow_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=8 
+GO <def.jhelom_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=9 
+GO <def.yew_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=10 
+GO <def.trinsic_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=11 
+GO <def.skara_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=12 
+GO <def.magincia_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=13 
+GO <def.vesper_tram> 
+SRC.CONSUME i_mem_moongate 
+
+ON=14 
+GO <def.britain_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=15 
+GO <def.moonglow_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=16 
+GO <def.jhelom_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=17 
+GO <def.yew_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=18 
+GO <def.trinsic_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=19 
+GO <def.skara_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=20 
+GO <def.magincia_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=21 
+GO <def.vesper_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=22 
+GO <def.ish_compassion> 
+SRC.CONSUME i_mem_moongate 
+
+ON=23 
+GO <def.ish_honesty> 
+SRC.CONSUME i_mem_moongate 
+
+ON=24 
+GO <def.ish_honor> 
+SRC.CONSUME i_mem_moongate 
+
+ON=25 
+GO <def.ish_humility> 
+SRC.CONSUME i_mem_moongate 
+
+ON=26 
+GO <def.ish_justice> 
+SRC.CONSUME i_mem_moongate 
+
+ON=27 
+GO <def.ish_sacrifice> 
+SRC.CONSUME i_mem_moongate 
+
+ON=28 
+GO <def.ish_spirituality> 
+SRC.CONSUME i_mem_moongate 
+
+ON=29 
+GO <def.ish_valor> 
+SRC.CONSUME i_mem_moongate 
+
+ON=30 
+GO <def.ish_chaos> 
+SRC.CONSUME i_mem_moongate 
+
+ON=31 
+GO <def.malas_luna> 
+SRC.CONSUME i_mem_moongate 
+
+ON=32 
+GO <def.malas_umbra> 
+SRC.CONSUME i_mem_moongate 
+
+ON=33 
+GO <def.tokuno_isamu_jima> 
+SRC.CONSUME i_mem_moongate 
+
+ON=34 
+GO <def.tokuno_homare_jima> 
+SRC.CONSUME i_mem_moongate 
+
+ON=35 
+GO <def.tokuno_makato_jima> 
+SRC.CONSUME i_mem_moongate 
+
+ON=36 
+GO <def.bucs_den_fel> 
+SRC.CONSUME i_mem_moongate 
+
+ON=37 
+GO <def.haven_tram> 
+SRC.CONSUME i_mem_moongate 
+
+[EOF]

@@ -1,0 +1,188 @@
+[COMMENT Armor Set List]
+Paladin Armor
+
+
+//45 Armor rating present with entire suit + greaves. +14 Magic Resist with total suit.
+//Use as a quest item, rare drop, or turn in reward.
+[ITEMDEF i_paladin_platemail_chest]
+DEFNAME=i_paladin_platemail_chest
+NAME=Paladin Platemail Breastplate
+ID=i_platemail_chest
+ARMOR=45
+RESOURCES=16 i_ingot_iron
+DYE=0
+VALUE=16000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Chest
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0
+
+[ITEMDEF i_paladin_platemail_arms]
+DEFNAME=i_paladin_platemail_arms
+NAME=Paladin Platemail Arms
+ID=i_platemail_arms
+ARMOR=45
+RESOURCES=8 i_ingot_iron
+DYE=0
+VALUE=8000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Arms
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0
+
+[ITEMDEF i_paladin_platemail_gloves]
+DEFNAME=i_paladin_platemail_gloves
+NAME=Paladin Platemail Gauntlets
+ID=i_platemail_gloves
+ARMOR=45
+RESOURCES=4 i_ingot_iron
+DYE=0
+VALUE=4000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Gauntlets
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0
+
+[ITEMDEF i_paladin_platemail_leggings]
+DEFNAME=i_paladin_platemail_leggings
+NAME=Paladin Platemail Legs
+ID=i_platemail_leggings
+ARMOR=45
+RESOURCES=10 i_ingot_iron
+DYE=0
+VALUE=10000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Leggings
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0
+
+[ITEMDEF i_paladin_platemail_gorget]
+DEFNAME=i_paladin_platemail_gorget
+NAME=Paladin Platemail Gorget
+ID=i_platemail_gorget
+ARMOR=45
+RESOURCES=2 i_ingot_iron
+DYE=0
+VALUE=2000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Gorget
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0
+
+[ITEMDEF i_paladin_platemail_helm]
+DEFNAME=i_paladin_platemail_helm
+NAME=Paladin Platemail Helm
+ID=i_platemail_helm
+ARMOR=45
+RESOURCES=2 i_ingot_iron
+DYE=0
+VALUE=2000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Helm
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0
+
+[ITEMDEF i_paladin_platemail_greaves]
+DEFNAME=i_paladin_platemail_greaves
+NAME=Paladin Platemail Greaves
+ID=i_boots_calf
+TYPE=t_armor
+ARMOR=45
+RESOURCES=4 i_ingot_iron
+DYE=0
+VALUE=4000
+
+CATEGORY=Magic Items
+SUBSECTION=Paladin Platemail
+DESCRIPTION=Paladin Platemail Greaves
+
+ON=@CREATE
+ COLOR=0481
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MAGICRESISTANCE += 2.0
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MAGICRESISTANCE -= 2.0
+ RETURN 0

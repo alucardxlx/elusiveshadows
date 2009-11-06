@@ -1,0 +1,55 @@
+[DEFNAME hues_monsters]
+colors_slimes_all		{ 0899 1 089A 1 089B 1 089C 1 089D 1 089E 1 089F 1 08A0 1 08A1 1 08A2 1 08A3 1 08A4 1 08A5 1 08A6 1 08A7 1 08A8 1 08A9 1 08AA 1 08AB 1 08AC 1 08AD 1 08AE 1 08AF 1 08B0 1 }
+colors_slimes_1			{ 0899 1 089A 1 089B 1 089C 1 089D 1 089E 1 }
+colors_slimes_2			{ 089F 1 08A0 1 08A1 1 08A2 1 08A3 1 08A4 1 }
+colors_slimes_3			{ 08A5 1 08A6 1 08A7 1 08A8 1 08A9 1 08AA 1 }
+colors_slimes_4			{ 08AB 1 08AC 1 08AD 1 08AE 1 08AF 1 08B0 1 }
+
+colors_animals_all		{ 08FD 1 08FE 1 08FF 1 0900 1 0901 1 0902 1 0903 1 0904 1 0905 1 0906 1 0907 1 0908 1 0909 1 090A 1 090B 1 090C 1 090D 1 090E 1 }
+colors_animals_1		{ 08FD 1 08FE 1 08FF 1 0900 1 0901 1 0902 1 }
+colors_animals_2		{ 0903 1 0904 1 0905 1 0906 1 0907 1 0908 1 }
+colors_animals_3		{ 0909 1 090A 1 090B 1 090C 1 090D 1 090E 1 }
+
+colors_snakes_all		{ 07D1 1 07D2 1 07D3 1 07D4 1 07D5 1 07D6 1 07D7 1 07D8 1 07D9 1 07DA 1 07DB 1 07DC 1 07DD 1 07DE 1 07DF 1 07E0 1 07E1 1 07E2 1 }
+colors_snakes_1			{ 07D1 1 07D2 1 07D3 1 07D4 1 07D5 1 07D6 1 }
+colors_snakes_2			{ 07D7 1 07D8 1 07D9 1 07DA 1 07DB 1 07DC 1 }
+colors_snakes_3			{ 07DD 1 07DE 1 07DF 1 07E0 1 07E1 1 07E2 1 }
+
+colors_birds_all		{ 0835 1 0836 1 0837 1 0838 1 0839 1 083A 1 083B 1 083C 1 083D 1 083E 1 083F 1 0840 1 0841 1 0842 1 0843 1 0844 1 0845 1 0846 1 0847 1 0848 1 0849 1 084A 1 084B 1 084C 1 084D 1 084E 1 084F 1 0850 1 0851 1 0852 1 }
+colors_birds_1			{ 0835 1 0836 1 0837 1 0838 1 0839 1 083A 1 }
+colors_birds_2			{ 083B 1 083C 1 083D 1 083E 1 083F 1 0840 1 }
+colors_birds_3			{ 0841 1 0842 1 0843 1 0844 1 0845 1 0846 1 }
+colors_birds_4			{ 0847 1 0848 1 0849 1 084A 1 084B 1 084C 1 }
+colors_birds_5			{ 084D 1 084E 1 084F 1 0850 1 0851 1 0852 1 }
+
+[DEFNAME dwarven_hair]
+random_dwarven_beards		{ i_beard_long_med 1 i_beard_short_med 1 }
+random_male_dwarven_hair	{  }
+random_female_dwarven_hair	{  }
+
+[DEFNAME dwarven_hues]
+colors_deep_dwarf_hair		{  }
+colors_dwarf_hair		{  }
+colors_elven_hair		{  }
+colors_dark_elven_hair		{  }
+colors_skin_dwarf		{ 096D 1 096E 1 096F 1 0970 1 0971 1 0972 1 0973 1 0974 1 0975 1 0976 1 0977 1 0978 1 0979 1 097A 1 097B 1 097C 1 097D 1 097E 1 }
+colors_skin_deep_dwarf		{ 0961 1 0962 1 0963 1 0964 1 0965 1 0966 1 0967 1 0968 1 0969 1 096A 1 096B 1 096C 1 }
+
+[DEFNAME orc_hues]
+colors_skin_orc			{ 089F 1 08A0 1 08A1 1 08A2 1 08A3 1 08A4 1 08A5 1 08A6 1 08A7 1 08A8 1 08A9 1 08AA 1 }
+
+[DEFNAME elven_hair]
+random_male_elven_hair		{  }
+random_female_elven_hair	{  }
+random_male_dark_elven_hair	{  }
+random_female_dark_elven_hair	{  }
+
+[DEFNAME elven_hues]
+colors_skin_elf			{  }
+colors_skin_dark_elf		{  }
+
+[DEFNAME colors_name_hues]
+color_karma_red			020
+color_karma_gray		0904
+color_karma_blue		02
+

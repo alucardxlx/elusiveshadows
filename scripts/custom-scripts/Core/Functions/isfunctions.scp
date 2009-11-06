@@ -1,0 +1,143 @@
+[comment IsFUNCTIONs]
+Ismulti
+IsLeather
+Isstuddedleather
+Ischainmail
+Isringmail
+Isplatemail
+Isshield
+Ishelmet
+Isheadgear
+Isclothing
+IsGood
+IsNeutral
+IsEvil
+IsAlignChaotic
+IsAlignNeutral
+IsAlignLawful
+IsAlignEvil
+IsAlignNeutral2
+IsAlignGood
+IsDamageSpell
+	* Dependency: es_events_global_npcs.scp
+
+
+
+[FUNCTION Ismulti]
+IF ((<TYPE> == t_multi) || (<TYPE> == t_multi_custom))
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+[FUNCTION IsLeather]
+IF ((<BASEID> == i_leather_armor) || (<BASEID> == i_leather_leggings) || (<BASEID> == i_leather_arms) || (<BASEID> == i_leather_gloves) || (<BASEID> == i_leather_gorget) || 
+
+[FUNCTION IsStuddedLeather]
+
+[FUNCTION IsChainmail]
+
+[FUNCTION IsRingmail]
+
+[FUNCTION IsPlatemail]
+
+[FUNCTION IsShield]
+IF (<TYPE> == t_shield)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+[FUNCTION IsHelmet]
+
+[FUNCTION IsHeadgear]
+
+[FUNCTION IsClothing]
+IF (<TYPE> == t_clothing)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+[FUNCTION IsEvil]
+IF (<KARMA> <= -6000)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+[FUNCTION IsNeutral]
+IF ((<KARMA> > -6000) && (<KARMA> <= -2000))
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+[FUNCTION IsGood]
+IF (<KARMA> >= 2001)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+//DnD Alignment FUNCTIONs
+[FUNCTION IsAlignChaotic]
+IF (<TAG.ALIGNMENT.1> <= -6000)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+[FUNCTION IsAlignNeutral]
+IF ((<TAG.ALIGNMENT.1> > -6000) && (<KARMA> <= -2000))
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+[FUNCTION IsAlignLawful]
+IF (<TAG.ALIGNMENT.1> >= 2001)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+[FUNCTION IsAlignEvil]
+IF (<TAG.ALIGNMENT.2> <= -6000)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+[FUNCTION IsAlignNeutral2]
+IF ((<TAG.ALIGNMENT.2> > -6000) && (<KARMA> <= -2000))
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+[FUNCTION IsAlignGood]
+IF (<TAG.ALIGNMENT.2> >= 2001)
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+[FUNCTION IsDamageSpell]
+IF ((<ARGN1> == 5) || (<ARGN1> == 12) || (<ARGN1> == 18) || (<ARGN1> == 30) || (<ARGN1> == 42) || (<ARGN1> == 49) || (<ARGN1> == 51) || (<ARGN1> == 55))
+ RETURN 1
+ENDIF
+RETURN 0
+
+
+
+
+
+
+[eof]

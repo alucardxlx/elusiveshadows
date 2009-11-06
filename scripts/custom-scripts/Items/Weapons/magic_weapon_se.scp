@@ -1,0 +1,1070 @@
+//Samurai Empire Magic Items.
+//Scripted by Khaotic Solitaire of Elusive Shadows.
+//Copyrighted by Menace Designs. Made for Menasoft.
+//Leave this header intact.
+
+//Bokuto
+[ITEMDEF i_bokuto_ruin]
+DEFNAME=i_bokuto_ruin
+NAME=Bokuto of Ruin
+ID=i_bokuto
+RESOURCES=i_bokuto, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Bokutos
+DESCRIPTION=Bokuto of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_bokuto_might]
+DEFNAME=i_bokuto_might
+NAME=Bokuto of Might
+ID=i_bokuto
+RESOURCES=i_bokuto, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Bokutos
+DESCRIPTION=Bokuto of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_bokuto_force]
+DEFNAME=i_bokuto_force
+NAME=Bokuto of Force
+ID=i_bokuto
+RESOURCES=i_bokuto, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Bokutos
+DESCRIPTION=Bokuto of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_bokuto_power]
+DEFNAME=i_bokuto_power
+NAME=Bokuto of Power
+ID=i_bokuto
+RESOURCES=i_bokuto, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Bokutos
+DESCRIPTION=Bokuto of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_bokuto_vanq]
+DEFNAME=i_bokuto_vanq
+NAME=Bokuto of Vanquishing
+ID=i_bokuto
+RESOURCES=i_bokuto, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Bokutos
+DESCRIPTION=Bokuto of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+
+//Daisho
+[ITEMDEF i_daisho_ruin]
+DEFNAME=i_daisho_ruin
+NAME=Daisho of Ruin
+ID=i_daisho
+RESOURCES=i_daisho, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Daishos
+DESCRIPTION=Daisho of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_daisho_might]
+DEFNAME=i_daisho_might
+NAME=Daisho of Might
+ID=i_daisho
+RESOURCES=i_daisho, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Daishos
+DESCRIPTION=Daisho of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_daisho_force]
+DEFNAME=i_daisho_force
+NAME=Daisho of Force
+ID=i_daisho
+RESOURCES=i_daisho, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Daishos
+DESCRIPTION=Daisho of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_daisho_power]
+DEFNAME=i_daisho_power
+NAME=Daisho of Power
+ID=i_daisho
+RESOURCES=i_daisho, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Daishos
+DESCRIPTION=Daisho of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_daisho_vanq]
+DEFNAME=i_daisho_vanq
+NAME=Daisho of Vanquishing
+ID=i_daisho
+RESOURCES=i_daisho, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Daishos
+DESCRIPTION=Daisho of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Fukiya
+[ITEMDEF i_fukiya_ruin]
+DEFNAME=i_fukiya_ruin
+NAME=Fukiya of Ruin
+ID=i_fukiya
+RESOURCES=i_fukiya, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Fukiyas
+DESCRIPTION=Fukiya of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_fukiya_might]
+DEFNAME=i_fukiya_might
+NAME=Fukiya of Might
+ID=i_fukiya
+RESOURCES=i_fukiya, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Fukiyas
+DESCRIPTION=Fukiya of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_fukiya_force]
+DEFNAME=i_fukiya_force
+NAME=Fukiya of Force
+ID=i_fukiya
+RESOURCES=i_fukiya, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Fukiyas
+DESCRIPTION=Fukiya of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_fukiya_power]
+DEFNAME=i_fukiya_power
+NAME=Fukiya of Power
+ID=i_fukiya
+RESOURCES=i_fukiya, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Fukiyas
+DESCRIPTION=Fukiya of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_fukiya_vanq]
+DEFNAME=i_fukiya_vanq
+NAME=Fukiya of Vanquishing
+ID=i_fukiya
+RESOURCES=i_fukiya, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Fukiyas
+DESCRIPTION=Fukiya of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Kama
+[ITEMDEF i_kama_ruin]
+DEFNAME=i_kama_ruin
+NAME=Kama of Ruin
+ID=i_kama
+RESOURCES=i_kama, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Kamas
+DESCRIPTION=Kama of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_kama_might]
+DEFNAME=i_kama_might
+NAME=Kama of Might
+ID=i_kama
+RESOURCES=i_kama, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Kamas
+DESCRIPTION=Kama of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_kama_force]
+DEFNAME=i_kama_force
+NAME=Kama of Force
+ID=i_kama
+RESOURCES=i_kama, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Kamas
+DESCRIPTION=Kama of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_kama_power]
+DEFNAME=i_kama_power
+NAME=Kama of Power
+ID=i_kama
+RESOURCES=i_kama, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Kamas
+DESCRIPTION=Kama of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_kama_vanq]
+DEFNAME=i_kama_vanq
+NAME=Kama of Vanquishing
+ID=i_kama
+RESOURCES=i_kama, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Kamas
+DESCRIPTION=Kama of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Lajatang
+[ITEMDEF i_lajatang_ruin]
+DEFNAME=i_lajatang_ruin
+NAME=Lajatang of Ruin
+ID=i_lajatang
+RESOURCES=i_lajatang, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Lajatangs
+DESCRIPTION=Lajatang of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_lajatang_might]
+DEFNAME=i_lajatang_might
+NAME=Lajatang of Might
+ID=i_lajatang
+RESOURCES=i_lajatang, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Lajatangs
+DESCRIPTION=Lajatang of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_lajatang_force]
+DEFNAME=i_lajatang_force
+NAME=Lajatang of Force
+ID=i_lajatang
+RESOURCES=i_lajatang, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Lajatangs
+DESCRIPTION=Lajatang of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_lajatang_power]
+DEFNAME=i_lajatang_power
+NAME=Lajatang of Power
+ID=i_lajatang
+RESOURCES=i_lajatang, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Lajatangs
+DESCRIPTION=Lajatang of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_lajatang_vanq]
+DEFNAME=i_lajatang_vanq
+NAME=Lajatang of Vanquishing
+ID=i_lajatang
+RESOURCES=i_lajatang, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Lajatangs
+DESCRIPTION=Lajatang of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//No-Dachi
+[ITEMDEF i_no_dachi_ruin]
+DEFNAME=i_no_dachi_ruin
+NAME=No-Dachi of Ruin
+ID=i_no_dachi
+RESOURCES=i_no_dachi, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic No-Dachis
+DESCRIPTION=No-Dachi of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_no_dachi_might]
+DEFNAME=i_no_dachi_might
+NAME=No-Dachi of Might
+ID=i_no_dachi
+RESOURCES=i_no_dachi, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic No-Dachis
+DESCRIPTION=No-Dachi of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_no_dachi_force]
+DEFNAME=i_no_dachi_force
+NAME=No-Dachi of Force
+ID=i_no_dachi
+RESOURCES=i_no_dachi, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic No-Dachis
+DESCRIPTION=No-Dachi of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_no_dachi_power]
+DEFNAME=i_no_dachi_power
+NAME=No-Dachi of Power
+ID=i_no_dachi
+RESOURCES=i_no_dachi, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic No-Dachis
+DESCRIPTION=No-Dachi of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_no_dachi_vanq]
+DEFNAME=i_no_dachi_vanq
+NAME=No-Dachi of Vanquishing
+ID=i_no_dachi
+RESOURCES=i_no_dachi, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic No-Dachis
+DESCRIPTION=No-Dachi of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Nunchaku
+[ITEMDEF i_nunchaku_ruin]
+DEFNAME=i_nunchaku_ruin
+NAME=Nunchaku of Ruin
+ID=i_nunchaku
+RESOURCES=i_nunchaku, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Nunchakus
+DESCRIPTION=Nunchaku of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_nunchaku_might]
+DEFNAME=i_nunchaku_might
+NAME=Nunchaku of Might
+ID=i_nunchaku
+RESOURCES=i_nunchaku, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Nunchakus
+DESCRIPTION=Nunchaku of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_nunchaku_force]
+DEFNAME=i_nunchaku_force
+NAME=Nunchaku of Force
+ID=i_nunchaku
+RESOURCES=i_nunchaku, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Nunchakus
+DESCRIPTION=Nunchaku of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_nunchaku_power]
+DEFNAME=i_nunchaku_power
+NAME=Nunchaku of Power
+ID=i_nunchaku
+RESOURCES=i_nunchaku, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Nunchakus
+DESCRIPTION=Nunchaku of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_nunchaku_vanq]
+DEFNAME=i_nunchaku_vanq
+NAME=Nunchaku of Vanquishing
+ID=i_nunchaku
+RESOURCES=i_nunchaku, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Nunchakus
+DESCRIPTION=Nunchaku of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Sai
+[ITEMDEF i_sai_ruin]
+DEFNAME=i_sai_ruin
+NAME=Sai of Ruin
+ID=i_sai
+RESOURCES=i_sai, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Sais
+DESCRIPTION=Sai of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_sai_might]
+DEFNAME=i_sai_might
+NAME=Sai of Might
+ID=i_sai
+RESOURCES=i_sai, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Sais
+DESCRIPTION=Sai of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_sai_force]
+DEFNAME=i_sai_force
+NAME=Sai of Force
+ID=i_sai
+RESOURCES=i_sai, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Sais
+DESCRIPTION=Sai of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_sai_power]
+DEFNAME=i_sai_power
+NAME=Sai of Power
+ID=i_sai
+RESOURCES=i_sai, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Sais
+DESCRIPTION=Sai of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_sai_vanq]
+DEFNAME=i_sai_vanq
+NAME=Sai of Vanquishing
+ID=i_sai
+RESOURCES=i_sai, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Sais
+DESCRIPTION=Sai of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Tekagi
+[ITEMDEF i_tekagi_ruin]
+DEFNAME=i_tekagi_ruin
+NAME=Tekagi of Ruin
+ID=i_tekagi
+RESOURCES=i_tekagi, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tekagis
+DESCRIPTION=Tekagi of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_tekagi_might]
+DEFNAME=i_tekagi_might
+NAME=Tekagi of Might
+ID=i_tekagi
+RESOURCES=i_tekagi, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tekagis
+DESCRIPTION=Tekagi of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_tekagi_force]
+DEFNAME=i_tekagi_force
+NAME=Tekagi of Force
+ID=i_tekagi
+RESOURCES=i_tekagi, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tekagis
+DESCRIPTION=Tekagi of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_tekagi_power]
+DEFNAME=i_tekagi_power
+NAME=Tekagi of Power
+ID=i_tekagi
+RESOURCES=i_tekagi, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tekagis
+DESCRIPTION=Tekagi of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_tekagi_vanq]
+DEFNAME=i_tekagi_vanq
+NAME=Tekagi of Vanquishing
+ID=i_tekagi
+RESOURCES=i_tekagi, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tekagis
+DESCRIPTION=Tekagi of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Tessen
+[ITEMDEF i_tessen_ruin]
+DEFNAME=i_tessen_ruin
+NAME=Tessen of Ruin
+ID=i_tessen
+RESOURCES=i_tessen, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tessens
+DESCRIPTION=Tessen of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_tessen_might]
+DEFNAME=i_tessen_might
+NAME=Tessen of Might
+ID=i_tessen
+RESOURCES=i_tessen, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tessens
+DESCRIPTION=Tessen of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_tessen_force]
+DEFNAME=i_tessen_force
+NAME=Tessen of Force
+ID=i_tessen
+RESOURCES=i_tessen, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tessens
+DESCRIPTION=Tessen of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_tessen_power]
+DEFNAME=i_tessen_power
+NAME=Tessen of Power
+ID=i_tessen
+RESOURCES=i_tessen, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tessens
+DESCRIPTION=Tessen of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_tessen_vanq]
+DEFNAME=i_tessen_vanq
+NAME=Tessen of Vanquishing
+ID=i_tessen
+RESOURCES=i_tessen, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tessens
+DESCRIPTION=Tessen of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Tetsubo
+[ITEMDEF i_tetsubo_ruin]
+DEFNAME=i_tetsubo_ruin
+NAME=Tetsubo of Ruin
+ID=i_tetsubo
+RESOURCES=i_tetsubo, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tetsubos
+DESCRIPTION=Tetsubo of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_tetsubo_might]
+DEFNAME=i_tetsubo_might
+NAME=Tetsubo of Might
+ID=i_tetsubo
+RESOURCES=i_tetsubo, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tetsubos
+DESCRIPTION=Tetsubo of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_tetsubo_force]
+DEFNAME=i_tetsubo_force
+NAME=Tetsubo of Force
+ID=i_tetsubo
+RESOURCES=i_tetsubo, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tetsubos
+DESCRIPTION=Tetsubo of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_tetsubo_power]
+DEFNAME=i_tetsubo_power
+NAME=Tetsubo of Power
+ID=i_tetsubo
+RESOURCES=i_tetsubo, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tetsubos
+DESCRIPTION=Tetsubo of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_tetsubo_vanq]
+DEFNAME=i_tetsubo_vanq
+NAME=Tetsubo of Vanquishing
+ID=i_tetsubo
+RESOURCES=i_tetsubo, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Tetsubos
+DESCRIPTION=Tetsubo of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Wakizashi's
+[ITEMDEF i_wakizashi_ruin]
+DEFNAME=i_wakizashi_ruin
+NAME=Wakizashi of Ruin
+ID=i_wakizashi
+RESOURCES=i_wakizashi, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wakizashis
+DESCRIPTION=Wakizashi of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_wakizashi_might]
+DEFNAME=i_wakizashi_might
+NAME=Wakizashi of Might
+ID=i_wakizashi
+RESOURCES=i_wakizashi, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wakizashis
+DESCRIPTION=Wakizashi of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_wakizashi_force]
+DEFNAME=i_wakizashi_force
+NAME=Wakizashi of Force
+ID=i_wakizashi
+RESOURCES=i_wakizashi, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wakizashis
+DESCRIPTION=Wakizashi of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_wakizashi_power]
+DEFNAME=i_wakizashi_power
+NAME=Wakizashi of Power
+ID=i_wakizashi
+RESOURCES=i_wakizashi, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wakizashis
+DESCRIPTION=Wakizashi of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_wakizashi_vanq]
+DEFNAME=i_wakizashi_vanq
+NAME=Wakizashi of Vanquishing
+ID=i_wakizashi
+RESOURCES=i_wakizashi, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wakizashis
+DESCRIPTION=Wakizashi of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Yumi's
+[ITEMDEF i_yumi_ruin]
+DEFNAME=i_yumi_ruin
+NAME=Yumi of Ruin
+ID=i_yumi
+RESOURCES=i_yumi, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Yumis
+DESCRIPTION=Yumi of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_yumi_might]
+DEFNAME=i_yumi_might
+NAME=Yumi of Might
+ID=i_yumi
+RESOURCES=i_yumi, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Yumis
+DESCRIPTION=Yumi of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_yumi_force]
+DEFNAME=i_yumi_force
+NAME=Yumi of Force
+ID=i_yumi
+RESOURCES=i_yumi, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Yumis
+DESCRIPTION=Yumi of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_yumi_power]
+DEFNAME=i_yumi_power
+NAME=Yumi of Power
+ID=i_yumi
+RESOURCES=i_yumi, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Yumis
+DESCRIPTION=Yumi of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_yumi_vanq]
+DEFNAME=i_yumi_vanq
+NAME=Yumi of Vanquishing
+ID=i_yumi
+RESOURCES=i_yumi, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Yumis
+DESCRIPTION=Yumi of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9

@@ -1,0 +1,69 @@
+[comment credits]
+This script will show all /party chat to anyone with hearall enabled.
+
+Installation:
+-add PACKET191=f_packet_0xbf to sphere.ini, anywhere under the [sphere] tag.
+
+Scripted by Skul,
+    www.marchadium.ca
+    
+[function f_packet_0xbf]
+ref1=<local.char>
+if (<ref1.ischar>)
+    if (<ref1.isplayer>) && (<ref1.isonline>)
+        if (<local.4>==06)
+            if (<local.5>==03) || (<local.5>==04)
+                while !(strmatch(<local.<eval <local.z> +6>>,0))
+                    if (<eval <eval <eval <local.z> +1> /2> *2>==<eval <local.z> +1>)
+                        local.chr=<local.<eval <local.z> +5>><local.<eval <local.z> +6>>
+                        if (strmatch(<local.txt>,0))
+                            local.txt=[<chr <local.chr>>
+                        else
+                            if (<isnum <local.txt>>)
+                                local.txt=<eval <local.txt>><chr <local.chr>>
+                            else
+                                local.txt=<local.txt><chr <local.chr>>
+                            endif
+                        endif
+                    endif
+                    local.z += 1
+                endwhile
+                local.txt="<strsub 1 0 <local.txt>>"
+                if !(strmatch(<local.txt>,0) && !(strmatch(<local.txt>,00)
+                    ref1.partychat <local.txt>
+                    serv.log @<ref1.name> says '<local.txt>' to party
+                else
+                    ref1.sysmessage @67,3,1 type a message.
+                endif
+                return 1
+            endif
+        endif
+    endif
+endif
+
+[function isinsameparty]
+if (<ischar>) && (<uid.<argn1>.ischar>)
+    if (<isplayer>) && (<uid.<argn1>.isplayer>)
+        if (<isonline>) && (<uid.<argn1>.isonline>)
+            if (<isinparty>) && (<uid.<argn1>.isinparty>)
+                if (<party.issamepartyof <argn1>>)
+                    local.return=1
+                endif
+            endif
+        endif
+    endif
+endif
+return <eval <local.return>>
+
+[function partychat]
+for 0 <eval <serv.clients> +-1>
+    if (<serv.client.<local._for>>)
+        if (<serv.client.<local._for>.hearall>) && (<serv.client.<local._for>.account.plevel> > 1)
+            uid.<serv.client.<local._for>.uid>.sysmessage @67,3,1, <def.l1><name> [<uid>]<def.r1><args>
+        elseif (<uid.<serv.client.<local._for>.uid>.isinsameparty <uid>>) || (<uid>==<serv.client.<local._for>.uid>)
+            uid.<serv.client.<local._for>.uid>.sysmessage @67,3,1, [Party Chat]<name>: <args>
+        endif
+    endif
+endfor
+
+[eof]

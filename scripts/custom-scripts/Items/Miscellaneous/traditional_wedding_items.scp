@@ -1,0 +1,143 @@
+[COMMENT FILE_INFO]
+Scripted by Khaotic Solitaire.
+Property of, and Copyrighted to, Menace Designs.
+Elusive Shadows Traditional Wedding Items.
+
+[ITEMDEF i_wedding_ring_male]
+DEFNAME=i_wedding_ring_male
+NAME=Golden Wedding Ring
+ID=i_ring_gold
+
+CATEGORY=Special Event Items
+SUBSECTION=Wedding Items
+DESCRIPTION=Golden Wedding Ring (Male)
+
+ON=@CREATE
+ COLOR color_o_gold
+ ATTR=attr_newbie
+
+ON=@EQUIP
+ IF (<src.obody> == c_man || c_elf_man)
+  SRC.MSG Your love shall be eternal.
+  SRC.MODSTR+=5
+  SRC.MODDEX+=5
+  SRC.MODINT+=5
+  RETURN 0
+ ELSE
+  MSG Only males can wear this item.
+  RETURN 1
+ ENDIF
+
+ON=@UNEQUIP
+ SRC.MODSTR-=5
+ SRC.MODDEX-=5
+ SRC.MODINT-=5
+ RETURN 0
+
+
+[ITEMDEF i_wedding_ring_female]
+DEFNAME=i_wedding_ring_female
+NAME=Diamond Wedding Ring
+ID=i_ring_gold
+
+CATEGORY=Special Event Items
+SUBSECTION=Wedding Items
+DESCRIPTION=Diamond Wedding Ring (Female)
+
+ON=@CREATE
+ COLOR 01EA
+ ATTR=attr_newbie
+
+ON=@EQUIP
+ IF (<src.obody> == c_woman || c_elf_woman)
+  SRC.MSG Your love shall be eternal.
+  SRC.MODSTR+=5
+  SRC.MODDEX+=5
+  SRC.MODINT+=5
+  RETURN 0
+ ELSE
+  MSG Only females can wear this item.
+  RETURN 1
+ ENDIF
+
+ON=@UNEQUIP
+ SRC.MODSTR-=5
+ SRC.MODDEX-=5
+ SRC.MODINT-=5
+ RETURN 0
+
+
+[ITEMDEF i_wedding_robe]
+DEFNAME=i_wedding_robe
+NAME=Wedding Robe
+ID=i_robe
+ARMOR=25
+DYE=0
+
+CATEGORY=Special Event Items
+SUBSECTION=Wedding Items
+DESCRIPTION=Wedding Robe
+
+ON=@CREATE
+ COLOR {047E 1, 0481 1}
+ HITPOINTS=255
+ ATTR=attr_newbie
+
+ON=@EQUIP
+ IF (<src.obody> == c_man || c_elf_man)
+  SRC.MSG Your love shall be eternal.
+  SRC.MODSTR+=5
+  SRC.MODDEX+=5
+  SRC.MODINT+=5
+  RETURN 0
+ ELSE
+  MSG Only males can wear this item.
+  RETURN 1
+ ENDIF
+
+ON=@UNEQUIP
+ SRC.MODSTR-=5
+ SRC.MODDEX-=5
+ SRC.MODINT-=5
+ RETURN 0
+
+ON=@ITEMDAMAGE
+ RETURN 1
+
+
+[ITEMDEF i_wedding_gown]
+DEFNAME=i_wedding_gown
+NAME=Wedding Gown
+ID=i_dress_full
+ARMOR=25
+DYE=0
+
+CATEGORY=Special Event Items
+SUBSECTION=Wedding Items
+DESCRIPTION=Wedding Gown
+
+ON=@CREATE
+ COLOR {047E 1, 0481 1}
+ HITPOINTS=255
+ ATTR=attr_newbie
+
+ON=@EQUIP
+ IF (<src.obody> == c_woman || c_elf_woman)
+  SRC.MSG Your love shall be eternal.
+  SRC.MODSTR+=5
+  SRC.MODDEX+=5
+  SRC.MODINT+=5
+  RETURN 0
+ ELSE
+  MSG Only females can wear this item.
+  RETURN 1
+ ENDIF
+
+ON=@UNEQUIP
+ SRC.MODSTR-=5
+ SRC.MODDEX-=5
+ SRC.MODINT-=5
+ RETURN 0
+
+ON=@ITEMDAMAGE
+ RETURN 1

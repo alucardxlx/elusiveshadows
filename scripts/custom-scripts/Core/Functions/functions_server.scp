@@ -1,0 +1,28 @@
+[PLEVEL 4]
+wipe_server
+static_notmove
+wipe_bits
+
+[function wipe_server]
+forchars 99999
+ remove
+endfor
+foritems 99999
+ remove
+endfor
+
+
+[function static_notmove]
+foritems 99999
+ if (<attr> != 08010)
+  attr=08010
+ endif
+endfor
+
+
+[function wipe_bits]
+foritems 99999
+ if (<attr>==0B0) && (<eval <amount>>) >= 3
+  remove
+ endif
+endfor

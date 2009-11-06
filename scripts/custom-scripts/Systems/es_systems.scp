@@ -1,0 +1,8 @@
+[comment elusive_shadows_systems_controls]
+combat_system_uor		1//1 yes, 0 no.
+combat_system_lbr		1
+combat_system_aos		0
+
+
+
+[EOF]

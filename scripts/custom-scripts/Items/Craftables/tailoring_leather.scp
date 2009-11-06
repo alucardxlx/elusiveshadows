@@ -1,0 +1,359 @@
+[ITEMDEF i_leather_sleeves_spined]
+DEFNAME=i_leather_sleeves_spined
+NAME=Spined Leather Sleeves
+ID=i_leather_sleeves
+TYPE=t_armor_leather
+RESOURCES=4 i_hides_cut_spined
+SKILLMAKE=TAILORING 53.9, t_sewing_kit
+WEIGHT=6
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (Spined)
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_gloves_spined]
+DEFNAME=i_leather_gloves_spined
+NAME=Spined Leather Gloves
+ID=i_leather_gloves
+TYPE=t_armor_leather
+RESOURCES=3 i_hides_cut_spined
+SKILLMAKE=TAILORING 51.8, t_sewing_kit
+WEIGHT=1
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gloves (Spined)
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_gorget_spined]
+DEFNAME=i_leather_gorget_spined
+NAME=Spined Leather Gorget
+ID=i_leather_gorget
+TYPE=t_armor_leather
+RESOURCES=4 i_hides_cut_spined
+SKILLMAKE=TAILORING 53.9, t_sewing_kit
+WEIGHT=2
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gorget (Spined)
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_leggings_spined]
+DEFNAME=i_leather_leggings_spined
+NAME=Spined Leather Leggings
+ID=i_leather_leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_hides_cut_spined
+SKILLMAKE=TAILORING 66.3, t_sewing_kit
+WEIGHT=6
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Leggings (Spined)
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_tunic_spined]
+DEFNAME=i_leather_tunic_spined
+NAME=Spined Leather Tunic
+ID=i_leather_tunic
+TYPE=t_armor_leather
+RESOURCES=12 i_hides_cut_spined
+SKILLMAKE=TAILORING 70.5, t_sewing_kit
+WEIGHT=7
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (Spined)
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_cap_spined]
+DEFNAME=i_leather_cap_spined
+NAME=Spined Leather Cap
+ID=i_leather_cap
+TYPE=t_armor_leather
+RESOURCES=2 i_hides_cut_spined
+SKILLMAKE=TAILORING 6.2, t_sewing_kit
+WEIGHT=1
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Cap (Spined)
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_sleeves_horned]
+DEFNAME=i_leather_sleeves_horned
+NAME=Horned Leather Sleeves
+ID=i_leather_sleeves
+TYPE=t_armor_leather
+RESOURCES=4 i_hides_cut_horned
+SKILLMAKE=TAILORING 53.9, t_sewing_kit
+WEIGHT=6
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (Horned)
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_gloves_horned]
+DEFNAME=i_leather_gloves_horned
+NAME=Horned Leather Gloves
+ID=i_leather_gloves
+TYPE=t_armor_leather
+RESOURCES=3 i_hides_cut_horned
+SKILLMAKE=TAILORING 51.8, t_sewing_kit
+WEIGHT=1
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gloves (Horned)
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_gorget_horned]
+DEFNAME=i_leather_gorget_horned
+NAME=Horned Leather Gorget
+ID=i_leather_gorget
+TYPE=t_armor_leather
+RESOURCES=4 i_hides_cut_horned
+SKILLMAKE=TAILORING 53.9, t_sewing_kit
+WEIGHT=2
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gorget (Horned)
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_leggings_horned]
+DEFNAME=i_leather_leggings_horned
+NAME=Horned Leather Leggings
+ID=i_leather_leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_hides_cut_horned
+SKILLMAKE=TAILORING 66.3, t_sewing_kit
+WEIGHT=6
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Leggings (Horned)
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_tunic_horned]
+DEFNAME=i_leather_tunic_horned
+NAME=Horned Leather Tunic
+ID=i_leather_tunic
+TYPE=t_armor_leather
+RESOURCES=12 i_hides_cut_horned
+SKILLMAKE=TAILORING 70.5, t_sewing_kit
+WEIGHT=7
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (Horned)
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_cap_horned]
+DEFNAME=i_leather_cap_horned
+NAME=Horned Leather Cap
+ID=i_leather_cap
+TYPE=t_armor_leather
+RESOURCES=2 i_hides_cut_horned
+SKILLMAKE=TAILORING 6.2, t_sewing_kit
+WEIGHT=1
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Cap (Horned)
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_sleeves_barbed]
+DEFNAME=i_leather_sleeves_barbed
+NAME=Barbed Leather Sleeves
+ID=i_leather_sleeves
+TYPE=t_armor_leather
+RESOURCES=4 i_hides_cut_barbed
+SKILLMAKE=TAILORING 53.9, t_sewing_kit
+WEIGHT=6
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (Barbed)
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_gloves_barbed]
+DEFNAME=i_leather_gloves_barbed
+NAME=Barbed Leather Gloves
+ID=i_leather_gloves
+TYPE=t_armor_leather
+RESOURCES=3 i_hides_cut_barbed
+SKILLMAKE=TAILORING 51.8, t_sewing_kit
+WEIGHT=1
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gloves (Barbed)
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_gorget_barbed]
+DEFNAME=i_leather_gorget_barbed
+NAME=Barbed Leather Gorget
+ID=i_leather_gorget
+TYPE=t_armor_leather
+RESOURCES=4 i_hides_cut_barbed
+SKILLMAKE=TAILORING 53.9, t_sewing_kit
+WEIGHT=2
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Gorget (Barbed)
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_leggings_barbed]
+DEFNAME=i_leather_leggings_barbed
+NAME=Barbed Leather Leggings
+ID=i_leather_leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_hides_cut_barbed
+SKILLMAKE=TAILORING 66.3, t_sewing_kit
+WEIGHT=6
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Leggings (Barbed)
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_tunic_barbed]
+DEFNAME=i_leather_tunic_barbed
+NAME=Barbed Leather Tunic
+ID=i_leather_tunic
+TYPE=t_armor_leather
+RESOURCES=12 i_hides_cut_barbed
+SKILLMAKE=TAILORING 70.5, t_sewing_kit
+WEIGHT=7
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Sleeves (Barbed)
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={25 30}
+
+[ITEMDEF i_leather_cap_barbed]
+DEFNAME=i_leather_cap_barbed
+NAME=Barbed Leather Cap
+ID=i_leather_cap
+TYPE=t_armor_leather
+RESOURCES=2 i_hides_cut_barbed
+SKILLMAKE=TAILORING 6.2, t_sewing_kit
+WEIGHT=1
+FLIP=1
+ARMOR=15
+REQSTR=10
+
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Cap (Barbed)
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={25 30}
