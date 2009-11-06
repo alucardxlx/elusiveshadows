@@ -1,0 +1,168 @@
+//SE LEATHER armour ITEMS
+//Menu 1
+
+//
+ON=i_leather_tunic Leather Armour
+SKILLMENU=sm_leather_armour
+
+//
+ON=i_studded_tunic Studded Leather Armour
+SKILLMENU=sm_studded_leather_armour
+
+//
+ON=i_armor_female_bustier Female Leather Armour
+SKILLMENU=sm_female_leather_armour
+
+ON=i_leather_do Leather Armour (SE)
+SKILLMENU=sm_leather_armour_se
+
+ON=i_leather_ninja_jacket Leather Ninja Armour (SE)
+SKILLMENU=sm_leather_ninja_armour_se
+
+ON=i_studded_do Studded Leather Armour (SE)
+SKILLMENU=sm_studded_leather_armour_se
+
+
+
+
+//SUB MENU 2
+//Leather Armour
+[SKILLMENU sm_leather_armour_se]
+Leather Armour (SE)
+
+ON=i_leather_do Leather Armour (Normal)
+SKILLMENU=sm_leather_armour_se_normal
+
+ON=i_leather_do_spined Leather Armour (Spined)
+SKILLMENU=sm_leather_armour_se_spined
+
+ON=i_leather_do_horned Leather Armour (Horned)
+SKILLMENU=sm_leather_armour_se_horned
+
+ON=i_leather_do_barbed Leather Armour (Barbed)
+SKILLMENU=sm_leather_armour_se_barbed
+
+
+//Studded Leather Armour
+[SKILLMENU sm_studded_leather_armour_se]
+Studded Leather Armour (SE)
+
+ON=i_studded_leather_do Studded Leather Armour (Normal)
+SKILLMENU=sm_studded_leather_armour_se_normal
+
+ON=i_studded_leather_do_spined Studded Leather Armour (Spined)
+SKILLMENU=sm_studded_leather_armour_se_spined
+
+ON=i_studded_leather_do_horned Studded Leather Armour (Horned)
+SKILLMENU=sm_studded_leather_armour_se_horned
+
+ON=i_studded_leather_do_barbed Studded Leather Armour (Barbed)
+SKILLMENU=sm_studded_leather_armour_se_barbed
+
+
+//Leather Ninja Armour
+[SKILLMENU sm_leather_ninja_armour_se]
+Leather Ninja Armour (SE)
+
+ON=i_leather_ninja_jacket Leather Ninja Armour (Normal)
+SKILLMENU=sm_ninja_armour_se_normal
+
+ON=i_leather_ninja_jacket_spined Leather Ninja Armour (Spined)
+SKILLMENU=sm_ninja_armour_se_spined
+
+ON=i_leather_ninja_jacket_horned Leather Ninja Armour (Horned)
+SKILLMENU=sm_ninja_armour_se_horned
+
+ON=i_leather_ninja_jacket_barbed Leather Ninja armour (Barbed)
+SKILLMENU=sm_ninja_armour_se_barbed
+
+
+
+
+//SUB MENU 3
+[SKILLMENU sm_leather_armour_se_normal]
+Leather Armour (SE) (Normal)
+
+ON=i_leather_do <NAME> <RESMAKE>
+MAKEITEM=i_leather_do
+
+ON=i_leather_haidate <NAME> <RESMAKE>
+MAKEITEM=i_leather_haidate
+
+ON=i_leather_hiro_sode <NAME> <RESMAKE>
+MAKEITEM=i_leather_hiro_sode
+
+ON=i_leather_jingasa <NAME> <RESMAKE>
+MAKEITEM=i_leather_jingasa
+
+ON=i_leather_mempo <NAME> <RESMAKE>
+MAKEITEM=i_leather_mempo
+
+ON=i_leather_suneate <NAME> <RESMAKE>
+MAKEITEM=i_leather_suneate
+
+
+[SKILLMENU sm_leather_armour_se_spined]
+Leather Armour (SE) (Spined)
+
+ON=i_leather_do_spined <NAME> <RESMAKE>
+MAKEITEM=i_leather_do_spined
+
+ON=i_leather_haidate_spined <NAME> <RESMAKE>
+MAKEITEM=i_leather_haidate_spined
+
+ON=i_leather_hiro_sode_spined <NAME> <RESMAKE>
+MAKEITEM=i_leather_hiro_sode_spined
+
+ON=i_leather_jingasa_spined <NAME> <RESMAKE>
+MAKEITEM=i_leather_jingasa_spined
+
+ON=i_leather_mempo_spined <NAME> <RESMAKE>
+MAKEITEM=i_leather_mempo_spined
+
+ON=i_leather_suneate_spined <NAME> <RESMAKE>
+MAKEITEM=i_leather_suneate_spined
+
+
+[SKILLMENU sm_leather_armour_se_horned]
+Leather Armour (SE) (Horned)
+
+ON=i_leather_do_horned <NAME> <RESMAKE>
+MAKEITEM=i_leather_do_horned
+
+ON=i_leather_haidate_horned <NAME> <RESMAKE>
+MAKEITEM=i_leather_haidate_horned
+
+ON=i_leather_hiro_sode_horned <NAME> <RESMAKE>
+MAKEITEM=i_leather_hiro_sode_horned
+
+ON=i_leather_jingasa_horned <NAME> <RESMAKE>
+MAKEITEM=i_leather_jingasa_horned
+
+ON=i_leather_mempo_horned <NAME> <RESMAKE>
+MAKEITEM=i_leather_mempo_horned
+
+ON=i_leather_suneate_horned <NAME> <RESMAKE>
+MAKEITEM=i_leather_suneate_horned
+
+
+[SKILLMENU sm_leather_armour_se_barbed]
+Leather Armour (SE) (Barbed)
+
+ON=i_leather_do_barbed <NAME> <RESMAKE>
+MAKEITEM=i_leather_do_barbed
+
+ON=i_leather_haidate_barbed <NAME> <RESMAKE>
+MAKEITEM=i_leather_haidate_barbed
+
+ON=i_leather_hiro_sode_barbed <NAME> <RESMAKE>
+MAKEITEM=i_leather_hiro_sode_barbed
+
+ON=i_leather_jingasa_barbed <NAME> <RESMAKE>
+MAKEITEM=i_leather_jingasa_barbed
+
+ON=i_leather_mempo_barbed <NAME> <RESMAKE>
+MAKEITEM=i_leather_mempo_barbed
+
+ON=i_leather_suneate_barbed <NAME> <RESMAKE>
+MAKEITEM=i_leather_suneate_barbed

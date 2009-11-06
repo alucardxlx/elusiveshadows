@@ -1,0 +1,69 @@
+[COMMENT Renew Soul]
+This was the old e_life script. I managed to shorten 70 lines of code to 16 lines.
+This is more optimal and refreshes not only their life, but stamina, and mana as well. Also does not restrict the lives to just 9 as a cap. You can set as high as you want.
+
+I commented out the @Click msg. If staff feel it should be added. Post about it.
+
+To use this code, simple set TAG.RENEW.SOUL=# to a NPC and TEVENTS=e_renew_soul
+You can also do things like TAG.RENEW.SOUL=<R2,7>, which would give the creature 2-7 lives.
+
+DO NOT USE THIS ON A NPC WITH e_mega_hp!
+
+[FUNCTION f_renew_soul]
+SRC.HITS=<SRC.MAXHITS>
+SRC.STAM=<SRC.MAXSTAM>
+SRC.MANA=<SRC.MAXMANA>
+SRC.TAG.RENEW.SOUL -= 1
+SRC.EMOTE a strange aura radiate from <SRC.NAME>, <SRC.NAME> becomes anew again
+//SRC.SAY *has <EVAL <TAG.RENEW.SOUL>> lives left*
+
+[EVENTS e_renew_soul]
+//ON=@CLICK
+//MSG [Lives left: <TAG..RENEW.SOUL>]
+
+ON=@DEATH
+IF (<SRC.TAG.RENEW.SOUL> == 0)
+ RETURN 0
+ELSE
+ f_renew_soul
+ RETURN 1
+ENDIF
+
+//One time event.
+[EVENTS e_renew_life]
+ON=@Death
+SRC.HITS=<SRC.MAXHITS>
+SRC.STAM=<SRC.MAXSTAM>
+SRC.MANA=<SRC.MAXMANA>
+SRC.EMOTE a strange aura radiate from <SRC.NAME>, <SRC.NAME> becomes anew again
+SRC.EVENTS -e_renew_life
+RETURN 1
+
+//1 in 10 chance to escape death.
+//Remove comment if you just one this a one chance instance.
+[EVENTS e_escape_death]
+ON=@DEATH
+LOCAL.ESCAPE.DEATH=<R1,10>
+IF (<LOCAL.ESCAPE.DEATH> == 1)
+ SRC.HITS=<SRC.MAXHITS>
+ SRC.STAM=<SRC.MAXSTAM>
+ SRC.MANA=<SRC.MAXMANA>
+ SRC.EMOTE a strange aura radiate from <SRC.NAME>, <SRC.NAME> becomes anew again
+// SRC.EVENTS -e_escape_death
+ RETURN 1
+ELSE
+ RETURN 0
+ENDIF
+
+
+
+
+
+[comment don't use ultrafast, it was to test a bug!]
+
+[events e_ultrafast]
+on=@NPCActFollow
+run = <dir>
+
+on=@NPCActFight
+run = <dir>

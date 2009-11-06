@@ -1,0 +1,40 @@
+[DEFNAME random_armor_magic_new]
+random_dragon_armor_defense		{ i_dragon_chest_defense 1 i_dragon_gloves_defense 1 i_dragon_helm_defense 1 i_dragon_leggings_defense 1 i_dragon_sleeves_defense 1 }
+random_dragon_armor_guarding		{ i_dragon_chest_guarding 1 i_dragon_gloves_guarding 1 i_dragon_helm_guarding 1 i_dragon_leggings_guarding 1 i_dragon_sleeves_guarding 1 }
+random_dragon_armor_hardening		{ i_dragon_chest_hardening 1 i_dragon_gloves_hardening 1 i_dragon_helm_hardening 1 i_dragon_leggings_hardening 1 i_dragon_sleeves_hardening 1 }
+random_dragon_armor_fortification	{ i_dragon_chest_fortification 1 i_dragon_gloves_fortification 1 i_dragon_helm_fortification 1 i_dragon_leggings_fortification 1 i_dragon_sleeves_fortification 1 }
+random_dragon_armor_invulnerability	{ i_dragon_chest_invulnerability 1 i_dragon_gloves_invulnerability 1 i_dragon_helm_invulnerability 1 i_dragon_leggings_invulnerability 1 i_dragon_sleeves_invulnerability 1 }
+
+random_dragon_armor_magic_all		{ random_dragon_armor_defense 1 random_dragon_armor_guarding 1 random_dragon_armor_hardening 1 random_dragon_armor_fortification 1 random_dragon_armor_invulnerability 1 }
+
+random_bone_armor_defense		{ i_bone_arms_defense 1 i_bone_leggings_defense 1 i_bone_helm_defense 1 i_bone_gloves_defense 1 i_bone_chest_defense 1 }
+random_bone_armor_guarding		{ i_bone_arms_guarding 1 i_bone_leggings_guarding 1 i_bone_helm_guarding 1 i_bone_gloves_guarding 1 i_bone_chest_guarding 1 }
+random_bone_armor_hardening		{ i_bone_arms_hardening 1 i_bone_leggings_hardening 1 i_bone_helm_hardening 1 i_bone_gloves_hardening 1 i_bone_chest_hardening 1 }
+random_bone_armor_fortification		{ i_bone_arms_fortification 1 i_bone_leggings_fortification 1 i_bone_helm_fortification 1 i_bone_gloves_fortification 1 i_bone_chest_fortification 1 }
+random_bone_armor_invulnerability	{ i_bone_arms_invulnerability 1 i_bone_leggings_invulnerability 1 i_bone_helm_invulnerability 1 i_bone_gloves_invulnerability 1 i_bone_chest_invulnerability 1 }
+
+random_bone_armor_magic_all		{ random_bone_armor_defense 1 random_bone_armor_guarding 1 random_bone_armor_hardening 1 random_bone_armor_fortification	1 random_bone_armor_invulnerability 1 }
+
+//*******************************************************************
+[DEFNAME items_reagents]
+random_reagents_normal			{ i_reag_black_pearl 1 i_reag_blood_moss 1 i_reag_garlic 1 i_reag_ginseng 1 i_reag_mandrake 1 i_reag_nightshade 1 i_reag_spider_silk 1 i_reag_sulfur_ash 1 }
+random_reagents_pagan			{ i_reag_batwing 1 i_reag_blackmoor 1 i_reag_blood_spawn 1 i_reag_bone 1 i_reag_brimstone 1 i_reag_daemon_bone 1 i_reag_dead_wood 1 i_reag_dragon_blood 1 i_reag_eye_of_newt 1 i_reag_fertile_dirt 1 i_reag_obsidian 1 i_reag_pig_iron 1 i_reag_pumice 1 i_reag_serpent_scale 1 i_reag_blood_vial 1  i_reag_volcanic_ash 1 i_reag_wyrm_heart 1 }
+
+//*******************************************************************
+[DEFNAME items_bones]
+random_bones				{ i_bone_spine 1 i_bone_ribcage 1 i_bone_pelvis 1 i_bone_jaw 1 i_bone_shards 1 i_bone 1 i_bone_pile 1 i_bones 1 }
+
+//*******************************************************************
+[DEFNAME items_clothing_ml]
+random_elven_male_tops			{ i_elven_shirt 1 i_elven_shirt_dark 1 i_elven_robe 1 }
+random_elven_female_tops		{ i_elven_shirt 1 i_elven_shirt_dark 1 i_elven_robe 1 i_elven_robe_female 1 }
+random_elven_pants			{ i_elven_pants 1 }
+random_elven_headwear			{ i_elven_glasses 1 }
+
+[DEFNAME items_clothing_se]
+random_se_male_tops			{ i_kimono_male 1 i_hakama_shita 1 i_jin_baori 1 i_kamashimo 1 }
+random_se_female_tops			{ i_kimono_female 1 i_hakama_shita 1 i_jin_baori 1 }
+random_se_footwear			{ i_waraji_tabi 1 }
+random_se_belts				{ i_obi 1 }
+random_se_pants				{ i_tattsuke_hakama 1 i_hakama 1 }
+random_se_hats				{ i_kasa 1 }

@@ -1,0 +1,86 @@
+[ITEMDEF i_hide_spined]
+DEFNAME=i_hide_spined
+NAME=Spined Hide%s
+ID=i_hide
+PILE=1
+WEIGHT=2.0
+
+CATEGORY=Items by professions
+SUBSECTION=Tanner
+DESCRIPTION=Spined Hide
+
+ON=@CREATE
+ COLOR=color_o_spined
+
+[ITEMDEF i_hide_horned]
+DEFNAME=i_hide_horned
+NAME=Horned Hide%s
+ID=i_hide
+PILE=1
+WEIGHT=2.0
+
+CATEGORY=Items by professions
+SUBSECTION=Tanner
+DESCRIPTION=Horned Hide
+
+ON=@CREATE
+ COLOR=color_o_horned
+
+[ITEMDEF i_hide_barbed]
+DEFNAME=i_hide_barbed
+NAME=Barbed Hide%s
+ID=i_hide
+PILE=1
+WEIGHT=2.0
+
+CATEGORY=Items by professions
+SUBSECTION=Tanner
+DESCRIPTION=Barbed Hide
+
+ON=@CREATE
+ COLOR=color_o_barbed
+
+[ITEMDEF i_hides_cut_spined]
+DEFNAME=i_hides_cut_spined
+NAME=Cut-up Spined Leather
+ID=i_hides_cut
+PILE=1
+WEIGHT=1.0
+RESOURCES=i_hide_spined
+
+CATEGORY=Items by professions
+SUBSECTION=Tanner
+DESCRIPTION=Cut-up Spined Leather
+
+ON=@CREATE
+ COLOR=color_o_spined
+
+[ITEMDEF i_hides_cut_horned]
+DEFNAME=i_hides_cut_horned
+NAME=Cut-up Horned Leather
+ID=i_hides_cut
+PILE=1
+WEIGHT=1.0
+RESOURCES=i_hide_horned
+
+CATEGORY=Items by professions
+SUBSECTION=Tanner
+DESCRIPTION=Cut-up Horned Leather
+
+ON=@CREATE
+ COLOR=color_o_horned
+
+[ITEMDEF i_hides_cut_barbed]
+DEFNAME=i_hides_cut_barbed
+NAME=Cut-up Barbed Leather
+ID=i_hides_cut
+PILE=1
+WEIGHT=1.0
+RESOURCES=i_hide_barbed
+
+CATEGORY=Items by professions
+SUBSECTION=Tanner
+DESCRIPTION=Cut-up Barbed Leather
+
+ON=@CREATE
+ COLOR=color_o_barbed

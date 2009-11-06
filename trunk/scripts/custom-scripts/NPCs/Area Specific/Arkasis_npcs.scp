@@ -1,0 +1,544 @@
+//Plagued Deep Dwarven Miner
+[CHARDEF c_plagued_deep_dwarf_miner]
+DEFNAME=c_plagued_deep_dwarf_miner
+NAME=Plagued Deep Dwarf Miner	//#names_deep_dwarves
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=100
+DAM=1,4
+ARMOR={10 20}
+ICON=i_pet_man
+SOUND=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_food, t_meat, t_fruit
+SHELTER=r_dungeon
+AVERSIONS=r_civilization
+DESIRES=e_notoriety, i_ore_mytheril, i_ingot_mytheril
+BLOODCOLOR=0
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Arkasis (Newbie Dungeon)
+DESCRIPTION=Plagued Deep Dwarf Miner
+
+ON=@CREATE
+ NPC=brain_human
+ COLOR=colors_skin
+
+ TAG.NAME.HUE=020
+
+ TAG.BARDING.DIFFICULTY=45.0
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ FAME=1000
+ KARMA=-1000
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=0
+
+ RESCOLD={10 25}
+ RESENERGY={10 25}
+ RESFIRE={5 10}
+ RESPOISON={50 75}
+
+ STR={50 65}
+ DEX={35 50}
+ INT={35 45}
+ MAXHITS={75 100}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={25.0 30.0}
+ FENCING={25.0 30.0}
+ TACTICS={25.0 30.0}
+ MAGICRESISTANCE={35.0 40.0}
+ ANATOMY={0.0 0.0}
+ POISONING={10.0 20.0}
+ MINING={25.0 45.0}
+ DETECTINGHIDDEN={50.0 60.0}
+ HIDING={35.0 40.0}
+
+ ITEMNEWBIE=random_male_hair
+ COLOR=colors_hair //colors_deep_dwarf_hair
+ ITEMNEWBIE={i_beard_short_med 1 i_beard_long_med 1}
+ COLOR=match_hair
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=i_pickaxe
+ ITEMNEWBIE=random_male_shirts
+ ITEMNEWBIE=random_pants
+ ITEMNEWBIE=random_shoes
+
+ON=@SEENEWPLAYER
+ ATTACK
+ EMOTE growl and shambles towards <SRC.NAME>
+ RETURN 1
+
+ON=@DEATH
+ NEWLOOT=loot_plagued_deep_dwarf_miner
+ NEWLOOT=add_loot_plagued_deep_dwarf_miner
+
+[TEMPLATE loot_plagued_deep_dwarf_miner]
+DEFNAME=loot_plagued_deep_dwarf_miner
+CATEGORY=NPC Loot Templates
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Deep Dwarf Miner
+ITEM=poor_gold_pile
+ITEM={i_pickaxe 1 0 9}
+ITEM=random_light
+ITEM=random_food,{2 3}
+ITEM=random_bottle,{1 2}
+ITEM={i_ore_mytheril 1 0 49},{1 2}
+
+[TEMPLATE add_loot_plagued_deep_dwarf_miner]
+DEFNAME=add_loot_plagued_deep_dwarf_miner
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Deep Dwarf Miner
+ITEM=
+
+
+//Dwarven Zombie
+[CHARDEF c_plagued_dwarven_zombie]
+DEFNAME=c_plagued_dwarven_zombie
+NAME=Plagued Dwarven Zombie
+ID=c_zombie
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+DAM=4,8
+ARMOR={15 20}
+ICON=i_pet_zombie
+SOUND=
+RESOURCES=t_magic
+FOODTYPE=15 t_meat_raw
+SHELTER=r_dungeon
+AVERSIONS=r_civilization
+DESIRES=e_notoriety
+BLOODCOLOR=0
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Arkasis (Newbie Dungeon)
+DESCRIPTION=Plagued Dwarven Zombie
+
+ON=@CREATE
+ NPC=brain_undead
+ COLOR=0
+
+ TAG.NAME.HUE=020
+
+ TAG.BARDING.DIFFICULTY=55.0
+ TAG.SLAYER.VULNERABILITY2=undead_slayer
+
+ FAME=1000
+ KARMA=-1000
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=0
+
+ RESCOLD={10 20}
+ RESENERGY={10 20}
+ RESFIRE={10 20}
+ RESPOISON={10 20}
+
+ STR={35 55}
+ DEX={35 40}
+ INT={15 25}
+ MAXHITS={75 100}
+ MAXSTAM=<DEX>
+ MAXMANA={0 0}
+
+ WRESTLING={25.0 35.0}
+ TACTICS={25.0 35.0}
+ MAGICRESISTANCE={10.0 20.0}
+ ANATOMY={0.0 0.0}
+ POISONING={10.0 25.0}
+
+ON=@DEATH
+ NEWLOOT=loot_plagued_dwarven_zombie
+ NEWLOOT=add_loot_dwarven_zombie
+
+[TEMPLATE loot_plagued_dwarven_zombie]
+DEFNAME=loot_plagued_dwarven_zombie
+CATEGORY=NPC Loot Templates
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Dwarven Zombie
+ITEM=i_gold,{10 25}
+
+[TEMPLATE add_loot_plagued_dwarven_zombie]
+DEFNAME=add_loot_plagued_dwarven_zombie
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Dwarven Zombie
+ITEM=
+
+//Plagued Grim Axe Clan Dwarven Warrior
+[CHARDEF c_plagued_grim_axe_clan_warrior]
+DEFNAME=c_plagued_grim_axe_clan_warrior
+NAME=Plagued Grim Axe Clan Warrior	//#names_deep_dwarves
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=100
+DAM=2,6
+ARMOR={10 20}
+ICON=i_pet_man
+SOUND=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_food
+SHELTER=r_dungeon
+AVERSIONS=r_civilization
+DESIRES=e_notoriety, i_ore_mytheril, i_ingot_mytheril
+BLOODCOLOR=0
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Arkasis (Newbie Dungeon)
+DESCRIPTION=Plagued Grim Axe Clan Warrior
+
+ON=@CREATE
+ NPC=brain_human
+ COLOR=colors_skin
+
+ TAG.NAME.SUFFIX=the Warrior
+ TAG.NAME.HUE=020
+
+ TAG.BARDING.DIFFICULTY=65.0
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ FAME=2000
+ KARMA=-2000
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=0
+
+ RESCOLD={10 25}
+ RESENERGY={10 25}
+ RESFIRE={5 10}
+ RESPOISON={50 75}
+
+ STR={50 65}
+ DEX={35 50}
+ INT={35 45}
+ MAXHITS={75 100}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={35.0 55.0}
+ SWORDSMANSHIP={45.0 55.0}
+ TACTICS={45.0 55.0}
+ MAGICRESISTANCE={30.0.0 40.0}
+ ANATOMY={0.0 0.0}
+ POISONING={10.0 20.0}
+ DETECTINGHIDDEN={50.0 60.0}
+ HIDING={35.0 40.0}
+
+ ITEMNEWBIE=random_male_hair
+ COLOR=colors_hair//colors_deep_dwarf_hair
+ ITEMNEWBIE={i_beard_short_med 1 i_beard_long_med 1}
+ COLOR=match_hair
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=random_axe
+ ITEMNEWBIE=i_chainmail_tunic
+ ITEMNEWBIE=i_chainmail_leggings
+ ITEMNEWBIE=i_chainmail_coif
+ ITEMNEWBIE=i_leather_gloves
+ ITEMNEWBIE=i_leather_gorget
+ ITEMNEWBIE=i_leather_arms
+
+ON=@SEENEWPLAYER
+ ATTACK
+ EMOTE growls and grits teeth as it charges towards <src.name>
+ RETURN 1
+
+ON=@DEATH
+ NEWLOOT=loot_plagued_grim_axe_clan_warrior
+ NEWLOOT=add_loot_plagued_grim_axe_clan_warrior
+
+[TEMPLATE loot_plagued_grim_axe_clan_warrior]
+DEFNAME=loot_plagued_grim_axe_clan_warrior
+CATEGORY=NPC Loot Templates
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Grim Axe Clan Warrior
+ITEM=meager_gold_pile
+ITEM=random_potion,{1 3}
+ITEM=random_food,{2 3}
+ITEM=random_bottle,{1 2}
+ITEM=random_light
+ITEM={i_ore_mytheril 1 0 49},{2 4}
+
+[TEMPLATE add_loot_plagued_grim_axe_clan_warrior]
+DEFNAME=add_loot_plagued_grim_axe_clan_warrior
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Grim Axe Clan Warrior
+ITEM=
+
+
+//Plagued Subterranean Mongbat
+[CHARDEF c_plagued_subterannean_mongbat]
+DEFNAME=c_plagued_subterannean_mongbat
+NAME=Plagued Subterannean Mongbat
+ID=c_mongbat
+CAN=mt_walk|mt_fly
+MOVERATE=100
+DAM=4,6
+ARMOR={7 12}
+ICON=i_pet_mongbat
+SOUND=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+SHELTER=r_dungeon
+AVERSIONS=r_civilization
+DESIRES=e_notoriety
+BLOODCOLOR=0
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Arkasis (Newbie Dungeon)
+DESCRIPTION=Plagued Subterannean Mongbat
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=27.5
+ TAG.SLAYER.VULNERABILITY2=bat_slayer
+
+ FAME=500
+ KARMA=-500
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=0
+
+ RESCOLD={10 20}
+ RESENERGY={5 10}
+ RESFIRE={5 10}
+ RESPOISON={20 30}
+
+ STR={25 45}
+ DEX={35 40}
+ INT={15 25}
+ MAXHITS={40 60}
+ MAXSTAM=<DEX>
+ MAXMANA={0 0}
+
+ WRESTLING={15.0 20.0}
+ TACTICS={15.0 20.0}
+ MAGICRESISTANCE={10.0 15.0}
+ ANATOMY={0.0 0.0}
+ POISONING={10.0 25.0}
+
+ON=@DEATH
+ NEWLOOT=loot_plagued_subterannean_mongbat
+ NEWLOOT=add_loot_plagued_subterannean_mongbat
+
+[TEMPLATE loot_plagued_subterannean_mongbat]
+DEFNAME=loot_plagued_subterannean_mongbat
+CATEGORY=NPC Loot Templates
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Subterannean Mongbat
+ITEM=i_gold,{15 30}
+ITEM={random_food 1 0 4}
+
+[TEMPLATE add_loot_plagued_subterannean_mongbat]
+DEFNAME=add_loot_plagued_subterannean_mongbat
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Subterannean Mongbat
+ITEM=
+
+
+//Plagued Grim Axe Clan Berserker
+[CHARDEF c_plagued_grim_axe_clan_berserker]
+DEFNAME=c_plagued_grim_axe_clan_berserker
+NAME=Plagued Grim Axe Clan Berserker	//#names_deep_dwarves
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=75
+DAM=1,4
+ARMOR={10 20}
+ICON=i_pet_man
+SOUND=
+RESOURCES=1 i_ribs_raw
+FOODTYPE=15 t_food
+//SHELTER=r_dungeon
+AVERSIONS=r_civilization
+DESIRES=e_notoriety, i_ore_mytheril, i_ingot_mytheril
+BLOODCOLOR=0
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Arkasis (Newbie Dungeon)
+DESCRIPTION=Plagued Grim Axe Clan Berserker
+
+ON=@CREATE
+ NPC=brain_berserk
+ COLOR=colors_skin
+
+// TAG.NAME.SUFFIX= the Berserker
+ TAG.NAME.HUE=020
+
+ TAG.BARDING.DIFFICULTY=85.0
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ FAME=3500
+ KARMA=-3500
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=0
+
+ RESCOLD={10 25}
+ RESENERGY={10 25}
+ RESFIRE={5 10}
+ RESPOISON={50 75}
+
+ STR={80 130}
+ DEX={65 80}
+ INT={55 60}
+ MAXHITS={120 195}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={35.0 55.0}
+ SWORDSMANSHIP={60.0 65.0}
+ TACTICS={60.0 65.0}
+ MAGICRESISTANCE={55.0 70.0}
+ ANATOMY={25.0 45.0}
+ POISONING={20.0 35.0}
+ DETECTINGHIDDEN={50.0 60.0}
+ HIDING={35.0 40.0}
+
+ ITEMNEWBIE=random_male_hair
+ COLOR=colors_hair//colors_deep_dwarf_hair
+ ITEMNEWBIE={i_beard_short_med 1 i_beard_long_med 1}
+ COLOR=match_hair
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=random_axe
+ ITEMNEWBIE=i_platemail_chest
+ ITEMNEWBIE=i_platemail_leggings
+ ITEMNEWBIE=i_platemail_arms
+ ITEMNEWBIE=i_platemail_gloves
+ ITEMNEWBIE=i_platemail_gorget
+
+ON=@SEENEWPLAYER
+ ATTACK
+ EMOTE growls and charges towards <SRC.NAME> bearing his axe
+ RETURN 1
+
+ON=@DEATH
+ NEWLOOT=loot_plagued_grim_axe_clan_berserker
+ NEWLOOT=add_loot_plagued_grim_axe_clan_berserker
+
+[TEMPLATE loot_plagued_grim_axe_clan_berserker]
+DEFNAME=loot_plagued_grim_axe_clan_berserker
+CATEGORY=NPC Loot Templates
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Grim Axe Clan Berserker
+ITEM=average_gold_pile
+ITEM=random_potion,{1 3}
+ITEM=random_food,{2 3}
+ITEM=random_bottle,{1 2}
+ITEM=random_jewel,{2 4}
+ITEM=random_light
+ITEM={i_ore_mytheril 1 0 49},{2 4}
+
+[TEMPLATE add_loot_plagued_grim_axe_clan_berserker]
+DEFNAME=add_loot_plagued_grim_axe_clan_berserker
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Plagued Grim Axe Clan Berserker
+ITEM=
+
+
+//Grimgnaw the Dire Wolf
+[CHARDEF c_grimgnaw_dire_wolf]
+DEFNAME=c_grimgnaw_dire_wolf
+NAME=Grimgnaw the Dire Wolf
+ID=c_a_direwolf
+CAN=mt_walk
+MOVERATE=100
+DAM=6,16
+ARMOR={10 20}
+ICON=i_pet_man
+SOUND=
+RESOURCES=1 i_ribs_raw, 1 i_fur_dark
+FOODTYPE=15 t_meat_raw
+//SHELTER=r_dungeon, r_forests, r_caves
+AVERSIONS=r_civilization
+DESIRES=e_notoriety
+BLOODCOLOR=0
+TEVENTS=
+
+CATEGORY=Monsters
+SUBSECTION=Arkasis (Newbie Dungeon)
+DESCRIPTION=Grimgnaw the Dire Wolf
+
+ON=@CREATE
+ NPC=brain_animal
+ COLOR=0
+
+ TAG.NAME.HUE=020
+
+ TAG.BARDING.DIFFICULTY=82.5
+ TAG.SLAYER.VULNERABILITY2=wolf_slayer
+
+ FAME=2500
+ KARMA=-2500
+
+ TAG.COLDDAMAGE=0
+ TAG.ENERGYDAMAGE=0
+ TAG.FIREDAMAGE=0
+ TAG.POISONDAMAGE=0
+
+ RESCOLD={10 20}
+ RESENERGY={10 20}
+ RESFIRE={25 35}
+ RESPOISON={10 20}
+
+ STR={75 100}
+ DEX={75 100}
+ INT={40 80}
+ MAXHITS={102 150}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.0 60.0}
+ TACTICS={40.0 60.0}
+ MAGICRESISTANCE={55.0 65.0}
+ ANATOMY={0.0 0.0}
+ POISONING={20.0 40.0}
+
+ON=@SEENEWPLAYER
+ ATTACK
+ EMOTE snarls
+ RETURN 1
+
+ON=@DEATH
+ NEWLOOT=loot_grimgnaw_dire_wolf
+ NEWLOOT=add_loot_grimgnaw_dire_wolf
+
+[TEMPLATE loot_grimgnaw_dire_wolf]
+DEFNAME=loot_grimgnaw_dire_wolf
+CATEGORY=NPC Loot Templates
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Grimgnaw the Dire Wolf
+ITEM=
+
+[TEMPLATE add_loot_grimgnaw_dire_wolf]
+DEFNAME=add_loot_grimgnaw_dire_wolf
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Arkasis (Newbie Mine)
+DESCRIPTION=Grimgnaw the Dire Wolf
+ITEM=

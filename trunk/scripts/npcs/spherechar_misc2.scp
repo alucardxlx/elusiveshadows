@@ -1,0 +1,118 @@
+
+[CHARDEF 01a4]
+//Male Kid (Blond Hair) (not in t2a)
+//NOTE: NOT in T2a !
+DEFNAME=c_child_mb
+NAME=Child
+RESOURCES=4 t_food
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+ICON=i_pet_MAN
+FOODTYPE=15 t_food,t_fruit
+DESIRES=i_gold,e_notoriety
+//SHELTER=r_house
+AVERSIONS=t_TRAP,t_eerie_stuff
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+DESCRIPTION=Child (Blond)
+SUBSECTION=Miscellaneous
+CATEGORY=Civilized
+
+ON=@Create
+	NPC=brain_human
+	FENCING={8.0 19.0}
+	PARRYING={8.0 19.0}
+	SWORDSMANSHIP={8.0 19.0}
+	WRESTLING={8.0 19.0}
+	MACEFIGHTING={8.0 19.0}
+	MAGICRESISTANCE={8.0 19.0}
+	TACTICS={8.0 19.0}
+
+[CHARDEF 01a5]
+//Male Kid (Dark Hair)
+//NOTE: NOT in T2a !
+DEFNAME=c_child_md
+NAME=Child
+CAN=MT_WALK|MT_RUN|MT_USEHANDS
+ICON=i_pet_MAN
+FOODTYPE=15 t_food,t_fruit
+//SHELTER=r_house
+DESIRES=i_gold,e_notoriety
+RESOURCES=4 i_ribs_raw
+AVERSIONS=t_TRAP,t_eerie_stuff
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+DESCRIPTION=Child (Brunette)
+SUBSECTION=Miscellaneous
+CATEGORY=Civilized
+
+ON=@Create
+	NPC=brain_human
+	FENCING={8.0 19.0}
+	PARRYING={8.0 19.0}
+	SWORDSMANSHIP={8.0 19.0}
+	WRESTLING={8.0 19.0}
+	MACEFIGHTING={8.0 19.0}
+	MAGICRESISTANCE={8.0 19.0}
+	TACTICS={8.0 19.0}
+
+[CHARDEF 01a6]
+//Female Kid (Blond Hair) (toddler)
+//NOTE: NOT in T2a !
+DEFNAME=c_child_fb
+NAME=Child
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_USEHANDS
+ICON=i_pet_woman
+FOODTYPE=15 t_food,t_fruit
+//SHELTER=r_house
+DESIRES=i_gold,e_notoriety
+RESOURCES=4 i_ribs_raw
+AVERSIONS=t_TRAP,t_eerie_stuff
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+DESCRIPTION=Child (Female Blonde)
+SUBSECTION=Miscellaneous
+CATEGORY=Civilized
+BLOODCOLOR=0
+
+ON=@Create
+	NPC=brain_human
+	FENCING={8.0 19.0}
+	PARRYING={8.0 19.0}
+	SWORDSMANSHIP={8.0 19.0}
+	WRESTLING={8.0 19.0}
+	MACEFIGHTING={8.0 19.0}
+	MAGICRESISTANCE={8.0 19.0}
+	TACTICS={8.0 19.0}
+
+[CHARDEF 01a7]
+//Female Kid (Dark Hair)
+//NOTE: NOT in T2a !
+DEFNAME=c_child_fd
+NAME=Child
+CAN=MT_WALK|MT_RUN|MT_FEMALE|MT_USEHANDS
+ICON=i_pet_woman
+FOODTYPE=15 t_food,t_fruit
+//SHELTER=r_house
+DESIRES=i_gold,e_notoriety
+RESOURCES=4 i_ribs_raw
+AVERSIONS=t_TRAP,t_eerie_stuff
+TSPEECH=spk_human_prime
+TSPEECH=spk_human_default
+TEVENTS=e_Human_HearUnk
+DESCRIPTION=Child (Female Brunette)
+SUBSECTION=Miscellaneous
+CATEGORY=Civilized
+BLOODCOLOR=0
+
+ON=@Create
+	NPC=brain_human
+	FENCING={8.0 19.0}
+	PARRYING={8.0 19.0}
+	SWORDSMANSHIP={8.0 19.0}
+	WRESTLING={8.0 19.0}
+	MACEFIGHTING={8.0 19.0}
+	MAGICRESISTANCE={8.0 19.0}
+	TACTICS={8.0 19.0}

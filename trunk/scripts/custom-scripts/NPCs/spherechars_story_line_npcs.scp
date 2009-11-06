@@ -1,0 +1,64 @@
+[chardef 766]
+defname=c_warlord_kabur
+name=Warlord Kabur
+can=mt_walk|mt_run|mt_equip|mt_usehands
+moverate=100
+dam=20,30
+armor=60
+foodtype=30 t_food,t_fruit
+//shelter=r_forest
+//aversions=r_civilization
+desires=e_notoriety
+
+//tspeech=spk_warlord_kabur
+//tevents=e_warlord_kabur
+
+category=Story Line NPC's
+subsection=Juka
+description=Warlord Kabur
+
+on=@Create
+	npc=brain_monster
+	color=0
+
+	fame=10000
+	karma=-10000
+
+	str={500 800}
+	dex={125 150}
+	int={100 150}
+	maxhits={20000 30000}
+	maxstam={10000 15000}
+	maxmana={1000 2000}
+
+	wrestling=125.0
+	swordsmanship=125.0
+	macefighting=125.0
+	fencing=125.0
+	archery=125.0
+	tactics=125.0
+	parrying=125.0
+	magicresistance=125.0
+
+on=NPCRestock
+	item=i_gold,<r2000 3000>
+	item=i_halberd_vanq
+	equip
+//	item=i_decorative_kabuto
+	item=i_leather_tunic_invulnerability
+	equip
+	item=i_leather_sleeves_invulnerability
+	equip
+	item=i_leather_leggings_invulnerability
+	equip
+	item=i_leather_gorget_invulnerability
+	equip
+	item=i_leather_gloves_invulnerability
+	equip
+//	item=
+
+
+
+
+
+//0b97

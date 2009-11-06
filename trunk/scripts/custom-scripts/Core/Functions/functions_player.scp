@@ -1,0 +1,9 @@
+//Status Function
+[plevel 1]
+mystatus
+
+[function mystatus]
+src.sysmessage Karma: <src.karma>
+src.sysmessage Fame: <src.fame>
+src.sysmessage Kills: <src.kills>
+src.sysmessage Food: <src.food>/<src.mmaxfood>

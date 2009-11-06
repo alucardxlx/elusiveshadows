@@ -1,0 +1,378 @@
+//****************************************************************************
+//SPHERE by : Menasoft ©1997-2007
+//www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions 
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// NOTE: This is loaded 2nd after SPHERE.INI watch out for order of dependancies ! (keyword DEFNAME)
+VERSION=0.56
+
+[RESOURCES]
+// sphere.ini and spheretable.scp are automatic.
+// All the other scripts we want to load.
+scripts/sphere_defs.scp
+scripts/sphere_types.scp
+scripts/sphere_book.scp
+scripts/sphere_backward_compatibility.scp
+scripts/sphere_events_human.scp
+scripts/sphere_events_npcs.scp
+scripts/npcs/
+scripts/sphere_admin.scp
+scripts/sphere_dialog.scp
+scripts/items/sphere_item_resources.scp
+scripts/items/
+scripts/sphere_region.scp
+// -----------------------------------
+//          	Maps
+// -----------------------------------
+scripts/maps/sphere_map0.scp
+scripts/maps/sphere_map0_ml.scp
+scripts/maps/sphere_map1.scp
+scripts/maps/sphere_map2.scp
+scripts/maps/sphere_map3.scp
+scripts/maps/sphere_map4.scp
+scripts/maps/sphere_map_points0.scp
+scripts/maps/sphere_map_points0_ml.scp
+scripts/maps/sphere_map_points1.scp
+scripts/maps/sphere_map_points2.scp
+scripts/maps/sphere_map_points3.scp
+scripts/maps/sphere_map_points4.scp
+// -----------------------------------
+scripts/sphere_menu.scp
+scripts/sphere_name.scp
+scripts/sphere_skillmenu.scp
+scripts/sphere_spawns.scp
+scripts/sphere_speech.scp
+scripts/sphere_skills.scp
+scripts/sphere_spells.scp
+scripts/sphere_newb.scp
+scripts/sphere_template.scp
+scripts/sphere_template_loot.scp
+scripts/sphere_template_vend.scp
+scripts/sphere_triggers.scp
+scripts/sphere_serv_triggers.scp
+scripts/speech/
+// -----------------------------------
+//          Stone system
+// -----------------------------------
+scripts/stones/
+scripts/stones/guilds/
+scripts/stones/towns/
+// -----------------------------------
+
+// -----------------------------------
+//          ES Scripts
+// -----------------------------------
+scripts/custom-scripts/
+scripts/custom-scripts/Core/
+scripts/custom-scripts/Core/Classes/
+scripts/custom-scripts/Core/Combat System/
+scripts/custom-scripts/Core/Enviromental/
+scripts/custom-scripts/Core/Functions/
+scripts/custom-scripts/Core/Housing/
+scripts/custom-scripts/Core/Level/
+scripts/custom-scripts/Core/Naval/
+scripts/custom-scripts/Core/Players/
+scripts/custom-scripts/Core/Races/
+scripts/custom-scripts/Core/Spells/
+scripts/custom-scripts/Core/Travel/
+scripts/custom-scripts/Events/
+scripts/custom-scripts/Items/
+scripts/custom-scripts/Items/Armor/
+scripts/custom-scripts/Items/Artifact/
+scripts/custom-scripts/Items/Clothing/
+scripts/custom-scripts/Items/Craftables/
+scripts/custom-scripts/Items/Magic Items/
+scripts/custom-scripts/Items/Miscellaneous/
+scripts/custom-scripts/Items/Resources/
+scripts/custom-scripts/Items/Skill Related/
+scripts/custom-scripts/Items/Staff/
+scripts/custom-scripts/Items/Weapons/
+scripts/custom-scripts/NPCs/
+scripts/custom-scripts/NPCs/Animals/
+scripts/custom-scripts/NPCs/Area Specific/
+scripts/custom-scripts/NPCs/Champions/
+scripts/custom-scripts/NPCs/Humanoids/
+scripts/custom-scripts/NPCs/Monsters/
+scripts/custom-scripts/NPCs/Mounts/
+scripts/custom-scripts/NPCs/Named/
+scripts/custom-scripts/NPCs/Peerless/
+scripts/custom-scripts/NPCs/Town NPCs/
+scripts/custom-scripts/Quests/
+scripts/custom-scripts/Speech/
+scripts/custom-scripts/Systems/
+scripts/custom-scripts/Systems/Champion Spawn/
+scripts/custom-scripts/Systems/Factions/
+scripts/custom-scripts/Templates/
+scripts/custom-scripts/World/
+scripts/custom-scripts/World/Cave/
+scripts/custom-scripts/World/Cave/Ancient Lair/
+scripts/custom-scripts/World/Cave/Lizard Passage/
+scripts/custom-scripts/World/Cave/Mushroom Cave/
+scripts/custom-scripts/World/Cave/Rat Cave/
+scripts/custom-scripts/World/Cave/Spider Cave/
+scripts/custom-scripts/World/Cemetaries/
+scripts/custom-scripts/World/Cemetaries/Britain/
+scripts/custom-scripts/World/Cemetaries/Cove/
+scripts/custom-scripts/World/Cemetaries/Jhelom/
+scripts/custom-scripts/World/Cemetaries/Moonglow/
+scripts/custom-scripts/World/Cemetaries/Nujel'm/
+scripts/custom-scripts/World/Cemetaries/Vesper/
+scripts/custom-scripts/World/Cemetaries/Yew/
+scripts/custom-scripts/World/City/
+scripts/custom-scripts/World/City/Ancient Citadel/
+scripts/custom-scripts/World/City/Britain/
+scripts/custom-scripts/World/City/Buccaneer's Den/
+scripts/custom-scripts/World/City/Cove/
+scripts/custom-scripts/World/City/Delucia/
+scripts/custom-scripts/World/City/Gypsy Camps/
+scripts/custom-scripts/World/City/Jhelom/
+scripts/custom-scripts/World/City/Lakeshire/
+scripts/custom-scripts/World/City/Luna/
+scripts/custom-scripts/World/City/Magincia/
+scripts/custom-scripts/World/City/Minoc/
+scripts/custom-scripts/World/City/Mistas/
+scripts/custom-scripts/World/City/Montor/
+scripts/custom-scripts/World/City/Moonglow/
+scripts/custom-scripts/World/City/Nujel'm/
+scripts/custom-scripts/World/City/Ocllo/
+scripts/custom-scripts/World/City/Papua/
+scripts/custom-scripts/World/City/Reg Volon/
+scripts/custom-scripts/World/City/Royal/
+scripts/custom-scripts/World/City/Savage Camp/
+scripts/custom-scripts/World/City/Serpents Hold/
+scripts/custom-scripts/World/City/Skara Brae/
+scripts/custom-scripts/World/City/Terort Skitas/
+scripts/custom-scripts/World/City/Trinsic/
+scripts/custom-scripts/World/City/Umbra/
+scripts/custom-scripts/World/City/Ver Lor Reg/
+scripts/custom-scripts/World/City/Vesper/
+scripts/custom-scripts/World/City/Wind/
+scripts/custom-scripts/World/City/Yew/
+scripts/custom-scripts/World/City/Zento/
+scripts/custom-scripts/World/Dungeon/
+scripts/custom-scripts/World/Dungeon/Ankh/
+scripts/custom-scripts/World/Dungeon/Arkasis/
+scripts/custom-scripts/World/Dungeon/Bedlam/
+scripts/custom-scripts/World/Dungeon/Blighted Grove/
+scripts/custom-scripts/World/Dungeon/Blood/
+scripts/custom-scripts/World/Dungeon/Britain Passage/
+scripts/custom-scripts/World/Dungeon/Covetous/
+scripts/custom-scripts/World/Dungeon/Deceit/
+scripts/custom-scripts/World/Dungeon/Despise/
+scripts/custom-scripts/World/Dungeon/Destard/
+scripts/custom-scripts/World/Dungeon/Doom/
+scripts/custom-scripts/World/Dungeon/Exodus/
+scripts/custom-scripts/World/Dungeon/Fan Dancer Dojo/
+scripts/custom-scripts/World/Dungeon/Fire/
+scripts/custom-scripts/World/Dungeon/Hythloth/
+scripts/custom-scripts/World/Dungeon/Ice/
+scripts/custom-scripts/World/Dungeon/Khaldun/
+scripts/custom-scripts/World/Dungeon/Labyrinth/
+scripts/custom-scripts/World/Dungeon/Orc Caves/
+scripts/custom-scripts/World/Dungeon/Painted Caves/
+scripts/custom-scripts/World/Dungeon/Palace of Paroxysmus/
+scripts/custom-scripts/World/Dungeon/Prism of Light/
+scripts/custom-scripts/World/Dungeon/Rock/
+scripts/custom-scripts/World/Dungeon/Shame/
+scripts/custom-scripts/World/Dungeon/Solen Hive/
+scripts/custom-scripts/World/Dungeon/Sorcerers/
+scripts/custom-scripts/World/Dungeon/Spectre/
+scripts/custom-scripts/World/Dungeon/Terathan Keep/
+scripts/custom-scripts/World/Dungeon/The Citadel/
+scripts/custom-scripts/World/Dungeon/Trinsic Passage/
+scripts/custom-scripts/World/Dungeon/Twisted Weald/
+scripts/custom-scripts/World/Dungeon/Wisp/
+scripts/custom-scripts/World/Dungeon/Wrong/
+scripts/custom-scripts/World/Dungeon/Yomotsu Mines/
+// -----------------------------------
+
+
+[OBSCENE]
+
+[FAME]
+0,2000,6000
+Anonymous
+Known
+Famous
+
+[KARMA]
+-10000,-6000,-2000,2001,6001
+Wicked
+Belligerent
+Neutral
+Kindly
+Goodhearted
+
+[NOTOTITLES] // NotoTitles[5*11]
+// highest karma
+Trustworthy
+Estimable
+Great
+Glorious
+Glorious
+
+Honest
+Commendable
+Famed
+Illustrious
+Illustrious
+
+Good
+Honorable
+Admirable
+Noble
+Noble
+
+Kind
+Respectable
+Proper
+Eminent
+Eminent
+
+Fair
+Upstanding
+Reputable
+Distinguished
+Distinguished
+
+<none>
+Notable
+Prominent
+Renowned
+Renowned
+
+Rude
+Disreputable
+Notorious
+Imfamous
+Dishonored
+
+Unsavory
+Dishonorable
+Ignoble
+Sinister
+Sinister
+
+Scoundrel
+Malicious
+Vile
+Villainous
+Dark
+
+Despicable
+Dastardly
+Wicked
+Evil
+Evil
+
+Outcast
+Wretched
+Nefarious
+Dread
+Dread
+
+
+[RUNES]
+An
+Bet
+Corp
+Des
+Ex
+Flam
+Grav
+Hur
+In
+Jux
+Kal
+Lor
+Mani
+Nox
+Ort
+Por
+Quas
+Rel
+Sanct
+Tym
+Uus
+Vas
+Wis
+Xen
+Ylem
+Zan
+
+[PLEVEL 1]	// extra player commands.
+AFK
+WHERE
+HUNGRY
+CAST
+TELE
+SUICIDE
+SELF
+LAST
+HELP
+PASSWORD
+EMAIL
+HelpPage
+
+[PLEVEL 2]	// extra counselor commands.
+ANIM
+DETAIL
+SLEEP
+UNDERWEAR
+BARK
+FIX
+RESEND
+INFO
+ADMIN
+PAGE
+GO
+GOUID
+GOCHAR
+GOSOCK
+GOCLI
+XGO
+JAIL
+FORGIVE
+
+[PLEVEL 3]
+CHARLIST
+
+[PLEVEL 4]
+BADSPAWN
+SAVE
+LINK
+TILE
+NUKE
+GOTYPE
+GONAME
+
+[PLEVEL 6]
+ACCOUNT
+SETPRIV
+DIALOG
+BLOCKIP
+TOME
+EXTRACT
+UNEXTRACT
+EXPORT
+IMPORT
+SERV.CLEARVARS
+
+[PLEVEL 7]
+SRC
+OBJ
+NEW
+DB
+FILE
+TRY
+TRYP
+TRYSRC
+TRYSRV
+PLEVEL
+
+[EOF]
+

@@ -1,0 +1,208 @@
+[COMMENT ELEMENTAL_ARMAMENTS_LIST]
+Elemental equipment is forged from elemental soul gems. These are rare gems to come by and are sought after by many. Sadly the odds of getting them are slim. Sometimes it is a better option to get some of the elemental gear from creatures in the world.
+
+SHIELDS:
+ 
+The elemental shields have a slightly above average armor value. Only one unique from this is the Earth Elemental Shield, whose armor value is significantly higher than the rest, as well as it's durability. The other shields, though not as protective tend to boost a wielder's physical or mental attributes.
+ 
+ Air; increase your dexterity value.
+ Earth; increased armor value on the shield when equipped and increased durability.
+ Fire; increases your strength value.
+ Water; increases your intelligence value.
+
+Colors have not been specified yet.
+
+[COMMENT ELEMENTAL_ENCHANTMENT_GEMSTONES]
+Default
+Air
+Earth
+Fire
+Water
+
+[ITEMDEF i_enchant_elem_gem]
+NAME=Elemental Enchantment Gemstone
+ID=i_virtstone_1
+TYPE=t_normal
+WEIGHT=1.0
+VALUE=100
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Crafting - Enchantment Resources
+DESCRIPTION=Elemental Enchantment Gemstone (Default)
+
+ON=@CREATE
+ COLOR=
+ ATTR=attr_magic
+
+[ITEMDEF i_enchant_elem_gem_air]
+NAME=Elemental Enchantment Gemstone
+ID=i_virtstone_1
+TYPE=t_normal
+WEIGHT=1.0
+VALUE=100
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Crafting - Enchantment Resources
+DESCRIPTION=Elemental Enchantment Gemstone (Air)
+
+ON=@CREATE
+ COLOR=00385
+ ATTR=attr_magic
+
+[ITEMDEF i_enchant_elem_gem_earth]
+NAME=Elemental Enchantment Gemstone
+ID=i_virtstone_1
+TYPE=t_normal
+WEIGHT=1.0
+VALUE=100
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Crafting - Enchantment Resources
+DESCRIPTION=Elemental Enchantment Gemstone (Earth)
+
+ON=@CREATE
+ COLOR=0021E
+ ATTR=attr_magic
+
+[ITEMDEF i_enchant_elem_gem_fire]
+NAME=Elemental Enchantment Gemstone
+ID=i_virtstone_1
+TYPE=t_normal
+WEIGHT=1.0
+VALUE=100
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Crafting - Enchantment Resources
+DESCRIPTION=Elemental Enchantment Gemstone (Fire)
+
+ON=@CREATE
+ COLOR=00026
+ ATTR=attr_magic
+
+[ITEMDEF i_enchant_elem_gem_water]
+NAME=Elemental Enchantment Gemstone
+ID=i_virtstone_1
+TYPE=t_normal
+WEIGHT=1.0
+VALUE=100
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Crafting - Enchantment Resources
+DESCRIPTION=Elemental Enchantment Gemstone (Water)
+
+ON=@CREATE
+ COLOR=00256
+ ATTR=attr_magic
+
+
+[COMMENT ELEMENTAL_SHIELDS]
+
+[TEMPLATE tm_elemental_shields]
+CATEGORY=Item Templates - ES
+SUBSECTION=Elemental Armaments
+DESCRIPTION=Elemental Shields
+ITEM={i_shield_elem_air 1, i_shield_elem_earth 1, i_shield_elem_fire 1, i_shield_elem_water 1}
+
+[ITEMDEF i_shield_elem_air]
+DEFNAME=i_shield_elem_air
+NAME=Air Elemental Shield
+ID=i_shield_order
+ARMOR=30
+WEIGHT=5.0
+REQSTR=40
+VALUE=1500
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Elemental Shields
+DESCRIPTION=Air Elemental Shield
+
+ON=@CREATE
+ COLOR=00385
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MODDEX+=5
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MODDEX-=5
+ RETURN 0
+
+[ITEMDEF i_shield_elem_earth]
+DEFNAME=i_shield_elem_earth
+NAME=Earth Elemental Shield
+ID=i_shield_order
+ARMOR=30
+WEIGHT=5.0
+REQSTR=40
+VALUE=1500
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Elemental Shields
+DESCRIPTION=Earth Elemental Shield
+
+ON=@CREATE
+ COLOR=0021E
+ HITPOINTS={110 125}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MODAR+=10
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MODAR-=10
+ RETURN 0
+
+[ITEMDEF i_shield_elem_fire]
+DEFNAME=i_shield_elem_fire
+NAME=Fire Elemental Shield
+ID=i_shield_order
+ARMOR=30
+WEIGHT=5.0
+REQSTR=40
+VALUE=1500
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Elemental Shields
+DESCRIPTION=Fire Elemental Shield
+
+ON=@CREATE
+ COLOR=00026
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MODSTR+=5
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MODSTR-=5
+ RETURN 0
+
+[ITEMDEF i_shield_elem_water]
+DEFNAME=i_shield_elem_water
+NAME=Water Elemental Shield
+ID=i_shield_order
+ARMOR=30
+WEIGHT=5.0
+REQSTR=40
+VALUE=1500
+
+CATEGORY=Provisions - Armor - Magic - ES
+SUBSECTION=Elemental Shields
+DESCRIPTION=Water Elemental Shield
+
+ON=@CREATE
+ COLOR=00256
+ HITPOINTS={80 100}
+ ATTR=attr_magic
+
+ON=@EQUIP
+ SRC.MODINT+=5
+ RETURN 0
+
+ON=@UNEQUIP
+ SRC.MODINT-=5
+ RETURN 0

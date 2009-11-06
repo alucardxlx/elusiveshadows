@@ -1,0 +1,155 @@
+[CHARDEF 087]	//135
+DEFNAME=c_arctic_ogre_lord
+NAME=Arctic Ogre Lord
+DAM=41,55//82 111
+ARMOR={55 70}
+CAN=mt_walk
+MOVERATE=100
+ICON=i_pet_arctic_ogre_lord
+FOODTYPE=30 t_meat
+RESOUCRES=2 i_ribs_raw
+//AVERSIONS=
+DESIRES=i_gold, e_notoriety
+SHELTER=r_ice_dungeon_level_1
+BLOODCOLOR=0
+
+//TEVENTS=e_poison_immunity_low
+
+CATEGORY=ES NPC's
+SUBSECTION=Ice Dungeon
+DESCRIPTION=Arctic Ogre Lord
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.NAME.PREFIX=""
+
+ TAG.BARDING.DIFFICULTY=88.8
+ TAG.SLAYER.VULNERABILITY=OGRE_SLAYER
+ TAG.SLAYER.VULNERABILITY2=REPOND_SLAYER
+
+ FAME=15000
+ KARMA=-15000
+
+ STR={767 945}
+ DEX={66 75}
+ INT={46 70}
+ MAXHITS={476 552}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={90.1 100.0}
+ TACTICS={90.1 100.0}
+ MAGICRESISTANCE={125.1 140.0}
+ ANATOMY=0.0
+
+
+ON=@NPCRESTOCK
+ ITEM=i_club
+ ITEM=i_gold,{750 950}
+ ITEM=//magic items
+ ITEM=//level 3 tmap
+
+
+
+
+//Ratman Archer
+[CHARDEF 08E]	//142
+DEFNAME=c_ratman_archer
+NAME=Ratman Archer
+DAM=18,21//36 42
+ARMOR={40 55}
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+ICON=i_pet_ratman_archer
+FOODTYPE=15 t_meat
+RESOUCRES=1 i_ribs_raw, 8 i_hide_spined
+//AVERSIONS=
+DESIRES=i_gold, e_notoriety
+SHELTER=r_vermin_horde_champion_spawn, r_compassion_mountains, r_ice_dungeon_level_2, r_montor_desert, r_ratman_mine_entrance, r_ratman_villa
+BLOODCOLOR=0
+
+CATEGORY=ES NPC's
+SUBSECTION=Ratmen
+DESCRIPTION=Ratman Archer
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=73.5
+ TAG.SLAYER.VULNERABILITY=REPOND_SLAYER
+
+ FAME=6500
+ KARMA=-6500
+
+ STR={146 180}
+ DEX={101 130}
+ INT={116 140}
+ MAXHITS={88 108}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={50.1 75.0}
+ TACTICS={50.1 75.0}
+ MAGICRESISTANCE={65.1 90.0}
+ ANATOMY={60.1 100.0}
+
+ ITEMNEWBIE=i_bow
+
+ON=@NPCRESTOCK
+ ITEM=i_arrow,{50 70}
+ ITEM=i_gold,{300 350}
+
+
+[CHARDEF 08F]	//134
+DEFNAME=c_ratman_mage
+NAME=Ratman Mage
+DAM=9,14//19 28
+ARMOR={40 45}
+CAN=mt_walk|mt_usehands
+MOVERATE=100
+ICON=i_pet_ratman_archer
+FOODTYPE=15 t_meat
+RESOUCRES=1 i_ribs_raw, 8 i_hide_spined
+//AVERSIONS=
+DESIRES=i_gold, e_notoriety
+SHELTER=r_vermin_horde_champion_spawn, r_compassion_mountains, r_ice_dungeon_level_2, r_man_mine_level_1, r_ratman_mine_entrance, r_ratman_villa
+BLOODCOLOR=0
+
+CATEGORY=ES NPC's
+SUBSECTION=Ratmen
+DESCRIPTION=Ratman Mage
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=79.3
+ TAG.SLAYER.VULNERABILITY=REPOND_SLAYER
+
+ FAME=7500
+ KARMA=-7500
+
+ STR={146 180}
+ DEX={101 130}
+ INT={130 210}
+ MAXHITS={88 108}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={50.1 75.0}
+ TACTICS={50.1 75.0}
+ MAGICRESISTANCE={65.1 90.0}
+ ANATOMY={60.1 100.0}
+
+ ITEMNEWBIE=i_spellbook
+ ADDCIRCLE=1,7
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{275 325}
+ ITEM=//6 REAGENTS
+ ITEM=//1 LOW LEVEL SCROLL
+ ITEM=//STATUE
+ ITEM=//LEVEL 2 TMAP

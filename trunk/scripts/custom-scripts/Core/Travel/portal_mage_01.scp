@@ -1,0 +1,453 @@
+[comment portal mage notes]
+By Pyromapes2k
+The portal mage uses tags to teleport people around. It has practically infinate pages and three sections: Dungeons, Towns and Other. Just set the tags as seen on the portal mage below and when the button is clicked you will be sent to the location in 10 seconds.
+
+Moving, getting hit or starting a skill stops the teleport.
+
+(Dont use commas in the P tags)
+
+Enjoy
+
+[CHARDEF c_v_PortalMage]
+ID=c_woman
+NAME=Persia
+CAN=MT_EQUIP|MT_USEHANDS|MT_WALK|MT_RUN|MT_FEMALE
+
+TAG.DUNGEON_1=Ankh Dungeon
+TAG.DUNGEON_1_P=
+TAG.DUNGEON_2=Bedlam
+TAG.DUNGEON_2_p=
+TAG.DUNGEON_3=Blighted Grove
+TAG.DUNGEON_3_p=
+TAG.DUNGEON_4=Blood Dungeon
+TAG.DUNGEON_4_p=
+TAG.DUNGEON_5=Britain Passage
+TAG.DUNGEON_5_p=
+TAG.DUNGEON_6=Covetous
+TAG.DUNGEON_6_p=
+TAG.DUNGEON_7=Deceit
+TAG.DUNGEON_7_p=
+TAG.DUNGEON_8=Despise
+TAG.DUNGEON_8_P=
+TAG.DUNGEON_9=Destard
+TAG.DUNGEON_9_p=
+TAG.DUNGEON_10=Doom
+TAG.DUNGEON_10_p=
+TAG.DUNGEON_11=Exodus Dungeon
+TAG.DUNGEON_11_p=
+TAG.DUNGEON_12=Fan Dancer Dojo
+TAG.DUNGEON_12_p=
+TAG.DUNGEON_13=Fire
+TAG.DUNGEON_13_p=
+TAG.DUNGEON_14=Hythloth
+TAG.DUNGEON_14_p=
+TAG.DUNGEON_15=Ice
+TAG.DUNGEON_15_P=
+TAG.DUNGEON_16=Khaldun
+TAG.DUNGEON_16_p=
+TAG.DUNGEON_17=Labyrinth
+TAG.DUNGEON_17_p=
+TAG.DUNGEON_18=Orc Caves
+TAG.DUNGEON_18_p=
+TAG.DUNGEON_19=Painted Caves
+TAG.DUNGEON_19_p=
+TAG.DUNGEON_20=Palace of Paroxymus
+TAG.DUNGEON_20_p=
+TAG.DUNGEON_21=Prism Of Light
+TAG.DUNGEON_21_p=
+TAG.DUNGEON_22=Rock Dungeon
+TAG.DUNGEON_22_P=
+TAG.DUNGEON_23=Shame
+TAG.DUNGEON_23_p=
+TAG.DUNGEON_24=Solen Hive
+TAG.DUNGEON_24_p=
+TAG.DUNGEON_25=Sorcerers Dungeon
+TAG.DUNGEON_25_p=
+TAG.DUNGEON_26=Spectres Dungeon
+TAG.DUNGEON_26_p=
+TAG.DUNGEON_27=Terathan Keep
+TAG.DUNGEON_27_p=
+TAG.DUNGEON_28=The Citadel
+TAG.DUNGEON_28_p=
+TAG.DUNGEON_29=Trinsic Passage
+TAG.DUNGEON_29_P=
+TAG.DUNGEON_30=Twisted Weald
+TAG.DUNGEON_30_p=
+TAG.DUNGEON_31=Wisp Dungeon
+TAG.DUNGEON_31_p=
+TAG.DUNGEON_32=Wrong
+TAG.DUNGEON_32_p=
+TAG.DUNGEON_33=Yomotsu Mines
+TAG.DUNGEON_33_p=
+
+TAG.TOWN_1=Ancient Citadel
+TAG.TOWN_1_P=
+TAG.TOWN_2=Britain
+TAG.TOWN_2_P=
+TAG.TOWN_3=Buccaneer's Den
+TAG.TOWN_3_P=
+TAG.TOWN_4=Cove
+TAG.TOWN_4_P=
+TAG.TOWN_5=Delucia
+TAG.TOWN_5_P=
+TAG.TOWN_6=Gypsy Camps
+TAG.TOWN_6_P=
+TAG.TOWN_7=Jhelom
+TAG.TOWN_7_P=
+TAG.TOWN_8=Lakeshire
+TAG.TOWN_8_P=
+TAG.TOWN_9=Luna
+TAG.TOWN_9_P=
+TAG.TOWN_10=Magincia
+TAG.TOWN_10_P=
+TAG.TOWN_11=Minoc
+TAG.TOWN_11_P=
+TAG.TOWN_12=Mistas
+TAG.TOWN_12_P=
+TAG.TOWN_13=Montor
+TAG.TOWN_13_P=
+TAG.TOWN_14=Moonglow
+TAG.TOWN_14_P=
+TAG.TOWN_15=Nujel'm
+TAG.TOWN_15_P=
+TAG.TOWN_16=Occlo
+TAG.TOWN_16_P=
+TAG.TOWN_17=Papua
+TAG.TOWN_17_P=
+TAG.TOWN_18=Reg Volon
+TAG.TOWN_18_P=
+TAG.TOWN_19=Royal City
+TAG.TOWN_19_P=
+TAG.TOWN_20=Savage Camp
+TAG.TOWN_20_P=
+TAG.TOWN_21=Serpents Hold
+TAG.TOWN_21_P=
+TAG.TOWN_22=Skara Brae
+TAG.TOWN_22_P=
+TAG.TOWN_23=Terort Skitas
+TAG.TOWN_23_P=
+TAG.TOWN_24=Trinsic
+TAG.TOWN_24_P=
+TAG.TOWN_25=Umbra
+TAG.TOWN_25_P=
+TAG.TOWN_26=Ver Lor Reg
+TAG.TOWN_26_P=
+TAG.TOWN_27=Vesper
+TAG.TOWN_27_P=
+TAG.TOWN_28=Wind
+TAG.TOWN_28_P=
+TAG.TOWN_29=Yew
+TAG.TOWN_29_P=
+TAG.TOWN_30=Zento
+TAG.TOWN_30_P=
+
+TAG.OTHER_1=Ancient Lair
+TAG.OTHER_1_P=
+TAG.OTHER_2=Lizard Passage
+TAG.OTHER_2_P=
+TAG.OTHER_3=Mushroom Cave
+TAG.OTHER_3_P=
+TAG.OTHER_4=Rat Cave
+TAG.OTHER_4_P=
+TAG.OTHER_5=Spider Cave
+TAG.OTHER_5_P=
+TAG.OTHER_6=Britain Cemetary
+TAG.OTHER_6_P=
+TAG.OTHER_7=Cove Cemetary
+TAG.OTHER_7_P=
+TAG.OTHER_8=Jhelom Cemetary
+TAG.OTHER_8_P=
+TAG.OTHER_9=Moonglow Cemetary
+TAG.OTHER_9_P=
+TAG.OTHER_10=Nujel'm Cemetary
+TAG.OTHER_10_P=
+TAG.OTHER_11=Vesper Cemetary
+TAG.OTHER_11_P=
+TAG.OTHER_12=Yew Cemetary
+TAG.OTHER_12_P=
+TAG.OTHER_13=
+TAG.OTHER_13_P=
+TAG.OTHER_14=
+TAG.OTHER_14_P=
+TAG.OTHER_15=
+TAG.OTHER_15_P=
+TAG.OTHER_16=
+TAG.OTHER_16_P=
+TAG.OTHER_17=
+TAG.OTHER_17_P=
+TAG.OTHER_18=
+TAG.OTHER_18_P=
+TAG.OTHER_19=
+TAG.OTHER_19_P=
+TAG.OTHER_20=
+TAG.OTHER_20_P=
+TAG.OTHER_21=
+TAG.OTHER_21_P=
+TAG.OTHER_22=
+TAG.OTHER_22_P=
+TAG.OTHER_23=
+TAG.OTHER_23_P=
+TAG.OTHER_24=
+TAG.OTHER_24_P=
+TAG.OTHER_25=
+TAG.OTHER_25_P=
+TAG.OTHER_26=
+TAG.OTHER_26_P=
+TAG.OTHER_27=
+TAG.OTHER_27_P=
+TAG.OTHER_28=
+TAG.OTHER_28_P=
+TAG.OTHER_29=
+TAG.OTHER_29_P=
+TAG.OTHER_30=
+TAG.OTHER_30_P=
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=colors_skin
+
+ FAME=2000
+ KARMA=2000
+
+ STR=100
+ DEX=0
+ INT=100
+ MAXHITS=5000
+
+ ITEMNEWBIE=i_hat_floppy
+ COLOR=0139
+ ITEMNEWBIE=i_dress_plain
+ COLOR=0139
+ ITEMNEWBIE=i_sandals
+ COLOR=0139
+ ITEMNEWBIE=i_c_staff_black
+ COLOR=0139
+ ITEMNEWBIE=i_hair_long
+ COLOR=72
+
+ON=@CLICK
+//MESSAGE @88,,1 [Double Click]
+ MESSAGE @72,,1 [Portal Mage]
+
+ON=@DCLICK
+ SRC.CTAG.MAPNUMC=1
+ DIALOG d_map_teleport 4
+ DIALOG d_map_teleport 1
+//SDIALOG d_vendor_buysell_new
+ RETURN 1
+
+[FUNCTION PORTAL_MAGE]
+IF <RESTEST i_portalmage_teleport>
+ IF <FINDID.i_portalmage_teleport.TIMER><=-1
+  FINDID.i_portalmage_teleport.REMOVE
+ ENDIF
+ENDIF
+IF !<RESTEST i_portalmage_teleport>
+ SERV.NEWITEM=i_portalmage_teleport
+ NEW.TAG.GO=<ARGV[0]>
+ EQUIP <NEW.UID>
+ELSE
+ SYSMESSAGE @88,,1 You are already Portaling...
+ENDIF
+
+
+[ITEMDEF i_portalmage_teleport]
+ID=i_memory
+TYPE=t_eq_script
+NAME=Portal Item
+
+ON=@EQUIP
+ MORE=10
+ TIMER=1
+ SRC.DIALOGCLOSE d_vendor_buysell_new
+ SRC.SAY @88,,1 [Teleporting]
+ TAG.X=<CONT.P.X>
+ TAG.Y=<CONT.P.Y>
+ CONT.EVENTS +e_teleporting_c
+
+ON=@TIMER
+ IF <CONT.P.Y>!=<TAG.Y>
+  CONT.SAY @88,,1 [You stop teleporting: moved]
+  CONT.EVENTS -e_teleporting_c
+  REMOVE
+  RETURN 1
+ ENDIF
+ IF <CONT.P.X>!=<TAG.X>
+  CONT.SAY @88,,1 [You stop teleporting: moved]
+  CONT.EVENTS -e_teleporting_c
+  REMOVE
+  RETURN 1
+ ENDIF
+ IF <MORE><=0
+  CONT.GO <TAG.GO>
+  CONT.EVENTS -e_teleporting_c
+  CONT.SYSMESSAGE @88,,1 You have been teleported...
+  REMOVE
+  RETURN 1
+ ELSE
+  CONT.SAY @88,,1 [<EVAL <MORE>>]
+  MORE=<MORE>+-1
+  CONT.EFFECT 3,i_fx_sparkle,30,32,0,55,4
+  CONT.SOUND snd_spell_recall
+  TIMER=1
+ ENDIF
+ RETURN 1
+
+[EVENTS e_teleporting_c]
+
+ON=@GETHIT
+ IF <RESTEST i_portalmage_teleport>
+  SAY @88,,1 [You stop teleporting: You got hit]
+  FINDID.i_portalmage_teleport.remove
+ ENDIF
+ EVENTS -e_teleporting_c
+
+ON=@SKILLSTART
+ IF <RESTEST i_portalmage_teleport>
+  SAY @88,,1 [You stop teleporting: You started a skill]
+  FINDID.i_portalmage_teleport.remove
+ ENDIF
+ EVENTS -e_teleporting_c
+
+
+
+[dialog d_map_teleport]
+0,0 
+NOMOVE
+resizepic 0 0 5120 610 430 
+text 210 25 32 0
+button 20 395 2152 2151 1 0 15
+text 50 400 66 1
+button 40 70 2152 2151 1 0 11
+button 240 70 2152 2151 1 0 12
+button 440 70 2152 2151 1 0 13
+
+dtext 170 375 44 Previous
+dtext 380 375 44 Next
+
+dtext 70 75 44 Dungeons
+dtext 270 75 44 Towns
+dtext 470 75 44 Other
+PAGE 1
+button 140 370 2152 2151 1 0 2
+button 350 370 2152 2151 1 0 1
+VAR.DOWN=130
+FOR <EVAL <SRC.CTAG.MAPNUMC>> <EVAL <SRC.CTAG.MAPNUMC>+10>
+IF !STRMATCH(<TAG.DUNGEON_<EVAL <LOCAL._for>>>,)
+button 20 <EVAL <VAR.DOWN>+5> 2361 2360 1 0 <EVAL <LOCAL._for>+1000>
+dtext 35 <EVAL <VAR.DOWN>> 66 <TAG.DUNGEON_<EVAL <LOCAL._for>>>
+VAR.DOWN=<EVAL <VAR.DOWN>+20>
+ENDIF
+ENDFOR
+VAR.DOWN=
+PAGE 2
+button 140 370 2152 2151 1 0 7
+button 350 370 2152 2151 1 0 3
+VAR.DOWN=130
+FOR <EVAL <SRC.CTAG.MAPNUMC>> <EVAL <SRC.CTAG.MAPNUMC>+10>
+IF !STRMATCH(<TAG.TOWN_<EVAL <LOCAL._for>>>,)
+button 20 <EVAL <VAR.DOWN>+5> 2361 2360 1 0 <EVAL <LOCAL._for>+4000>
+dtext 35 <EVAL <VAR.DOWN>> 66 <TAG.TOWN_<EVAL <LOCAL._for>>>
+VAR.DOWN=<EVAL <VAR.DOWN>+20>
+ENDIF
+ENDFOR
+VAR.DOWN=
+PAGE 3
+button 140 370 2152 2151 1 0 6
+button 350 370 2152 2151 1 0 4
+VAR.DOWN=130
+FOR <EVAL <SRC.CTAG.MAPNUMC>> <EVAL <SRC.CTAG.MAPNUMC>+10>
+IF !STRMATCH(<TAG.OTHER_<EVAL <LOCAL._for>>>,)
+button 20 <EVAL <VAR.DOWN>+5> 2361 2360 1 0 <EVAL <LOCAL._for>+7000>
+dtext 35 <EVAL <VAR.DOWN>> 66 <TAG.OTHER_<EVAL <LOCAL._for>>>
+VAR.DOWN=<EVAL <VAR.DOWN>+20>
+ENDIF
+ENDFOR
+VAR.DOWN=
+PAGE 4
+
+
+[dialog d_map_teleport text]
+Where do you wish to go?
+Done
+
+[dialog d_map_teleport button]
+
+ON=0
+dialogclose d_map_teleport
+
+ON=11
+SRC.CTAG.MAPNUMC=1
+DIALOG d_map_teleport 1
+
+ON=12
+SRC.CTAG.MAPNUMC=1
+DIALOG d_map_teleport 2
+
+ON=13
+SRC.CTAG.MAPNUMC=1
+DIALOG d_map_teleport 3
+
+ON=1
+IF !STRMATCH(<TAG.DUNGEON_<EVAL <SRC.CTAG.MAPNUMC>+11>>,)
+SRC.CTAG.MAPNUMC=<EVAL <SRC.CTAG.MAPNUMC>+11>
+ENDIF
+DIALOG d_map_teleport 1
+
+ON=3
+IF !STRMATCH(<TAG.TOWN_<EVAL <SRC.CTAG.MAPNUMC>+11>>,)
+SRC.CTAG.MAPNUMC=<EVAL <SRC.CTAG.MAPNUMC>+11>
+ENDIF
+DIALOG d_map_teleport 2
+
+ON=4
+IF !STRMATCH(<TAG.OTHER_<EVAL <SRC.CTAG.MAPNUMC>+11>>,)
+SRC.CTAG.MAPNUMC=<EVAL <SRC.CTAG.MAPNUMC>+11>
+ENDIF
+DIALOG d_map_teleport 3
+
+ON=2
+IF 0<SRC.CTAG.MAPNUMC>>1
+SRC.CTAG.MAPNUMC=<EVAL <SRC.CTAG.MAPNUMC>+-11>
+ENDIF
+DIALOG d_map_teleport 1
+
+ON=7
+IF 0<SRC.CTAG.MAPNUMC>>1
+SRC.CTAG.MAPNUMC=<EVAL <SRC.CTAG.MAPNUMC>+-11>
+ENDIF
+DIALOG d_map_teleport 2
+
+ON=6
+IF 0<SRC.CTAG.MAPNUMC>>1
+SRC.CTAG.MAPNUMC=<EVAL <SRC.CTAG.MAPNUMC>+-11>
+ENDIF
+DIALOG d_map_teleport 3
+
+
+ON=1000 3000
+IF !STRMATCH(<TAG.DUNGEON_<EVAL <ARGN1>+-1000>>,)
+SRC.Sysmessage @77,,1 Destination: <TAG.DUNGEON_<EVAL <ARGN1>+-1000>>
+SRC.PORTAL_MAGE <TAG.DUNGEON_<EVAL <ARGN1>+-1000>_P>
+ENDIF
+dialogclose d_map_teleport
+return 1
+
+ON=4000 6000
+IF !STRMATCH(<TAG.TOWN_<EVAL <ARGN1>+-4000>>,)
+SRC.Sysmessage @77,,1 Destination: <TAG.TOWN_<EVAL <ARGN1>+-4000>>
+SRC.PORTAL_MAGE <TAG.TOWN_<EVAL <ARGN1>+-4000>_P>
+ENDIF
+dialogclose d_map_teleport
+return 1
+
+ON=7000 9000
+IF !STRMATCH(<TAG.OTHER_<EVAL <ARGN1>+-7000>>,)
+SRC.Sysmessage @77,,1 Destination: <TAG.OTHER_<EVAL <ARGN1>+-7000>>
+SRC.PORTAL_MAGE <TAG.OTHER_<EVAL <ARGN1>+-7000>_P>
+ENDIF
+dialogclose d_map_teleport
+return 1
+
+ON=15
+dialogclose d_map_teleport

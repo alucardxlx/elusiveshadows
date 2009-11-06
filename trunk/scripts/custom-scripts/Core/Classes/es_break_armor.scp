@@ -1,0 +1,63 @@
+//Armor Break. Used to depreciate enemies armor durability.
+[DEFNAME def_armor_areas]
+def_ab_gloves
+def_ab_gorget
+def_ab_leggings
+def_ab_chest
+def_ab_arms
+def_ab_helm
+
+[FUNCTION armorbreak]
+IF (<STAM> > 10)
+ IF !<RESTEST 1 i_armor_break_timer>
+  SRC.EVENTS +e_armor_break
+  SERV.NEWITEM i_armor_break_timer
+  NEW.EQUIP <UID>
+  STAM-=10
+ ELSE
+  SMSG You have <EvAL (<FINDID.i_armor_break_timer.TIMER>)> seconds until you can use this ability again.
+  RETURN 0
+ ENDIF
+ELSE
+ MSG You lack the stamina to use this ability.
+ENDIF
+
+[EVENTS E_ARMOR_BREAK]
+ON=@HIT
+MSG You ready your aim at your target.
+LOCAL.CHANCE=(<EVAL (((<STAM> + <STR>) / 2) /4)>)
+ IF (<R1,100> <= <LOCAL.CHANCE>)
+  IF (0<SRC.FINDLAYER.LAYER_CHEST.ID>) 
+   SRC.FINDLAYER.LAYER_CHEST.MORE1L -= <r1,10>
+    IF (<SRC.FINDLAYER.LAYER_CHEST.MORE1L> < 0)
+     SRC.FINDLAYER.LAYER_CHEST.REMOVE
+     SRC.MSG Your armor has been destroyed.
+     RETURN 0
+    ENDIF
+   MSG You caused significant damage to your opponents armor!
+   SRC.MSG Your armor has been damaged by your opponents blow.
+   RETURN 0
+  ELSE
+   MSG Your opponent has no armor to hit!
+   RETURN 0
+  ENDIF
+ ELSE
+  MSG You fail to cause significant damage to your opponents armor.
+  RETURN 0
+ ENDIF
+
+[ITEMDEF i_armor_break_timer]
+ID=i_memory
+TYPE=t_eq_script
+LAYER=layer_special
+
+ON=@CREATE
+ ATTR 08090
+
+ON=@EQUIP
+ TIMER 30
+
+ON=@TIMER
+ CONT.SMSG Armor Break ability available for use again.
+ REMOVE
+ RETURN 1

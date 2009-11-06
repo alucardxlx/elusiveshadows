@@ -1,0 +1,347 @@
+//NPCs
+[CHARDEF c_ice_elf_mage]
+DEFNAME=c_ice_elf_mage
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=100
+DAM=5,10
+ARMOR=20
+
+CATEGORY=ES NPCs
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Mage
+
+ON=@Create
+ Title=Ice Elf Magi
+ COLOR=047f
+
+ TAG.BARDING.DIFFICULTY=70.0
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ FAME=3000
+ KARMA=-3000
+
+ STR={180 200}
+ DEX={100 150}
+ INT={300 500}
+ MAXHITS={150 180}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.0 80.0}
+ TACTICS={60.0 80.0}
+ MAGICRESISTANCE={100.0 125.0}
+ MAGERY={80.0 90.0}
+ EVALUATINGINTEL={40.0 50.0}
+ MEDITATION={40.0 60.0}
+ DETECTINGHIDDEN={50.0 60.0}
+ MACEFIGHTING={60.0 80.0}
+
+ ITEMNEWBIE=i_hair_long
+ COLOR=047f
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=i_spellbook
+ ADDSPELL=s_fireball
+ ADDSPELL=s_lightning
+ ADDSPELL=s_energy_bolt
+ ADDSPELL=s_poison
+ ADDSPELL=s_teleport
+ ADDSPELL=s_curse
+ ADDSPELL=s_mana_drain
+ ITEMNEWBIE=i_staff_gnarled_ice_elf
+ ITEMNEWBIE=i_robe_ice_elf
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+
+ON=@SPELLEFFECT
+ IF (<ARGN1> == 20) || (<ARGN1> == 39)
+  SRC.SMSG <NAME> is immune to this spell! 
+  EMOTE=resists the spell.
+  RETURN 1
+ ENDIF
+
+ON=@GETHIT
+ IF (<HITS> < 100)
+   IF (<RESTEST 1 i_potion_healgreat>)
+    SPELLEFFECT s_greater_heal,100.0
+    CONSUME i_potion_healgreat
+   ELSE
+  RETURN 0
+  ENDIF
+ ENDIF
+
+ IF (<DISTANCE> < 2)
+  FINDID.i_dagger_ice_elf.CONT=<UID>
+ ENDIF
+ RETURN 0
+
+ON=@DEATH
+ NEWLOOT=loot_ice_elf_mage
+ NEWLOOT=add_loot_ice_elf_mage
+
+
+[CHARDEF c_ice_elf_captain]
+DEFNAME=c_ice_elf_captain
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=100
+DAM=5,10
+ARMOR=20
+
+CATEGORY=ES NPCs
+SUBSECTION=Ice Elves
+DESCRIPTION=Ice Elf Captain
+
+ON=@Create
+ NPC=brain_monster
+ COLOR=047f
+ Title=Ice Elf Captain
+
+ FAME=4000
+ KARMA=-4000
+
+ TAG.BARDING.DIFFICULTY=76.5
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ STR={250 300}
+ DEX={150 175}
+ INT={51 85}
+ MAXHITS={320 400}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={75.0 90.0}
+ TACTICS={75.0 90.0}
+ MAGICRESISTANCE={90.0 100.0}
+ DETECTINGHIDDEN={75.0 80.0}
+ SWORDSMANSHIP={80.0 100.0}
+ PARRYING={50.0 100.0}
+
+ ITEMNEWBIE=i_hair_long
+ COLOR=047f
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=i_sword_viking_ice_elf
+ ITEMNEWBIE=i_shield_heater_ice_elf
+ ITEMNEWBIE=i_platemail_gorget_ice_elf
+ ITEMNEWBIE=i_platemail_chest_ice_elf
+ ITEMNEWBIE=i_platemail_arms_ice_elf
+ ITEMNEWBIE=i_platemail_gloves_ice_elf
+ ITEMNEWBIE=i_platemail_leggings_ice_elf
+ ITEMNEWBIE=i_platemail_helm_ice_elf
+ ITEM=i_cape
+ COLOR=047f
+ ITEM=i_sash
+ COLOR=047f
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+
+ON=@SPELLEFFECT
+ IF (<ARGN1> == 20) || (<ARGN1> == 39)
+  SRC.SMSG <NAME> is immune to this spell! 
+  EMOTE=resists the spell.
+  RETURN 1
+ ENDIF
+
+ON=@GETHIT // heal twice (two bottles)
+ IF (<HITS> < 100)
+   IF (<RESTEST 1 i_potion_healgreat>)
+    SPELLEFFECT s_greater_heal,100.0
+    CONSUME i_potion_healgreat
+   ELSE
+  RETURN 0
+  ENDIF
+ ENDIF
+
+ON=@DEATH
+ NEWLOOT=loot_ice_elf_captain
+ NEWLOOT=add_loot_ice_elf_captain
+
+
+[CHARDEF c_ice_elf_warrior]
+DEFNAME=i_ice_elf_warrior
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=100
+DAM=5,10
+ARMOR=20
+
+ON=@Create
+ Title=Ice Elf Warrior
+ COLOR=047f
+
+ TAG.BARDING.DIFFICULTY=70.0
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ FAME=3000
+ KARMA=-3000
+
+ STR={150 175}
+ DEX={125 150}
+ INT={50 80}
+ MAXHITS={125 180}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.0 70.0}
+ TACTICS={60.0 70.0}
+ MAGICRESISTANCE={60.0 75.0}
+ DETECTINGHIDDEN={50.0 60.0}
+ SWORDSMANSHIP={60.0 70.0}
+ PARRYING={50.0 80.0}
+
+ ITEMNEWBIE=i_hair_long
+ COLOR=047f
+
+ON=@NPCRestock
+ ITEMNEWBIE=i_sword_viking_ice_elf
+ ITEMNEWBIE=i_shield_heater_ice_elf
+ ITEMNEWBIE=i_platemail_gorget_ice_elf
+ ITEMNEWBIE=i_platemail_chest_ice_elf
+ ITEMNEWBIE=i_platemail_arms_ice_elf
+ ITEMNEWBIE=i_platemail_gloves_ice_elf
+ ITEMNEWBIE=i_platemail_leggings_ice_elf
+ ITEMNEWBIE=i_platemail_helm_ice_elf
+ ITEM=i_Sash
+ COLOR=047f
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+
+ON=@SPELLEFFECT
+ IF (<ARGN1> == 20) || (<ARGN1> == 39)
+  SRC.SMSG <NAME> is immune to this spell! 
+  EMOTE=resists the spell.
+  RETURN 1
+ ENDIF
+
+ON=@GETHIT // heal twice (two bottles)
+ IF (<HITS> < 100)
+   IF (<RESTEST 1 i_potion_healgreat>)
+    SPELLEFFECT s_greater_heal,100.0
+    CONSUME i_potion_healgreat
+   ELSE
+  RETURN 0
+  ENDIF
+ ENDIF
+
+ON=@DEATH
+ NEWLOOT=loot_ice_elf_warrior
+ NEWLOOT=add_loot_ice_elf_warrior
+
+
+
+[CHARDEF c_ice_elf_archer] 
+DEFNAME=c_ice_elf_archer
+ID=c_man
+CAN=mt_walk|mt_run|mt_usehands|mt_equip
+MOVERATE=100
+DAM=5,10
+ARMOR=20
+
+ON=@Create
+ NPC=brain_monster
+ Title=Ice Elf Archer
+ COLOR=047f
+
+ TAG.BARDING.DIFFICULTY=70.0
+ TAG.SLAYER.VULNERABILITY2=repond_slayer
+
+ FAME=3000
+ KARMA=-3000
+
+ STR={150 175}
+ DEX={125 150}
+ INT={50 80}
+ MAXHITS={125 180}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={60.0 70.0}
+ TACTICS={60.0 70.0}
+ MAGICRESISTANCE={60.0 75.0}
+ DETECTINGHIDDEN={50.0 60.0}
+ ARCHERY={75.0 80.0}
+ FENCING={65.0 75.0}
+
+ ITEMNEWBIE=i_hair_long
+ COLOR=047f
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=i_dagger_ice_elf
+ ITEMNEWBIE=i_bow_ice_elf
+ ITEMNEWBIE=i_arrow_ice_elf, {200 250}
+ ITEMNEWBIE=i_bone_chest_ice_elf
+ ITEMNEWBIE=i_bone_arms_ice_elf
+ ITEMNEWBIE=i_bone_gloves_ice_elf
+ ITEMNEWBIE=i_bone_leggings_ice_elf
+ ITEMNEWBIE=i_bone_helmet_ice_elf
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+ ITEM=i_potion_healgreat
+
+ON=@SPELLEFFECT
+ IF (<ARGN1> == 20) || (<ARGN1> == 39)
+  SRC.SMSG <NAME> is immune to this spell! 
+  EMOTE=resists the spell.
+  RETURN 1
+ ENDIF
+
+ON=@GETHIT // change weapon
+ IF (<HITS> < 100)
+   IF (<RESTEST 1 i_potion_healgreat>)
+    SPELLEFFECT s_greater_heal,100.0
+    CONSUME i_potion_healgreat
+   ELSE
+  RETURN 0
+  ENDIF
+ ENDIF
+
+ IF (<DISTANCE> < 2)
+  FINDID.i_dagger_ice_elf.CONT=<UID>
+ ENDIF
+ IF (<DISTANCE> > 2)
+  FIDNID.i_bow_ice_elf.CONT=<UID>
+ ENDIF
+ RETURN 0
+
+
+ON=@DEATH
+ NEWLOOT=loot_ice_elf_warrior
+ NEWLOOT=add_loot_ice_elf_warrior
+
+
+[CHARDEF c_ice_cougar]
+DEFNAME=c_ice_cougar
+ID=c_panther
+NAME=Ice Cougar
+CAN=mt_walk|mt_run
+MOVERATE=100
+DAM=5,10
+ARMOR=20
+
+ON=@Create
+COLOR=047f
+STR={100 200}
+DEX={60 80}
+INT={51 85}
+
+WRESTLING={20.0 45.0}
+MAGICRESISTANCE={100.0}
+TACTICS={98.0 100.0}
+
+NPC=BRAIN_MONSTER
+
+KARMA=0
+FAME=0
+
+ON=@NPCRESTOCK
+ ITEMNEWBIE=i_custom_mem_ele3
+
+ON=@DEATH
+ SAY The corpse melts are as it is slain.
+ REMOVE
+ RETURN 1

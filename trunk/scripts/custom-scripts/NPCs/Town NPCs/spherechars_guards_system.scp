@@ -1,0 +1,234 @@
+Fighter
+Broadsword
+Ringmail Tunic
+Ringmail Arms
+Ringmail Gloves
+Ringmail Leggings
+Chainmail Coif
+Boots
+Wooden Shield
+
+
+[chardef c_h_guard_male]
+defname=c_h_guard_male
+name=#names_humanmale the Guard
+title=the Guard
+id=c_man
+dam=10,20	//15,20
+armor=20	//20 kept defaulted due to what I call divine faith.
+desires=i_gold
+shelter=r_civilization, r_guardpost
+//aversions=
+tspeech=spk_human_prime
+tspeech=jobguard
+tspeech=spk_needs
+tspeech=spk_rehello
+tspeech=spk_human_default
+tevents=e_human_hearunk
+tevents=e_human_needs
+tevents=e_human_convinit
+tevents=e_human_greet
+tevents=e_human_space
+tevents=e_human_refuse
+tevents=e_human_environ
+
+category=Guards
+subsection=Standard Guards
+description=Human Guard (Male)
+
+on=@Create
+	npc=brain_guard
+	color=colors_skin
+
+	fame=2000
+	karma=2000
+
+	str={80 125}
+	dex={800 100}
+	int={50 80}
+	maxhits=<eval <str> +25>
+	maxstam=<dex>
+	maxmana=<int>
+
+	wrestling={60.0 80.0}
+	archery={60.0 80.0}
+	swordsmanship={60.0 80.0}
+	fencing={60.0 80.0}
+	macefighting={60.0 80.0}
+	tactics={60.0 80.0}
+	anatomy={60.0 80.0}
+	magicresistance={60.0 80.0}
+	parrying={60.0 80.0}
+	detectinghidden={60.0 80.0}
+	forensics={60.0 80.0}
+
+	itemnewbie=random_male_hair
+	color=colors_hair
+	itemnewbie=random_facial_hair
+	color=match_hair
+
+	item=i_body_sash
+	color=0183
+	item=i_platemail_arms
+	item=i_platemail_leggings
+	item=i_platemail_chest
+	item=i_halberd
+
+on=@npcrestock
+	item=random_coin_purse
+
+on=@NPCRefuseItem
+	say I cannot be bribed. Be gone.
+	return 1
+
+[chardef c_h_guard_female]
+defname=c_h_guard_female
+name=#names_humanfemale
+title=the Guard
+id=c_woman
+dam=10,20	//15,20
+armor=20	//20 kept defaulted due to what I call divine faith.
+desires=i_gold
+shelter=r_civilization, r_guardpost
+//aversions=
+tspeech=spk_human_prime
+tspeech=jobguard
+tspeech=spk_needs
+tspeech=spk_rehello
+tspeech=spk_human_default
+tevents=e_human_hearunk
+tevents=e_human_needs
+tevents=e_human_convinit
+tevents=e_human_greet
+tevents=e_human_space
+tevents=e_human_refuse
+tevents=e_human_environ
+
+category=Guards
+subsection=Standard Guards
+description=Human Guard (Male)
+
+on=@Create
+	npc=brain_guard
+	color=colors_skin
+
+	fame=2000
+	karma=2000
+
+	str={80 125}
+	dex={800 100}
+	int={50 80}
+	maxhits=<eval <str> +25>
+	maxstam=<dex>
+	maxmana=<int>
+
+	wrestling={60.0 80.0}
+	archery={60.0 80.0}
+	swordsmanship={60.0 80.0}
+	fencing={60.0 80.0}
+	macefighting={60.0 80.0}
+	tactics={60.0 80.0}
+	anatomy={60.0 80.0}
+	magicresistance={60.0 80.0}
+	parrying={60.0 80.0}
+	detectinghidden={60.0 80.0}
+	forensics={60.0 80.0}
+
+	itemnewbie=random_female_hair
+	color=colors_hair
+
+	item=i_body_sash
+	color=0183
+	item=i_leather_skirt
+	item=i_female_leather_armor
+	item=i_halberd
+	item=i_sandals
+
+on=@npcrestock
+	item=random_coin_purse
+
+ON=@NPCRefuseItem
+	SAY I cannot be bribed. Be gone.
+	return 1
+
+
+[chardef c_h_guard_captain_male]
+defname=c_h_guard_male
+name=#names_humanmale the Guard Captain
+title=the Guard Captain
+id=c_man
+dam=15,20
+armor=20	//20 kept defaulted due to what I call divine faith.
+desires=i_gold
+shelter=r_civilization, r_guardpost
+//aversions=
+tspeech=spk_human_prime
+tspeech=jobguard
+tspeech=spk_needs
+tspeech=spk_rehello
+tspeech=spk_human_default
+tevents=e_human_hearunk
+tevents=e_human_needs
+tevents=e_human_convinit
+tevents=e_human_greet
+tevents=e_human_space
+tevents=e_human_refuse
+tevents=e_human_environy
+
+category=Guards
+subsection=Standard Guards
+description=Human Captain of the Guard (Male)
+
+on=@create
+	npc=brain_guard
+	color=colors_skin
+
+	fame=4000
+	karma=4000
+
+	str={125 175}
+	dex={100 150}
+	int={80 100}
+	maxhits=<eval <str> +100>
+	maxstam=<eval <dex> +50>
+	maxmana=<int>
+
+	wrestling={80.0 100.0}
+	archery={80.0 100.0}
+	swordsmanship={80.0 100.0}
+	fencing={80.0 100.0}
+	macefighting={80.0 100.0}
+	tactics={80.0 100.0}
+	anatomy={80.0 100.0}
+	magicresistance={80.0 100.0}
+	parrying={80.0 100.0}
+	detectinghidden={80.0 100.0}
+	forensics={80.0 100.0}
+
+	itemnewbie=random_male_hair
+	color=colors_hair
+	itemnewbie=random_facial_hair
+	color=match_hair
+
+//	item=i_body_sash
+//	color=0183
+	item=i_platemail_gloves
+	color=0454
+	item=i_platemail_arms
+	color=0454
+	item=i_platemail_leggings
+	color=0454
+	item=i_platemail_chest
+	color=0454
+	item=i_halberd
+	color=0454
+
+on=@npcrestock
+	item=i_gold,{200 250}
+	item={random_magic_weapon 1, random_magic_armor 1, random_magic_shield 1}
+
+on=@NPCRefuseItem
+	say I cannot be bribed. Be gone.
+	return 1
+
+

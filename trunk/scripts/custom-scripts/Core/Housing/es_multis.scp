@@ -1,0 +1,59 @@
+[ITEMDEF i_cannon_east]
+NAME=Cannon
+ID=i_worldgem_bit
+TYPE=t_multi
+VALUE=10000
+CATEGORY=Multis
+SUBSECTION=Cannons
+DESCRIPTION=Cannon (E)
+MULTIREGION=0,0,0,0
+COMPONENT=3732,-1,1,0,0
+COMPONENT=3733,0,1,0,0
+COMPONENT=3734,1,1,0,0
+
+[ITEMDEF i_cannon_west]
+NAME=Cannon
+ID=i_worldgem_bit
+TYPE=t_multi
+VALUE=10000
+CATEGORY=Multis
+SUBSECTION=Cannons
+DESCRIPTION=Cannon (W)
+MULTIREGION=0,0,0,0
+COMPONENT=3726,0,1,0,0
+COMPONENT=3727,1,1,0,0
+COMPONENT=3728,2,1,0,0
+
+[ITEMDEF i_cannon_south]
+NAME=Cannon
+ID=i_worldgem_bit
+TYPE=t_multi
+VALUE=10000
+CATEGORY=Multis
+SUBSECTION=Cannons
+DESCRIPTION=Cannon (S)
+MULTIREGION=0,0,0,0
+COMPONENT=3729,1,1,0,0
+COMPONENT=3731,1,-1,0,0
+COMPONENT=3730,1,0,0,0
+
+[ITEMDEF i_cannon_north]
+NAME=Cannon
+ID=i_worldgem_bit
+TYPE=t_multi
+VALUE=10000
+CATEGORY=Multis
+SUBSECTION=Cannons
+DESCRIPTION=Cannon (N)
+MULTIREGION=0,0,0,0
+COMPONENT=3725,1,0,0,0
+COMPONENT=3723,1,2,0,0
+COMPONENT=3724,1,1,0,0
+
+
+[function newcreate]
+serv.newitem <argv[0]>
+new.amount <argv[1]>
+new.bounce <argv[2]>
+
+[EOF]

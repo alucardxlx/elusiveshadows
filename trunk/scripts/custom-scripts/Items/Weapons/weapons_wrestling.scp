@@ -1,0 +1,366 @@
+[ITEMDEF i_handwraps]
+DEFNAME=i_handwraps
+NAME=Handwraps
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=50
+
+CATEGORY=Provisions - Weapons
+SUBSECTION=Wrestling
+DESCRIPTION=Handwraps
+
+ON=@CREATE
+ HITPOINTS={50 60}
+ COLOR=
+
+[ITEMDEF i_spiked_gauntlets]
+DEFNAME=i_spiked_gauntlets
+NAME=Spiked Gauntlets
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=120
+
+CATEGORY=Provisions - Weapons
+SUBSECTION=Wrestling
+DESCRIPTION=Spiked Gloves
+
+ON=@CREATE
+ HITPOINTS={50 60}
+ COLOR=
+
+
+
+
+
+
+
+[ITEMDEF i_handwraps_ruin]
+DEFNAME=i_handwraps_ruin
+NAME=Handwraps of Ruin
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=1050
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Handwraps of Ruin
+
+ON=@CREATE
+ HITPOINTS={100 110}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=20.0
+
+[ITEMDEF i_handwraps_might]
+DEFNAME=i_handwraps_might
+NAME=Handwraps of Might
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=2100
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Handwraps of Might
+
+ON=@CREATE
+ HITPOINTS={110 120}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=40.0
+
+[ITEMDEF i_handwraps_force]
+DEFNAME=i_handwraps_force
+NAME=Handwraps of Force
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=4200
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Handwraps of Force
+
+ON=@CREATE
+ HITPOINTS={120 130}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=60.0
+
+[ITEMDEF i_handwraps_power]
+DEFNAME=i_handwraps_power
+NAME=Handwraps of Power
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=8400
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Handwraps of Power
+
+ON=@CREATE
+ HITPOINTS={130 140}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=80.0
+
+[ITEMDEF i_handwraps_vanq]
+DEFNAME=i_handwraps_vanq
+NAME=Handwraps of Vanquishing
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=16800
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Handwraps of Vanquishing
+
+ON=@CREATE
+ HITPOINTS={140 150}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=100.0
+
+[ITEMDEF i_handwraps_mystic]
+DEFNAME=i_handwraps_mystic
+NAME=Mystic Handwraps
+ID=i_leather_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=6,8
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=10
+WEIGHT=1.0
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+RESOURCES=
+VALUE=33600
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Mystic Handwraps
+
+ON=@CREATE
+ HITPOINTS={150 175}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=125.0
+
+
+[ITEMDEF i_spiked_gauntlets_ruin]
+DEFNAME=i_spiked_gauntlets_ruin
+NAME=Spiked Gauntlets of Ruin
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=1120
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Spiked Gloves of Ruin
+
+ON=@CREATE
+ HITPOINTS={100 110}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=20.0
+
+[ITEMDEF i_spiked_gauntlets_might]
+DEFNAME=i_spiked_gauntlets_might
+NAME=Spiked Gauntlets of Might
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=2240
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Spiked Gloves of Might
+
+ON=@CREATE
+ HITPOINTS={110 120}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=40.0
+
+[ITEMDEF i_spiked_gauntlets_force]
+DEFNAME=i_spiked_gauntlets_force
+NAME=Spiked Gauntlets of Force
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=4480
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Spiked Gloves of Force
+
+ON=@CREATE
+ HITPOINTS={120 130}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=60.0
+
+[ITEMDEF i_spiked_gauntlets_power]
+DEFNAME=i_spiked_gauntlets_power
+NAME=Spiked Gauntlets of Power
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=8960
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Spiked Gloves of Power
+
+ON=@CREATE
+ HITPOINTS={130 140}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=80.0
+
+[ITEMDEF i_spiked_gauntlets_vanq]
+DEFNAME=i_spiked_gauntlets_vanq
+NAME=Spiked Gauntlets of Vanquishing
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=17920
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Spiked Gloves of Vanquishing
+
+ON=@CREATE
+ HITPOINTS={140 150}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=100.0
+
+[ITEMDEF i_spiked_gauntlets_mystic]
+DEFNAME=i_spiked_gauntlets_mystic
+NAME=Mystic Spiked Gauntlets
+ID=i_dragon_gloves
+TYPE=t_weapon_mace_staff
+LAYER=layer_gloves
+DAM=8,10
+SPEED=30
+SKILL=Wrestling
+TWOHANDS=N
+REQSTR=25
+WEIGHT=1.0
+SKILLMAKE=Blacksmithing 40.0, t_sewing_kit
+RESOURCES=
+VALUE=35840
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Wrestling
+DESCRIPTION=Mystic Spiked Gloves
+
+ON=@CREATE
+ HITPOINTS={150 175}
+ COLOR=
+ ATTR=attr_magic
+ MOREY=125.0

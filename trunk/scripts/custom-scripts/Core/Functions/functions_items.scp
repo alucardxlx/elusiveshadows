@@ -1,0 +1,142 @@
+[FUNCTION eq_set_archer]
+ARCHERY += <ARGS>
+TACTICS += <ARGS>
+
+[FUNCTION uneq_set_archer]
+ARCHERY -= <ARGS>
+TACTICS -= <ARGS>
+
+[FUNCTION eq_set_fencer]
+FENCING += <ARGS>
+TACTICS += <ARGS>
+
+[FUNCTION uneq_set_fencer]
+FENCING -= <ARGS>
+TACTICS -= <ARGS>
+
+[FUNCTION eq_set_macefighter]
+MACEFIGHTING += <ARGS>
+TACTICS += <ARGS>
+
+[FUNCTION uneq_set_macefighter]
+MACEFIGHTING -= <ARGS>
+TACTICS -= <ARGS>
+
+[FUNCTION eq_set_swordsman]
+SWORDSMANSHIP += <ARGS>
+TACTICS += <ARGS>
+
+[FUNCTION uneq_set_swordsman]
+SWORDSMANSHIP -= <ARGS>
+TACTICS -= <ARGS>
+
+[FUNCTION eq_set_wrestler]
+WRESTLING += <ARGS>
+TACTICS += <ARGS>
+
+[FUNCTION uneq_set_fencer]
+WRESTLING -= <ARGS>
+TACTICS -= <ARGS>
+
+
+//Healer/Tamer
+[FUNCTION eq_set_healer]
+ANATOMY += <ARGS>
+HEALING += <ARGS>
+
+[FUNCTION uneq_set_healer]
+ANATOMY -= <ARGS>
+HEALING -= <ARGS>
+
+[FUNCTION eq_set_tamer]
+TAMING += <ARGS>
+ANIMALLORE += <ARGS>
+
+[FUNCTION uneq_set_tamer]
+TAMING -= <ARGS>
+ANIMALLORE -= <ARGS>
+
+
+//Music
+[FUNCTION eq_set_enticer]
+DISCORDANCE += <ARGS>
+MUSICIANSHIP += <ARGS>
+
+[FUNCTION uneq_set_enticer]
+DISCORDANCE -= <ARGS>
+MUSICIANSHIP -= <ARGS>
+
+[FUNCTION eq_set_peacer]
+PEACEMAKING += <ARGS>
+MUSICIANSHIP += <ARGS>
+
+[FUNCTION uneq_set_peacer]
+PEACEMAKING -= <ARGS>
+MUSICIANSHIP -= <ARGS>
+
+[FUNCTION eq_set_provoker]
+PROVOCATION += <ARGS>
+MUSICIANSHIP += <ARGS>
+
+[FUNCTION uneq_set_provoker]
+PROVOCATION -= <ARGS>
+MUSICIANSHIP -= <ARGS>
+
+//SPELLCASTING
+[FUNCTION eq_set_mage]
+MAGERY += <ARGS>
+EVALUATINGINTEL += <ARGS>
+
+[FUNCTION uneq_set_mage]
+MAGERY -= <ARGS>
+EVALUATINGINTEL -= <ARGS>
+
+[FUNCTION eq_set_necromancer]
+NECROMANCY += <ARGS>
+SPIRITSPEAK += <ARGS>
+
+[FUNCTION uneq_set_necromancer]
+NECROMANCY -= <ARGS>
+SPIRITSPEAK -= <ARGS>
+
+//SPECIAL
+[FUNCTION eq_set_ninja]
+NINJITSU += <ARGS>
+STEALTH += <ARGS>
+
+[FUNCTION uneq_set_ninja]
+NINJITSU -= <ARGS>
+STEALTH -= <ARGS>
+
+[FUNCTION eq_set_samurai]
+BUSHIDO += <ARGS>
+PARRYING += <ARGS>
+
+[FUNCTION uneq_set_samurai]
+BUSHIDO -= <ARGS>
+PARRYING -= <ARGS>
+
+[FUNCTION eq_set_paladin]
+CHIVALRY += <ARGS>
+MAGICRESISTANCE += <ARGS>
+
+[FUNCTION uneq_set_paladin]
+CHIVALRY -= <ARGS>
+MAGICRESISTANCE -= <ARGS>
+
+//ES set
+[FUNCTION eq_set_thief]
+STEALING += <ARGS>
+SNOOPING += <ARGS>
+
+[FUNCTION uneq_set_thief]
+STEALING -= <ARGS>
+SNOOPING -= <ARGS>
+
+[FUNCTION eq_set_assassin]
+POISONING += <ARGS>
+MUSICIANSHIP += <ARGS>
+
+[FUNCTION uneq_set_assassin]
+POISONING -= <ARGS>
+MUSICIANSHIP -= <ARGS>

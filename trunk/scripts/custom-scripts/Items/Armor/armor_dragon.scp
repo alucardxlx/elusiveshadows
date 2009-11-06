@@ -1,0 +1,411 @@
+//Scripted by Khaotic Solitare.
+//For use with Elusive Shadows game server and sub users.
+//Copyrighted by Menace Designs, LLC. All rights reserved.
+
+//Dragon Chest
+[ITEMDEF i_dragon_chest_defense]
+DEFNAME=i_dragon_chest_defense
+NAME=Dragon Scale Breastplate of Defense
+ID=i_dragon_chest
+ARMOR=55
+RESOURCES=i_dragon_chest,1 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Breastplate of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_chest_guarding]
+DEFNAME=i_dragon_chest_guarding
+NAME=Dragon Scale Breastplate of Guarding
+ID=i_dragon_chest
+ARMOR=60
+RESOURCES=i_dragon_chest,2 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Breastplate of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_chest_hardening]
+DEFNAME=i_dragon_chest_hardening
+NAME=Dragon Scale Breastplate of Hardening
+ID=i_dragon_chest
+ARMOR=65
+RESOURCES=i_dragon_chest,3 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Breastplate of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_chest_fortification]
+DEFNAME=i_dragon_chest_fortification
+NAME=Dragon Scale Breastplate of Fortification
+ID=i_dragon_chest
+ARMOR=70
+RESOURCES=i_dragon_chest,4 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Breastplate of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_chest_invulnerability]
+DEFNAME=i_dragon_chest_invulnerability
+NAME=Dragon Scale Breastplate of Invulnerability
+ID=i_dragon_chest
+ARMOR=75
+RESOURCES=i_dragon_chest,5 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Breastplate of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+
+//Dragon Gloves
+[ITEMDEF i_dragon_gloves_defense]
+DEFNAME=i_dragon_gloves_defense
+NAME=Dragon Scale Gloves of Defense
+ID=i_dragon_gloves
+ARMOR=55
+RESOURCES=i_dragon_gloves,1 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Gloves of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_gloves_guarding]
+DEFNAME=i_dragon_gloves_guarding
+NAME=Dragon Scale Gloves of Guarding
+ID=i_dragon_gloves
+ARMOR=60
+RESOURCES=i_dragon_gloves,2 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Gloves of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_gloves_hardening]
+DEFNAME=i_dragon_gloves_hardening
+NAME=Dragon Scale Gloves of Hardening
+ID=i_dragon_gloves
+ARMOR=65
+RESOURCES=i_dragon_gloves,3 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Gloves of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_gloves_fortification]
+DEFNAME=i_dragon_gloves_fortification
+NAME=Dragon Scale Gloves of Fortification
+ID=i_dragon_gloves
+ARMOR=70
+RESOURCES=i_dragon_gloves,4 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Gloves of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_gloves_invulnerability]
+DEFNAME=i_dragon_gloves_invulnerability
+NAME=Dragon Scale Gloves of Invulnerability
+ID=i_dragon_gloves
+ARMOR=75
+RESOURCES=i_dragon_gloves,5 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Gloves of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+
+//Dragon Helm
+[ITEMDEF i_dragon_helm_defense]
+DEFNAME=i_dragon_helm_defense
+NAME=Dragon Scale Helm of Defense
+ID=i_dragon_helm
+ARMOR=55
+RESOURCES=i_dragon_helm,1 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Helm of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_helm_guarding]
+DEFNAME=i_dragon_helm_guarding
+NAME=Dragon Scale Helm of Guarding
+ID=i_dragon_helm
+ARMOR=60
+RESOURCES=i_dragon_helm,2 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Helm of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_helm_hardening]
+DEFNAME=i_dragon_helm_hardening
+NAME=Dragon Scale Helm of Hardening
+ID=i_dragon_helm
+ARMOR=65
+RESOURCES=i_dragon_helm,3 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Helm of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_helm_fortification]
+DEFNAME=i_dragon_helm_fortification
+NAME=Dragon Scale Helm of Fortification
+ID=i_dragon_helm
+ARMOR=70
+RESOURCES=i_dragon_helm,4 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Helm of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_helm_invulnerability]
+DEFNAME=i_dragon_helm_invulnerability
+NAME=Dragon Scale Helm of Invulnerability
+ID=i_dragon_helm
+ARMOR=75
+RESOURCES=i_dragon_helm,5 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Helm of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+//Dragon Leggings
+[ITEMDEF i_dragon_leggings_defense]
+DEFNAME=i_dragon_leggings_defense
+NAME=Dragon Scale Leggings of Defense
+ID=i_dragon_leggings
+ARMOR=55
+RESOURCES=i_dragon_leggings,1 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Leggings of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_leggings_guarding]
+DEFNAME=i_dragon_leggings_guarding
+NAME=Dragon Scale Leggings of Guarding
+ID=i_dragon_leggings
+ARMOR=60
+RESOURCES=i_dragon_leggings,2 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Leggings of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_leggings_hardening]
+DEFNAME=i_dragon_leggings_hardening
+NAME=Dragon Scale Leggings of Hardening
+ID=i_dragon_leggings
+ARMOR=65
+RESOURCES=i_dragon_leggings,3 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Leggings of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_leggings_fortification]
+DEFNAME=i_dragon_leggings_fortification
+NAME=Dragon Scale Leggings of Fortification
+ID=i_dragon_leggings
+ARMOR=70
+RESOURCES=i_dragon_leggings,4 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Leggings of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_leggings_invulnerability]
+DEFNAME=i_dragon_leggings_invulnerability
+NAME=Dragon Scale Leggings of Invulnerability
+ID=i_dragon_leggings
+ARMOR=75
+RESOURCES=i_dragon_leggings,5 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Leggings of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+
+//Dragon Sleeves
+[ITEMDEF i_dragon_sleeves_defense]
+DEFNAME=i_dragon_sleeves_defense
+NAME=Dragon Scale Sleeves of Defense
+ID=i_dragon_sleeves
+ARMOR=55
+RESOURCES=i_dragon_sleeves,1 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Sleeves of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_sleeves_guarding]
+DEFNAME=i_dragon_sleeves_guarding
+NAME=Dragon Scale Sleeves of Guarding
+ID=i_dragon_sleeves
+ARMOR=60
+RESOURCES=i_dragon_sleeves,2 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Sleeves of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_sleeves_hardening]
+DEFNAME=i_dragon_sleeves_hardening
+NAME=Dragon Scale Sleeves of Hardening
+ID=i_dragon_sleeves
+ARMOR=65
+RESOURCES=i_dragon_sleeves,3 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Sleeves of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_sleeves_fortification]
+DEFNAME=i_dragon_sleeves_fortification
+NAME=Dragon Scale Sleeves of Fortification
+ID=i_dragon_sleeves
+ARMOR=70
+RESOURCES=i_dragon_sleeves,4 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Sleeves of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+
+[ITEMDEF i_dragon_sleeves_invulnerability]
+DEFNAME=i_dragon_sleeves_invulnerability
+NAME=Dragon Scale Sleeves of Invulnerability
+ID=i_dragon_sleeves
+ARMOR=75
+RESOURCES=i_dragon_sleeves,5 i_enchant_armor
+
+CATEGORY=Provisions - armor - magic
+SUBSECTION=Dragon Armor
+DESCRIPTION=Dragon Scale Sleeves of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={50 80}
+ ATTR=attr_magic

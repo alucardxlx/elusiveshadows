@@ -1,0 +1,988 @@
+//Mondain's Legacy Magic Items.
+//Scripted by Khaotic Solitaire of Elusive Shadows.
+//Copyrighted by Menace Designs. Made for Menasoft.
+//Leave this header intact.
+
+//Assassin Spike
+[ITEMDEF i_sword_assassin_spike_ruin]
+DEFNAME=i_sword_assassin_spike_ruin
+NAME=Assassin Spike of Ruin
+ID=i_sword_assassin_spike
+RESOURCES=i_sword_assassin_spike, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Assassin Spikes
+DESCRIPTION=Assassin Spike of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_sword_assassin_spike_might]
+DEFNAME=i_sword_assassin_spike_might
+NAME=Assassin Spike of Might
+ID=i_sword_assassin_spike
+RESOURCES=i_sword_assassin_spike, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Assassin Spikes
+DESCRIPTION=Assassin Spike of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_sword_assassin_spike_force]
+DEFNAME=i_sword_assassin_spike_force
+NAME=Assassin Spike of Force
+ID=i_sword_assassin_spike
+RESOURCES=i_sword_assassin_spike, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Assassin Spikes
+DESCRIPTION=Assassin Spike of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_sword_assassin_spike_power]
+DEFNAME=i_sword_assassin_spike_power
+NAME=Assassin Spike of Power
+ID=i_sword_assassin_spike
+RESOURCES=i_sword_assassin_spike, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Assassin Spikes
+DESCRIPTION=Assassin Spike of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_sword_assassin_spike_vanq]
+DEFNAME=i_sword_assassin_spike_vanq
+NAME=Assassin Spike of Vanquishing
+ID=i_sword_assassin_spike
+RESOURCES=i_sword_assassin_spike, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Assassin Spikes
+DESCRIPTION=Assassin Spike of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+
+//Diamond Mace
+[ITEMDEF i_mace_diamond_ruin]
+DEFNAME=i_mace_diamond_ruin
+NAME=Diamond Mace of Ruin
+ID=i_mace_diamond
+RESOURCES=i_mace_diamond, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Diamond Maces
+DESCRIPTION=Diamond Mace of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_mace_diamond_might]
+DEFNAME=i_mace_diamond_might
+NAME=Diamond Mace of Might
+ID=i_mace_diamond
+RESOURCES=i_mace_diamond, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Diamond Maces
+DESCRIPTION=Diamond Mace of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_mace_diamond_force]
+DEFNAME=i_mace_diamond_force
+NAME=Diamond Mace of Force
+ID=i_mace_diamond
+RESOURCES=i_mace_diamond, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Diamond Maces
+DESCRIPTION=Diamond Mace of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_mace_diamond_power]
+DEFNAME=i_mace_diamond_power
+NAME=Diamond Mace of Power
+ID=i_mace_diamond
+RESOURCES=i_mace_diamond, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Diamond Maces
+DESCRIPTION=Diamond Mace of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_mace_diamond_vanq]
+DEFNAME=i_mace_diamond_vanq
+NAME=Diamond Mace of Vanquishing
+ID=i_mace_diamond
+RESOURCES=i_mace_diamond, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Diamond Maces
+DESCRIPTION=Diamond Mace of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Elven Composite Longbow
+[ITEMDEF i_elven_composite_longbow_ruin]
+DEFNAME=i_elven_composite_longbow_ruin
+NAME=Elven Composite Longbow of Ruin
+ID=i_elven_composite_longbow
+RESOURCES=i_elven_composite_longbow, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Composite Longbows
+DESCRIPTION=Elven Composite Longbow of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_elven_composite_longbow_might]
+DEFNAME=i_elven_composite_longbow_might
+NAME=Elven Composite Longbow of Might
+ID=i_elven_composite_longbow
+RESOURCES=i_elven_composite_longbow, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Composite Longbows
+DESCRIPTION=Elven Composite Longbow of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_elven_composite_longbow_force]
+DEFNAME=i_elven_composite_longbow_force
+NAME=Elven Composite Longbow of Force
+ID=i_elven_composite_longbow
+RESOURCES=i_elven_composite_longbow, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Composite Longbows
+DESCRIPTION=Elven Composite Longbow of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_elven_composite_longbow_power]
+DEFNAME=i_elven_composite_longbow_power
+NAME=Elven Composite Longbow of Power
+ID=i_elven_composite_longbow
+RESOURCES=i_elven_composite_longbow, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Composite Longbows
+DESCRIPTION=Elven Composite Longbow of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_elven_composite_longbow_vanq]
+DEFNAME=i_elven_composite_longbow_vanq
+NAME=Elven Composite Longbow of Vanquishing
+ID=i_elven_composite_longbow
+RESOURCES=i_elven_composite_longbow, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Composite Longbows
+DESCRIPTION=Elven Composite Longbow of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Elven Machete
+[ITEMDEF i_elven_machete_ruin]
+DEFNAME=i_elven_machete_ruin
+NAME=Elven Machete of Ruin
+ID=i_elven_machete
+RESOURCES=i_elven_machete, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Machetes
+DESCRIPTION=Elven Machete of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_elven_machete_might]
+DEFNAME=i_elven_machete_might
+NAME=Elven Machete of Might
+ID=i_elven_machete
+RESOURCES=i_elven_machete, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Machetes
+DESCRIPTION=Elven Machete of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_elven_machete_force]
+DEFNAME=i_elven_machete_force
+NAME=Elven Machete of Force
+ID=i_elven_machete
+RESOURCES=i_elven_machete, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Machetes
+DESCRIPTION=Elven Machete of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_elven_machete_power]
+DEFNAME=i_elven_machete_power
+NAME=Elven Machete of Power
+ID=i_elven_machete
+RESOURCES=i_elven_machete, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Machetes
+DESCRIPTION=Elven Machete of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_elven_machete_vanq]
+DEFNAME=i_elven_machete_vanq
+NAME=Elven Machete of Vanquishing
+ID=i_elven_machete
+RESOURCES=i_elven_machete, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Machetes
+DESCRIPTION=Elven Machete of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Elven Spellblade
+[ITEMDEF i_elven_spellblade_ruin]
+DEFNAME=i_elven_spellblade_ruin
+NAME=Elven Spellblade of Ruin
+ID=i_elven_spellblade
+RESOURCES=i_elven_spellblade, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Spellblades
+DESCRIPTION=Elven Spellblade of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_elven_spellblade_might]
+DEFNAME=i_elven_spellblade_might
+NAME=Elven Spellblade of Might
+ID=i_elven_spellblade
+RESOURCES=i_elven_spellblade, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Spellblades
+DESCRIPTION=Elven Spellblade of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_elven_spellblade_force]
+DEFNAME=i_elven_spellblade_force
+NAME=Elven Spellblade of Force
+ID=i_elven_spellblade
+RESOURCES=i_elven_spellblade, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Spellblades
+DESCRIPTION=Elven Spellblade of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_elven_spellblade_power]
+DEFNAME=i_elven_spellblade_power
+NAME=Elven Spellblade of Power
+ID=i_elven_spellblade
+RESOURCES=i_elven_spellblade, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Spellblades
+DESCRIPTION=Elven Spellblade of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_elven_spellblade_vanq]
+DEFNAME=i_elven_spellblade_vanq
+NAME=Elven Spellblade of Vanquishing
+ID=i_elven_spellblade
+RESOURCES=i_elven_spellblade, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Elven Spellblades
+DESCRIPTION=Elven Spellblade of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Leafblade
+[ITEMDEF i_sword_leafblade_ruin]
+DEFNAME=i_sword_leafblade_ruin
+NAME=Leafblade of Ruin
+ID=i_sword_leafblade
+RESOURCES=i_sword_leafblade, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Leafblades
+DESCRIPTION=Leafblade of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_sword_leafblade_might]
+DEFNAME=i_sword_leafblade_might
+NAME=Leafblade of Might
+ID=i_sword_leafblade
+RESOURCES=i_sword_leafblade, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Leafblades
+DESCRIPTION=Leafblade of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_sword_leafblade_force]
+DEFNAME=i_sword_leafblade_force
+NAME=Leafblade of Force
+ID=i_sword_leafblade
+RESOURCES=i_sword_leafblade, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Leafblades
+DESCRIPTION=Leafblade of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_sword_leafblade_power]
+DEFNAME=i_sword_leafblade_power
+NAME=Leafblade of Power
+ID=i_sword_leafblade
+RESOURCES=i_sword_leafblade, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Leafblades
+DESCRIPTION=Leafblade of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_sword_leafblade_vanq]
+DEFNAME=i_sword_leafblade_vanq
+NAME=Leafblade of Vanquishing
+ID=i_sword_leafblade
+RESOURCES=i_sword_leafblade, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Leafblades
+DESCRIPTION=Leafblade of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Magical Shortbow
+[ITEMDEF i_magical_shortbow_ruin]
+DEFNAME=i_magical_shortbow_ruin
+NAME=Magical Shortbow of Ruin
+ID=i_magical_shortbow
+RESOURCES=i_magical_shortbow, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Magical Shortbows
+DESCRIPTION=Magical Shortbow of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_magical_shortbow_might]
+DEFNAME=i_magical_shortbow_might
+NAME=Magical Shortbow of Might
+ID=i_magical_shortbow
+RESOURCES=i_magical_shortbow, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Magical Shortbows
+DESCRIPTION=Magical Shortbow of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_magical_shortbow_force]
+DEFNAME=i_magical_shortbow_force
+NAME=Magical Shortbow of Force
+ID=i_magical_shortbow
+RESOURCES=i_magical_shortbow, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Magical Shortbows
+DESCRIPTION=Magical Shortbow of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_magical_shortbow_power]
+DEFNAME=i_magical_shortbow_power
+NAME=Magical Shortbow of Power
+ID=i_magical_shortbow
+RESOURCES=i_magical_shortbow, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Magical Shortbows
+DESCRIPTION=Magical Shortbow of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_magical_shortbow_vanq]
+DEFNAME=i_magical_shortbow_vanq
+NAME=Magical Shortbow of Vanquishing
+ID=i_magical_shortbow
+RESOURCES=i_magical_shortbow, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Magical Shortbows
+DESCRIPTION=Magical Shortbow of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Ornate Axe
+[ITEMDEF i_ornate_axe_ruin]
+DEFNAME=i_ornate_axe_ruin
+NAME=Ornate Axe of Ruin
+ID=i_ornate_axe
+RESOURCES=i_ornate_axe, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Ornate Axes
+DESCRIPTION=Ornate Axe of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_ornate_axe_might]
+DEFNAME=i_ornate_axe_might
+NAME=Ornate Axe of Might
+ID=i_ornate_axe
+RESOURCES=i_ornate_axe, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Ornate Axes
+DESCRIPTION=Ornate Axe of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_ornate_axe_force]
+DEFNAME=i_ornate_axe_force
+NAME=Ornate Axe of Force
+ID=i_ornate_axe
+RESOURCES=i_ornate_axe, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Ornate Axes
+DESCRIPTION=Ornate Axe of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_ornate_axe_power]
+DEFNAME=i_ornate_axe_power
+NAME=Ornate Axe of Power
+ID=i_ornate_axe
+RESOURCES=i_ornate_axe, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Ornate Axes
+DESCRIPTION=Ornate Axe of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_ornate_axe_vanq]
+DEFNAME=i_ornate_axe_vanq
+NAME=Ornate Axe of Vanquishing
+ID=i_ornate_axe
+RESOURCES=i_ornate_axe, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Ornate Axes
+DESCRIPTION=Ornate Axe of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Radiant Scimitar
+[ITEMDEF i_radiant_scimitar_ruin]
+DEFNAME=i_radiant_scimitar_ruin
+NAME=Radiant Scimitar of Ruin
+ID=i_radiant_scimitar
+RESOURCES=i_radiant_scimitar, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Radiant Scimitars
+DESCRIPTION=Radiant Scimitar of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_radiant_scimitar_might]
+DEFNAME=i_radiant_scimitar_might
+NAME=Radiant Scimitar of Might
+ID=i_radiant_scimitar
+RESOURCES=i_radiant_scimitar, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Radiant Scimitars
+DESCRIPTION=Radiant Scimitar of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_radiant_scimitar_force]
+DEFNAME=i_radiant_scimitar_force
+NAME=Radiant Scimitar of Force
+ID=i_radiant_scimitar
+RESOURCES=i_radiant_scimitar, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Radiant Scimitars
+DESCRIPTION=Radiant Scimitar of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_radiant_scimitar_power]
+DEFNAME=i_radiant_scimitar_power
+NAME=Radiant Scimitar of Power
+ID=i_radiant_scimitar
+RESOURCES=i_radiant_scimitar, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Radiant Scimitars
+DESCRIPTION=Radiant Scimitar of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_radiant_scimitar_vanq]
+DEFNAME=i_radiant_scimitar_vanq
+NAME=Radiant Scimitar of Vanquishing
+ID=i_radiant_scimitar
+RESOURCES=i_radiant_scimitar, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Radiant Scimitars
+DESCRIPTION=Radiant Scimitar of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Rune Blade
+[ITEMDEF i_rune_blade_ruin]
+DEFNAME=i_rune_blade_ruin
+NAME=Rune Blade of Ruin
+ID=i_rune_blade
+RESOURCES=i_rune_blade, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Rune Blades
+DESCRIPTION=Rune Blade of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_rune_blade_might]
+DEFNAME=i_rune_blade_might
+NAME=Rune Blade of Might
+ID=i_rune_blade
+RESOURCES=i_rune_blade, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Rune Blades
+DESCRIPTION=Rune Blade of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_rune_blade_force]
+DEFNAME=i_rune_blade_force
+NAME=Rune Blade of Force
+ID=i_rune_blade
+RESOURCES=i_rune_blade, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Rune Blades
+DESCRIPTION=Rune Blade of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_rune_blade_power]
+DEFNAME=i_rune_blade_power
+NAME=Rune Blade of Power
+ID=i_rune_blade
+RESOURCES=i_rune_blade, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Rune Blades
+DESCRIPTION=Rune Blade of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_rune_blade_vanq]
+DEFNAME=i_rune_blade_vanq
+NAME=Rune Blade of Vanquishing
+ID=i_rune_blade
+RESOURCES=i_rune_blade, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Rune Blades
+DESCRIPTION=Rune Blade of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//War Cleaver
+[ITEMDEF i_sword_warcleaver_ruin]
+DEFNAME=i_sword_warcleaver_ruin
+NAME=War Cleaver of Ruin
+ID=i_sword_warcleaver
+RESOURCES=i_sword_warcleaver, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic War Cleavers
+DESCRIPTION=War Cleaver of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_sword_warcleaver_might]
+DEFNAME=i_sword_warcleaver_might
+NAME=War Cleaver of Might
+ID=i_sword_warcleaver
+RESOURCES=i_sword_warcleaver, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic War Cleavers
+DESCRIPTION=War Cleaver of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_sword_warcleaver_force]
+DEFNAME=i_sword_warcleaver_force
+NAME=War Cleaver of Force
+ID=i_sword_warcleaver
+RESOURCES=i_sword_warcleaver, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic War Cleavers
+DESCRIPTION=War Cleaver of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_sword_warcleaver_power]
+DEFNAME=i_sword_warcleaver_power
+NAME=War Cleaver of Power
+ID=i_sword_warcleaver
+RESOURCES=i_sword_warcleaver, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic War Cleavers
+DESCRIPTION=War Cleaver of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_sword_warcleaver_vanq]
+DEFNAME=i_sword_warcleaver_vanq
+NAME=War Cleaver of Vanquishing
+ID=i_sword_warcleaver
+RESOURCES=i_sword_warcleaver, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic War Cleavers
+DESCRIPTION=War Cleaver of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9
+
+
+//Wild Staff's
+[ITEMDEF i_mace_wildstaff_ruin]
+DEFNAME=i_mace_wildstaff_ruin
+NAME=Wild Staff of Ruin
+ID=i_mace_wildstaff
+RESOURCES=i_mace_wildstaff, 1 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wild Staves
+DESCRIPTION=Wild Staff of Ruin
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=1
+
+[ITEMDEF i_mace_wildstaff_might]
+DEFNAME=i_mace_wildstaff_might
+NAME=Wild Staff of Might
+ID=i_mace_wildstaff
+RESOURCES=i_mace_wildstaff, 2 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wild Staves
+DESCRIPTION=Wild Staff of Might
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=3
+
+[ITEMDEF i_mace_wildstaff_force]
+DEFNAME=i_mace_wildstaff_force
+NAME=Wild Staff of Force
+ID=i_mace_wildstaff
+RESOURCES=i_mace_wildstaff, 3 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wild Staves
+DESCRIPTION=Wild Staff of Force
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=5
+
+[ITEMDEF i_mace_wildstaff_power]
+DEFNAME=i_mace_wildstaff_power
+NAME=Wild Staff of Power
+ID=i_mace_wildstaff
+RESOURCES=i_mace_wildstaff, 4 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wild Staves
+DESCRIPTION=Wild Staff of Power
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=7
+
+[ITEMDEF i_mace_wildstaff_vanq]
+DEFNAME=i_mace_wildstaff_vanq
+NAME=Wild Staff of Vanquishing
+ID=i_mace_wildstaff
+RESOURCES=i_mace_wildstaff, 5 i_enchant_weapon
+
+CATEGORY=Provisions - Weapons - Magic
+SUBSECTION=Magic Wild Staves
+DESCRIPTION=Wild Staff of Vanquishing
+
+ON=@CREATE
+ COLOR=color_magic_weap
+ HITPOINTS={50 80}
+ ATTR=attr_magic
+ MODAR=9

@@ -1,0 +1,35 @@
+///////////////////////////////////////////
+/// Script feito por Coruja //////////////
+/////////////////////////////////////////
+
+[PLEVEL 1]
+GuildMenu
+gc
+
+
+[FUNCTION GuildMenu]	//Do not name this function as 'GUILD', it will crash the server
+IF !(<SRC.GUILD>)
+ SDIALOG d_guild_create
+ELSE
+ UID.<SRC.GUILD>.SDIALOG d_guild_main
+ENDIF
+
+
+[FUNCTION gc]
+REF1=<GUILD>
+IF !(<GUILD>) || !(<DEF0.Guild.EnableGuildChat>)
+ return 1
+ELIF (<GUILD.MemberFromUID.<SRC>.PRIV> < <DEF0.Guild.Priv.CanUseChat>)
+ SRC.SYSMESSAGE @,,1 You don't have permission to use the guild chat.
+ return 1
+ELIF (<CTAG0.Guild.ChatDelay> < <SERV.TIME>)
+ IF (<GUILD.COLOR>)
+  LOCAL.Color=@<GUILD.COLOR>,,1
+ ELSE
+  LOCAL.Color=@,,1
+ ENDIF
+ UID.<GUILD>.AllMembers -1,SYSMESSAGE <LOCAL.Color> [Guild] <NAME>: <ARGS>
+ CTAG.Guild.ChatDelay = <SERV.TIME>+<DEF0.Guild.ChatDelay>
+ENDIF
+
+[EOF]

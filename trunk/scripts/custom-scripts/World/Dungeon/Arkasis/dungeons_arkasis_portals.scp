@@ -1,0 +1,39 @@
+[ITEMDEF i_arkasis_entrance]
+DEFNAME=i_arkasis_entrance
+NAME=Arkasis Dungeon Entrance
+ID=i_moongate_black
+TYPE=t_telepad
+
+ON=@CREATE
+ MORE1=1
+ MORE2=0
+ MOREP=5330 1381 0 0
+
+ON=@STEP
+ IF (<SRC.SKILLTOTAL> < 2500)
+  SRC.EVENTS +e_increased_gain_rate
+  SRC.EVENTS +e_dungeon_arkasis_limitations
+  SRC.SMSG You have entered the portal to the infamous Arkasis Mines.
+  SRC.MSG @020 A strange sensation engulfs you as you enter.
+  RETURN 0
+ ELSE
+  SRC.MSG You cannot enter the portal to Arkasis Mines, your skills are too high.
+  RETURN 1
+ ENDIF
+
+[ITEMDEF i_arkasis_exit]
+DEFNAME=i_arkasis_exit
+NAME=Arkasis Dungeon Exit
+ID=i_moongate_black
+TYPE=t_telepad
+
+ON=@CREATE
+ MORE1=1
+ MORE2=0
+ MOREP=-1 -1 0 0
+
+ON=@STEP
+ SRC.EVENTS -e_increased_gain_rate
+ SRC.EVENTS -e_dungeon_arkasis_limitations
+ SRC.GO -1 -1 0 0
+ RETURN 0

@@ -1,0 +1,48 @@
+[EVENTS e_increased_gain_rate]
+ON=@SKILLGAIN
+LOCAL.VALUE=<R1,25>
+ IF <SKILLTOTAL> > 25000
+   MSG You are at the cap skill for being in the newbie dungeon. You should leave.
+   GO britain
+   EVENTS -e_increased_gain_rate
+   RETURN 1
+  ELSEIF <LOCAL.VALUE> == 1
+   LOCAL.CHANCE=<R2,5>
+   LOCAL.SKILL = <EVAL <ACTION> & 0ff>	//LOCAL.SKILL=<FINDSKILL <ACTION>>
+   TRY <LOCAL.SKILL> = <<LOCAL.SKILL>> + <LOCAL.CHANCE>
+   SMSG You tingle as you feel a weird sensation from the mines.
+   RETURN 1
+  ELSE
+   RETURN 0
+  ENDIF
+ ENDIF
+
+[EVENTS e_dungeon_arkasis_limitations]
+ON=@HITTRY
+IF <SRC.NPC> = 0
+ RETURN 1
+ENDIF
+
+ON=@SPELLCAST
+ IF ((<SRC.TARG.NPC> == 0) && !(<FLAGS> == SPELLFLAG_GOOD))
+  MSG You cannot cast harmful spells on a player in the Arkasis Dungeon.
+  RETURN 1
+ ELSE
+  RETURN 0
+ ENDIF
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[EOF]

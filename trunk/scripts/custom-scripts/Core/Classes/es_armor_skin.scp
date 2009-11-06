@@ -1,0 +1,64 @@
+//ARMORSKIN 1/2 dmg for seconds x level
+[ITEMDEF i_armor_skin]
+NAME=Armor Skin
+ID=i_memory
+TYPE=t_eq_script
+
+ON=@CREATE
+ ATTR attr_move_never|attr_invis
+
+ON=@EQUIP
+TIMER=<EVAL(<SRC.LEVEL>)>
+
+ON=@TIMER
+ CONT.SMSG Armor Skin has worn off.
+ REMOVE
+ SERV.NEWITEM i_armor_skin_timer
+ SERV.BOUNCE <CONT.UID>
+ RETURN 1
+
+
+[ITEMDEF i_armor_skin_timer]
+ID=i_memory
+TYPE=t_eq_script
+
+ON=@CREATE
+ ATTR attr_move_never|attr_invis
+
+ON=@EQUIP
+TIMER=60
+
+ON=@TIMER
+ CONT.EVENTS -e_ability_ARMORSKIN
+ CONT.SMSG Armor Skin ability available.
+ REMOVE
+ RETURN 1
+
+[FUNCTION ARMORSKIN]
+ IF (0<SRC.TAG.ABILITY_ARMORSKIN>)
+  IF <SRC.STAM> > 20
+   IF !<SRC.RESTEST 1 i_armor_skin_timer> 
+    SRC.STAM-=20
+    SRC.EVENTS +e_ability_ARMORSKIN
+    SRC.MSG Your skin toughens to an iron-like strength!
+    SERV.NEWITEM I_ARMOR_SKIN
+    NEW.BOUNCE <SRC.UID>
+    SRC.SFX 022b
+   ELSE 
+    SRC.SMSG About <EVAL(<SRC.FINDID.i_armor_skin_timer.TIMER>/60)> minutes until you can use this again.
+    RETURN 0
+   ENDIF
+  ELSE
+   SRC.MSG You lack the stamina to use this ability
+   RETURN 0
+  ENDIF
+ ELSE
+  SRC.SMSG You have not learned this ability.
+  RETURN 0
+ ENDIF
+
+[EVENTS e_ability_ARMORSKIN]
+ON=@GETHIT
+IF <ARGN1> > 0
+  ARGN1=(<ARGN1>/2)
+ENDIF

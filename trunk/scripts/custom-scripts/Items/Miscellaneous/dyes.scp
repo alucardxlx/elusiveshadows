@@ -1,0 +1,695 @@
+//Bleach
+[ITEMDEF i_bleach]
+DEFNAME=i_bleach
+NAME=Bleach
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Bleach
+DESCRIPTION=Bleach
+
+ON=@CREATE
+ COLOR=0
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+//COMMENT THIS OUT AND UNCOMMENT BELOW IF YOU WANT BLEACH TO ONLY EFFECT MAGIC ITEMS.
+ SRC.TARG.COLOR=<COLOR>
+ REMOVE
+ UPDATE
+ RETURN 1
+// IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+//  SRC.TARG.COLOR=<COLOR>
+//  REMOVE
+//  UPDATE
+//  RETURN 1
+// ELSE
+//  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+//  RETURN 1
+// ENDIF
+
+
+//Pigments of Tokuno (Greater): Neon
+[ITEMDEF i_pigments_berserker_red]
+DEFNAME=i_pigments_berserker_red
+NAME=Pigments of Tokuno [Berserker Red]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Berserker Red]
+
+ON=@CREATE
+COLOR=020
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_dryad_green]
+DEFNAME=i_pigments_dryad_green
+NAME=Pigments of Tokuno [Dryad Green]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Dryad Green]
+
+ON=@CREATE
+ COLOR=048F
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_fire_orange]
+DEFNAME=i_pigments_fire_orange
+NAME=Pigments of Tokuno [Fire Orange]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Fire Orange]
+
+ON=@CREATE
+ COLOR=04E9
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_invul_blue]
+DEFNAME=i_pigments_invul_blue
+NAME=Pigments of Tokuno [Invulnerability Blue]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Invulnerability Blue]
+
+ON=@CREATE
+ COLOR=04F2
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_luna_white]
+DEFNAME=i_pigments_luna_white
+NAME=Pigments of Tokuno [Luna White]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Luna White]
+
+ON=@CREATE
+ COLOR=0481
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_nox_green]
+DEFNAME=i_pigments_nox_green
+NAME=Pigments of Tokuno [Nox Green]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Nox Green]
+
+ON=@CREATE
+ COLOR=0582
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_paragon_gold]
+DEFNAME=i_pigments_paragon_gold
+NAME=Pigments of Tokuno [Paragon Gold]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Paragon Gold]
+
+ON=@CREATE
+ COLOR=0501
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_rum_red]
+DEFNAME=i_pigments_rum_red
+NAME=Pigments of Tokuno [Rum Red]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Rum Red]
+
+ON=@CREATE
+ COLOR=0676
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_shadow_dancer_black]
+DEFNAME=i_pigments_shadow_dancer_black
+NAME=Pigments of Tokuno [Shadow Dancer Black]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Shadow Dancer Black]
+
+ON=@CREATE
+ COLOR=0497
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[ITEMDEF i_pigments_violet_courage_purple]
+DEFNAME=i_pigments_violet_courage_purple
+NAME=Pigments of Tokuno [Violet Courage Purple]
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Tokuno Dyes - Greater
+DESCRIPTION=Pigments of Tokuno [Violet Courage Purple]
+
+ON=@CREATE
+ COLOR=0486
+
+ON=@DCLICK
+ TARGET Choose the item you wish to dye.
+
+ON=@TARGON_ITEM
+ IF (<SRC.TARG.ATTR> == ATTR_MAGIC)
+  SRC.TARG.COLOR=<COLOR>
+  REMOVE
+  UPDATE
+  RETURN 1
+ ELSE
+  SRC.SMSG That item cannot be dyed with this. Only magic items and artifacts can be dyed.
+  RETURN 1
+ ENDIF
+
+
+[FUNCTION f_mel_dyes]
+ IF <CONT> != <SRC.FINDLAYER.21.UID>
+  SRC.SMSG The item must be in your backpack to use it.
+  RETURN 1
+ ENDIF
+ IF <SRC.FINDLAYER.LAYER_HAIR.UID>
+  SRC.FINDLAYER.LAYER_HAIR.COLOR=<COLOR>
+  SRC.UPDATE
+  REMOVE
+ ENDIF
+ RETURN 1
+
+[ITEMDEF i_peerless_dye_01]
+DEFNAME=i_peerless_dye_01
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 01
+
+ON=@CREATE
+ COLOR=0496
+
+ON=@DCLICK
+f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_02]
+DEFNAME=i_peerless_dye_02
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 02
+
+ON=@CREATE
+ COLOR=0487
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_03]
+DEFNAME=i_peerless_dye_03
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 03
+
+ON=@CREATE
+ COLOR=048A
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_04]
+DEFNAME=i_peerless_dye_04
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 04
+
+ON=@CREATE
+ COLOR=0490
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_05]
+DEFNAME=i_peerless_dye_05
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 05
+
+ON=@CREATE
+ COLOR=047F
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_06]
+DEFNAME=i_peerless_dye_06
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 06
+
+ON=@CREATE
+ COLOR=0488
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_07]
+DEFNAME=i_peerless_dye_07
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 07
+
+ON=@CREATE
+ COLOR=048D
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_08]
+DEFNAME=i_peerless_dye_08
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 08
+
+ON=@CREATE
+ COLOR=0492
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_09]
+DEFNAME=i_peerless_dye_09
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 09
+
+ON=@CREATE
+ COLOR=0491
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_10]
+DEFNAME=i_peerless_dye_10
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 10
+
+ON=@CREATE
+ COLOR=047E
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_11]
+DEFNAME=i_peerless_dye_11
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 11
+
+ON=@CREATE
+ COLOR=0497
+
+ON=@DCLICK
+ f_mel_dyes
+
+[ITEMDEF i_peerless_dye_12]
+DEFNAME=i_peerless_dye_12
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 12
+
+ON=@CREATE
+ COLOR=0484
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_13]
+DEFNAME=i_peerless_dye_13
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 13
+
+ON=@CREATE
+ COLOR=0483
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_14]
+DEFNAME=i_peerless_dye_14
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 14
+
+ON=@CREATE
+ COLOR=0481
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_15]
+DEFNAME=i_peerless_dye_15
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 15
+
+ON=@CREATE
+ COLOR=0493
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_16]
+DEFNAME=i_peerless_dye_16
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 16
+
+ON=@CREATE
+ COLOR=0480
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_17]
+DEFNAME=i_peerless_dye_17
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 17
+
+ON=@CREATE
+ COLOR=0485
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_18]
+DEFNAME=i_peerless_dye_18
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 18
+
+ON=@CREATE
+ COLOR=048C
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_19]
+DEFNAME=i_peerless_dye_19
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 19
+
+ON=@CREATE
+ COLOR=0494
+
+ON=@DCLICK
+ f_mel_dyes
+
+
+[ITEMDEF i_peerless_dye_20]
+DEFNAME=i_peerless_dye_20
+NAME=Hair Dye
+ID=0E27
+TYPE=t_normal
+WEIGHT=1.0
+
+CATEGORY=Dyes
+SUBSECTION=Melisande Hair Dye's
+DESCRIPTION=Hair Dye 20
+
+ON=@CREATE
+ COLOR=0482
+
+ON=@DCLICK
+ f_mel_dyes

@@ -1,0 +1,57 @@
+[chardef c_champion_serado_awakened]
+defname=c_champion_serado_awakened
+id=c_m_yamadon
+name=Serado the Awakened
+dam=
+armor=
+can=mt_walk
+moverate=100
+resources=
+foodtype=30 t_food
+shelter=
+aversions=
+desires=
+bloodcolor=
+
+reslevel=
+resdispdnid=
+resdispdnhue=
+
+tevents=
+
+category=Champions
+subsection=Champions
+description=Serado the Awakened
+
+on=@create
+ npc=brain_monster
+ color=
+
+ fame=20000
+ karma=-20000
+
+ str={}
+ dex={}
+ int={}
+ maxhits={}
+ maxstam={}
+ maxmana={}
+
+ wrestling={}
+ tactics={}
+ magicresistance={}
+ anatomy={}
+ poisoning={}
+ magery={}
+ evaluatingintel={}
+ meditation={}
+
+on=@death
+ newloot=loot_serado_awakened
+
+[template loot_serado_awakened]
+defname=
+category=NPC Loot Templates
+subsection=Champions
+description=Serado the Awakened
+container=i_backpack

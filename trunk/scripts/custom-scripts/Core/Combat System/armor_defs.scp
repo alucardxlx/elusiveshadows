@@ -1,0 +1,246 @@
+
+//Tells you armor baseid
+[Function GetBase]
+TargetF GetBase2
+
+[Function GetBase2]
+Sysmessage Baseid: <Serv.Itemdef.<Argo.ID>.Baseid>
+
+[Function ModSkill]
+If !<IsEmpty <Argv[0]>>
+ If <IsNum <Argv[0]>>
+  If <Serv.Skill.<Argv[0]>>
+   TAG.OVERRIDE.SKILLSUM.AMOUNT = <Eval <TAG0.OVERRIDE.SKILLSUM.AMOUNT> + <Argv[1]>>
+   TAG.OVERRIDE.SKILLSUM = <Eval <TAG0.OVERRIDE.SKILLSUM.AMOUNT>+<SkillClass.SkillSum>>
+   TAG.OVERRIDE.SKILLCAP_<Eval <Argv[0]>>.AMOUNT = <Eval <TAG0.OVERRIDE.SKILLCAP_<Eval <Argv[0]>>.AMOUNT> + <Argv[1]>>
+   TAG.OVERRIDE.SKILLCAP_<Eval <Argv[0]>> = <Eval <TAG0.OVERRIDE.SKILLCAP_<Eval <Argv[0]>>.AMOUNT>+<SkillClass.<Argv[0]>>>
+Try <Argv[0]> = <Eval <<Argv[0]>> + <Argv[1]>>
+  Endif
+ Endif
+Endif
+
+
+
+
+
+[Function GetArmor]
+Return <dDef0.Armor_ID_<Serv.Itemdef.<ID>.Baseid>>
+
+[Function GetArmorName]
+Return <Def0.Armor_Type_<dDef0.Armor_ID_<Serv.Itemdef.<ID>.Baseid>>>
+
+[FUNCTION IsLeatherArmor]
+If <GetArmor> == 1
+Return 1
+Endif
+Return 0
+
+[FUNCTION IsStuddedArmor]
+If <GetArmor> == 2
+Return 1
+Endif
+Return 0
+
+[FUNCTION IsRingmailArmor]
+If <GetArmor> == 3
+Return 1
+Endif
+Return 0
+
+[FUNCTION IsChainmailArmor]
+If <GetArmor> == 4
+Return 1
+Endif
+Return 0
+
+[Function IsBoneArmor]
+If <GetArmor> == 5
+Return 1
+Endif
+Return 0
+
+[Function IsPlatemailArmor]
+If <GetArmor> == 6
+Return 1
+Endif
+Return 0
+
+[Function IsDragonArmor]
+If <GetArmor> == 7
+Return 1
+Endif
+Return 0
+
+[comment Function IsShield]
+If <GetArmor> == 8
+Return 1
+Endif
+Return 0
+
+[function IsHelmet]
+IF ((<layer> == layer_helm) && (<IsArmor>))
+return 1
+endif
+return 0
+
+
+[DEFNAME Armor_Type_Defs]
+Armor_Type_Leather = 1
+Armor_Type_StuddedLeather = 2
+Armor_Type_Ringmail = 3
+Armor_Type_Chainmail = 4
+Armor_Type_Bone = 5
+Armor_Type_Platemail = 6
+Armor_Type_DragonScale = 7
+Armor_Type_Shield = 8
+
+Armor_Type_1	 Leather
+Armor_Type_2	 Studded Leather
+Armor_Type_3	 Chainmail
+Armor_Type_4	 Ringmail
+Armor_Type_5	 Bone Armor
+Armor_Type_6	 Platemail
+Armor_Type_7	 Dragon Scale
+Armor_Type_8	 Shield
+
+
+//LEATHER
+armor_id_i_leather_sleeves = 1
+armor_id_i_leather_gloves = 1
+armor_id_i_leather_gorget = 1
+armor_id_i_leather_leggings = 1
+armor_id_i_leather_tunic = 1
+armor_id_i_leather_cap = 1
+armor_id_i_armor_female_shorts = 1
+armor_id_i_armor_female_leather = 1
+armor_id_i_armor_female_skirt = 1
+armor_id_i_armor_female_bustier = 1
+armor_id_i_leather_ninja_hood = 1
+////armor_id_i_leather_ninja_belt	//belt again, not armor
+armor_id_i_leather_ninja_pants = 1
+armor_id_i_leather_ninja_mitts = 1
+armor_id_i_leather_ninja_jacket = 1
+armor_id_i_leather_haidate = 1
+armor_id_i_leather_hiro_sode = 1
+armor_id_i_leather_mempo = 1
+armor_id_i_leather_do = 1
+armor_id_i_leather_suneate = 1
+armor_id_i_leather_jingasa = 1
+armor_id_i_leaf_tunic = 1
+armor_id_i_leaf_gloves = 1
+armor_id_i_leaf_gorget = 1
+armor_id_i_leaf_arms = 1
+armor_id_i_leaf_pants = 1
+armor_id_i_leaf_tonlet = 1
+
+armor_id_i_mask_orc = 1
+
+
+//STUDDED ARMOR
+armor_id_i_studded_sleeves = 2
+armor_id_i_studded_gloves = 2
+armor_id_i_studded_gorget = 2
+armor_id_i_studded_leggings = 2
+armor_id_i_studded_tunic = 2
+armor_id_i_armor_female_bustier_studded = 2
+armor_id_i_armor_female_studded = 2
+armor_id_i_studded_hiro_sode = 2
+armor_id_i_studded_haidate = 2
+armor_id_i_studded_mempo = 2
+armor_id_i_studded_suneate = 2
+armor_id_i_studded_do = 2
+armor_id_i_hide_tunic = 2
+armor_id_i_hide_gloves = 2
+armor_id_i_hide_gorget = 2
+armor_id_i_hide_paldrons = 2
+armor_id_i_hide_pants = 2
+armor_id_i_hide_tunic_female = 2
+
+
+//RINGMAIL
+armor_id_i_ringmail_gloves = 3
+armor_id_i_ringmail_tunic = 3
+armor_id_i_ringmail_sleeves = 3
+armor_id_i_ringmail_leggings = 3
+
+
+//CHAINMAIL
+armor_id_i_chainmail_coif = 4
+armor_id_i_chainmail_leggings = 4
+armor_id_i_chainmail_tunic = 4
+armor_id_i_chainmail_hatsuburi = 4
+
+
+//BONE ARMOR
+armor_id_i_bone_arms = 5
+armor_id_i_bone_chest = 5
+armor_id_i_bone_gloves = 5
+armor_id_i_bone_helmet = 5
+armor_id_i_bone_leggings = 5
+
+armor_id_i_helm_orc = 5
+
+
+//PLATEMAIL
+armor_id_i_platemail_arms = 6
+armor_id_i_platemail_leggings = 6
+armor_id_i_platemail_helm = 6
+armor_id_i_platemail_gorget = 6
+armor_id_i_platemail_gloves = 6
+armor_id_i_platemail_chest = 6
+armor_id_i_armor_female_plate = 6
+armor_id_i_platemail_mempo = 6
+armor_id_i_platemail_do = 6
+armor_id_i_platemail_hiro_sode = 6
+armor_id_i_platemail_suneate = 6
+armor_id_i_platemail_haidate = 6
+armor_id_i_woodland_chest = 6
+//armor_id_i_woodland_belt	considered a belt
+armor_id_i_woodland_gorget = 6
+armor_id_i_woodland_gauntlets = 6
+armor_id_i_woodland_leggings = 6
+armor_id_i_woodland_arms = 6
+armor_id_i_armor_female_woodland = 6
+
+armor_id_i_helm_closed = 6
+armor_id_i_helm_open = 6
+armor_id_i_bascinet = 6
+armor_id_i_helm_nose = 6
+armor_id_i_circlet = 6
+armor_id_i_circlet_royal = 6
+armor_id_i_circlet_gemmed = 6
+armor_id_i_helm_vulture = 6
+armor_id_i_helm_winged = 6
+armor_id_i_platemail_hatsuburi = 6
+armor_id_i_plate_jingasa_heavy = 6
+armor_id_i_platemail_kabuto_battle = 6
+armor_id_i_platemail_kabuto_decorative = 6
+armor_id_i_plate_jingasa_light = 6
+armor_id_i_plate_jingasa_small = 6
+armor_id_i_platemail_kabuto = 6
+
+
+//DRAGON ARMOR
+armor_id_i_dragon_chest = 7
+armor_id_i_dragon_gloves = 7
+armor_id_i_dragon_helm = 7
+armor_id_i_dragon_leggings = 7
+armor_id_i_dragon_sleeves = 7
+
+
+//SHIELDS
+armor_id_i_shield_round_bronze = 8
+armor_id_i_shield_buckler = 8
+armor_id_i_shield_kite_metal = 8
+armor_id_i_shield_heater = 8
+armor_id_i_shield_kite_wood = 8
+armor_id_i_shield_wood = 8
+armor_id_i_shield_round_metal = 8
+armor_id_i_shield_chaos = 8
+armor_id_i_shield_order = 8
+
+
+//Not sure. I assume we might have to break it down.
+armor_id_i_armor_female_shorts_spiked = 2
+armor_id_i_armor_female_harness_amazon = 2
+armor_id_i_armor_female_harness_elite = 6

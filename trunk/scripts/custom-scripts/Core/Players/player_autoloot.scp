@@ -1,0 +1,23 @@
+[TYPEDEF t_corpse]
+ON=@DClick
+IF ((<rescount> > 0) && (<link> == <src.uid>))
+ f_lootback
+ UPDATE
+ENDIF
+
+
+
+[FUNCTION f_lootback]
+FORCONT <uid> 0
+	IF (<TYPE> != T_HAIR)
+		IF (!(<TAG0.THIS.WASEQUIPPED>))
+		BOUNCE
+		ELSEIF (<SRC.STR> >= <REQSTR>) && (<TAG0.THIS.WASEQUIPPED>)
+		TAG.THIS.WASEQUIPPED=
+		EQUIP
+		ELSEIF (<SRC.STR> < <REQSTR>) && (<TAG0.THIS.WASEQUIPPED>)
+		TAG.THIS.WASEQUIPPED=
+		BOUNCE
+		ENDIF
+	ENDIF
+ENDFOR

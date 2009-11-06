@@ -1,0 +1,97 @@
+//
+//Idea by Khaos
+//Created by Pyromapes2k
+//
+
+//To be placed in a player event
+[EVENTS e_container_limitations]
+ON=@ItemDropon_Item
+If <Act.Can>&0100
+If <Act.Baseid>==<Argo.Baseid>
+If <Argo.Cont.IsItem>
+Argo.Cont.Trigger @DropOn_Self,<def.TAT_AS_ARGO>,<Act.Uid>
+Endif
+Endif
+Endif
+
+
+//To be placed anywhere in your scripts
+
+[DEFNAME capacity_system]
+def_capacity_container            125
+def_maxweight_container            400
+
+def_capacitymod_i_chest_metal    75
+def_weightmod_i_chest_metal    600
+
+[comment Typedef t_container]
+
+ON=@DropOn_Self
+If <Cont.IsItem>
+If <Cont.Trigger @DropOn_Self,<def.TAT_AS_ARGO>,<Argo.Uid>>
+Return 1
+Endif
+Endif
+
+If !<Local.Drop>
+If <Src.Findlayer.31.Uid>==<Argo.Uid>
+If (<Contains> + (<Argo.Contains>+1)) > <GetItemLimit>
+ReturnToPack <Argo.Uid>,that container cannot hold any more items
+Return 1
+Elif ((<GetWeight>) + (<Argo.Weight>/10)) > <GetWeightLimit>
+ReturnToPack <Argo.Uid>,that container cannot hold that much weight
+Return 1
+Endif
+Endif
+Endif
+
+Timerf 0,ResendTooltip
+Return 0
+
+ON=@PICKUP_SELF
+Timerf 0,ResendTooltip
+
+ON=@Clienttooltip
+src.addcliloc 1070722,<Name>
+src.addcliloc 1072225,<eval <Weight>/10>
+SRC.AddCliloc 1072241,<Contains>,<GetItemLimit>,<GetWeight>,<GetWeightLimit>
+return 1
+
+[Function ReturnToPack]
+Ref1=<Argv[0]>
+If <Uid>!=<Src.Findlayer.21.Uid>
+Src.Sysmessage @1153,,1 <Argv[1]>
+Endif
+If (<Src.Findlayer.21.Contains> + (<Ref1.Contains>+1)) > <GetItemLimit>
+Ref1.Cont = <Src.Findlayer.21.Uid>
+Ref1.Drop
+Src.Sysmessage @1153,,1 your pack cannot hold that many items!
+Timerf 0,ResendTooltip
+Elif ((<Src.Findlayer.21.GetWeight>) + (<Ref1.Weight>/10)) > <Src.Findlayer.21.GetWeightLimit>
+Ref1.Cont = <Src.Findlayer.21.Uid>
+Ref1.Drop
+Src.Sysmessage @1153,,1 your pack cannot hold that much weight!
+Timerf 0,ResendTooltip
+Else
+Ref1.Bounce
+Src.Findlayer.21.Timerf 0,ResendTooltip
+Endif
+
+[Function Contains]
+If <Type>==t_container
+Local.Items = <Rescount>
+FORCONTTYPE t_container
+Local.Items += <Rescount>
+ENDFOR
+Return <dLocal.Items>
+Endif
+Return 0
+
+[Function GetWeight]
+Return <Eval ((<Weight>/10)+-<Serv.Itemdef.<Baseid>.Weight>)>
+
+[Function GetWeightLimit]
+Return <Eval <Def0.def_maxweight_container> + <Def0.def_weightmod_<Baseid>>>
+
+[Function GetItemLimit]
+Return <Eval <dDef0.def_capacity_container> + <Def0.def_capacitymod_<Baseid>>>

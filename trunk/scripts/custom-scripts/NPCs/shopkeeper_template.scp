@@ -1,0 +1,46 @@
+[CHARDEF c_shopkeeper_gargoyle_a]	//c_shopkeeper_gargoyle_blacksmith
+DEFNAME=c_gargoyle
+NAME=	//Shop name type, Gargoyle
+ID=c_shopkeeper_gargoyle
+
+TSPEECH=spk_gargoyle_shopkeep
+
+CATEGORY=ES NPC's
+SUBSECTION=Gargoyle Shopkeeper
+DESCRIPTION=Gargoyle Shopkeeper (<shop type>)
+
+ON=@CREATE
+ NPC=brain_vendor
+ COLOR=08000|0480
+
+ INVUL=1
+
+ TAG.BARDING.DIFFICULTY=72.5
+ TAG.SLAYER.INVULNERABILITY=gargoyle_slayer
+ TAG.SLAYER.INVULNERABILITY2=demon_slayer
+
+ FAME=3500
+ KARMA=3500
+
+ STR={146 175}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={88 105}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY=0.0
+
+ON=@DCLICK
+ RETURN 1
+
+ON=@NPCRESTOCK
+ ITEM=i_gold,{125 175}
+ ITEM=//1 MEDIUM LEVEL SCROLL
+ ITEM=//1-4 GEMS
+
+ BUY=VENDOR_B_Baker_template
+ SELL=VENDOR_S_Baker_template

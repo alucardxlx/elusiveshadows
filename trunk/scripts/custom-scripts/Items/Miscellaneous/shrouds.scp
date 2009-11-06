@@ -1,0 +1,164 @@
+//Hooded Shrouds and Death Shrouds w/function fix for the 3 that don't work.
+//Scripted By Admin Khaotic Solitaire
+//Copyrighted to Menace Designs. All rights reserved. For Menasoft's use only.
+//Shroud List w/ art descriptions.
+//i_hooded_shroud, i_hooded_shroud_1, i_hooded_robe = non perforated death robs.
+//i_death_shroud, i_death_shroud_1 = Perforated death robes.
+//i_deathshroud = naturally not included since its in base scripts, but disappears on world save
+//if you are not flagged as a ghost.
+//No client tooltips were added. Not too fond of them.
+//These are ALL ITEM IMAGES in the art.mul file for hooded and death shrouds.
+
+//Following are Hooded shrouds that work without functions. Shows presketched image on hover over pdoll.
+[itemdef 02683]
+defname i_death_shroud
+name Death Shroud
+weight 1
+type t_clothing
+layer layer_robe
+flip 1
+dupelist 02684
+dye 1
+
+category=GM Items
+subsection=Shrouds
+description=Death Shroud
+
+on @create
+ hitpoints {100 100}
+ color 0
+
+[itemdef 02684]
+dupeitem 02683
+
+
+//No Dupeitem.. ie no flipping!
+[itemdef 02687]
+defname i_hooded_shroud
+name Hooded Robe
+weight 1
+type t_clothing
+layer layer_robe
+dye 1
+
+category=GM Items
+subsection=Shrouds
+description=Hooded Shroud
+
+on @create
+ hitpoints {100 100}
+ color 0
+
+
+
+//Following only display with the function at the bottom. Hooded and death shroud item arts.
+[itemdef 025EE]
+defname i_hooded_shroud_1
+name Hooded Shroud
+type t_clothing
+layer layer_robe
+weight 1
+flip 1
+dupelist 025EF
+dye 1
+
+category=GM Items
+subsection=Shrouds
+description=Hooded Shroud 1 (Don't Use)
+
+on @create
+hitpoints 100
+color 0
+
+on @equip
+f_shroud_equip
+return 0
+
+on @unequip
+f_shroud_unequip
+return 0
+
+[itemdef 025EF]
+dupeitem 025EE
+
+
+[itemdef 025F0]
+defname i_death_shroud_1
+name Death Shroud
+weight=1.0
+type=t_clothing
+layer=layer_robe
+flip=1
+dupelist=025F1
+dye=1
+
+category=GM Items
+subsection=Shrouds
+description=Death Shroud 1 (Don't Use)
+
+on=@create
+ hitpoints 100
+ color 0
+
+on=@equip
+ f_shroud_equip
+ return 0
+
+on=@unequip
+ f_shroud_unequip
+ return 0
+
+
+[itemdef 025F1]
+dupeitem 025F0
+
+category=GM Items
+subsection=Shrouds
+description=Death Shroud 1 (Don't Use)
+
+
+[itemdef 02685]
+defname=i_hooded_shroud_2
+name=Hooded Shroud
+weight=1.0
+type=t_clothing
+layer=layer_robe
+flip=1
+dye=1
+dupelist=02686
+
+category=GM Items
+subsection=Shrouds
+description=Death Shroud (Don't Use)
+
+on=@create
+ hitpoints 100
+ color=0
+
+on=@equip
+ f_shroud_equip
+ return 0
+
+on=@unequip
+ f_shroud_unequip
+ return 0
+
+
+[itemdef 02686]
+dupeitem 02685
+
+category=GM Items
+subsection=Shrouds
+description=Death Shroud (Don't Use)
+
+
+
+//Functions used to get the non-displaying items to work on equip, then revert to old art on unequip.
+[function f_shroud_equip]
+dispid=02687
+update
+
+
+[function f_shroud_unequip]
+dispid <id>
+update

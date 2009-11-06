@@ -1,0 +1,382 @@
+[TEMPLATE loot_Abyssmal_Horror]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Abyssmal Horror
+CONTAINER=i_backpack
+ITEM=i_gold, {1600 2000}
+ITEM={ random_bottle 1 0 8 }
+ITEM={ random_light 1 0 8 }
+ITEM=random_potion
+ITEM=random_potion
+ITEM=random_potion
+ITEM=random_potion
+ITEM=random_reagent, {1 50}
+ITEM=random_reagent, {1 50}
+ITEM=random_reagent, {1 50}
+ITEM=random_reagent, {1 50}
+ITEM=RANDOM_WAND_SIX
+//16 magic items
+//doom arties
+
+
+[TEMPLATE loot_Bone_Deamon]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Bone Deamon
+CONTAINER=i_backpack
+ITEM=i_gold, {4000 5000}
+ITEM={ random_bottle 1 0 8 }
+ITEM={ random_light 1 0 8 }
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=RANDOM_WAND_EIGHT
+ITEM=RANDOM_WAND_SIX
+//16 magic items
+//doom arties
+
+
+[TEMPLATE loot_Crystal_Elemental]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Crystal Elemental
+CONTAINER=i_backpack
+ITEM=i_gold, {400 500}
+ITEM={ random_food 3 0 1 },{ 4 10 }
+ITEM=random_jewel,2
+ITEM=random_jewel,2
+ITEM=Random_Potion
+
+
+[TEMPLATE loot_Skittering_Hopper]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Skittering Hopper
+CONTAINER=i_backpack
+ITEM=i_gold, {50 100}
+ITEM={ random_food 3 0 1 },{ 4 10 }
+
+
+[TEMPLATE loot_Flesh_Golem]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Flesh Golem
+CONTAINER=i_backpack
+ITEM=i_gold, {125 175}
+ITEM={ random_meat 1 0 1 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+
+
+[TEMPLATE loot_Devourer_Souls]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Devourer of Souls
+CONTAINER=i_backpack
+ITEM=i_gold, {1000 1200}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM=RANDOM_REAGENTS_PAGAN, {5 10}
+ITEM=RANDOM_REAGENTS_PAGAN, {5 10}
+ITEM=RANDOM_REAGENTS_PAGAN, {5 10}
+ITEM=RANDOM_REAGENTS_PAGAN, {5 10}
+ITEM=RANDOM_REAGENTS_PAGAN, {5 10}
+ITEM=RANDOM_REAGENTS_PAGAN, {5 10}
+//ITEM=i_ttm_lvl5,R24
+ITEM=i_reag_daemon_bone, {10 20}
+//Magic items
+
+[TEMPLATE loot_Gore_Fiend]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Gore Fiend
+CONTAINER=i_backpack
+ITEM=i_gold, {125 175}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+
+
+[TEMPLATE loot_Impaler]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Impaler
+CONTAINER=i_backpack
+ITEM=i_gold, {1600 2000}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+//magic items 16
+
+
+[TEMPLATE loot_Gibberling]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Gibberling
+CONTAINER=i_backpack
+ITEM=i_gold, {50 100}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM=random_platemail_armor
+
+
+[TEMPLATE loot_Patchwork_Skeleton]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Patchwork Skeleton
+CONTAINER=i_backpack
+ITEM=i_gold, {50 100}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+
+
+[TEMPLATE loot_Wailing_Banshee]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Wailing Banshee
+ITEM=i_gold, {50 100}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM=random_reagents_pagan, {5 10}
+
+
+[TEMPLATE loot_Darknight_Creeper]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Darknight Creeper
+CONTAINER=i_backpack
+ITEM=i_gold, {1600 2000}
+ITEM=RANDOM_REAG_BLACK, {1 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=RANDOM_WAND_EIGHT
+ITEM=RANDOM_WAND_SIX
+//16 magic items
+
+
+[TEMPLATE loot_Ravager]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Ravager
+CONTAINER=i_backpack
+ITEM=i_gold, {275 325}
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_food 3 0 1 },{ 4 10 }
+ITEM=Random_Potion
+
+
+[TEMPLATE loot_Flesh_Renderer]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Flesh Renderer
+CONTAINER=i_backpack
+ITEM=i_gold, {1600 2000}
+ITEM=random_body_parts_1
+ITEM=random_body_parts_2
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=RANDOM_WAND_SIX
+ITEM=Random_Potion, {1 3}
+//magic items 16
+
+
+[TEMPLATE loot_Wanderer_Void]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Wanderer of the Void
+CONTAINER=i_backpack
+ITEM=i_gold, {1000 2000}   // Not sure of the amount here
+ITEM=ttm_lvl3, R24 //Check these too
+ITEM=ttm_lvl4, R49 //Check these too
+ITEM=i_reag_deamon_bone,50
+
+
+[TEMPLATE loot_Vampire_Bat]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Vampire Bat
+CONTAINER=i_backpack
+ITEM=i_gold, {25 50}  
+ITEM=i_reag_blood_vial, {1 5}
+
+
+[TEMPLATE loot_Dark_Father]
+DEFNAME=loot_dark_father
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Dark Father
+CONTAINER=i_backpack
+ITEM=i_gold, {2200 3000}  
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_scroll, {2 4}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=random_reagents,{5 10}
+ITEM=Random_Potion, {1 3}
+//16 magic items
+//doom arties
+
+
+[TEMPLATE loot_Mound_Maggots]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Mound of Maggots
+CONTAINER=i_backpack
+ITEM=
+
+
+[TEMPLATE loot_treefellow]
+CATEGORY=NPC Loot Templates
+SUBSECTION=AoS
+DESCRIPTION=Treefellow
+CONTAINER=i_backpack
+ITEM=i_gold,{125 175}
+ITEM=i_log, {20 35}
+
+
+//************************************************************************
+
+
+[TEMPLATE add_loot_Abyssmal_Horror]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Abyssmal Horror
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Bone_Deamon]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Bone Deamon
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Crystal_Elemental]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Crystal Elemental
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Skittering_Hopper]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Skittering Hopper
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Flesh_Golem]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Flesh Golem
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Devourer_Souls]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Devourer of Souls
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Gore_Fiend]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Gore Fiend
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Impaler]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Impaler
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Gibberling]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Gibberling
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Patchwork_Skeleton]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Patchwork Skeleton
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Wailing_Banshee]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Wailing Banshee
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Darknight_Creeper]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Darknight Creeper
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Ravager]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Ravager
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Flesh_Renderer]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Flesh Renderer
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Wanderer_Void]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Wanderer of the Void
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Vampire_Bat]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Vampire Bat
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Dark_Father]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Dark Father
+//CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_Mound_Maggots]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Mound of Maggots
+CONTAINER=i_backpack
+ITEM=
+
+[TEMPLATE add_loot_treefellow]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=AoS
+DESCRIPTION=Treefellow
+CONTAINER=i_backpack
+ITEM=

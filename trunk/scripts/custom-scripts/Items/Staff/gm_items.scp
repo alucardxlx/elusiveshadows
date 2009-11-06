@@ -1,0 +1,39 @@
+[ITEMDEF i_bandana_insight]
+NAME=Bandana of Insight
+ID=i_bandana
+TyPE=t_clothing
+ARMOR=0
+VALUE=
+
+CATEGORY=GM Items
+SUBSECTION=GM/Admin Items
+DESCRIPTION=Banadana of Insight (INFO)
+
+ON=@CREATE
+ HITPOINTS={10 20}
+ COLOR=00496
+
+ON=@DCLICK
+ Target Please target the item/mobile you want info on.
+ RETURN 0
+
+ON=@TARGON_CHAR
+ src.info
+ RETURN 0
+
+ON=@TARGON_GROUND
+ scr.info
+ RETURN 0
+
+ON=@TARGON_ITEM
+ src.info
+ RETURN 0
+
+ON=@EQUIPTEST
+ IF (<SRC.PLEVEL> <= 5)
+  REMOVE
+  SRC.MSG I was trying to use a staff item!
+  RETURN 1
+ ELSE
+  RETURN 0
+ ENDIF

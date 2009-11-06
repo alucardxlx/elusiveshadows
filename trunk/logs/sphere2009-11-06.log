@@ -1,0 +1,1714 @@
+2009/11/06 00:00:1700:00:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:03:ERROR:UID=04000dcfa, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+00:03:GC: 58562 Objects accounted for
+00:03:World data saved   (D:\Sphere\save/sphereworld.scp).
+00:03:Player data saved  (D:\Sphere\save/spherechars.scp).
+00:03:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+00:03:Context data saved (D:\Sphere\save/spheredata.scp).
+00:03:World save completed, took 2.3735 seconds
+00:04:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:08:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:12:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:16:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:20:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:24:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:27:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:31:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:35:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:39:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:12:ERROR:UID=04000dac2, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+01:12:GC: 58557 Objects accounted for
+01:12:World data saved   (D:\Sphere\save/sphereworld.scp).
+01:12:Player data saved  (D:\Sphere\save/spherechars.scp).
+01:12:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+01:12:Context data saved (D:\Sphere\save/spheredata.scp).
+01:12:World save completed, took 1.3679 seconds
+01:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:30:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+01:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:04:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:08:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:12:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:16:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:19:ERROR:UID=04000d92c, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+02:19:GC: 58565 Objects accounted for
+02:19:World data saved   (D:\Sphere\save/sphereworld.scp).
+02:19:Player data saved  (D:\Sphere\save/spherechars.scp).
+02:19:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+02:19:Context data saved (D:\Sphere\save/spheredata.scp).
+02:19:World save completed, took 2.4450 seconds
+02:20:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:24:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:42:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:46:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:50:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:54:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:27:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+03:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:31:ERROR:UID=04000d739, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+03:31:GC: 58557 Objects accounted for
+03:31:World data saved   (D:\Sphere\save/sphereworld.scp).
+03:31:Player data saved  (D:\Sphere\save/spherechars.scp).
+03:31:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+03:31:Context data saved (D:\Sphere\save/spheredata.scp).
+03:31:World save completed, took 1.6890 seconds
+03:34:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:49:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:53:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:57:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:00:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:04:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:08:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:12:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:16:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:19:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:23:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:27:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:31:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:35:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:38:ERROR:UID=04000d53c, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+04:38:GC: 58558 Objects accounted for
+04:38:World data saved   (D:\Sphere\save/sphereworld.scp).
+04:38:Player data saved  (D:\Sphere\save/spherechars.scp).
+04:38:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+04:38:Context data saved (D:\Sphere\save/spheredata.scp).
+04:38:World save completed, took 1.0435 seconds
+04:39:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:50:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:54:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:17:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:18:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+05:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:45:ERROR:UID=04000d254, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+05:45:GC: 58567 Objects accounted for
+05:45:World data saved   (D:\Sphere\save/sphereworld.scp).
+05:45:Player data saved  (D:\Sphere\save/spherechars.scp).
+05:45:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+05:45:Context data saved (D:\Sphere\save/spheredata.scp).
+05:45:World save completed, took 1.3433 seconds
+05:49:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:53:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:57:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:01:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:05:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:09:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:16:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:53:ERROR:UID=04000d05a, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+06:53:GC: 58564 Objects accounted for
+06:53:World data saved   (D:\Sphere\save/sphereworld.scp).
+06:53:Player data saved  (D:\Sphere\save/spherechars.scp).
+06:53:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+06:53:Context data saved (D:\Sphere\save/spheredata.scp).
+06:53:World save completed, took 1.0544 seconds
+06:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:11:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+07:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:17:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:54:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:58:ERROR:UID=04000cd54, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+07:58:GC: 58566 Objects accounted for
+07:58:World data saved   (D:\Sphere\save/sphereworld.scp).
+07:58:Player data saved  (D:\Sphere\save/spherechars.scp).
+07:58:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+07:58:Context data saved (D:\Sphere\save/spheredata.scp).
+07:58:World save completed, took 0.5283 seconds
+08:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:09:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:17:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:24:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:39:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:54:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:01:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+09:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:04:ERROR:UID=04000caab, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+09:04:GC: 58569 Objects accounted for
+09:04:World data saved   (D:\Sphere\save/sphereworld.scp).
+09:04:Player data saved  (D:\Sphere\save/spherechars.scp).
+09:04:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+09:04:Context data saved (D:\Sphere\save/spheredata.scp).
+09:04:World save completed, took 0.9793 seconds
+09:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:09:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:17:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:20:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:24:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:35:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:39:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:50:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:54:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:05:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:09:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:10:ERROR:UID=04000c95e, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+10:10:GC: 58566 Objects accounted for
+10:10:World data saved   (D:\Sphere\save/sphereworld.scp).
+10:10:Player data saved  (D:\Sphere\save/spherechars.scp).
+10:10:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+10:10:Context data saved (D:\Sphere\save/spheredata.scp).
+10:10:World save completed, took 1.1511 seconds
+10:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:17:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:20:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:24:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:35:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:39:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:47:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:50:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+10:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:16:ERROR:UID=04000c691, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+11:16:GC: 58581 Objects accounted for
+11:16:World data saved   (D:\Sphere\save/sphereworld.scp).
+11:16:Player data saved  (D:\Sphere\save/spherechars.scp).
+11:16:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+11:16:Context data saved (D:\Sphere\save/spheredata.scp).
+11:16:World save completed, took 2.2450 seconds
+11:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:49:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:55:1b0:Client connected [Total:1] ('71.200.58.34' 1/1)
+11:55:1b0:Login 'khaossolitaire6'
+11:55:1b0:Client disconnected [Total:0] ('71.200.58.34' 0/0)
+11:55:1b0:Client connected [Total:1] ('71.200.58.34' 1/1)
+11:55:1b0:Login 'khaossolitaire6'
+11:55:1b0:Setup_Start acct='khaossolitaire6', char='Khaotic Solitaire', IP='71.200.58.34'
+11:56:1b0:'khaossolitaire6' commands 'go fire island'=1
+11:56:1b4:Client connected [Total:2] ('127.0.0.1' 1/1)
+11:56:1b4:Login 'darkfae'
+11:56:1c4:Client connected [Total:3] ('127.0.0.1' 1/2)
+11:56:1b4:Client disconnected [Total:2] ('127.0.0.1' 1/1)
+11:56:1c4:Login 'darkfae'
+11:56:1c4:Setup_Start acct='darkfae', char='Darkfae', IP='127.0.0.1'
+11:56:1c4:'darkfae' commands 'admin'=1
+11:57:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:57:1b0:'khaossolitaire6' commands 'where'=1
+11:57:1b0:'khaossolitaire6' commands 'go 4446 3437 0 1'=1
+11:57:1c4:'darkfae' commands 'admin'=1
+11:59:ERROR:Undefined keyword 'magincia'
+11:59:1b0:'khaossolitaire6' commands 'magincia'=1
+11:59:1b0:'khaossolitaire6' commands 'go magincia'=1
+11:59:1b0:'khaossolitaire6' commands 'where'=1
+11:59:1b0:'khaossolitaire6' commands 'go 3713 2215 20 1'=1
+12:00:ERROR:Undefined keyword 'lastconnect'
+12:00:ERROR:Undefined keyword 'lastconnect'
+12:00:1b0:'khaossolitaire6' commands 'serv.lastconnect'=1
+12:00:1b0:'khaossolitaire6' commands 'serv.account.kilroy.lastconnect'=1
+12:00:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:01:1b0:'khaossolitaire6' commands 'serv.account'=1
+12:04:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:08:1b0:'khaossolitaire6' commands 'go 4446 3437 0 1'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1c4:'darkfae' commands 'admin'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:08:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:08:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'admin'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'admin'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'tele'=1
+12:09:1b0:'khaossolitaire6' commands 'tele'=1
+12:09:1c4:'darkfae' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1b0:'khaossolitaire6' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'tele'=1
+12:10:1c4:'darkfae' commands 'admin'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:11:1c4:'darkfae' commands 'tele'=1
+12:11:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1c4:'darkfae' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1c4:'darkfae' commands 'tele'=1
+12:12:1c4:'darkfae' commands 'tele'=1
+12:12:1c4:'darkfae' commands 'admin'=1
+12:12:1c4:'darkfae' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:1b0:'khaossolitaire6' commands 'tele'=1
+12:12:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:13:1b0:'khaossolitaire6' commands 'tele'=1
+12:16:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:19:1c4:'darkfae' commands 'admin'=1
+12:19:1b0:'khaossolitaire6' commands 'add c_lich_primevil'=1
+12:19:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:20:ERROR:Undefined symbol 'c_slasher_veil'
+12:20:ERROR:Undefined keyword 'add'
+12:20:1b0:'khaossolitaire6' commands 'add c_slasher_veil'=1
+12:20:1b0:'khaossolitaire6' commands 'add c_slasher_veils'=1
+12:20:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:20:1b0:'khaossolitaire6' commands 'add c_rotworm'=1
+12:20:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:20:1b0:'khaossolitaire6' commands 'add c_mimic'=1
+12:20:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:20:1b0:'khaossolitaire6' commands 'add c_gremlin'=1
+12:21:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:21:ERROR:Undefined symbol 'c_mindflayer'
+12:21:ERROR:Undefined keyword 'add'
+12:21:1b0:'khaossolitaire6' commands 'add c_mindflayer'=1
+12:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:22:ERROR:Undefined symbol 'c_stygian_dragon'
+12:22:ERROR:Undefined keyword 'add'
+12:22:1b0:'khaossolitaire6' commands 'add c_stygian_dragon'=1
+12:22:1b0:'khaossolitaire6' commands 'add c_dragon_stygian'=1
+12:22:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:23:ERROR:(es_faction_dragons.SCP,65)Undefined keyword 'SHELTER'
+12:23:ERROR:(es_faction_dragons.SCP,67)Undefined symbol 'e_faction_chaos'
+12:23:ERROR:(es_faction_dragons.SCP,67)Bad resource list id ' e_faction_chaos'
+12:23:ERROR:(es_faction_dragons.SCP,69)Undefined symbol 'e_carnivore3'
+12:23:ERROR:(es_faction_dragons.SCP,69)Unknown 'EVENTS' Resource 'e_carnivore3'
+12:23:1b0:'khaossolitaire6' commands 'add c_platinum_dragon'=1
+12:23:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:23:ERROR:(es_faction_dragons.SCP,12)Undefined keyword 'SHELTER'
+12:23:ERROR:(es_faction_dragons.SCP,14)Undefined symbol 'e_faction_chaos'
+12:23:ERROR:(es_faction_dragons.SCP,14)Bad resource list id ' e_faction_chaos'
+12:23:ERROR:(es_faction_dragons.SCP,16)Undefined symbol 'e_carnivore3'
+12:23:ERROR:(es_faction_dragons.SCP,16)Unknown 'EVENTS' Resource 'e_carnivore3'
+12:23:1b0:'khaossolitaire6' commands 'add c_crimson_dragon'=1
+12:23:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:24:ERROR:UID=04000c4e5, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+12:24:GC: 58594 Objects accounted for
+12:24:World data saved   (D:\Sphere\save/sphereworld.scp).
+12:24:Player data saved  (D:\Sphere\save/spherechars.scp).
+12:24:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+12:24:Context data saved (D:\Sphere\save/spheredata.scp).
+12:24:World save completed, took 12.2204 seconds
+12:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:25:ERROR:Undefined symbol 'c_humunculus'
+12:25:ERROR:Undefined keyword 'add'
+12:25:1b0:'khaossolitaire6' commands 'add c_humunculus'=1
+12:26:1b0:'khaossolitaire6' commands 'add c_humunculous'=1
+12:26:1b0:'khaossolitaire6' commands 'add c_boura'=1
+12:26:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:26:1b0:'khaossolitaire6' commands 'add c_kepetch'=1
+12:26:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:26:1b0:'khaossolitaire6' commands 'add c_kepetch_shorn'=1
+12:26:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:26:ERROR:(spherechars_stygian_abyss.scp,293)Undefined symbol 'i_medusa_blood'
+12:26:ERROR:(spherechars_stygian_abyss.scp,293)Bad resource list id 'i_medusa_blood, i_medusa_scales'
+12:26:ERROR:(spherechars_stygian_abyss.scp,294)Undefined symbol 'e_lethal_strike'
+12:26:ERROR:(spherechars_stygian_abyss.scp,294)Unknown 'EVENTS' Resource 'e_lethal_strike'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'e_petrify'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'e_petrify'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'para'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource '(para'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource '10'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'sec'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'sec'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'leaves'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'leaves'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'a'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'statue'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'statue'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'destroy'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'destroy'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'or'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'or'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'comes'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'comes'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'to'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'to'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'life'
+12:26:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'life)'
+12:26:ERROR:(spherechars_stygian_abyss.scp,296)Undefined symbol 'e_lethal_poison'
+12:26:ERROR:(spherechars_stygian_abyss.scp,296)Unknown 'EVENTS' Resource 'e_lethal_poison'
+12:26:ERROR:(spherechars_stygian_abyss.scp,296)Undefined symbol 'from'
+12:26:ERROR:(spherechars_stygian_abyss.scp,296)Unknown 'EVENTS' Resource '(from'
+12:26:ERROR:(spherechars_stygian_abyss.scp,296)Undefined symbol 'hair'
+12:26:ERROR:(spherechars_stygian_abyss.scp,296)Unknown 'EVENTS' Resource 'hair)'
+12:26:1b0:'khaossolitaire6' commands 'add c_medusa'=1
+12:27:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:27:1b0:'Khaotic Solitaire' Says UNICODE 'ENU' 'c_raptor' mode=0
+12:27:1b0:'khaossolitaire6' commands 'add c_raptor'=1
+12:27:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:27:1b0:'khaossolitaire6' commands 'add c_skree'=1
+12:27:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:27:1b0:'khaossolitaire6' commands 'add c_slith'=1
+12:27:1b0:'khaossolitaire6' commands 'add c_spider_female'=1
+12:28:1b0:'khaossolitaire6' commands 'add c_spider_male'=1
+12:28:1b0:'khaossolitaire6' commands 'add c_spider_trapdoor'=1
+12:28:ERROR:Undefined keyword 'c_wolf_leather'
+12:28:1b0:'khaossolitaire6' commands 'c_wolf_leather'=1
+12:28:1b0:'khaossolitaire6' commands 'add c_wolf_leather'=1
+12:29:1b0:'khaossolitaire6' commands 'add c_shadow_dweller'=1
+12:29:1b0:'khaossolitaire6' commands 'add c_spirit_body'=1
+12:29:1b0:'khaossolitaire6' commands 'add c_spirit_tentacle'=1
+12:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:30:ERROR:Undefined symbol 'c_green_goblin'
+12:30:ERROR:Undefined keyword 'add'
+12:30:1b0:'khaossolitaire6' commands 'add c_green_goblin'=1
+12:30:ERROR:Undefined symbol 'c_grey_goblin'
+12:30:ERROR:Undefined keyword 'add'
+12:30:1b0:'khaossolitaire6' commands 'add c_grey_goblin'=1
+12:30:ERROR:Undefined symbol 'c_green_goblin'
+12:30:ERROR:Undefined keyword 'add'
+12:30:1b0:'khaossolitaire6' commands 'add c_green_goblin'=1
+12:30:1b0:'khaossolitaire6' commands 'add c_goblin_green'=1
+12:30:1b0:'khaossolitaire6' commands 'add c_goblin_grey'=1
+12:30:1b0:'khaossolitaire6' commands 'add c_gargoyle_undead'=1
+12:31:1b0:'khaossolitaire6' commands 'add c_flayer'=1
+12:31:1b0:'khaossolitaire6' commands 'add c_elem_lava'=1
+12:31:ERROR:Undefined symbol 'c_dragon_wolf'
+12:31:ERROR:Undefined keyword 'add'
+12:31:1b0:'khaossolitaire6' commands 'add c_dragon_wolf'=1
+12:31:ERROR:Undefined symbol 'c_dragon_wolf'
+12:31:ERROR:Undefined keyword 'add'
+12:31:1b0:'khaossolitaire6' commands 'add c_dragon_wolf'=1
+12:31:1b0:'khaossolitaire6' commands 'add c_wolf_dragon'=1
+12:31:1b0:'khaossolitaire6' commands 'add c_dragon_fairie'=1
+12:32:ERROR:Undefined symbol 'c_clockwork_scorpion'
+12:32:ERROR:Undefined keyword 'add'
+12:32:1b0:'khaossolitaire6' commands 'add c_clockwork_scorpion'=1
+12:32:ERROR:Undefined symbol 'c_scorpion_scorpion'
+12:32:ERROR:Undefined keyword 'add'
+12:32:1b0:'khaossolitaire6' commands 'add c_scorpion_scorpion'=1
+12:32:1b0:'khaossolitaire6' commands 'add c_scorpion_clockwork'=1
+12:32:1b0:'khaossolitaire6' commands 'add c_chicken_lizard'=1
+12:32:1b0:'khaossolitaire6' commands 'add c_beetle_iron'=1
+12:33:ERROR:Undefined keyword 'add_abyssal_infernal'
+12:33:1b0:'khaossolitaire6' commands 'add_abyssal_infernal'=1
+12:33:ERROR:Undefined keyword 'add_abyssal_infernal'
+12:33:1b0:'khaossolitaire6' commands 'add_abyssal_infernal'=1
+12:33:ERROR:Undefined symbol 'c_infernal_abyssal'
+12:33:ERROR:Undefined keyword 'add'
+12:33:1b0:'khaossolitaire6' commands 'add c_infernal_abyssal'=1
+12:33:1b0:'khaossolitaire6' commands 'add 02C9'=1
+12:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:33:ERROR:Undefined symbol 'c_abyssmal_inferal'
+12:33:ERROR:Undefined keyword 'add'
+12:33:1b0:'khaossolitaire6' commands 'add c_abyssmal_inferal'=1
+12:33:ERROR:Undefined symbol 'c_abyssmal_infernal'
+12:33:ERROR:Undefined keyword 'add'
+12:33:1b0:'khaossolitaire6' commands 'add c_abyssmal_infernal'=1
+12:34:ERROR:Undefined symbol 'c_abysmal_infernal'
+12:34:ERROR:Undefined keyword 'add'
+12:34:1b0:'khaossolitaire6' commands 'add c_abysmal_infernal'=1
+12:34:1b0:'khaossolitaire6' commands 'add c_stone_form'=1
+12:34:ERROR:Undefined symbol 'c_shadow_lord'
+12:34:ERROR:Undefined keyword 'add'
+12:34:1b0:'khaossolitaire6' commands 'add c_shadow_lord'=1
+12:35:1b0:'khaossolitaire6' commands 'add c_animated_weapon'=1
+12:36:ERROR:Undefined symbol 'c_abysmal_infernal'
+12:36:ERROR:Undefined keyword 'add'
+12:36:1b0:'khaossolitaire6' commands 'add c_abysmal_infernal'=1
+12:36:ERROR:Undefined symbol 'c_champ_abysmal_infernal'
+12:36:ERROR:Undefined keyword 'add'
+12:36:1b0:'khaossolitaire6' commands 'add c_champ_abysmal_infernal'=1
+12:36:ERROR:Undefined symbol 'c_champ_abyssmal_infernal'
+12:36:ERROR:Undefined keyword 'add'
+12:36:1b0:'khaossolitaire6' commands 'add c_champ_abyssmal_infernal'=1
+12:36:ERROR:Undefined symbol 'c_acid_slug'
+12:36:ERROR:Undefined keyword 'add'
+12:36:1b0:'khaossolitaire6' commands 'add c_acid_slug'=1
+12:36:ERROR:Undefined symbol 'c_slug_acid'
+12:36:ERROR:Undefined keyword 'add'
+12:36:1b0:'khaossolitaire6' commands 'add c_slug_acid'=1
+12:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:37:ERROR:Undefined symbol 'c_slug_acid'
+12:37:ERROR:Undefined keyword 'add'
+12:37:1b0:'khaossolitaire6' commands 'add c_slug_acid.add c_bloodworm'=1
+12:38:ERROR:Undefined symbol 'c_slug_acid'
+12:38:ERROR:Undefined keyword 'add'
+12:38:1b0:'khaossolitaire6' commands 'add c_slug_acid.add c_blood_worm'=1
+12:38:ERROR:Undefined symbol 'c_slug_acid'
+12:38:ERROR:Undefined keyword 'add'
+12:38:1b0:'khaossolitaire6' commands 'add c_slug_acid.add c_bloodworm'=1
+12:38:ERROR:Undefined symbol 'c_fire_ant'
+12:38:ERROR:Undefined keyword 'add'
+12:38:1b0:'khaossolitaire6' commands 'add c_fire_ant'=1
+12:38:ERROR:Undefined symbol 'c_ant_fire'
+12:38:ERROR:Undefined keyword 'add'
+12:38:1b0:'khaossolitaire6' commands 'add c_ant_fire'=1
+12:40:1b0:'khaossolitaire6' commands 'add c_gargoyle_pet'=1
+12:41:ERROR:Undefined symbol 'c_rising_collosus'
+12:41:ERROR:Undefined keyword 'add'
+12:41:1b0:'khaossolitaire6' commands 'add c_rising_collosus'=1
+12:41:ERROR:Undefined symbol 'c_rising_collossus'
+12:41:ERROR:Undefined keyword 'add'
+12:41:1b0:'khaossolitaire6' commands 'add c_rising_collossus'=1
+12:41:1b0:'khaossolitaire6' commands 'add c_rising_colossus'=1
+12:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:41:ERROR:Undefined keyword 'c_bloodworm'
+12:41:1b0:'khaossolitaire6' commands 'c_bloodworm'=1
+12:41:ERROR:Undefined symbol 'c_a_bloodworm'
+12:41:ERROR:Undefined keyword 'add'
+12:41:1b0:'khaossolitaire6' commands 'add c_a_bloodworm'=1
+12:42:1b0:'khaossolitaire6' commands 'add c_bloodworm'=1
+12:42:1b0:'khaossolitaire6' commands 'add c_abyssal_infernal'=1
+12:42:ERROR:Undefined keyword 'c_bulbous_putrifaction'
+12:42:1b0:'khaossolitaire6' commands 'c_bulbous_putrifaction'=1
+12:43:1b0:'khaossolitaire6' commands 'add c_bulbous_putrifaction'=1
+12:43:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+12:43:ERROR:Undefined symbol 'c_bird_phoenix'
+12:43:ERROR:Undefined keyword 'add'
+12:43:1b0:'khaossolitaire6' commands 'add c_bird_phoenix'=1
+12:43:ERROR:Undefined symbol 'c_phoenix'
+12:43:ERROR:Undefined keyword 'add'
+12:43:1b0:'khaossolitaire6' commands 'add c_phoenix'=1
+12:43:ERROR:Undefined symbol 'c_a_phoenix'
+12:43:ERROR:Undefined keyword 'add'
+12:43:1b0:'khaossolitaire6' commands 'add c_a_phoenix'=1
+12:43:1b0:'khaossolitaire6' commands 'add c_phoenix_bird'=1
+12:44:1b0:'khaossolitaire6' commands 'add c_parrot_bird'=1
+12:44:1b0:'khaossolitaire6' commands 'add c_gargoyle_man'=1
+12:45:ERROR:(es_portalmage.scp,76)Undefined symbol 'i_c_staff_black'
+12:45:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:45:ERROR:Undefined keyword 'c_gargoyle_woman'
+12:45:1b0:'khaossolitaire6' commands 'c_gargoyle_woman'=1
+12:45:1b0:'khaossolitaire6' commands 'add c_gargoyle_woman'=1
+12:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:45:1b0:'khaossolitaire6' commands 'set dispid c_gargoyle_man'=1
+12:46:ERROR:Undefined keyword 'dispid'
+12:46:'khaossolitaire6' commands uid=0c25e (Kisa) to 'dispid c_gargoyle_man'=0
+12:46:ERROR:Undefined symbol 'c_gargoyle_male'
+12:46:ERROR:Undefined keyword 'add'
+12:46:1b0:'khaossolitaire6' commands 'add c_gargoyle_male'=1
+12:47:1b0:'Khaotic Solitaire' Says 'all stay' mode=0
+12:47:1b0:'khaossolitaire6' commands 'set body c_phoenix_bird'=1
+12:47:'khaossolitaire6' commands uid=05742 (Khaotic Solitaire) to 'body c_phoenix_bird'=1
+12:47:1b0:'khaossolitaire6' commands 'update'=1
+12:48:1b0:'khaossolitaire6' commands 'set body <obody>'=1
+12:48:ERROR:Undefined symbol ''
+12:48:ERROR:Undefined symbol 'obody'
+12:48:'khaossolitaire6' commands uid=05742 (Khaotic Solitaire) to 'body <obody>'=1
+12:48:1b0:'khaossolitaire6' commands 'update'=1
+12:48:1b0:'khaossolitaire6' commands 'set dispid <obody>'=1
+12:48:ERROR:Undefined keyword 'dispid'
+12:48:'khaossolitaire6' commands uid=05742 (Khaotic Solitaire) to 'dispid <obody>'=0
+12:48:1b0:'khaossolitaire6' commands 'set dispid c_elf_man'=1
+12:48:ERROR:Undefined keyword 'dispid'
+12:48:'khaossolitaire6' commands uid=05742 (Khaotic Solitaire) to 'dispid c_elf_man'=0
+12:49:1b0:'khaossolitaire6' commands 'set body c_elf_man'=1
+12:49:ERROR:Undefined symbol 'c_elf_man'
+12:49:'khaossolitaire6' commands uid=05742 (Khaotic Solitaire) to 'body c_elf_man'=1
+12:49:1b0:'khaossolitaire6' commands 'update'=1
+12:49:1b0:'khaossolitaire6' commands 'edit'=1
+12:49:1b0:'khaossolitaire6' commands 'info'=1
+12:49:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:49:1b0:'khaossolitaire6' commands 'set body c_elf_male'=1
+12:49:'khaossolitaire6' commands uid=05742 (Khaotic Solitaire) to 'body c_elf_male'=1
+12:49:1b0:'khaossolitaire6' commands 'update'=1
+12:50:1b0:'khaossolitaire6' commands 'xdir 3'=1
+12:50:'khaossolitaire6' commands uid=0c2e8 (flayer) to 'dir 3'=1
+12:50:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:50:'khaossolitaire6' commands uid=0c2e8 (flayer) to 'dir 4'=1
+12:50:1b0:'khaossolitaire6' commands 'update'=1
+12:50:1b0:'khaossolitaire6' commands 'update'=1
+12:50:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:50:'khaossolitaire6' commands uid=0c315 (female spider) to 'dir 4'=1
+12:50:1b0:'khaossolitaire6' commands 'update'=1
+12:50:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:50:'khaossolitaire6' commands uid=0c296 (gargoyle pet) to 'dir 4'=1
+12:50:1b0:'khaossolitaire6' commands 'update'=1
+12:50:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:50:'khaossolitaire6' commands uid=0c2c5 (stone form) to 'dir 4'=1
+12:50:1b0:'khaossolitaire6' commands 'update'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c28e (Rising Colossus) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'update'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2d8 (chicken lizard) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'update'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c268 (Parrot) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'update'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2d5 (iron beetle) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2db (dragon wolf) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2e4 (lava elemental) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c26f (bulbous putrifaction) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c305 (shadow dweller) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2f2 (tunnel spirit tentacle) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c300 (Tunnel Spirit Body) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'update'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c27d (Abyssal Infernal) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2d9 (clockwork scorpion) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2eb (Goblin) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2ea (Grey Goblin) to 'dir 4'=1
+12:51:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:51:'khaossolitaire6' commands uid=0c2e9 (undead gargoyle) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c285 (bloodworm) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c2da (fairie dragon) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'update'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c36d (slasher of veils) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c371 (Primevil lich) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c33e (humunculous) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c327 (raptor) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c313 (male spider) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c30c (trapdoor spider) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'update'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c368 (mimic) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c36a (rotworm) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c333 (Kepetch) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c330 (Kepetch (Shorn)) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c324 (skree) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c31f (slith) to 'dir 4'=1
+12:52:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:52:'khaossolitaire6' commands uid=0c366 (gremlin) to 'dir 4'=1
+12:53:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:53:'khaossolitaire6' commands uid=0c33a (boura) to 'dir 4'=1
+12:53:1b0:'khaossolitaire6' commands 'update'=1
+12:53:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:53:'khaossolitaire6' commands uid=0c33e (humunculous) to 'dir 4'=1
+12:53:1b0:'khaossolitaire6' commands 'update'=1
+12:53:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:53:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:53:'khaossolitaire6' commands uid=0c30a (wolf leather) to 'dir 4'=1
+12:53:1b0:'khaossolitaire6' commands 'update'=1
+12:53:1b0:'khaossolitaire6' commands 'xmove SE'=1
+12:53:'khaossolitaire6' commands uid=0c30a (wolf leather) to 'move SE'=1
+12:54:1b0:'khaossolitaire6' commands 'xmove S'=1
+12:54:'khaossolitaire6' commands uid=0c2d8 (chicken lizard) to 'move S'=1
+12:54:1b0:'khaossolitaire6' commands 'xmove S'=1
+12:54:'khaossolitaire6' commands uid=0c2d8 (chicken lizard) to 'move S'=1
+12:54:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:54:'khaossolitaire6' commands uid=0c26a (Phoenix) to 'dir 4'=1
+12:54:1b0:'khaossolitaire6' commands 'update'=1
+12:54:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:54:'khaossolitaire6' commands uid=0c355 (Platinum Dragon) to 'dir 4'=1
+12:54:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:54:'khaossolitaire6' commands uid=0c357 (stygian dragon) to 'dir 4'=1
+12:54:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:54:'khaossolitaire6' commands uid=0c352 (Crimson Dragon) to 'dir 4'=1
+12:54:1b0:'khaossolitaire6' commands 'update'=1
+12:55:1b0:'khaossolitaire6' commands 'xmove E 2'=1
+12:55:'khaossolitaire6' commands uid=0c366 (gremlin) to 'move E 2'=1
+12:55:1b0:'khaossolitaire6' commands 'xmove E 1'=1
+12:55:'khaossolitaire6' commands uid=0c366 (gremlin) to 'move E 1'=1
+12:55:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:55:'khaossolitaire6' commands uid=0c32a (medusa) to 'dir 4'=1
+12:55:1b0:'khaossolitaire6' commands 'update'=1
+12:56:1b0:'khaossolitaire6' commands 'xdir 4'=1
+12:56:'khaossolitaire6' commands uid=0c259 (Gargoyle) to 'dir 4'=1
+12:56:1b0:'khaossolitaire6' commands 'update'=1
+12:57:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:00:1b0:'khaossolitaire6' commands 'xnuke'=1
+13:00:Expansion maps supported: T2A, LBR, AOS, SE, ML
+13:00:Indexing 362 scripts...
+13:00:WARNING:Resource 'scripts/custom-scripts/NPCs/Town NPCs/es_portalmage.scp' changed, resync.
+13:00:ERROR:Undefined keyword 'nuke'
+13:00:'khaossolitaire6' commands uid=0c313 (male spider) to 'nuke'=0
+13:00:1b0:'khaossolitaire6' commands 'add c_gargoyle_man'=1
+13:00:ERROR:(es_portalmage.scp,76)Undefined symbol 'i_c_staff_black'
+13:00:1b0:'khaossolitaire6' commands 'info'=1
+13:01:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:03:Expansion maps supported: T2A, LBR, AOS, SE, ML
+13:03:Indexing 362 scripts...
+13:03:WARNING:Resource 'scripts/custom-scripts/NPCs/Town NPCs/es_portalmage.scp' changed, resync.
+13:05:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:06:1b0:'khaossolitaire6' commands 'add c_gargoyle_man'=1
+13:06:ERROR:(es_portalmage.scp,78)Undefined symbol 'i_c_staff_black'
+13:07:1c4:Client disconnected [Total:1] ('127.0.0.1' 0/0)
+13:07:1b0:'khaossolitaire6' commands 'nuke'=1
+13:07:1b0:Client disconnected [Total:0] ('71.200.58.34' 0/0)
+13:07:ERROR:UID=04000c33b, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+13:07:GC: 58633 Objects accounted for
+13:07:World data saved   (D:\Sphere\save/sphereworld.scp).
+13:07:Player data saved  (D:\Sphere\save/spherechars.scp).
+13:07:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+13:07:Context data saved (D:\Sphere\save/spheredata.scp).
+13:07:World save completed, took 1.7985 seconds
+13:07:Statics data saved (D:\Sphere\save/spherestatics.scp).
+13:07:FATAL:Immediate Shutdown initialized!
+
+13:07:Sphere Version 0.56b [WIN32] by www.sphereserver.com, compiled at Sep 20 2009 (20:00:04)
+13:07:Expansion maps supported: T2A, LBR, AOS, SE, ML
+13:07:FATAL:Server terminated by error 1!
+13:07:ERROR:(spheretables.scp,76)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/Core/Level/*.scp
+13:07:ERROR:(spheretables.scp,76)DirList=-1 for 'scripts/custom-scripts/Core/Level/'
+13:07:ERROR:(spheretables.scp,77)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/Core/Naval/*.scp
+13:07:ERROR:(spheretables.scp,77)DirList=-1 for 'scripts/custom-scripts/Core/Naval/'
+13:07:ERROR:(spheretables.scp,80)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/Core/Spells/*.scp
+13:07:ERROR:(spheretables.scp,80)DirList=-1 for 'scripts/custom-scripts/Core/Spells/'
+13:07:ERROR:(spheretables.scp,85)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/Items/Artifact/*.scp
+13:07:ERROR:(spheretables.scp,85)DirList=-1 for 'scripts/custom-scripts/Items/Artifact/'
+13:07:ERROR:(spheretables.scp,98)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/NPCs/Humanoids/*.scp
+13:07:ERROR:(spheretables.scp,98)DirList=-1 for 'scripts/custom-scripts/NPCs/Humanoids/'
+13:07:ERROR:(spheretables.scp,100)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/NPCs/Mounts/*.scp
+13:07:ERROR:(spheretables.scp,100)DirList=-1 for 'scripts/custom-scripts/NPCs/Mounts/'
+13:07:ERROR:(spheretables.scp,101)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/NPCs/Named/*.scp
+13:07:ERROR:(spheretables.scp,101)DirList=-1 for 'scripts/custom-scripts/NPCs/Named/'
+13:07:ERROR:(spheretables.scp,102)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/NPCs/Peerless/*.scp
+13:07:ERROR:(spheretables.scp,102)DirList=-1 for 'scripts/custom-scripts/NPCs/Peerless/'
+13:07:ERROR:(spheretables.scp,111)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/World/Cave/*.scp
+13:07:ERROR:(spheretables.scp,111)DirList=-1 for 'scripts/custom-scripts/World/Cave/'
+13:07:ERROR:(spheretables.scp,117)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/World/Cemetaries/*.scp
+13:07:ERROR:(spheretables.scp,117)DirList=-1 for 'scripts/custom-scripts/World/Cemetaries/'
+13:07:ERROR:(spheretables.scp,125)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/World/City/*.scp
+13:07:ERROR:(spheretables.scp,125)DirList=-1 for 'scripts/custom-scripts/World/City/'
+13:07:ERROR:(spheretables.scp,141)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/World/City/Ocllo/*.scp
+13:07:ERROR:(spheretables.scp,141)DirList=-1 for 'scripts/custom-scripts/World/City/Ocllo/'
+13:07:ERROR:(spheretables.scp,156)Unable to open directory D:\Sphere\scripts/scripts/custom-scripts/World/Dungeon/*.scp
+13:07:ERROR:(spheretables.scp,156)DirList=-1 for 'scripts/custom-scripts/World/Dungeon/'
+13:07:Allocating map sectors: 0=7168 1=7168 2=900 3=1280 4=32761
+13:07:Indexing 362 scripts...
+13:07:Loading scripts/sphere_defs.scp
+13:07:Loading scripts/sphere_types.scp
+13:07:Loading scripts/sphere_book.scp
+13:07:Loading scripts/sphere_backward_compatibility.scp
+13:07:Loading scripts/sphere_events_human.scp
+13:07:Loading scripts/sphere_events_npcs.scp
+13:07:Loading scripts/npcs/spherechar_se.scp
+13:07:Loading scripts/npcs/spherechar_new_mounts.scp
+13:07:Loading scripts/npcs/spherechar_mondains_legacy.scp
+13:07:Loading scripts/npcs/spherechar_misc2.scp
+13:07:Loading scripts/npcs/spherechar_misc.scp
+13:07:Loading scripts/npcs/spherechar_lbr2.scp
+13:07:Loading scripts/npcs/spherechar_lbr.scp
+13:07:Loading scripts/npcs/spherechar_human.scp
+13:07:Loading scripts/npcs/spherechar_evil.scp
+13:07:Loading scripts/npcs/spherechar_aos.scp
+13:07:Loading scripts/npcs/spherechar_anim.scp
+13:07:Loading scripts/npcs/spherechar.scp
+13:07:Loading scripts/npcs/mondains_legacy_npcs.scp
+13:07:Loading scripts/sphere_admin.scp
+13:07:Loading scripts/sphere_dialog.scp
+13:07:Loading scripts/items/sphere_item_resources.scp
+13:07:Loading scripts/items/sphere_minor_artifacts.scp
+13:07:Loading scripts/items/sphere_item_vegetation.scp
+13:07:Loading scripts/items/sphere_item_unsorted.scp
+13:07:Loading scripts/items/sphere_item_treasure_maps.scp
+13:07:Loading scripts/items/sphere_item_ship_parts.scp
+13:07:Loading scripts/items/sphere_item_provisions_weapons_se.scp
+13:07:Loading scripts/items/sphere_item_provisions_weapons_ml.scp
+13:07:Loading scripts/items/sphere_item_provisions_weapons_aos.scp
+13:07:Loading scripts/items/sphere_item_provisions_weapons.scp
+13:07:Loading scripts/items/sphere_item_provisions_potions.scp
+13:07:Loading scripts/items/sphere_item_provisions_ore.scp
+13:07:Loading scripts/items/sphere_item_provisions_misc.scp
+13:07:Loading scripts/items/sphere_item_provisions_jewelry.scp
+13:07:Loading scripts/items/sphere_item_provisions_deeds.scp
+13:07:Loading scripts/items/sphere_item_provisions_deed.scp
+13:07:Loading scripts/items/sphere_item_provisions_clothing_ml.scp
+13:07:Loading scripts/items/sphere_item_provisions_clothing.scp
+13:07:Loading scripts/items/sphere_item_provisions_beers.scp
+13:07:Loading scripts/items/sphere_item_provisions_armor_se.scp
+13:07:Loading scripts/items/sphere_item_provisions_armor_ml.scp
+13:07:Loading scripts/items/sphere_item_provisions_armor_color.scp
+13:07:Loading scripts/items/sphere_item_provisions_armor_aos.scp
+13:07:Loading scripts/items/sphere_item_provisions_armor.scp
+13:07:Loading scripts/items/sphere_item_provisions_alchemy_magic.scp
+13:07:Loading scripts/items/sphere_item_profession_tailor_tanner.scp
+13:07:Loading scripts/items/sphere_item_profession_cook_barkeep_baker.scp
+13:07:Loading scripts/items/sphere_item_profession_cartographer.scp
+13:07:Loading scripts/items/sphere_item_profession_barber.scp
+13:07:Loading scripts/items/sphere_item_profession_alchemist_mage.scp
+13:07:Loading scripts/items/sphere_item_profession.scp
+13:07:Loading scripts/items/sphere_item_mystic_sa[1].scp
+13:07:Loading scripts/items/sphere_item_multis_stairs.scp
+13:07:Loading scripts/items/sphere_item_multis_houses_ships.scp
+13:07:Loading scripts/items/sphere_item_multis_foundations.scp
+13:07:Loading scripts/items/sphere_item_ml_misc.scp
+13:07:Loading scripts/items/sphere_item_ml_floor_wall.scp
+13:07:Loading scripts/items/sphere_item_ml.scp
+13:07:Loading scripts/items/sphere_item_misc_se.scp
+13:07:Loading scripts/items/sphere_item_misc.scp
+13:07:Loading scripts/items/sphere_item_magic_weapon.scp
+13:07:Loading scripts/items/sphere_item_magic_wands.scp
+13:07:Loading scripts/items/sphere_item_magic_necromancer_aos.scp
+13:07:Loading scripts/items/sphere_item_magic_leather.scp
+13:07:Loading scripts/items/sphere_item_magic_armor.scp
+13:07:Loading scripts/items/sphere_item_ground_tiles.scp
+13:07:Loading scripts/items/sphere_item_eight_age.scp
+13:07:Loading scripts/items/sphere_item_deco_signs.scp
+13:07:Loading scripts/items/sphere_item_deco_misc.scp
+13:07:Loading scripts/items/sphere_item_deco_mini_houses.scp
+13:07:Loading scripts/items/sphere_item_deco_lightsources.scp
+13:07:Loading scripts/items/sphere_item_deco_furniture.scp
+13:07:Loading scripts/items/sphere_item_deco_fireplace_chimney_oven.scp
+13:07:Loading scripts/items/sphere_item_deco_evilitem.scp
+13:07:Loading scripts/items/sphere_item_deco_dungeons_traps_dead.scp
+13:07:Loading scripts/items/sphere_item_deco_curtains_banners_tapestries.scp
+13:07:Loading scripts/items/sphere_item_deco_carvings_statues.scp
+13:07:Loading scripts/items/sphere_item_deco_carpet_rugs.scp
+13:07:Loading scripts/items/sphere_item_christmas.scp
+13:07:Loading scripts/items/sphere_item_char_icons_new.scp
+13:07:Loading scripts/items/sphere_item_char_icons.scp
+13:07:Loading scripts/items/sphere_item_building_walls_se.scp
+13:07:Loading scripts/items/sphere_item_building_walls.scp
+13:07:Loading scripts/items/sphere_item_building_stairs_ml.scp
+13:07:Loading scripts/items/sphere_item_building_stairs.scp
+13:07:Loading scripts/items/sphere_item_building_roofs_se.scp
+13:07:Loading scripts/items/sphere_item_building_roofs_ml.scp
+13:07:Loading scripts/items/sphere_item_building_roofs_aos.scp
+13:07:Loading scripts/items/sphere_item_building_roofs.scp
+13:07:Loading scripts/items/sphere_item_building_other.scp
+13:07:Loading scripts/items/sphere_item_building_floors_se.scp
+13:07:Loading scripts/items/sphere_item_building_floors.scp
+13:07:Loading scripts/items/sphere_item_building_fence.scp
+13:07:Loading scripts/items/sphere_item_building_doors.scp
+13:07:Loading scripts/items/sphere_item_boulders_rocks.scp
+13:07:Loading scripts/items/sphere_item_aos_se.scp
+13:07:Loading scripts/items/sphere_item_animations.scp
+13:07:Loading scripts/sphere_region.scp
+13:07:Loading scripts/maps/sphere_map0.scp
+13:07:Loading scripts/maps/sphere_map0_ml.scp
+13:07:Loading scripts/maps/sphere_map1.scp
+13:07:Loading scripts/maps/sphere_map2.scp
+13:07:Loading scripts/maps/sphere_map3.scp
+13:07:Loading scripts/maps/sphere_map4.scp
+13:07:Loading scripts/maps/sphere_map_points0.scp
+13:07:Loading scripts/maps/sphere_map_points0_ml.scp
+13:07:Loading scripts/maps/sphere_map_points1.scp
+13:07:Loading scripts/maps/sphere_map_points2.scp
+13:07:Loading scripts/maps/sphere_map_points3.scp
+13:07:Loading scripts/maps/sphere_map_points4.scp
+13:07:Loading scripts/sphere_menu.scp
+13:07:Loading scripts/sphere_name.scp
+13:07:Loading scripts/sphere_skillmenu.scp
+13:07:Loading scripts/sphere_spawns.scp
+13:07:ERROR:(sphere_spawns.scp,33)Undefined symbol 'c_skeleton_mage'
+13:07:ERROR:(sphere_spawns.scp,35)Undefined symbol 'c_liche_lord'
+13:07:ERROR:(sphere_spawns.scp,49)Undefined symbol 'c_skeleton_mage'
+13:07:ERROR:(sphere_spawns.scp,51)Undefined symbol 'c_liche_lord'
+13:07:ERROR:(sphere_spawns.scp,62)Undefined symbol 'c_elem_blood'
+13:07:ERROR:(sphere_spawns.scp,63)Undefined symbol 'c_elem_ice'
+13:07:ERROR:(sphere_spawns.scp,64)Undefined symbol 'c_elem_poison'
+13:07:ERROR:(sphere_spawns.scp,65)Undefined symbol 'c_elem_snow'
+13:07:ERROR:(sphere_spawns.scp,89)Undefined symbol 'c_hellcat'
+13:07:ERROR:(sphere_spawns.scp,90)Undefined symbol 'c_hellhound'
+13:07:ERROR:(sphere_spawns.scp,91)Undefined symbol 'c_stoneharpy'
+13:07:ERROR:(sphere_spawns.scp,101)Undefined symbol 'c_gazer_elder'
+13:07:ERROR:(sphere_spawns.scp,102)Undefined symbol 'c_imp'
+13:07:ERROR:(sphere_spawns.scp,123)Undefined symbol 'c_hellcat'
+13:07:ERROR:(sphere_spawns.scp,124)Undefined symbol 'c_hellhound'
+13:07:ERROR:(sphere_spawns.scp,125)Undefined symbol 'c_stoneharpy'
+13:07:ERROR:(sphere_spawns.scp,128)Undefined symbol 'c_gazer_elder'
+13:07:ERROR:(sphere_spawns.scp,129)Undefined symbol 'c_imp'
+13:07:ERROR:(sphere_spawns.scp,136)Undefined symbol 'c_orc_lord'
+13:07:ERROR:(sphere_spawns.scp,137)Undefined symbol 'c_orc_mage'
+13:07:ERROR:(sphere_spawns.scp,160)Undefined symbol 'c_frost_troll'
+13:07:ERROR:(sphere_spawns.scp,161)Undefined symbol 'c_ogre_lord'
+13:07:ERROR:(sphere_spawns.scp,168)Undefined symbol 'c_dragon_brown'
+13:07:ERROR:(sphere_spawns.scp,172)Undefined symbol 'c_dragon_wyrm'
+13:07:ERROR:(sphere_spawns.scp,173)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,243)Undefined symbol 'c_skeleton_mage'
+13:07:ERROR:(sphere_spawns.scp,245)Undefined symbol 'c_liche_lord'
+13:07:ERROR:(sphere_spawns.scp,251)Undefined symbol 'c_elem_blood'
+13:07:ERROR:(sphere_spawns.scp,252)Undefined symbol 'c_elem_ice'
+13:07:ERROR:(sphere_spawns.scp,253)Undefined symbol 'c_elem_poison'
+13:07:ERROR:(sphere_spawns.scp,270)Undefined symbol 'c_hellcat'
+13:07:ERROR:(sphere_spawns.scp,271)Undefined symbol 'c_hellhound'
+13:07:ERROR:(sphere_spawns.scp,272)Undefined symbol 'c_stoneharpy'
+13:07:ERROR:(sphere_spawns.scp,275)Undefined symbol 'c_gazer_elder'
+13:07:ERROR:(sphere_spawns.scp,276)Undefined symbol 'c_imp'
+13:07:ERROR:(sphere_spawns.scp,279)Undefined symbol 'c_orc_lord'
+13:07:ERROR:(sphere_spawns.scp,284)Undefined symbol 'c_dragon_wyrm'
+13:07:ERROR:(sphere_spawns.scp,285)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,289)Undefined symbol 'c_dragon_brown'
+13:07:ERROR:(sphere_spawns.scp,291)Undefined symbol 'c_frost_troll'
+13:07:ERROR:(sphere_spawns.scp,292)Undefined symbol 'c_ogre_lord'
+13:07:ERROR:(sphere_spawns.scp,355)Undefined symbol 'c_SWAMP_TENTACLES'
+13:07:ERROR:(sphere_spawns.scp,417)Undefined symbol 'c_orc_mage'
+13:07:ERROR:(sphere_spawns.scp,418)Undefined symbol 'c_MONGBAT_ARBOREAL'
+13:07:ERROR:(sphere_spawns.scp,439)Undefined symbol 'c_SWAMP_TENTACLES'
+13:07:ERROR:(sphere_spawns.scp,452)Undefined symbol 'c_MONGBAT_ARBOREAL'
+13:07:ERROR:(sphere_spawns.scp,707)Undefined symbol 'c_goblin'
+13:07:ERROR:(sphere_spawns.scp,708)Undefined symbol 'c_goblin_CHIEF'
+13:07:ERROR:(sphere_spawns.scp,709)Undefined symbol 'c_goblin_MAGE'
+13:07:ERROR:(sphere_spawns.scp,870)Undefined symbol 'c_dragon_brown'
+13:07:ERROR:(sphere_spawns.scp,874)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,902)Undefined symbol 'c_goblin'
+13:07:ERROR:(sphere_spawns.scp,923)Undefined symbol 'c_goblin'
+13:07:ERROR:(sphere_spawns.scp,924)Undefined symbol 'c_goblin_CHIEF'
+13:07:ERROR:(sphere_spawns.scp,932)Undefined symbol 'c_orc_lord'
+13:07:ERROR:(sphere_spawns.scp,933)Undefined symbol 'c_goblin_MAGE'
+13:07:ERROR:(sphere_spawns.scp,996)Undefined symbol 'c_dragon_brown'
+13:07:ERROR:(sphere_spawns.scp,998)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,1000)Undefined symbol 'c_orc_lord'
+13:07:ERROR:(sphere_spawns.scp,1001)Undefined symbol 'c_orc_mage'
+13:07:ERROR:(sphere_spawns.scp,1003)Undefined symbol 'c_goblin_chief'
+13:07:ERROR:(sphere_spawns.scp,1013)Undefined symbol 'c_dragon_brown'
+13:07:ERROR:(sphere_spawns.scp,1017)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,1027)Undefined symbol 'c_dragon_brown'
+13:07:ERROR:(sphere_spawns.scp,1031)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,1032)Undefined symbol 'c_dragon_wyrm'
+13:07:ERROR:(sphere_spawns.scp,1048)Undefined symbol 'c_goblin'
+13:07:ERROR:(sphere_spawns.scp,1057)Undefined symbol 'c_orc_lord'
+13:07:ERROR:(sphere_spawns.scp,1059)Undefined symbol 'c_goblin_CHIEF'
+13:07:ERROR:(sphere_spawns.scp,1060)Undefined symbol 'c_goblin_MAGE'
+13:07:ERROR:(sphere_spawns.scp,1069)Undefined symbol 'c_wyvern'
+13:07:ERROR:(sphere_spawns.scp,1084)Undefined symbol 'c_orc_lord'
+13:07:ERROR:(sphere_spawns.scp,1085)Undefined symbol 'c_orc_mage'
+13:07:Loading scripts/sphere_speech.scp
+13:07:Loading scripts/sphere_skills.scp
+13:07:ERROR:(sphere_skills.scp,1211)Undefined keyword 'EVENTS'
+13:07:Loading scripts/sphere_spells.scp
+13:07:ERROR:(sphere_spells.scp,1395)Undefined symbol 'i_rune_NETHER_BOLT'
+13:07:ERROR:(sphere_spells.scp,1412)Undefined symbol 'i_rune_HEALING_STONE'
+13:07:ERROR:(sphere_spells.scp,1429)Undefined symbol 'i_rune_PURGE_MAGIC'
+13:07:ERROR:(sphere_spells.scp,1446)Undefined symbol 'i_rune_ENCHANT_WEAPON'
+13:07:ERROR:(sphere_spells.scp,1463)Undefined symbol 'i_rune_SLEEP'
+13:07:ERROR:(sphere_spells.scp,1480)Undefined symbol 'i_rune_EAGLE_STRIKE'
+13:07:ERROR:(sphere_spells.scp,1497)Undefined symbol 'i_rune_ANIMATED_WEAPON'
+13:07:ERROR:(sphere_spells.scp,1514)Undefined symbol 'i_rune_STONE_FORM'
+13:07:ERROR:(sphere_spells.scp,1531)Undefined symbol 'i_rune_SPELL_TRIGGER'
+13:07:ERROR:(sphere_spells.scp,1548)Undefined symbol 'i_rune_MASS_SLEEP'
+13:07:ERROR:(sphere_spells.scp,1565)Undefined symbol 'i_rune_CLEANSING_WINDS'
+13:07:ERROR:(sphere_spells.scp,1582)Undefined symbol 'i_rune_BOMBARD'
+13:07:ERROR:(sphere_spells.scp,1599)Undefined symbol 'i_rune_SPELL_PLAGUE'
+13:07:ERROR:(sphere_spells.scp,1616)Undefined symbol 'i_rune_HAIL_STORM'
+13:07:ERROR:(sphere_spells.scp,1633)Undefined symbol 'i_rune_NETHER_CYCLONE'
+13:07:ERROR:(sphere_spells.scp,1650)Undefined symbol 'i_rune_RISING_COLOSSUS'
+13:07:Loading scripts/sphere_newb.scp
+13:07:Loading scripts/sphere_template.scp
+13:07:Loading scripts/sphere_template_loot.scp
+13:07:Loading scripts/sphere_template_vend.scp
+13:07:Loading scripts/sphere_triggers.scp
+13:07:Loading scripts/sphere_serv_triggers.scp
+13:07:Loading scripts/speech/townyew.scp
+13:07:Loading scripts/speech/townwind.scp
+13:07:Loading scripts/speech/townvesper.scp
+13:07:Loading scripts/speech/towntrinsic.scp
+13:07:Loading scripts/speech/townskarabrae.scp
+13:07:Loading scripts/speech/townserphold.scp
+13:07:Loading scripts/speech/townnujelm.scp
+13:07:Loading scripts/speech/townmoonglow.scp
+13:07:Loading scripts/speech/townminoc.scp
+13:07:Loading scripts/speech/townmagincia.scp
+13:07:Loading scripts/speech/townjhelom.scp
+13:07:Loading scripts/speech/towncove.scp
+13:07:Loading scripts/speech/townbucsden.scp
+13:07:Loading scripts/speech/townbritain.scp
+13:07:Loading scripts/speech/spherespee.scp
+13:07:Loading scripts/speech/speakshopkeep.scp
+13:07:Loading scripts/speech/speakrehello.scp
+13:07:Loading scripts/speech/speakorc.scp
+13:07:Loading scripts/speech/speakneeds.scp
+13:07:Loading scripts/speech/speakmaster.scp
+13:07:Loading scripts/speech/speakhuman.scp
+13:07:Loading scripts/speech/speakhorse.scp
+13:07:Loading scripts/speech/jobweaver.scp
+13:07:Loading scripts/speech/jobweaponstrainer.scp
+13:07:Loading scripts/speech/jobweaponsmith.scp
+13:07:Loading scripts/speech/jobwaiter.scp
+13:07:Loading scripts/speech/jobvet.scp
+13:07:Loading scripts/speech/jobveggie.scp
+13:07:Loading scripts/speech/jobtinker.scp
+13:07:Loading scripts/speech/jobthief.scp
+13:07:Loading scripts/speech/jobtavernkeeper.scp
+13:07:Loading scripts/speech/jobtanner.scp
+13:07:Loading scripts/speech/jobshipwright.scp
+13:07:Loading scripts/speech/jobshepherd.scp
+13:07:Loading scripts/speech/jobservant.scp
+13:07:Loading scripts/speech/jobsculptor.scp
+13:07:Loading scripts/speech/jobscribe.scp
+13:07:Loading scripts/speech/jobscholar.scp
+13:07:Loading scripts/speech/jobsailor.scp
+13:07:Loading scripts/speech/jobrunner.scp
+13:07:Loading scripts/speech/jobrealtor.scp
+13:07:Loading scripts/speech/jobranger.scp
+13:07:Loading scripts/speech/jobrancher.scp
+13:07:Loading scripts/speech/jobprovisioner.scp
+13:07:Loading scripts/speech/jobprisoner.scp
+13:07:Loading scripts/speech/jobpriest.scp
+13:07:Loading scripts/speech/jobpirate.scp
+13:07:Loading scripts/speech/jobparliament.scp
+13:07:Loading scripts/speech/jobpaladin.scp
+13:07:Loading scripts/speech/joboverseer.scp
+13:07:Loading scripts/speech/jobnoble.scp
+13:07:Loading scripts/speech/jobmonk.scp
+13:07:Loading scripts/speech/jobminter.scp
+13:07:Loading scripts/speech/jobminer.scp
+13:07:Loading scripts/speech/jobmiller.scp
+13:07:Loading scripts/speech/jobmayor.scp
+13:07:Loading scripts/speech/jobmapmaker.scp
+13:07:Loading scripts/speech/jobMageShop.scp
+13:07:Loading scripts/speech/jobMageEvil.scp
+13:07:Loading scripts/speech/jobMage.scp
+13:07:Loading scripts/speech/joblaborer.scp
+13:07:Loading scripts/speech/jobjudge.scp
+13:07:Loading scripts/speech/jobjeweller.scp
+13:07:Loading scripts/speech/jobjailor.scp
+13:07:Loading scripts/speech/jobinnkeeper.scp
+13:07:Loading scripts/speech/jobherbalist.scp
+13:07:Loading scripts/speech/jobhealwand.scp
+13:07:Loading scripts/speech/jobhealer.scp
+13:07:Loading scripts/speech/jobGuard.scp
+13:07:Loading scripts/speech/jobglassblower.scp
+13:07:Loading scripts/speech/jobgambler.scp
+13:07:Loading scripts/speech/jobfurtrader.scp
+13:07:Loading scripts/speech/jobfarmer.scp
+13:07:Loading scripts/speech/jobcobbler.scp
+13:07:Loading scripts/speech/jobcashual.scp
+13:07:Loading scripts/speech/jobcarpenter.scp
+13:07:Loading scripts/speech/jobbutcher.scp
+13:07:Loading scripts/speech/jobBrigand.scp
+13:07:Loading scripts/speech/jobbowyer.scp
+13:07:Loading scripts/speech/jobblacksmith.scp
+13:07:Loading scripts/speech/jobbeggar.scp
+13:07:Loading scripts/speech/jobbeekeeper.scp
+13:07:Loading scripts/speech/jobbard.scp
+13:07:Loading scripts/speech/jobbanker.scp
+13:07:Loading scripts/speech/jobbaker.scp
+13:07:Loading scripts/speech/jobartist.scp
+13:07:Loading scripts/speech/jobarmourer.scp
+13:07:Loading scripts/speech/jobarchitect.scp
+13:07:Loading scripts/speech/jobanimal.scp
+13:07:Loading scripts/speech/jobalchemist.scp
+13:07:Loading scripts/speech/jobactor.scp
+13:07:Loading scripts/stones/sphere_genericstone_types.scp
+13:07:Loading scripts/stones/sphere_genericstone_items.scp
+13:07:Loading scripts/stones/sphere_genericstone_functions.scp
+13:07:Loading scripts/stones/sphere_genericstone_config.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_types.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_speech.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_promptconsole.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_items.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_functions_player.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_functions.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_events.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_warfarestatus.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_warfaredeclare.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_warfareadmin.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_master.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_main.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_guildlist.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_charter.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_charlist.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_dlg_align.scp
+13:07:Loading scripts/stones/guilds/sphere_guild_config.scp
+13:07:Loading scripts/stones/towns/sphere_town_types.scp
+13:07:Loading scripts/stones/towns/sphere_town_speech.scp
+13:07:Loading scripts/stones/towns/sphere_town_promptconsole.scp
+13:07:Loading scripts/stones/towns/sphere_town_items.scp
+13:07:Loading scripts/stones/towns/sphere_town_functions_player.scp
+13:07:Loading scripts/stones/towns/sphere_town_functions.scp
+13:07:Loading scripts/stones/towns/sphere_town_events.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_warfarestatus.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_warfaredeclare.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_warfareadmin.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_townlist.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_master.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_main.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_charter.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_charlist.scp
+13:07:Loading scripts/stones/towns/sphere_town_dlg_align.scp
+13:07:Loading scripts/stones/towns/sphere_town_config.scp
+13:07:Loading scripts/custom-scripts/place_holder.scp
+13:07:Loading scripts/custom-scripts/Core/backwards_compatability.scp
+13:07:Loading scripts/custom-scripts/Core/Classes/es_critical_hit.scp
+13:07:Loading scripts/custom-scripts/Core/Classes/es_break_shield.scp
+13:07:Loading scripts/custom-scripts/Core/Classes/es_break_armor.scp
+13:07:Loading scripts/custom-scripts/Core/Classes/es_armor_skin.scp
+13:07:Loading scripts/custom-scripts/Core/Classes/es_abilities_warrior.scp
+13:07:Loading scripts/custom-scripts/Core/Classes/es_abilities_rogue.scp
+13:07:Loading scripts/custom-scripts/Core/Combat System/armor_defs.scp
+13:07:Loading scripts/custom-scripts/Core/Enviromental/enviromental_script.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/isfunctions.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_world_development.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_serv_triggers.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_server.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_regen_overrides.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_player.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_items.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_copyrect.scp
+13:07:Loading scripts/custom-scripts/Core/Functions/functions_commands.scp
+13:07:Loading scripts/custom-scripts/Core/Housing/es_multis.scp
+13:07:Loading scripts/custom-scripts/Core/Housing/AOS_House_System_37_coruja.scp
+13:07:Loading scripts/custom-scripts/Core/Players/player_autoloot.scp
+13:07:Loading scripts/custom-scripts/Core/Players/es_player_events.scp
+13:07:Loading scripts/custom-scripts/Core/Races/races_orcs.scp
+13:07:Loading scripts/custom-scripts/Core/Races/races_names.scp
+13:07:Loading scripts/custom-scripts/Core/Races/races_functions.scp
+13:07:Loading scripts/custom-scripts/Core/Races/races_events.scp
+13:07:Loading scripts/custom-scripts/Core/Races/races_defs_misc.scp
+13:07:Loading scripts/custom-scripts/Core/Races/races_core.scp
+13:07:Loading scripts/custom-scripts/Core/Travel/portal_mage_01.scp
+13:07:Loading scripts/custom-scripts/Core/Travel/portal_mage_00.scp
+13:07:Loading scripts/custom-scripts/Core/Travel/moongates_v14.scp
+13:07:ERROR:(moongates_v14.scp,97)Replace existing VarNum 'bucs_den_fel' with 2711,2234,0,0
+13:07:ERROR:(moongates_v14.scp,98)Replace existing VarNum 'haven_tram' with 3763,2771,51,0
+13:07:Loading scripts/custom-scripts/Events/renew_soul.scp
+13:07:Loading scripts/custom-scripts/Events/party_chat_show_hearall.scp
+13:07:Loading scripts/custom-scripts/Events/mega_hp_bosses.scp
+13:07:Loading scripts/custom-scripts/Events/es_increased_skillgain.scp
+13:07:Loading scripts/custom-scripts/Events/es_events_global_npcs.scp
+13:07:Loading scripts/custom-scripts/Events/es_emotes.scp
+13:07:Loading scripts/custom-scripts/Events/es_combat_events_npcs.scp
+13:07:Loading scripts/custom-scripts/Events/es_bag_item_weight_limit.scp
+13:07:Loading scripts/custom-scripts/Events/click_msg_fixes.scp
+13:07:Loading scripts/custom-scripts/Events/56b_stacking_drop_runuo_style.scp
+13:07:Loading scripts/custom-scripts/Items/es_items_ice_elves.scp
+13:07:Loading scripts/custom-scripts/Items/Armor/armor_platemail.scp
+13:07:Loading scripts/custom-scripts/Items/Armor/armor_elemental.scp
+13:07:Loading scripts/custom-scripts/Items/Armor/armor_dragon.scp
+13:07:Loading scripts/custom-scripts/Items/Armor/armor_bone.scp
+13:07:Loading scripts/custom-scripts/Items/Clothing/clothing_se.scp
+13:07:Loading scripts/custom-scripts/Items/Craftables/tailoring_studded_leather.scp
+13:07:Loading scripts/custom-scripts/Items/Craftables/tailoring_skillmenus2.scp
+13:07:Loading scripts/custom-scripts/Items/Craftables/tailoring_resources.scp
+13:07:Loading scripts/custom-scripts/Items/Craftables/tailoring_leather.scp
+13:07:Loading scripts/custom-scripts/Items/Craftables/tailoring_female_leather.scp
+13:07:Loading scripts/custom-scripts/Items/Magic Items/skill_jewelry.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/traditional_wedding_items.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/shrouds.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/server_items.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/Mechanic - Traps.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/items_samurai_empire.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/items_misc.scp
+13:07:Loading scripts/custom-scripts/Items/Miscellaneous/dyes.scp
+13:07:Loading scripts/custom-scripts/Items/Resources/ores_new.scp
+13:07:Loading scripts/custom-scripts/Items/Skill Related/camping_items.scp
+13:07:Loading scripts/custom-scripts/Items/Staff/gm_items.scp
+13:07:Loading scripts/custom-scripts/Items/Weapons/weapons_wrestling.scp
+13:07:Loading scripts/custom-scripts/Items/Weapons/weapons_swordsmanship.scp
+13:07:Loading scripts/custom-scripts/Items/Weapons/magic_weapon_se.scp
+13:07:Loading scripts/custom-scripts/Items/Weapons/magic_weapon_ml.scp
+13:07:Loading scripts/custom-scripts/Items/Weapons/magic_weapon_aos.scp
+13:07:Loading scripts/custom-scripts/NPCs/spherechar_elementals.scp
+13:07:Loading scripts/custom-scripts/NPCs/spherechars_story_line_npcs.scp
+13:07:Loading scripts/custom-scripts/NPCs/spherechars_gargoyles.scp
+13:07:Loading scripts/custom-scripts/NPCs/spherechars_faction_npcs.scp
+13:07:Loading scripts/custom-scripts/NPCs/shopkeeper_template_garg.scp
+13:07:Loading scripts/custom-scripts/NPCs/shopkeeper_template.scp
+13:07:Loading scripts/custom-scripts/NPCs/shopkeeper_gargoyle_default.scp
+13:07:Loading scripts/custom-scripts/NPCs/es_monster_names.scp
+13:07:Loading scripts/custom-scripts/NPCs/es_chars_ice_elf.scp
+13:07:Loading scripts/custom-scripts/NPCs/es_chars_ice_dungeon_pack.scp
+13:07:Loading scripts/custom-scripts/NPCs/es_chars_espers.scp
+13:07:Loading scripts/custom-scripts/NPCs/es_chars_blood_knights.scp
+13:07:Loading scripts/custom-scripts/NPCs/Animals/animals_land_wild.scp
+13:07:Loading scripts/custom-scripts/NPCs/Animals/animals_land_domestic.scp
+13:07:Loading scripts/custom-scripts/NPCs/Animals/animals_aquatic_wild.scp
+13:07:Loading scripts/custom-scripts/NPCs/Animals/animals_aquatic_domestic.scp
+13:07:Loading scripts/custom-scripts/NPCs/Animals/animals_air_wild.scp
+13:07:Loading scripts/custom-scripts/NPCs/Animals/animals_air_domestic.scp
+13:07:Loading scripts/custom-scripts/NPCs/Area Specific/Arkasis_npcs.scp
+13:07:Loading scripts/custom-scripts/NPCs/Champions/sleeping_dragon_serado_the_awakened.scp
+13:07:Loading scripts/custom-scripts/NPCs/Monsters/spherechars_stygian_abyss.scp
+13:07:Loading scripts/custom-scripts/NPCs/Monsters/es_faction_dragons.SCP
+13:07:Loading scripts/custom-scripts/NPCs/Town NPCs/spherechars_guards_system.scp
+13:07:Loading scripts/custom-scripts/NPCs/Town NPCs/es_portalmage.scp
+13:07:Loading scripts/custom-scripts/Quests/es_quests_britain.scp
+13:07:ERROR:(es_quests_britain.scp,277)Bad chars in DEFNAME=add_loot_giant_rat_mother
+13:07:ERROR:(es_quests_britain.scp,287)Undefined keyword 'SUBECTION'
+13:07:Loading scripts/custom-scripts/Systems/speech_open_pack.scp
+13:07:Loading scripts/custom-scripts/Systems/skill_focus.scp
+13:07:Loading scripts/custom-scripts/Systems/pre_aos_enticement.scp
+13:07:Loading scripts/custom-scripts/Systems/es_typedefs.scp
+13:07:Loading scripts/custom-scripts/Systems/es_systems.scp
+13:07:Loading scripts/custom-scripts/Systems/es_skill_stones.scp
+13:07:Loading scripts/custom-scripts/Systems/es_skill_detect_hidden.scp
+13:07:Loading scripts/custom-scripts/Systems/es_randomized_containers.scp
+13:07:Loading scripts/custom-scripts/Systems/es_hues.scp
+13:07:Loading scripts/custom-scripts/Systems/es_defs.scp
+13:07:Loading scripts/custom-scripts/Templates/sphere_template_loot_aos.scp
+13:07:Loading scripts/custom-scripts/Templates/es_templates_ice_elves.scp
+13:07:Loading scripts/custom-scripts/World/Dungeon/Arkasis/dungeons_arkasis_portals.scp
+13:07:Loading D:\Sphere\scripts/sphere_msgs.scp
+13:07:Loading D:\Sphere\scripts/sphere_misc_sa.scp
+13:08:Loaded 61 client encryption keys.
+13:08:Server started on 'Server' port 2593.
+13:08:Monitoring IP '169.254.2.2'.
+13:08:Monitoring IP '205.144.208.215'.
+13:08:Loading D:\Sphere\save/spheredata...
+13:08:Loading D:\Sphere\save/spherestatics...
+13:08:Loading D:\Sphere\save/spheremultis...
+13:08:Loading D:\Sphere\save/sphereworld...
+13:08:ERROR:(spherechar.scp,575)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_evil.scp,1037)Creating char SetDispID(066dc) > 2048
+13:08:WARNING:(spherechar_evil.scp,1047)Char script 'c_m_elem_poison' has bad DISPID 00. Defaulting to 0400.
+13:08:ERROR:(spherechar.scp,263)Undefined symbol 't_fish_raw'
+13:08:ERROR:(spherechar.scp,263)Bad resource list id '30 t_fish_raw'
+13:08:ERROR:(spherechar.scp,265)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,998)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,1062)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,481)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_evil.scp,95)Creating char SetDispID(065bd) > 2048
+13:08:WARNING:(spherechar_evil.scp,107)Char script 'c_m_elem_blood' has bad DISPID 00. Defaulting to 0400.
+13:08:ERROR:(spherechar_lbr2.scp,13)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,373)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_evil.scp,287)Creating char SetDispID(060b5) > 2048
+13:08:WARNING:(spherechar_evil.scp,297)Char script 'c_m_elem_ice' has bad DISPID 00. Defaulting to 0400.
+13:08:ERROR:(spherechar_elementals.scp,334)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_aos.scp,575)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_aos.scp,923)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_aos.scp,1111)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_aos.scp,102)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,322)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,150)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_evil.scp,1462)Undefined symbol 'c_orc_lord'
+13:08:ERROR:(spherechar_evil.scp,1467)Undefined keyword 'ALIGNMENT'
+13:08:ERROR:(spherechar_evil.scp,1468)Undefined keyword 'SPELLCIRCLES'
+13:08:ERROR:(spherechar_evil.scp,1469)Undefined keyword 'SHELTER'
+13:08:WARNING:(spherechar_evil.scp,1473)Char script 'c_m_orc_captain' has bad DISPID 00. Defaulting to 0400.
+13:08:WARNING:(spherechar_evil.scp,1473)Char script 'c_m_orc_captain' has no CAN flags specified!
+13:08:ERROR:(es_items_ice_elves.scp,106)Undefined keyword 'DEFNAMEi_robe_ice_elf'
+13:08:ERROR:(spherechar_evil.scp,805)Undefined symbol 'c_daemon_w_sword'
+13:08:ERROR:(spherechar_evil.scp,805)Bad resource list id 'c_daemon_w_sword'
+13:08:ERROR:(shopkeeper_gargoyle_default.scp,8)Undefined symbol 'i_pet_shopkeeper_gargoyle'
+13:08:ERROR:(shopkeeper_template.scp,6)Undefined symbol 'spk_gargoyle_shopkeep'
+13:08:ERROR:(shopkeeper_template.scp,6)Unknown 'SPEECH' Resource 'spk_gargoyle_shopkeep'
+13:08:ERROR:(spherechar.scp,832)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar.scp,921)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_evil.scp,615)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_elementals.scp,283)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_elementals.scp,79)Undefined keyword 'SHELTER'
+13:08:ERROR:(Arkasis_npcs.scp,13)Undefined symbol 't_meat'
+13:08:ERROR:(Arkasis_npcs.scp,13)Bad resource list id ' t_meat, t_fruit'
+13:08:ERROR:(Arkasis_npcs.scp,14)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_evil.scp,257)Undefined symbol 'c_daemon_w_sword'
+13:08:ERROR:(spherechar_evil.scp,257)Bad resource list id 'c_daemon_w_sword'
+13:08:ERROR:(spherechar_evil.scp,3789)Undefined symbol 'c_ORC_LORD'
+13:08:WARNING:(spherechar_evil.scp,3798)Char script 'c_m_goblin_lord' has bad DISPID 00. Defaulting to 0400.
+13:08:WARNING:(spherechar_evil.scp,3798)Char script 'c_m_goblin_lord' has no CAN flags specified!
+13:08:ERROR:(spherechar_evil.scp,672)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_lbr.scp,938)Undefined symbol 'i_pet_fireant_warrior'
+13:08:ERROR:(spherechar_evil.scp,570)Undefined symbol 'c_DAEMON_W_SWORD'
+13:08:WARNING:(spherechar_evil.scp,583)Char script 'c_m_balron' has bad DISPID 00. Defaulting to 0400.
+13:08:ERROR:(spherechar_lbr.scp,864)Undefined symbol 'i_pet_fireant_queen'
+13:08:ERROR:(spherechar_lbr.scp,906)Undefined symbol 'i_pet_fireant_worker'
+13:08:ERROR:(spherechar_lbr.scp,383)Undefined symbol 'i_pet_arcanedaemon'
+13:08:ERROR:(spherechar_lbr.scp,615)Undefined symbol 'i_pet_chaosdaemon'
+13:08:ERROR:(spherechars_stygian_abyss.scp,293)Undefined symbol 'i_medusa_blood'
+13:08:ERROR:(spherechars_stygian_abyss.scp,293)Bad resource list id 'i_medusa_blood, i_medusa_scales'
+13:08:ERROR:(spherechars_stygian_abyss.scp,294)Undefined symbol 'e_lethal_strike'
+13:08:ERROR:(spherechars_stygian_abyss.scp,294)Unknown 'EVENTS' Resource 'e_lethal_strike'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'e_petrify'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'e_petrify'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'para'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource '(para'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource '10'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'sec'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'sec'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'leaves'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'leaves'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol ''
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'a'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'statue'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'statue'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'destroy'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'destroy'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'or'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'or'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'comes'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'comes'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'to'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'to'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Undefined symbol 'life'
+13:08:ERROR:(spherechars_stygian_abyss.scp,295)Unknown 'EVENTS' Resource 'life)'
+13:08:ERROR:(spherechars_stygian_abyss.scp,296)Undefined symbol 'e_lethal_poison'
+13:08:ERROR:(spherechars_stygian_abyss.scp,296)Unknown 'EVENTS' Resource 'e_lethal_poison'
+13:08:ERROR:(spherechars_stygian_abyss.scp,296)Undefined symbol 'from'
+13:08:ERROR:(spherechars_stygian_abyss.scp,296)Unknown 'EVENTS' Resource '(from'
+13:08:ERROR:(spherechars_stygian_abyss.scp,296)Undefined symbol 'hair'
+13:08:ERROR:(spherechars_stygian_abyss.scp,296)Unknown 'EVENTS' Resource 'hair)'
+13:08:ERROR:(es_faction_dragons.SCP,12)Undefined keyword 'SHELTER'
+13:08:ERROR:(es_faction_dragons.SCP,14)Undefined symbol 'e_faction_chaos'
+13:08:ERROR:(es_faction_dragons.SCP,14)Bad resource list id ' e_faction_chaos'
+13:08:ERROR:(es_faction_dragons.SCP,16)Undefined symbol 'e_carnivore3'
+13:08:ERROR:(es_faction_dragons.SCP,16)Unknown 'EVENTS' Resource 'e_carnivore3'
+13:08:ERROR:(es_faction_dragons.SCP,65)Undefined keyword 'SHELTER'
+13:08:ERROR:(es_faction_dragons.SCP,67)Undefined symbol 'e_faction_chaos'
+13:08:ERROR:(es_faction_dragons.SCP,67)Bad resource list id ' e_faction_chaos'
+13:08:ERROR:(es_faction_dragons.SCP,69)Undefined symbol 'e_carnivore3'
+13:08:ERROR:(es_faction_dragons.SCP,69)Unknown 'EVENTS' Resource 'e_carnivore3'
+13:08:ERROR:(spherechar_lbr.scp,1231)Undefined symbol 'i_pet_irongolem'
+13:08:ERROR:(spherechar_evil.scp,1638)Undefined symbol 'c_orc_lord'
+13:08:WARNING:(spherechar_evil.scp,1648)Char script 'c_m_goblin_chief' has bad DISPID 00. Defaulting to 0400.
+13:08:WARNING:(spherechar_evil.scp,1648)Char script 'c_m_goblin_chief' has no CAN flags specified!
+13:08:ERROR:(spherechar_lbr2.scp,71)Undefined keyword 'SHELTER'
+13:08:ERROR:(spherechar_lbr.scp,1135)Undefined symbol 'i_pet_forestlord'
+13:08:ERROR:(spherechar_lbr.scp,1048)Undefined symbol 'i_pet_spiderlord'
+13:08:Loading D:\Sphere\save/spherechars...
+13:08:ERROR:(camping_items.scp,21)Undefined symbol 'i_garlic'
+13:08:ERROR:(camping_items.scp,21)Bad resource list id ' 5 i_garlic'
+13:08:WARNING:33 chars at 960,704. Sector too complex!
+13:08:WARNING:47 chars at 4032,3264,0,1. Sector too complex!
+13:08:GC: 58633 Objects accounted for
+13:08:Auto-complete dictionary loaded (contains 142 words).
+13:08:Option flags: CommandSysmessages + OSIMultiSight + FileCommands + NoHouseMuteSpeech + FloodProtection
+13:08:Experimental flags: Unicode + NewTriggersEnable + DamageTools + NPCActTriggers + UseAsyncNetwork
+13:08:Admin=es.staff@hotmail.com, URL=, Lang=English, TZ=5
+13:08:Startup complete. items=53716, chars=4917
+13:08:Press '?' for console commands
+13:08:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:10:1ac:Client connected [Total:1] ('71.200.58.34' 1/1)
+13:10:1ac:Login 'khaossolitaire6'
+13:10:1ac:Client disconnected [Total:0] ('71.200.58.34' 0/0)
+13:10:1ac:Client connected [Total:1] ('71.200.58.34' 1/1)
+13:10:1ac:Login 'khaossolitaire6'
+13:10:1ac:Setup_Start acct='khaossolitaire6', char='Khaotic Solitaire', IP='71.200.58.34'
+13:10:1bc:Client connected [Total:2] ('127.0.0.1' 1/1)
+13:10:1bc:Login 'darkfae'
+13:10:1bc:Client disconnected [Total:1] ('127.0.0.1' 0/0)
+13:10:1bc:Client connected [Total:2] ('127.0.0.1' 1/1)
+13:10:1bc:Login 'darkfae'
+13:10:1bc:Setup_Start acct='darkfae', char='Darkfae', IP='127.0.0.1'
+13:11:1ac:'khaossolitaire6' commands 'info'=1
+13:11:1ac:'khaossolitaire6' commands 'nukechar'=1
+13:11:1ac:'khaossolitaire6' commands 'nukechar'=1
+13:12:1ac:'khaossolitaire6' commands 'nukechar'=1
+13:12:1ac:'khaossolitaire6' commands 'nukechar'=1
+13:12:1ac:'khaossolitaire6' commands 'go britain'=1
+13:12:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:12:1bc:'darkfae' commands 'admin'=1
+13:13:1bc:'darkfae' commands 'remove'=1
+13:13:'darkfae' commands uid=04761 (Katie) to 'remove'=1
+13:14:1bc:'darkfae' commands 'where'=1
+13:14:ERROR:Undefined symbol 'c_polar_bear'
+13:14:ERROR:Undefined keyword 'add'
+13:14:1ac:'khaossolitaire6' commands 'add c_polar_bear'=1
+13:14:1ac:'khaossolitaire6' commands 'add c_bear_polar'=1
+13:14:1ac:'khaossolitaire6' commands 'set name Coca Cola Bear'=1
+13:14:'khaossolitaire6' commands uid=04177 (Polar Bear) to 'name Coca Cola Bear'=1
+13:14:1ac:'khaossolitaire6' commands 'goname DarFae'=1
+13:14:1ac:'khaossolitaire6' commands 'goname DarkFae'=1
+13:14:1ac:'khaossolitaire6' commands 'goname DarkFae'=1
+13:14:Expansion maps supported: T2A, LBR, AOS, SE, ML
+13:14:Indexing 362 scripts...
+13:14:WARNING:Resource 'scripts/custom-scripts/NPCs/Town NPCs/es_portalmage.scp' changed, resync.
+13:16:1bc:'darkfae' commands 'add c_h_portalmage'=1
+13:16:ERROR:(es_portalmage.scp,78)Undefined symbol 'i_c_staff_black'
+13:16:ERROR:(es_portalmage.scp,117)Undefined symbol 'd_vendor_buysell_new'
+13:16:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:17:1bc:'darkfae' commands 'add 04501'=1
+13:17:1bc:'darkfae' commands 'add i_deathshroud'=1
+13:18:1bc:'darkfae' commands 'remove'=1
+13:18:'darkfae' commands uid=040005669 (death shroud) to 'remove'=1
+13:18:1bc:'darkfae' commands 'add i_person_black_thorne'=1
+13:18:1bc:'darkfae' commands 'remove'=1
+13:18:'darkfae' commands uid=040003694 (unnamed) to 'remove'=1
+13:18:1bc:'darkfae' commands 'remove'=1
+13:18:'darkfae' commands uid=040004008 (GM Robe) to 'remove'=1
+13:18:1ac:'khaossolitaire6' commands 'xdupe'=1
+13:18:'khaossolitaire6' commands uid=04000c60d (death shroud) to 'dupe'=1
+13:18:1ac:'khaossolitaire6' commands 'info'=1
+13:18:1bc:'darkfae' commands 'info'=1
+13:19:1bc:'darkfae' commands 'remove'=1
+13:19:'darkfae' commands uid=040003d52 (Death Shroud) to 'remove'=1
+13:20:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:23:1ac:'khaossolitaire6' commands 'go 960 704'=1
+13:24:1ac:'khaossolitaire6' commands 'remove'=1
+13:24:'khaossolitaire6' commands uid=011804 (Shopkeeper Gargoyle) to 'remove'=1
+13:24:1ac:'khaossolitaire6' commands 'remove'=1
+13:24:'khaossolitaire6' commands uid=040011805 (Worldgem bit) to 'remove'=1
+13:24:1ac:'khaossolitaire6' commands 'remove'=1
+13:24:'khaossolitaire6' commands uid=0400117cc (Worldgem bit) to 'remove'=1
+13:24:1ac:'khaossolitaire6' commands 'remove'=1
+13:24:'khaossolitaire6' commands uid=040011847 (Worldgem bit) to 'remove'=1
+13:24:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:25:1ac:'khaossolitaire6' commands 'remove'=1
+13:25:'khaossolitaire6' commands uid=04001171b (Worldgem bit) to 'remove'=1
+13:25:1ac:'khaossolitaire6' commands 'remove'=1
+13:25:'khaossolitaire6' commands uid=040011726 (Worldgem bit) to 'remove'=1
+13:25:1ac:'khaossolitaire6' commands 'remove'=1
+13:25:'khaossolitaire6' commands uid=04001170e (Worldgem bit) [amount=2] to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=04001177e (Worldgem bit) to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=040011784 (Worldgem bit) [amount=6] to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=04001175f (Worldgem bit) to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=04001176d (Worldgem bit) [amount=2] to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=040011734 (Worldgem bit) to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=0400115ea (Worldgem bit) [amount=2] to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=04001174a (Worldgem bit) [amount=2] to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=04001174f (Worldgem bit) to 'remove'=1
+13:26:1ac:'khaossolitaire6' commands 'remove'=1
+13:26:'khaossolitaire6' commands uid=01141b (Wisp) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=040011792 (Worldgem bit) [amount=3] to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=040011797 (Worldgem bit) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=0400115fa (Worldgem bit) [amount=2] to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=0400117aa (Worldgem bit) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=0400117b1 (Worldgem bit) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=040011688 (Worldgem bit) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=040011620 (Worldgem bit) [amount=2] to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=0400116b2 (Worldgem bit) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=040011883 (Worldgem bit) to 'remove'=1
+13:27:1ac:'khaossolitaire6' commands 'remove'=1
+13:27:'khaossolitaire6' commands uid=04001165f (Worldgem bit) to 'remove'=1
+13:28:1ac:'khaossolitaire6' commands 'remove'=1
+13:28:'khaossolitaire6' commands uid=040011636 (Worldgem bit) to 'remove'=1
+13:28:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:29:ERROR:Undefined keyword 'go4032'
+13:29:1ac:'khaossolitaire6' commands 'go4032,3264,0,1'=1
+13:29:1ac:'khaossolitaire6' commands 'go 4032,3264,0,1'=1
+13:29:1bc:'darkfae' commands 'admin'=1
+13:29:1ac:'khaossolitaire6' commands 'go britain'=1
+13:30:1ac:Client disconnected [Total:1] ('71.200.58.34' 0/0)
+13:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:43:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:09:1bc:Client disconnected [Total:0] ('127.0.0.1' 0/0)
+14:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:15:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:15:ERROR:UID=04000361c, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+14:15:GC: 58358 Objects accounted for
+14:15:World data saved   (D:\Sphere\save/sphereworld.scp).
+14:15:Player data saved  (D:\Sphere\save/spherechars.scp).
+14:15:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+14:15:Context data saved (D:\Sphere\save/spheredata.scp).
+14:15:World save completed, took 1.9620 seconds
+14:19:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:23:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:32:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+14:34:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:38:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:42:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:43:FATAL:Immediate Shutdown initialized!
+14:44:FATAL:Server terminated by error 1!

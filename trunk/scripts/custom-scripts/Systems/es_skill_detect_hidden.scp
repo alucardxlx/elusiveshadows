@@ -1,0 +1,363 @@
+[COMMENT Traps_And_Locks]
+The trap Tags:
+Tag.Trap.Enabled = 1 or 0 (if the trap is enabled or not)
+Tag.Trap.Type = Trap Type (1, 2, 3, 4, etc) to dictate what the trap does
+Tag.Trap.Difficulty = Trap Difficulty. This is how hard the trap is to disable
+Tag.Trap.Origin = Trap Origin. If the trap has a fireball fire or a boulder roll, this is where it comes from.
+
+The Lockpick Tags:
+Tag.Lock.Type = (1 = Magical, 0 = Normal)
+Tag.Lock.Difficulty = Lock Difficulty. THis is now hard the lock is to pick
+
+
+[Plevel 1]
+Detect
+
+[Function Detect]
+Toggle_DetectingHidden
+
+
+[Function Add_Trap]
+MENU m_add_trap
+
+
+[MENU m_add_trap]
+What you would like to add a trap for?
+
+ON=0 Item
+MENU m_add_trap_item
+
+ON=0 Floor
+MENU m_add_trap_floor
+
+[MENU m_add_trap_item]
+What type of item trap?
+
+ON=0 Explosion
+Targetf Add_Trap_Item Explosion
+
+ON=0 Fire
+Targetf Add_Trap_Item Fire
+
+ON=0 Poison
+Targetf Add_Trap_Item Poison
+
+ON=0 Dart
+Targetf Add_Trap_Item Dart
+
+ON=0 Bladed
+Targetf Add_Trap_Item Bladed
+
+ON=0 Teleportation
+Targetf Add_Trap_Item_Teleportation
+
+ON=0 Cancel
+
+
+[MENU m_add_trap_floor]
+What type of floor trap?
+
+ON=0 Fireball
+Sysmessage @55,,1 Target the TOP LEFT corner of the trap area
+Targetgf Add_Trap_Floor Fireball
+
+ON=0 Firefield
+Sysmessage @55,,1 Target the TOP LEFT corner of the trap area
+Targetgf Add_Trap_Floor Firefield
+
+ON=0 Poisonfield
+Sysmessage @55,,1 Target the TOP LEFT corner of the trap area
+Targetgf Add_Trap_Floor Poisonfield
+
+ON=0 Cancel
+
+
+[Function Add_Trap_Floor]
+Sysmessage @59,,1 Target the BOTTOM RIGHT corner of the trap area
+Targetgf Add_Trap_Floor_2 <Argv[0]>,<Targp.X>,<Targp.Y>,<Targp.Z>
+
+
+[Function Add_Trap_Floor_2]
+For X <Argv[1]> <Targp.X>
+For Y <Argv[2]> <Targp.Y>
+If ((<Local.X>==<Argv[1]>) && (<Local.Y>==<Argv[2]>))
+Serv.Newitem = i_floortrap_master
+New.Tag.Trap.Type=Trap_Floor_<Argv[0]>
+New.Tag.Trap.Enabled=1
+Local.Master=<New.Uid>
+Else
+Serv.Newitem = i_floortrap_slave
+Endif
+New.More=<Local.Master>
+Serv.Log <dLocal.X>,<dLocal.Y>,<Z>,<MAP>
+New.P = <dLocal.X>,<dLocal.Y>,<Z>,<MAP>
+Endfor
+Endfor
+TRY Add_Trap_Floor_<Argv[0]> <Local.Master>
+
+[Function Add_Trap_Floor_Fireball]
+Ref1=<Argv[0]>
+Sysmessage @88,,1 Target the location the firball will come from.
+CTAG.Trap.UID = <Ref1.Uid>
+TargetFG Set_Trap_Fireball
+
+[Function Add_Trap_Floor_Firefield]
+Ref1=<Argv[0]>
+CTAG.Trap.UID = <Ref1.Uid>
+Sysmessage @88,,1 Type in the remove trap skill required (1000 = 100.0%)
+PROMPTCONSOLE Set_Trap_Difficulty
+
+[Function Set_Trap_Fireball]
+Ref1 = <CTAG0.Trap.UID>
+If <Ref1.IsItem>
+Ref1.Tag.Trap.Origin = <TargP.X>,<TargP.Y>,<Z>,<MAP>
+Message @72,,1 Location: <TargP.X>,<TargP.Y>,<Z>,<MAP>
+Endif
+Sysmessage @88,,1 Type in the remove trap skill required (1000 = 100.0%)
+PROMPTCONSOLE Set_Trap_Difficulty
+
+[Itemdef i_floortrap_master]
+ID=i_paver_stone
+TYPE=t_script
+NAME=Trap (Master)
+TEVENTS +t_trapped_floor
+
+ON=@Create
+Color=44
+Attr=090
+
+[Itemdef i_floortrap_slave]
+ID=i_paver_stone
+TYPE=t_script
+NAME=Trap
+TEVENTS +t_trapped_floor
+
+ON=@Create
+Color=49
+Attr=090
+
+
+[Function Add_Trap_Item]
+Ref1 = <Argo.Uid>
+If <Ref1.IsItem>
+Ref1.Events +t_trapped
+Ref1.Tag.Trap.Enabled = 1
+Ref1.Tag.Trap.Type = Trap_Item_<Argv[0]>
+Sysmessage @88,,1 Type in the remove trap skill required (1000 = 100.0%)
+CTAG.Trap.UID = <Ref1.Uid>
+PROMPTCONSOLE Set_Trap_Difficulty
+Endif
+
+[Function Add_Trap_Item_Teleportation]
+Ref1 = <Argo.Uid>
+If <Ref1.IsItem>
+Ref1.Events +t_trapped
+Ref1.Tag.Trap.Enabled = 1
+Ref1.Tag.Trap.Type = Trap_Item_Teleportation
+Sysmessage @88,,1 Type in the coordinates that the teleportation trap sends the player to
+CTAG.Trap.UID = <Ref1.Uid>
+PROMPTCONSOLE Set_Trap_Teleportation
+Endif
+
+
+
+[Function Set_Trap_Teleportation]
+Ref1 = <CTAG0.Trap.UID>
+If <Ref1.IsItem>
+Ref1.Tag.Trap.Origin = <Args>
+Message @72,,1 Location: <Args>
+Endif
+Sysmessage @88,,1 Type in the remove trap skill required (1000 = 100.0%)
+PROMPTCONSOLE Set_Trap_Difficulty
+
+
+[Function Set_Trap_Difficulty]
+Ref1 = <CTAG0.Trap.UID>
+If <Ref1.IsItem>
+Ref1.Tag.Trap.Difficulty = <Eval <Args>>
+Message @72,,1 Difficulty: <Fval <Args>>%
+Endif
+CTAG.Trap.UID =
+
+
+[Function Toggle_DetectingHidden]
+If <Restest i_detectinghidden_memory>
+Consume i_detectinghidden_memory
+Else
+Serv.Newitem i_detectinghidden_memory
+Equip <New.Uid>
+Endif
+
+[Itemdef i_detectinghidden_memory]
+ID=i_memory
+TYPE=t_eq_script
+NAME=Detect Hidden Skill
+
+ON=@Equip
+Src.Sysmessage @88,,1 You begin searching for traps...
+Src.Visualrange = 4
+Timer = 3
+
+ON=@Unequip
+Src.Sysmessage @88,,1 You stop searching for traps...
+Src.Visualrange = 18
+Src.Update
+
+ON=@Timer
+If <Cont.Hits> <= 0
+Remove
+Return 1
+Endif
+Cont.Sysmessage @88,,1 searching...
+Local.Cont=<Cont.Uid>
+Foritems 6
+Trigger @Detect,<def.TAT_AS_ARGO>,<Local.Cont>
+Endfor
+Forchars 6
+Detect_Attempt <Local.Cont>
+Endfor
+Timer = 3
+Return 1
+
+[Itemdef i_trap_detections]
+ID=i_memory
+TYPE=t_eq_script
+NAME=Traps Memory
+
+ON=@Timer
+Remove
+Return 1
+
+[Itemdef i_test_chest]
+ID=i_chest_wooden_brass
+TYPE=t_container
+NAME=Test Chest
+TEVENTS +t_trapped
+
+
+[Typedef t_trapped]
+
+ON=@Dclick
+If ((<Tag0.Trap.Enabled>) && (!<IsEmpty <Tag.Trap.Type>>))
+If ((<Src.IsPlayer>) || (<Src.Owner>))
+Try <Tag0.Trap.Type>
+Endif
+Return 1
+Endif
+
+ON=@Click
+If <Src.Findid.i_trap_detections.Tag0.<Uid>> > <Serv.Time>
+If <Tag0.Trap.Enabled>
+Message @32,,1 [Trapped]
+Else
+Message @72,,1 [Disarmed]
+Endif
+Endif
+
+ON=@Detect
+//If <Argo.CanSeeLos <Uid>>
+If <Tag0.Trap.Difficulty> <= <Argo.DetectingHidden> + 200
+If <Tag0.Trap.Enabled>
+Detected <Argo.Uid>,32
+Else
+Detected <Argo.Uid>,72
+Endif
+Endif
+//Endif
+
+
+[Typedef t_trapped_floor]
+
+ON=@Step
+Ref1=<More>
+If ((<Src.IsPlayer>) || (<Src.Owner>))
+If ((<Ref1.Tag0.Trap.Enabled>) && (!<IsEmpty <Ref1.Tag.Trap.Type>>) && (!<Ref1.Tag0.Trap.Delay>))
+Try <Ref1.Tag0.Trap.Type>
+Return 1
+Endif
+Endif
+
+ON=@Detect
+Ref1=<More>
+//If <Argo.CanSeeLos <Uid>>
+If <Ref1.Tag0.Trap.Difficulty> <= <Argo.DetectingHidden> + 200
+If <Ref1.Tag0.Trap.Enabled>
+Detected <Argo.Uid>,32
+Else
+Detected <Argo.Uid>,72
+Endif
+Endif
+//Endif
+
+ON=@Timer
+Return 1
+
+
+[Function Detected]
+Ref1=<Argv[0]>
+Ref2=<Uid>
+Local.Src = <Argo.Uid>
+Forplayers 18
+If ((<Uid> == <Ref1.Uid>) || (<IsInSameParty <Ref1.Uid>>) || (<IsInSameGuild <Ref1.Uid>>))
+sendpacket 0c0 02 D0 D0 W<EVAL <Ref2.DISPID>> W<EVAL <Ref2.P.X>> W<eval <Ref2.P.Y>> B<EVAL <Ref2.P.Z> + 1> W<EVAL <Ref2.P.X>> W<EVAL <Ref2.P.Y>> B<EVAL <Ref2.P.Z>> B0 B80 00 00 00 B0 D<hval <Argv[1]> - 1> D3
+self_sound 1387
+FoundTrap <Ref2.Uid>
+Endif
+Endfor
+
+[Function Detect_Attempt]
+Ref1 = <Argv[0]>
+If ((<Flags>&08) || (<Flags>&0800000))
+If <Uid> != <Ref1.Uid>
+If <IsInSameParty <Ref1.Uid>>
+ref1.sendpacket 0c0 02 D0 D0 W<EVAL 02848> W<EVAL <P.X>> W<eval <P.Y>> B<EVAL <P.Z> + 1> W<EVAL <P.X>> W<EVAL <P.Y>> B<EVAL <P.Z>> B0 B80 00 00 00 B0 D10 D3
+Else
+If Rand(<Ref1.DetectingHidden> / 3) >= <Hiding> / 4
+FLAGS=<FLAGS>&~08
+FLAGS=<FLAGS>&~0800000
+UPDATE
+Ref1.Sysmessage @11,,1 You reveal [<Name>]
+Sysmessage @34,,1 You have been revealed!
+Else
+Sysmessage @34,,1 <ref1.Name> is attempting to reveal you!
+Endif
+Endif
+Endif
+Endif
+
+
+[Function FoundTrap]
+If !<Restest i_trap_detections>
+Serv.Newitem = i_trap_detections
+Equip <New.Uid>
+Endif
+Findid.i_trap_detections.Tag.<Argv[0]> = <Eval <Serv.Time> + 3000>
+Findid.i_trap_detections.Timer = 3000
+
+
+[Function IsInSameParty]
+Ref1 = <Argv[0]>
+If ((<IsInParty>) && (<Ref1.IsInParty>))
+If <Party.Member.0> == <Ref1.Party.Member.0>
+Return 1
+Endif
+Endif
+Return 0
+
+[function self_sound]
+sendpacket 054 01 w<argn1> w0 w<p.x> w<p.y> w<p.z>
+
+[Function IsInSameGuild]
+Ref1 = <Argv[0]>
+If ((<GetGuild>) && (<Ref1.GetGuild>))
+If <GetGuild> == <Ref1.GetGuild>
+Return 1
+Endif
+Endif
+Return 0
+
+[Function GetGuild]
+If <NPC>
+Return <Qval <Owner> ? <Owner.Guild> : 0>
+Endif
+Return <Guild>

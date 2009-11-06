@@ -1,0 +1,175 @@
+[DEFNAME colors_bod_cloth]
+COLOR_ICE_HUE_5		047E
+COLOR_ICE_HUE_4		047F
+COLOR_ICE_HUE_2		0481
+COLOR_ICE_HUE_3		0482
+COLOR_GREEN_HIGHLIGHT	0483
+COLOR_DARK_BLUE		0484
+COLOR_DARK_RED		0485
+COLOR_DARK_PURPLE	0486
+COLOR_DARK_YELLOW	0487
+COLOR_DARK_BLUE_GREEN	0488
+COLOR_FIRE		0489
+COLOR_BLUEGREEN		048A
+COLOR_BLUE_PURPLE	048B
+COLOR_GREEN_BLUE	048C
+COLOR_ICE_LIGHT		048D
+COLOR_FIRE_LIGHT	048E
+COLOR_PURPLE_LIGHT	0490
+COLOR_BROWN_LIGHT	0491
+COLOR_SLICKNESS		0492
+COLOR_GREEN_PURPLE	0493
+COLOR_BLUE_RED		0494
+COLOR_BRIGHT_BLUE	0495
+COLOR_BLAZE		0496
+COLOR_DARKNESS		0497
+COLOR_BLUE_DARK_BLUE	0498
+COLOR_GOLD		0499
+
+[DEFNAME colors_es_dyes]
+color_es_gold		0501
+color_es_purpleblue	0502
+color_es_pinkblue	0503
+color_es_blue		0504
+color_es_green		0505
+color_es_green2		0506
+color_es_redaqua	0507
+color_es_skyred		0508
+color_es_ltbluepink	0509
+
+[DEFNAME energy_weapon_colors]
+color_fire_weap1	04E7
+color_fire_weap2	04E8
+color_fire_weap3	04E9
+color_fire_weap4	04EA
+color_fire_weap5	04EB
+color_fire_weap6	04EC
+color_cold_weap1	04ED
+color_cold_weap2	04EE
+color_cold_weap3	04EF
+color_cold_weap4	04F0
+color_cold_weap5	04F1
+color_cold_weap6	04F2
+color_poison_weap1	04F3
+color_poison_weap2	04F4
+color_poison_weap3	04F5
+color_poison_weap4	04F6
+color_poison_weap5	04F7
+color_poison_weap6	04F8
+color_energy_weap1	04F9
+color_energy_weap2	04FA
+color_energy_weap3	04FB
+color_energy_weap4	04FC
+color_energy_weap5	04FD
+color_energy_weap6	04FE
+
+
+[DEFNAME energy_armor_colors]
+color_fire_wear1	054B
+color_fire_wear2	054C
+color_fire_wear3	054D
+color_fire_wear4	054E
+color_fire_wear5	054F
+color_fire_wear6	0550
+color_cold_wear1	0551
+color_cold_wear2	0552
+color_cold_wear3	0553
+color_cold_wear4	0554
+color_cold_wear5	0555
+color_cold_wear6	0556
+color_poison_wear1	0557
+color_poison_wear2	0558
+color_poison_wear3	0559
+color_poison_wear4	055A
+color_poison_wear5	055B
+color_poison_wear6	055C
+color_energy_wear1	055D
+color_energy_wear2	055E
+color_energy_wear3	055F
+color_energy_wear4	0560
+color_energy_wear5	0561
+color_energy_wear6	0562
+
+[DEFNAME hues_leather_armor]
+color_o_spined		0031A
+color_o_horned		00151
+color_o_barbed		00304
+
+[DEFNAME colors_bone]
+color_o_daemon_bone	01B0
+
+[DEFNAME hues_dragon]
+color_d_black		002C3
+color_d_blue		002B4
+color_d_green		00304
+color_d_red		00151
+color_d_white		002C2
+color_d_yellow		00224
+
+[DEFNAME melisande_hair_dye_hues]
+color_mel_01	0496
+color_mel_02	0487
+color_mel_03	048A
+color_mel_04	0490
+color_mel_05	047F
+color_mel_06	0488
+color_mel_07	048D
+color_mel_08	0492
+color_mel_09	0491
+color_mel_10	047E
+color_mel_11	0497
+color_mel_12	0484
+color_mel_13	0483
+color_mel_14	0481
+color_mel_15	0493
+color_mel_16	0480
+color_mel_17	0485
+color_mel_18	048C
+color_mel_19	0494
+color_mel_20	0482
+
+
+[DEFNAME colors_custom_stone]
+color_o_jadex1			0B83
+color_o_bloodstonex1		0B85
+color_o_bronzex1		0B87
+color_o_bronzex2		0B88
+color_o_alabasterx1		0B89
+color_o_marblex1		0B8B
+color_o_marblex2		0B8C
+color_o_granite1		0B8E
+color_o_alabasterx0		0B8F
+color_o_alabastermarble1	0B90
+color_o_alabastermarble2	0B91
+color_o_alabastermarble3	0B92
+color_o_jade0			0B93
+color_o_jade1			0B94
+color_o_jade2			0B95
+color_o_jade3			0B96
+color_o_bronze0			0B97
+color_o_bronze1			0B98
+color_o_bronze2			0B99
+color_o_bronze3			0B9A
+
+
+[DEFNAME tokuno_dye_hues]
+color_paragon_gold		0501
+color_berserker_red		021	//Close as I could get. 020
+color_dryad_green		048F
+color_invulnerability_blue	04F2
+color_nox_green			0582	//Close as I could get.
+color_luna_white		0481
+color_shadow_dancer_black	0497
+color_rum_red			0676	//Close as I could get.
+color_violet_courage_purple	0486
+color_fire_orange		04E9
+
+
+[DEFNAME colors_wood]
+COLOR_OAK		04A6
+COLOR_ASH		04A7
+COLOR_YEW		04A8
+COLOR_HEARTWOOD		04A9
+COLOR_BLOODWOOD		04AA
+COLOR_FRSOTWOOD		04AB
+COLOR_SUNWOOD		04AC

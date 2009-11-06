@@ -1,0 +1,82 @@
+[plevel 2]
+buildingarea
+eventarea
+meetingarea
+testingarea
+gm_setup
+
+[plevel 4]
+testregen
+colorplus
+
+[plevel 5]
+allstats
+
+[plevel 6]
+regen_hits
+regen_stam
+regen_mana
+serv_unequip
+
+//Staff Functions
+[function allstats]
+ostr=<argn>
+odex=<argn>
+oint=<argn>
+hits=<argn>
+stam=<argn>
+mana=<argn>
+
+[FUNCTION gmsetup]
+OSTR 100
+ODEX 100
+OINT 100
+HITS 100
+STAM 100
+MANA 100
+
+OBODY=c_gm_man
+DISPID=c_gm_man
+
+INVUL 1
+NIGHTSIGHT 1
+HEARALL 1
+ALLSHOW 0
+ALLSKILLS 100.0
+
+ IF <SRC.PLEVEL> = 2
+  LOCAL.COLOR=
+ ELSEIF <SRC.PLEVEL> = 3
+  LOCAL.COLOR=
+ ELSEIF <SRC.PLEVEL> = 4
+  LOCAL.COLOR=
+ ELSEIF <SRC.PLEVEL> = 5
+  LOCAL.COLOR=
+ ELSEIF <SRC.PLEVEL> = 6
+  LOCAL.COLOR=
+ ELSEIF <SRC.PLEVEL> = 7
+  LOCAL.COLOR=
+ ELSE
+  SMSG @021,,1 You are a player and should have even invoked this command.
+  RETURN 1
+ ENDIF
+SERV.NEWITEM i_robe_gm
+NEW.NAME Elusive Shadows staff robe
+NEW.COLOR <LOCAL.COLOR>
+NEW.BOUNCE <UID>
+
+MSG All your skills are now 100.0, you have 100 in all stats, invul, nightsight,
+MSG and hearall are turned on. Allshow is set to off. You also received a gm robe in your pack.
+
+
+[function dev_building]
+go 
+
+[function dev_event]
+go 
+
+[function dev_meeting]
+go 
+
+[function dev_testing]
+go 

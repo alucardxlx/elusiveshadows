@@ -1,0 +1,552 @@
+2009/11/04 00:00:0300:00:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:06:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+00:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:11:ERROR:UID=04000bf79, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+00:11:GC: 58514 Objects accounted for
+00:11:World data saved   (D:\Sphere\save/sphereworld.scp).
+00:11:Player data saved  (D:\Sphere\save/spherechars.scp).
+00:11:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+00:11:Context data saved (D:\Sphere\save/spheredata.scp).
+00:11:World save completed, took 1.7683 seconds
+00:15:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+00:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:00:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:15:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:17:ERROR:UID=04000bd3b, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+01:17:GC: 58514 Objects accounted for
+01:17:World data saved   (D:\Sphere\save/sphereworld.scp).
+01:17:Player data saved  (D:\Sphere\save/spherechars.scp).
+01:17:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+01:17:Context data saved (D:\Sphere\save/spheredata.scp).
+01:17:World save completed, took 1.6507 seconds
+01:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+01:56:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+02:00:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:15:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:23:ERROR:UID=04000ba08, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+02:23:GC: 58518 Objects accounted for
+02:23:World data saved   (D:\Sphere\save/sphereworld.scp).
+02:23:Player data saved  (D:\Sphere\save/spherechars.scp).
+02:23:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+02:23:Context data saved (D:\Sphere\save/spheredata.scp).
+02:23:World save completed, took 1.7488 seconds
+02:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:45:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+02:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:29:ERROR:UID=04000b642, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+03:29:GC: 58531 Objects accounted for
+03:29:World data saved   (D:\Sphere\save/sphereworld.scp).
+03:29:Player data saved  (D:\Sphere\save/spherechars.scp).
+03:29:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+03:29:Context data saved (D:\Sphere\save/spheredata.scp).
+03:29:World save completed, took 0.5546 seconds
+03:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:46:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+03:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+03:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:34:ERROR:UID=04000b37b, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+04:34:GC: 58519 Objects accounted for
+04:34:World data saved   (D:\Sphere\save/sphereworld.scp).
+04:34:Player data saved  (D:\Sphere\save/spherechars.scp).
+04:34:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+04:34:Context data saved (D:\Sphere\save/spheredata.scp).
+04:34:World save completed, took 1.4492 seconds
+04:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+04:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:36:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+05:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:40:ERROR:UID=04000b06d, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+05:40:GC: 58527 Objects accounted for
+05:40:World data saved   (D:\Sphere\save/sphereworld.scp).
+05:40:Player data saved  (D:\Sphere\save/spherechars.scp).
+05:40:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+05:40:Context data saved (D:\Sphere\save/spheredata.scp).
+05:40:World save completed, took 1.4149 seconds
+05:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+05:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:46:ERROR:UID=04000adfc, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+06:46:GC: 58525 Objects accounted for
+06:46:World data saved   (D:\Sphere\save/sphereworld.scp).
+06:46:Player data saved  (D:\Sphere\save/spherechars.scp).
+06:46:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+06:46:Context data saved (D:\Sphere\save/spheredata.scp).
+06:46:World save completed, took 1.5347 seconds
+06:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+06:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:25:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+07:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:52:ERROR:UID=04000aba8, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+07:52:GC: 58531 Objects accounted for
+07:52:World data saved   (D:\Sphere\save/sphereworld.scp).
+07:52:Player data saved  (D:\Sphere\save/spherechars.scp).
+07:52:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+07:52:Context data saved (D:\Sphere\save/spheredata.scp).
+07:52:World save completed, took 1.6121 seconds
+07:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+07:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:30:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:34:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:38:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:42:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:46:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:50:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:54:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+08:58:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:00:ERROR:UID=04000a8d0, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+09:00:GC: 58527 Objects accounted for
+09:00:World data saved   (D:\Sphere\save/sphereworld.scp).
+09:00:Player data saved  (D:\Sphere\save/spherechars.scp).
+09:00:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+09:00:Context data saved (D:\Sphere\save/spheredata.scp).
+09:00:World save completed, took 2.3900 seconds
+09:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:09:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:13:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:17:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:17:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+09:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:32:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+09:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:02:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:06:ERROR:UID=04000a462, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+10:06:GC: 58528 Objects accounted for
+10:06:World data saved   (D:\Sphere\save/sphereworld.scp).
+10:06:Player data saved  (D:\Sphere\save/spherechars.scp).
+10:06:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+10:06:Context data saved (D:\Sphere\save/spheredata.scp).
+10:06:World save completed, took 1.9941 seconds
+10:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+10:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:08:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+11:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:12:ERROR:UID=04000a04a, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+11:12:GC: 58528 Objects accounted for
+11:12:World data saved   (D:\Sphere\save/sphereworld.scp).
+11:12:Player data saved  (D:\Sphere\save/spherechars.scp).
+11:12:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+11:12:Context data saved (D:\Sphere\save/spheredata.scp).
+11:12:World save completed, took 1.2774 seconds
+11:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+11:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:18:ERROR:UID=040009d69, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+12:18:GC: 58543 Objects accounted for
+12:18:World data saved   (D:\Sphere\save/sphereworld.scp).
+12:18:Player data saved  (D:\Sphere\save/spherechars.scp).
+12:18:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+12:18:Context data saved (D:\Sphere\save/spheredata.scp).
+12:18:World save completed, took 1.3791 seconds
+12:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+12:57:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+12:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:24:ERROR:UID=04000986a, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+13:24:GC: 58532 Objects accounted for
+13:24:World data saved   (D:\Sphere\save/sphereworld.scp).
+13:24:Player data saved  (D:\Sphere\save/spherechars.scp).
+13:24:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+13:24:Context data saved (D:\Sphere\save/spheredata.scp).
+13:24:World save completed, took 1.4934 seconds
+13:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+13:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:29:ERROR:UID=0400095db, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+14:29:GC: 58530 Objects accounted for
+14:29:World data saved   (D:\Sphere\save/sphereworld.scp).
+14:29:Player data saved  (D:\Sphere\save/spherechars.scp).
+14:29:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+14:29:Context data saved (D:\Sphere\save/spheredata.scp).
+14:29:World save completed, took 1.3607 seconds
+14:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:47:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+14:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+14:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:35:ERROR:UID=0400089d2, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+15:35:GC: 58535 Objects accounted for
+15:35:World data saved   (D:\Sphere\save/sphereworld.scp).
+15:35:Player data saved  (D:\Sphere\save/spherechars.scp).
+15:35:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+15:35:Context data saved (D:\Sphere\save/spheredata.scp).
+15:35:World save completed, took 1.0455 seconds
+15:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+15:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:37:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+16:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:41:ERROR:UID=040008730, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+16:41:GC: 58530 Objects accounted for
+16:41:World data saved   (D:\Sphere\save/sphereworld.scp).
+16:41:Player data saved  (D:\Sphere\save/spherechars.scp).
+16:41:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+16:41:Context data saved (D:\Sphere\save/spheredata.scp).
+16:41:World save completed, took 1.6792 seconds
+16:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+16:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:47:ERROR:UID=040008345, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+17:47:GC: 58528 Objects accounted for
+17:47:World data saved   (D:\Sphere\save/sphereworld.scp).
+17:47:Player data saved  (D:\Sphere\save/spherechars.scp).
+17:47:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+17:47:Context data saved (D:\Sphere\save/spheredata.scp).
+17:47:World save completed, took 1.8650 seconds
+17:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+17:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:27:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+18:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:53:ERROR:UID=040007d17, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+18:53:GC: 58537 Objects accounted for
+18:53:World data saved   (D:\Sphere\save/sphereworld.scp).
+18:53:Player data saved  (D:\Sphere\save/spherechars.scp).
+18:53:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+18:53:Context data saved (D:\Sphere\save/spheredata.scp).
+18:53:World save completed, took 1.5660 seconds
+18:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+18:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+19:59:ERROR:UID=04000798a, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+19:59:GC: 58539 Objects accounted for
+19:59:World data saved   (D:\Sphere\save/sphereworld.scp).
+19:59:Player data saved  (D:\Sphere\save/spherechars.scp).
+19:59:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+19:59:Context data saved (D:\Sphere\save/spheredata.scp).
+19:59:World save completed, took 1.2444 seconds
+19:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:16:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+20:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+20:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:05:ERROR:UID=04000749e, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+21:05:GC: 58533 Objects accounted for
+21:05:World data saved   (D:\Sphere\save/sphereworld.scp).
+21:05:Player data saved  (D:\Sphere\save/spherechars.scp).
+21:05:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+21:05:Context data saved (D:\Sphere\save/spheredata.scp).
+21:05:World save completed, took 0.7977 seconds
+21:06:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:10:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:21:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:25:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:36:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:40:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:51:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:55:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+21:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:06:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+22:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:11:ERROR:UID=040007385, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+22:11:GC: 58541 Objects accounted for
+22:11:World data saved   (D:\Sphere\save/sphereworld.scp).
+22:11:Player data saved  (D:\Sphere\save/spherechars.scp).
+22:11:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+22:11:Context data saved (D:\Sphere\save/spheredata.scp).
+22:11:World save completed, took 1.3319 seconds
+22:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+22:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:03:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:07:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:11:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:14:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:17:ERROR:UID=040007168, id=0be9 'Sorcerers' Guild', Invalid code=2236 (Item flagged as decay but without timer set)
+23:17:GC: 58538 Objects accounted for
+23:17:World data saved   (D:\Sphere\save/sphereworld.scp).
+23:17:Player data saved  (D:\Sphere\save/spherechars.scp).
+23:17:Multi data saved   (D:\Sphere\save/spheremultis.scp).
+23:17:Context data saved (D:\Sphere\save/spheredata.scp).
+23:17:World save completed, took 0.1944 seconds
+23:18:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:22:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:26:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:29:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:33:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:37:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:41:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:44:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:48:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:52:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:56:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'
+23:56:ERROR:(enviromental_script.scp,326)Undefined symbol 'i_light_man'
+23:59:ERROR:(spherechar.scp,986)Undefined symbol 'add_loot_elem_fire'

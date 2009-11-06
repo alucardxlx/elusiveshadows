@@ -1,0 +1,513 @@
+[COMMENT ores_new]
+Contained in this file are the following sections:
+
+*	Color defs.
+*	Ore lists.
+*	Ingot lists.
+*	Region resource lists.
+
+Ores added:
+
+*	Dragon
+*	Titan
+*	Crystaline
+*	Kryptonite
+*	Vulcan
+*	Sand Rock
+*	Blood Crest
+*	Steel
+*	Elvin
+*	Gorgan
+*	Acid
+*	Aqua
+*	Eldar
+
+[DEFNAME colors_ore_new]
+color_o_dragon		0593
+color_o_titan		0736
+color_o_crystaline	0065
+color_o_kryptonite	0170
+color_o_vulcan		0324
+color_o_sand_rock	0709
+color_o_blood_crest	064e
+color_o_steel		0540
+color_o_elvin		0596
+color_o_gorgan		0456
+color_o_acid		0078
+color_o_aqua		0123//123982
+color_o_eldar		04D8
+
+
+[ITEMDEF i_ore_dragon]
+DEFNAME=i_ore_dragon
+ID=i_ore_iron
+name=Dragon Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_dragon
+VALUE=25
+
+ON=@CREATE
+ color=color_o_dragon
+
+[ITEMDEF i_ore_titan]
+DEFNAME=i_ore_titan
+ID=i_ore_iron
+name=Titan Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_titan
+VALUE=25
+
+ON=@CREATE
+ color=color_o_dragon
+
+[ITEMDEF i_ore_crystaline]
+DEFNAME=i_ore_crystaline
+ID=i_ore_iron
+name=Crystaline Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_crystaline
+VALUE=25
+
+ON=@CREATE
+ color=color_o_crystaline
+
+[ITEMDEF i_ore_kryptonite]
+DEFNAME=i_ore_kryptonite
+ID=i_ore_iron
+name=Kryptonite Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_kryptonite
+VALUE=25
+
+ON=@CREATE
+ color=color_o_kryptonite
+
+[ITEMDEF i_ore_vulcan]
+DEFNAME=i_ore_vulcan
+ID=i_ore_iron
+name=Vulcan Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_vulcan
+VALUE=25
+
+ON=@CREATE
+ color=color_o_vulcan
+
+[ITEMDEF i_ore_sand_rock]
+DEFNAME=i_ore_sand_rock
+ID=i_ore_iron
+name=Sand Rock Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_sand_rock
+VALUE=25
+
+ON=@CREATE
+ color=color_o_sand_rock
+
+[ITEMDEF i_ore_blood_crest]
+DEFNAME=i_ore_blood_crest
+ID=i_ore_iron
+name=Blood Crest Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_blood_crest
+VALUE=25
+
+ON=@CREATE
+ color=color_o_blood_crest
+
+[ITEMDEF i_ore_steel]
+DEFNAME=i_ore_steel
+ID=i_ore_iron
+name=Steel Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_steel
+VALUE=25
+
+ON=@CREATE
+ color=color_o_steel
+
+[ITEMDEF i_ore_elvin]
+DEFNAME=i_ore_elvin
+ID=i_ore_iron
+name=Elvin Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_elvin
+VALUE=25
+
+ON=@CREATE
+ color=color_o_elvin
+
+[ITEMDEF i_ore_gorgan]
+DEFNAME=i_ore_gorgan
+ID=i_ore_iron
+name=Gorgan Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_gorgan
+VALUE=25
+
+ON=@CREATE
+ color=color_o_gorgan
+
+[ITEMDEF i_ore_acid]
+DEFNAME=i_ore_acid
+ID=i_ore_iron
+name=Acid Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_acid
+VALUE=25
+
+ON=@CREATE
+ color=color_o_acid
+
+[ITEMDEF i_ore_aqua]
+DEFNAME=i_ore_aqua
+ID=i_ore_iron
+name=Aqua Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_aqua
+VALUE=25
+
+ON=@CREATE
+ color=color_o_aqua
+
+[ITEMDEF i_ore_eldar]
+DEFNAME=i_ore_eldar
+ID=i_ore_iron
+name=Eldar Ore
+SKILLNAME=mining 100.0
+TDATA1=i_ingot_eldar
+VALUE=25
+
+ON=@CREATE
+ color=color_o_eldar
+
+
+
+
+
+[ITEMDEF i_ingot_dragon]
+DEFNAME=i_ingot_dragon
+ID=i_ingot_iron
+NAME=Dragon Ingot
+TYPE=t_ingot
+RESOURCES=i_ore_dragon
+SKILLMAKE=mining 100.0
+TDATA1=90.0
+TDATA2=100.0
+VALUE=
+WEIGHT=2.0
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Dragon Ingot
+
+ON=@CREATE
+ color=color_o_dragon
+
+[ITEMDEF i_ingot_titan]
+DEFNAME=i_ingot_titan
+ID=i_ingot_iron
+name=Titan Ingot
+type=t_ingot
+RESOURCES=i_ore_titan
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Titan Ingot
+
+ON=@CREATE
+ color=color_o_titan
+
+[ITEMDEF i_ingot_crystaline]
+DEFNAME=i_ingot_crystaline
+ID=i_ingot_iron
+name=Crystaline Ingot
+type=t_ingot
+RESOURCES=i_ore_crystaline
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Crystaline Ingot
+
+ON=@CREATE
+ color=color_o_crystaline
+
+[ITEMDEF i_ingot_kryptonite]
+DEFNAME=i_ingot_kryptonite
+ID=i_ingot_iron
+name=Kryptonite Ingot
+type=t_ingot
+RESOURCES=i_ore_kryptonite
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Kryptonite Ingot
+
+ON=@CREATE
+ color=color_o_kryptonite
+
+[ITEMDEF i_ingot_vulcan]
+DEFNAME=i_ingot_vulcan
+ID=i_ingot_iron
+name=Vulcan Ingot
+type=t_ingot
+RESOURCES=i_ore_vulcan
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Vulcan Ingot
+
+ON=@CREATE
+ color=color_o_vulcan
+
+[ITEMDEF i_ingot_sand_rock]
+DEFNAME=i_ingot_sand_rock
+ID=i_ingot_iron
+name=Sand Rock Ingot
+type=t_ingot
+RESOURCES=i_ore_sand_rock
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Sand Rock Ingot
+
+ON=@CREATE
+ color=color_o_sand_rock
+
+[ITEMDEF i_ingot_blood_crest]
+DEFNAME=i_ingot_blood_crest
+ID=i_ingot_iron
+name=Blood Crest Ingot
+type=t_ingot
+RESOURCES=i_ore_blood_crest
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Blood Crest Ingot
+
+ON=@CREATE
+ color=color_o_blood_crest
+
+[ITEMDEF i_ingot_steel]
+DEFNAME=i_ingot_steel
+ID=i_ingot_iron
+name=Steel Ingot
+type=t_ingot
+RESOURCES=i_ore_steel
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Steel Ingot
+
+ON=@CREATE
+ color=color_o_steel
+
+[ITEMDEF i_ingot_elvin]
+DEFNAME=i_ingot_elvin
+ID=i_ingot_iron
+name=Elvin Ingot
+type=t_ingot
+RESOURCES=i_ore_elvin
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Elvin Ingot
+
+ON=@CREATE
+ color=color_o_elvin
+
+[ITEMDEF i_ingot_gorgan]
+DEFNAME=i_ingot_gorgan
+ID=i_ingot_iron
+name=Gorgan Ingot
+type=t_ingot
+RESOURCES=i_ore_gorgan
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Gorgan Ingot
+
+ON=@CREATE
+ color=color_o_gorgan
+
+[ITEMDEF i_ingot_acid]
+DEFNAME=i_ingot_acid
+ID=i_ingot_iron
+name=Acid Ingot
+type=t_ingot
+RESOURCES=i_ore_acid
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Acid Ingot
+
+ON=@CREATE
+ color=color_o_acid
+
+[ITEMDEF i_ingot_aqua]
+DEFNAME=i_ingot_aqua
+ID=i_ingot_iron
+name=Aqua Ingot
+type=t_ingot
+RESOURCES=i_ore_aqua
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Aqua Ingot
+
+ON=@CREATE
+ color=color_o_aqua
+
+[ITEMDEF i_ingot_eldar]
+DEFNAME=i_ingot_eldar
+ID=i_ingot_iron
+name=Eldar Ingot
+type=t_ingot
+RESOURCES=i_ore_eldar
+SKILLMAKE=
+TDATA1=
+TDATA2=
+VALUE=
+WEIGHT=
+
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Eldar Ingot
+
+ON=@CREATE
+ color=color_o_eldar
+
+
+//Needs editting.
+[REGIONRESOURCE mr_dragon]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_dragon
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_titan]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_titan
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_crystaline]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_crystaline
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_kryptonite]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_kryptonite
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_vulcan]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_vulcan
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_sand_rock]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_sand_rock
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_blood_crest]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_blood_crest
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_steel]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_steel
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_elvin]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_elvin
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_gorgan]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_gorgan
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_acid]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_acid
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_aqua]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_aqua
+REGEN=60*60*10
+
+[REGIONRESOURCE mr_eldar]
+SKILL=1.0,100.0
+AMOUNT=1,2
+REAP=i_ore_eldar
+REGEN=60*60*10

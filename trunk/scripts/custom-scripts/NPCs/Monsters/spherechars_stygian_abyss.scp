@@ -1,0 +1,733 @@
+[chardef 029A]//666
+defname=c_gargoyle_man
+name=Gargoyle
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 029B]
+defname=c_gargoyle_woman
+name=Gargoyle
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02B6]
+defname=c_gargoyle_ghost_man
+name=Gargoyle Ghost
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02B7]
+defname=c_gargoyle_ghost_woman
+name=Gargoyle Ghost
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02C9]
+defname=c_abyssal_infernal
+name=Abyssal Infernal
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02CA]
+defname=c_beetle_iron
+name=iron beetle
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02CB]
+defname=c_boura
+name=boura
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02CC]
+defname=c_chicken_lizard
+name=chicken lizard
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02CD]
+defname=c_scorpion_clockwork
+name=clockwork scorpion
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02CE]
+defname=c_dragon_fairie
+name=fairie dragon
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02CF]
+defname=c_wolf_dragon
+name=dragon wolf
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D0]
+defname=c_elem_lava
+name=lava elemental
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D1]
+defname=c_flayer
+name=flayer
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D2]
+defname=c_gargoyle_undead
+name=undead gargoyle
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D3]
+defname=c_goblin_green
+name=Goblin
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D4]
+defname=c_gremlin
+name=gremlin
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D5]
+defname=c_humunculous
+name=humunculous
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D6]
+defname=c_kepetch
+name=Kepetch
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D7]
+defname=c_kepetch_shorn
+name=Kepetch (Shorn)
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02D8]
+defname=c_medusa
+name=medusa
+can=mt_walk|mt_run|mt_usehands|mt_equip|mt_female
+moverate=100
+dam=21,28
+armor=55,65
+resources=i_medusa_blood, i_medusa_scales
+tevents=e_lethal_strike
+tevents=e_petrify (para 10 sec, leaves a statue, destroy or comes to life)
+tevents=e_lethal_poison (from hair)
+
+on=@create
+npc=brain_monster
+
+fame=
+karma=
+
+tag.barding.dif=160.0
+
+//tag.firedamage=20
+//tag.energydamage=20
+
+str={1200 1400}
+dex={125 140}
+int={500 700}
+maxhits=70000
+maxstam=<dex>
+maxmana=<int>
+
+//modar={55 65}
+resfire={55 65}
+rescold={55 65}
+respoison={80 90}
+resenergy={60 75}
+
+wrestling={110.0 135.0}
+tactics={110.0 135.0}
+magicresistance=120.0
+anatomy={110.0 120.0}
+magery={100.0 120.0}
+evaluatingintel={100.0 120.0}
+meditation=100.0
+
+on=@death
+newloot=loot_medusa
+
+[template loot_medusa]
+category=
+subsection=
+description=Medusa
+container=i_backpack
+item=i_gold,6000
+item=random_magic_items//16?
+
+[chardef 02D9]
+defname=c_mimic
+name=mimic
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02DA]
+defname=c_raptor
+name=raptor
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02DC]
+defname=c_rotworm
+name=rotworm
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02DD]
+defname=c_skree
+name=skree
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02DE]
+defname=c_slith
+name=slith
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02DF]
+defname=c_spider_female
+name=female spider
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E0]
+defname=c_spider_male
+name=male spider
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E1]
+defname=c_spider_trapdoor
+name=trapdoor spider
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E2]
+defname=c_trapdoor_creature
+name=trapdoor creature
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E3]
+defname=c_wolf_leather
+name=wolf leather
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 0125]
+defname=c_gargoyle_pet
+name=gargoyle pet
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 011E]//doesnt work
+defname=c_rotworm_juvenile
+name=Rotworm Juvenile
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+CATEGORY=
+SUBSECTION=
+DESCRIPTION=Rotworm Juvenile (N/A)
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 011F]
+defname=c_bloodworm
+name=bloodworm
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02B4]
+defname=c_animated_weapon
+name=animated weapon
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 033E]
+defname=c_lich_primevil
+name=Primevil lich
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 033D]
+defname=c_rising_colossus
+name=Rising Colossus
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E5]
+defname=c_slasher_veils
+name=slasher of veils
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 033A]
+defname=c_dragon_stygian
+name=stygian dragon
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E4]
+defname=c_shadow_dweller
+name=shadow dweller
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E6]
+defname=c_spirit_body
+name=Tunnel Spirit Body
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02E7]
+defname=c_spirit_tentacle
+name=tunnel spirit tentacle
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 014E]
+defname=c_goblin_grey
+name=Grey Goblin
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 0340]
+defname=c_phoenix_bird
+name=Phoenix
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 010E]
+defname=c_bulbous_putrifaction
+name=bulbous putrifaction
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 033F]
+defname=c_parrot_bird
+name=Parrot
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1
+
+[chardef 02C1]
+defname=c_stone_form
+name=stone form
+can=mt_walk
+moverate=100
+dam=
+armor=
+
+on=@create
+npc=brain_monster
+
+str=1
+dex=1
+int=1

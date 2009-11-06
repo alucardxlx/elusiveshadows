@@ -1,0 +1,211 @@
+[CHARDEF 0C5]//197
+DEFNAME=c_crimson_dragon
+NAME=Crimson Dragon
+CAN=mt_walk|mt_fly
+MOVERATE=100
+ICON=i_pet_dragon
+SOUND=snd_monster_dragon1
+DAM=8,10
+ARMOR={50 70}
+RESOURCES=i_ribs_raw 19, i_hide_barbed 40, i_reag_dragon_blood 18
+FOODTYPE=50 t_meat_raw
+SHELTER=r_caves, r_dungeon, r_mountains
+AVERSIONS=t_trap_active
+DESIRES=e_notoriety, e_faction_chaos
+BLOODCOLOR=0
+TEVENTS=e_carnivore3
+TEVENTS=e_wild_dragon
+TEVENTS=e_death_rain_gold
+
+CATEGORY=Champions
+SUBSECTION=Faction Dragons
+DESCRIPTION=Crimson Dragon
+
+ON=@CREATE
+ NPC=brain_dragon
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=160.0
+ TAG.SLAYER=slayer_dragon
+ TAG.SUPER.SLAYER=slayer_reptile
+
+ FAME=20000
+ KARMA=-20000
+
+ STR={2000 2200}
+ DEX={250 300}
+ INT={1000 1200}
+ MAXHITS={25000 30000}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={120.0 130.0}
+ TACTICS={120.0 130.0}
+ MAGICRESISTANCE={110.0 130.0}
+ ANATOMY={110.0 130.0}
+ POISONING=
+ MAGERY={110.0 130.0}
+ MEDITATION={110.0 130.0}
+ EVALUATINGINTEL={110.0 130.0}
+
+ON=@DEATH
+ NEWLOOT=loot_crimson_dragon
+
+[CHARDEF 0C6]//198
+DEFNAME=c_platinum_dragon
+NAME=Platinum Dragon
+CAN=mt_walk|mt_fly
+MOVERATE=100
+ICON=i_pet_dragon
+SOUND=snd_monster_dragon1
+DAM=8,10
+ARMOR={50 70}
+RESOURCES=i_ribs_raw 19, i_hide_barbed 40, i_reag_dragon_blood 18
+FOODTYPE=50 t_meat_raw
+SHELTER=r_caves, r_dungeon, r_mountains
+AVERSIONS=t_trap_active
+DESIRES=e_notoriety, e_faction_chaos
+BLOODCOLOR=0
+TEVENTS=e_carnivore3
+TEVENTS=e_wild_dragon
+TEVENTS=e_death_rain_gold
+
+CATEGORY=Champions
+SUBSECTION=Faction Dragons
+DESCRIPTION=Platinum Dragon
+
+ON=@CREATE
+ NPC=brain_dragon
+ COLOR=0
+
+ TAG.SLAYER=slayer_dragon
+ TAG.SUPER.SLAYER=slayer_reptile
+
+ FAME=20000
+ KARMA=20000
+
+ STR={2000 2200}
+ DEX={250 300}
+ INT={1000 1200}
+ MAXHITS={25000 30000}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={120.0 130.0}
+ TACTICS={120.0 130.0}
+ MAGICRESISTANCE={110.0 130.0}
+ ANATOMY={110.0 130.0}
+ POISONING=
+ MAGERY={110.0 130.0}
+ MEDITATION={110.0 130.0}
+ EVALUATINGINTEL={110.0 130.0}
+
+ON=@DEATH
+ NEWLOOT=loot_platinum_dragon
+
+[EVENTS e_wild_dragon]
+ON=@HIT
+IF <R1,10> == 1
+ IF (<SRC.FLAGS> &statf_pet) && (<SRC.BRAIN> = brain_dragon)
+  src.memoryfindtype.memory_ipet.remove
+  RETURN 0
+ ENDIF
+ RETURN 0
+ENDIF
+
+ON=@GETHIT
+IF <R1,10> == 1
+ IF (<SRC.FLAGS> &statf_pet) && (<SRC.BRAIN> = brain_dragon)
+  src.memoryfindtype.memory_ipet.remove
+  RETURN 0
+ ENDIF
+ RETURN 0
+ENDIF
+
+[EVENTS e_death_rain_gold]
+ON=@DEATH
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+RAIN_GOLD {600 1200}
+
+[comment FUNCTION RAIN_GOLD]
+IF <CANSEELOS>
+ SERV.NEWITEM=i_gold,<ARGS>
+// NEW.P <SRC.P>
+// NEW.MOVE <EVAL (<R1,19> - 10)>,<EVAL (<R1,19> - 10)>
+ NEW.MOVENEAR <UID> 9
+ NEW.SOUND 55
+ NEW.EFFECT 2 01ec6 0 16 0 0 0
+ELSE
+ RAIN_GOLD
+ENDIF
+
+[FUNCTION RAIN_GOLD]
+NEWITEM=i_gold,<ARGS>
+NEW.MOVENEAR <src>,9
+NEW.ATTR attr_decay
+IF !(<new.CanSeeLOS>
+ NEW.REMOVE
+ RAIN_GOLD
+ RETURN 1
+ENDIF
+NEW.SOUND 55
+NEW.EFFECT 2 01ec6 0 16 0 0 0
+NEW.TIMER=10*60 //this should probably be called from .ini but I'm lazy now
+
+[TEMPLATE loot_order_dragon]
+CATEGORY=NPC Loot Templates
+SUBSECTION=Faction Dragons
+DESCRIPTION=Order Dragon
+ITEM=
+
+[TEMPLATE add_loot_order_dragon]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Faction Dragons
+DESCRIPTION=Order Dragon
+ITEM=
+
+[TEMPLATE loot_chaos_dragon]
+CATEGORY=NPC Loot Templates
+SUBSECTION=Faction Dragons
+DESCRIPTION=Chaos Dragon
+ITEM=
+
+[TEMPLATE add_loot_chaos_dragon]
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Faction Dragons
+DESCRIPTION=Chaos Dragon
+ITEM=
+
+
+
+[FUNCTION REM_COMBAT_MEMS]
+IF ( <MEMORYFINDTYPE.MEMORY_WAR_TARG.UID>) || (<MEMORYFINDTYPE.MEMORY_SAWCRIME.UID>) || (<MEMORYFINDTYPE.MEMORY_FIGHT.UID>)
+    IF (<MEMORYFINDTYPE.memory_fight.LINK.MEMORYFINDTYPE.memory_fight.LINK> == <UID>)
+        MEMORYFINDTYPE.memory_fight.LINK.MEMORYFINDTYPE.memory_fight.REMOVE
+    ENDIF
+    MEMORYFINDTYPE.MEMORY_WAR_TARG.REMOVE
+    MEMORYFINDTYPE.MEMORY_FIGHT.REMOVE
+    MEMORYFINDTYPE.MEMORY_SAWCRIME.REMOVE
+    REM_COMBAT_MEMS
+ENDIF
+RETURN 1
+
+

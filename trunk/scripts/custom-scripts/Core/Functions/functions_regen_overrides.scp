@@ -1,0 +1,35 @@
+[Function testregen]
+Tag.RegenVal_Hits = 1
+Tag.RegenVal_Stam = 1
+Tag.RegenVal_Mana = 1
+Tag.regen_hits = 40
+tag.regen_stam = 10
+tag.regen_mana = 20
+Timerf <Tag0.Regen_Stam>,Regen_Stam
+Timerf <Tag0.Regen_Hits>,Regen_Hits
+Timerf <Tag0.Regen_Mana>,Regen_Mana
+
+
+[Function Regen_Stam]
+If <IsOnline>
+If <Maxstam> > <Stam>
+Stam += <Tag0.RegenVal_Stam>
+Endif
+Timerf <Tag0.Regen_Stam>,Regen_Stam
+Endif
+
+[Function Regen_Hits]
+If <IsOnline>
+If <Maxhits> > <Hits>
+Hits += <Tag0.RegenVal_Hits>
+Endif
+Timerf <Tag0.Regen_Hits>,Regen_Hits
+Endif
+
+[Function Regen_Mana]
+If <IsOnline>
+If <Maxmana> > <Mana>
+Mana += <Tag0.RegenVal_Mana>
+Endif
+Timerf <Tag0.Regen_Mana>,Regen_Mana
+Endif

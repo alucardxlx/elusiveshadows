@@ -1,0 +1,1127 @@
+//Daemon Bone
+[ITEMDEF i_bone_chest_daemon]
+DEFNAME=i_bone_chest_daemon
+NAME=Daemon Bone Armor
+ID=i_bone_chest
+ARMOR=60
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Daemon Bone
+DESCRIPTION=Daemon Bone Armor
+
+ON=@CREATE
+ COLOR=color_o_daemon_bone
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_daemon]
+DEFNAME=i_bone_arms_daemon
+NAME=Daemon Bone Arm Plates
+ID=i_bone_arms
+ARMOR=60
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Daemon Bone
+DESCRIPTION=Daemon Bone Arm Plates
+
+ON=@CREATE
+ COLOR=color_o_daemon_bone
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_daemon]
+DEFNAME=i_bone_gloves_daemon
+NAME=Daemon Bone Gauntlets
+ID=i_bone_gloves
+ARMOR=60
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Daemon Bone
+DESCRIPTION=Daemon Bone Gauntlets
+
+ON=@CREATE
+ COLOR=color_o_daemon_bone
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_daemon]
+DEFNAME=i_bone_leggings_daemon
+NAME=Daemon Bone Leg Plates
+ID=i_bone_leggings
+ARMOR=60
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Daemon Bone
+DESCRIPTION=Daemon Bone Leg Plates
+
+ON=@CREATE
+ COLOR=color_o_daemon_bone
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_daemon]
+DEFNAME=i_bone_helmet_daemon
+NAME=Daemon Bone Helm
+ID=i_bone_helmet
+ARMOR=60
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Daemon Bone
+DESCRIPTION=Daemon Bone Helm
+
+ON=@CREATE
+ COLOR=color_o_daemon_bone
+ HITPOINTS={26 30}
+
+
+//Spined
+[ITEMDEF i_bone_chest_spined]
+DEFNAME=i_bone_chest_spined
+NAME=Spined Bone Armor
+ID=i_bone_chest
+ARMOR=40
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Armor
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_spined]
+DEFNAME=i_bone_arms_spined
+NAME=Spined Bone Arm Plates
+ID=i_bone_arms
+ARMOR=40
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Arm Plates 
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_spined]
+DEFNAME=i_bone_gloves_spined
+NAME=Spined Bone Gauntlets
+ID=i_bone_gloves
+ARMOR=40
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Gauntlets
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_spined]
+DEFNAME=i_bone_leggings_spined
+NAME=Spined Bone Leg Plates
+ID=i_bone_leggings
+ARMOR=40
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Leg Plates
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_spined]
+DEFNAME=i_bone_helmet_spined
+NAME=Spined Bone Helm
+ID=i_bone_helmet
+ARMOR=40
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Helm
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+
+//Spined - Exceptional
+[ITEMDEF i_bone_chest_spined_exceptional]
+DEFNAME=i_bone_chest_spined_exceptional
+NAME=Spined Bone Armor [Exceptional]
+ID=i_bone_chest
+ARMOR=46
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Armor [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_spined_exceptional]
+DEFNAME=i_bone_arms_spined_exceptional
+NAME=Spined Bone Arm Plates [Exceptional]
+ID=i_bone_arms
+ARMOR=46
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Arm Plates [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_spined_exceptional]
+DEFNAME=i_bone_gloves_spined_exceptional
+NAME=Spined Bone Gauntlets [Exceptional]
+ID=i_bone_gloves
+ARMOR=46
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Gauntlets [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_spined_exceptional]
+DEFNAME=i_bone_leggings_spined_exceptional
+NAME=Spined Bone Leg Plates [Exceptional]
+ID=i_bone_leggings
+ARMOR=46
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Leg Plates [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_spined_exceptional]
+DEFNAME=i_bone_helmet_spined_exceptional
+NAME=Spined Bone Helm [Exceptional]
+ID=i_bone_helmet
+ARMOR=46
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Spined
+DESCRIPTION=Spined Bone Helm [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_spined
+ HITPOINTS={26 30}
+
+
+//Horned
+[ITEMDEF i_bone_chest_horned]
+DEFNAME=i_bone_chest_horned
+NAME=Horned Bone Armor
+ID=i_bone_chest
+ARMOR=43
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Armor
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_horned]
+DEFNAME=i_bone_arms_horned
+NAME=Horned Bone Arm Plates
+ID=i_bone_arms
+ARMOR=43
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Arm Plates 
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_horned]
+DEFNAME=i_bone_gloves_horned
+NAME=Horned Bone Gauntlets
+ID=i_bone_gloves
+ARMOR=43
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Gauntlets
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_horned]
+DEFNAME=i_bone_leggings_horned
+NAME=Horned Bone Leg Plates
+ID=i_bone_leggings
+ARMOR=43
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Leg Plates
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_horned]
+DEFNAME=i_bone_helmet_horned
+NAME=Horned Bone Helm
+ID=i_bone_helmet
+ARMOR=43
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Helm
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+
+//Horned - Exceptional
+[ITEMDEF i_bone_chest_horned_exceptional]
+DEFNAME=i_bone_chest_horned_exceptional
+NAME=Horned Bone Armor [Exceptional]
+ID=i_bone_chest
+ARMOR=49
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Armor [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_horned_exceptional]
+DEFNAME=i_bone_arms_horned_exceptional
+NAME=Horned Bone Arm Plates [Exceptional]
+ID=i_bone_arms
+ARMOR=49
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Arm Plates [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_horned_exceptional]
+DEFNAME=i_bone_gloves_horned_exceptional
+NAME=Horned Bone Gauntlets [Exceptional]
+ID=i_bone_gloves
+ARMOR=49
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Gauntlets [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_horned_exceptional]
+DEFNAME=i_bone_leggings_horned_exceptional
+NAME=Horned Bone Leg Plates [Exceptional]
+ID=i_bone_leggings
+ARMOR=49
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Leg Plates [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_horned_exceptional]
+DEFNAME=i_bone_helmet_horned_exceptional
+NAME=Horned Bone Helm [Exceptional]
+ID=i_bone_helmet
+ARMOR=49
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Horned
+DESCRIPTION=Horned Bone Helm [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_horned
+ HITPOINTS={26 30}
+
+
+//Barbed
+[ITEMDEF i_bone_chest_barbed]
+DEFNAME=i_bone_chest_barbed
+NAME=Barbed Bone Armor
+ID=i_bone_chest
+ARMOR=46
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Armor
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_barbed]
+DEFNAME=i_bone_arms_barbed
+NAME=Barbed Bone Arm Plates
+ID=i_bone_arms
+ARMOR=46
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Arm Plates 
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_barbed]
+DEFNAME=i_bone_gloves_barbed
+NAME=Barbed Bone Gauntlets
+ID=i_bone_gloves
+ARMOR=46
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Gauntlets
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_barbed]
+DEFNAME=i_bone_leggings_barbed
+NAME=Barbed Bone Leg Plates
+ID=i_bone_leggings
+ARMOR=46
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Leg Plates
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_barbed]
+DEFNAME=i_bone_helmet_barbed
+NAME=Barbed Bone Helm
+ID=i_bone_helmet
+ARMOR=46
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Helm
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+
+//Barbed - Exceptional
+[ITEMDEF i_bone_chest_barbed_exceptional]
+DEFNAME=i_bone_chest_barbed_exceptional
+NAME=Barbed Bone Armor [Exceptional]
+ID=i_bone_chest
+ARMOR=52
+RESOURCES=10 i_bone, 12 t_hide
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Armor [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_arms_barbed_exceptional]
+DEFNAME=i_bone_arms_barbed_exceptional
+NAME=Barbed Bone Arm Plates [Exceptional]
+ID=i_bone_arms
+ARMOR=52
+RESOURCES=4 i_bone, 8 t_hide
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Arm Plates [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_gloves_barbed_exceptional]
+DEFNAME=i_bone_gloves_barbed_exceptional
+NAME=Barbed Bone Gauntlets [Exceptional]
+ID=i_bone_gloves
+ARMOR=52
+RESOURCES=2 i_bone, 6 t_hide
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Gauntlets [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_leggings_barbed_exceptional]
+DEFNAME=i_bone_leggings_barbed_exceptional
+NAME=Barbed Bone Leg Plates [Exceptional]
+ID=i_bone_leggings
+ARMOR=52
+RESOURCES=6 i_bone, 10 t_hide
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Leg Plates [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+[ITEMDEF i_bone_helmet_barbed_exceptional]
+DEFNAME=i_bone_helmet_barbed_exceptional
+NAME=Barbed Bone Helm [Exceptional]
+ID=i_bone_helmet
+ARMOR=52
+RESOURCES=2 i_bone, 4 t_hide
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Barbed
+DESCRIPTION=Barbed Bone Helm [Exceptional]
+
+ON=@CREATE
+ COLOR=color_o_barbed
+ HITPOINTS={26 30}
+
+
+//Magic Armor
+//Bone Armor of Defense
+[ITEMDEF i_bone_chest_defense]
+DEFNAME=i_bone_chest_defense
+NAME=Bone Armor of Defense
+ID=i_bone_chest
+ARMOR=40
+RESOURCES=10 i_bone, 12 t_hide, 1 i_enchant_armor
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Armor of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_arms_defense]
+DEFNAME=i_bone_arms_defense
+NAME=Bone Arm Plates of Defense
+ID=i_bone_arms
+ARMOR=40
+RESOURCES=4 i_bone, 8 t_hide, 1 i_enchant_armor
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Arm Plates of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_gloves_defense]
+DEFNAME=i_bone_gloves_defense
+NAME=Bone Gauntlets of Defense
+ID=i_bone_gloves
+ARMOR=40
+RESOURCES=2 i_bone, 6 t_hide, 1 i_enchant_armor
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Gauntlets of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_leggings_defense]
+DEFNAME=i_bone_leggings_defense
+NAME=Bone Leg Plates of Defense
+ID=i_bone_leggings
+ARMOR=40
+RESOURCES=6 i_bone, 10 t_hide, 1 i_enchant_armor
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Leg Plates of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_helmet_defense]
+DEFNAME=i_bone_helmet_defense
+NAME=Bone Helm of Defense
+ID=i_bone_helmet
+ARMOR=40
+RESOURCES=2 i_bone, 4 t_hide, 1 i_enchant_armor
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Helm of Defense
+
+ON=@CREATE
+ COLOR=color_magic_defense
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+//Bone Armor of Guarding
+[ITEMDEF i_bone_chest_guarding]
+DEFNAME=i_bone_chest_guarding
+NAME=Bone Armor of Guarding
+ID=i_bone_chest
+ARMOR=45
+RESOURCES=10 i_bone, 12 t_hide, 2 i_enchant_armor
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Armor of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_arms_guarding]
+DEFNAME=i_bone_arms_guarding
+NAME=Bone Arm Plates of Guarding
+ID=i_bone_arms
+ARMOR=45
+RESOURCES=4 i_bone, 8 t_hide, 2 i_enchant_armor
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Arm Plates of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_gloves_guarding]
+DEFNAME=i_bone_gloves_guarding
+NAME=Bone Gauntlets of Guarding
+ID=i_bone_gloves
+ARMOR=45
+RESOURCES=2 i_bone, 6 t_hide, 2 i_enchant_armor
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Gauntlets of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_leggings_guarding]
+DEFNAME=i_bone_leggings_guarding
+NAME=Bone Leg Plates of Guarding
+ID=i_bone_leggings
+ARMOR=45
+RESOURCES=6 i_bone, 10 t_hide, 2 i_enchant_armor
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Leg Plates of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_helmet_guarding]
+DEFNAME=i_bone_helmet_guarding
+NAME=Bone Helm of Guarding
+ID=i_bone_helmet
+ARMOR=45
+RESOURCES=2 i_bone, 4 t_hide, 2 i_enchant_armor
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Helm of Guarding
+
+ON=@CREATE
+ COLOR=color_magic_guarding
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+
+//Bone Armor of Hardening
+[ITEMDEF i_bone_chest_hardening]
+DEFNAME=i_bone_chest_hardening
+NAME=Bone Armor of Hardening
+ID=i_bone_chest
+ARMOR=50
+RESOURCES=10 i_bone, 12 t_hide, 3 i_enchant_armor
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Armor of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_arms_hardening]
+DEFNAME=i_bone_arms_hardening
+NAME=Bone Arm Plates of Hardening
+ID=i_bone_arms
+ARMOR=50
+RESOURCES=4 i_bone, 8 t_hide, 3 i_enchant_armor
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Arm Plates of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_gloves_hardening]
+DEFNAME=i_bone_gloves_hardening
+NAME=Bone Gauntlets of Hardening
+ID=i_bone_gloves
+ARMOR=50
+RESOURCES=2 i_bone, 6 t_hide, 3 i_enchant_armor
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Gauntlets of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_leggings_hardening]
+DEFNAME=i_bone_leggings_hardening
+NAME=Bone Leg Plates of Hardening
+ID=i_bone_leggings
+ARMOR=50
+RESOURCES=6 i_bone, 10 t_hide, 3 i_enchant_armor
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Leg Plates of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_helmet_hardening]
+DEFNAME=i_bone_helmet_hardening
+NAME=Bone Helm of Hardening
+ID=i_bone_helmet
+ARMOR=50
+RESOURCES=2 i_bone, 4 t_hide, 3 i_enchant_armor
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Helm of Hardening
+
+ON=@CREATE
+ COLOR=color_magic_hardening
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+
+//Bone Armor of Fortification
+[ITEMDEF i_bone_chest_fortification]
+DEFNAME=i_bone_chest_fortification
+NAME=Bone Armor of Fortification
+ID=i_bone_chest
+ARMOR=55
+RESOURCES=10 i_bone, 12 t_hide, 4 i_enchant_armor
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Armor of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_arms_fortification]
+DEFNAME=i_bone_arms_fortification
+NAME=Bone Arm Plates of Fortification
+ID=i_bone_arms
+ARMOR=55
+RESOURCES=4 i_bone, 8 t_hide, 4 i_enchant_armor
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Arm Plates of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_gloves_fortification]
+DEFNAME=i_bone_gloves_fortification
+NAME=Bone Gauntlets of Fortification
+ID=i_bone_gloves
+ARMOR=55
+RESOURCES=2 i_bone, 6 t_hide, 4 i_enchant_armor
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Gauntlets of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_leggings_fortification]
+DEFNAME=i_bone_leggings_fortification
+NAME=Bone Leg Plates of Fortification
+ID=i_bone_leggings
+ARMOR=55
+RESOURCES=6 i_bone, 10 t_hide, 4 i_enchant_armor
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Leg Plates of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_helmet_fortification]
+DEFNAME=i_bone_helmet_fortification
+NAME=Bone Helm of Fortification
+ID=i_bone_helmet
+ARMOR=55
+RESOURCES=2 i_bone, 4 t_hide, 4 i_enchant_armor
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Helm of Fortification
+
+ON=@CREATE
+ COLOR=color_magic_fortification
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+
+//Bone Armor of Invulnerability
+[ITEMDEF i_bone_chest_invulnerability]
+DEFNAME=i_bone_chest_invulnerability
+NAME=Bone Armor of Invulnerability
+ID=i_bone_chest
+ARMOR=60
+RESOURCES=10 i_bone, 12 t_hide, 5 i_enchant_armor
+SKILLMAKE= Tailoring 96.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Armor of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_arms_invulnerability]
+DEFNAME=i_bone_arms_invulnerability
+NAME=Bone Arm Plates of Invulnerability
+ID=i_bone_arms
+ARMOR=60
+RESOURCES=4 i_bone, 8 t_hide, 5 i_enchant_armor
+SKILLMAKE= Tailoring 92.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Arm Plates of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_gloves_invulnerability]
+DEFNAME=i_bone_gloves_invulnerability
+NAME=Bone Gauntlets of Invulnerability
+ID=i_bone_gloves
+ARMOR=60
+RESOURCES=2 i_bone, 6 t_hide, 5 i_enchant_armor
+SKILLMAKE= Tailoring 89.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Gauntlets of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_leggings_invulnerability]
+DEFNAME=i_bone_leggings_invulnerability
+NAME=Bone Leg Plates of Invulnerability
+ID=i_bone_leggings
+ARMOR=60
+RESOURCES=6 i_bone, 10 t_hide, 5 i_enchant_armor
+SKILLMAKE= Tailoring 95.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Leg Plates of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={26 30}
+ ATTR=attr_magic
+
+[ITEMDEF i_bone_helmet_invulnerability]
+DEFNAME=i_bone_helmet_invulnerability
+NAME=Bone Helm of Invulnerability
+ID=i_bone_helmet
+ARMOR=60
+RESOURCES=2 i_bone, 5 t_hide, 5 i_enchant_armor
+SKILLMAKE= Tailoring 85.0, t_sewing_kit
+REPAIR=0
+REQSTR=40
+
+CATEGORY=Provisions - Armor - Magic
+SUBSECTION=Bone Armor
+DESCRIPTION=Bone Helm of Invulnerability
+
+ON=@CREATE
+ COLOR=color_magic_invulnerability
+ HITPOINTS={26 30}
+ ATTR=attr_magic

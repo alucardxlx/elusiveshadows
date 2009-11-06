@@ -1,0 +1,252 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+[CHARDEF 02F1]	//753
+DEFNAME=c_gargoyle_enslaved
+NAME=Enslaved Gargoyle
+CAN=mt_walk|mt_run|mt_usehands|mt_fly
+MOVERATE=100
+DAM=7,14
+ARMOR=30,40
+ICON=
+SOUND=
+RESOURCES=i_ribs_raw 1
+FOODTYPE=15 t_meat_raw
+//AVERSIONS=
+DESIRES=
+SHELTER=
+
+CATEGORY=Monsters
+SUBSECTION=Gargoyles
+DESCRIPTION=Enslaved Gargoyle
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=70.8
+ TAG.SLAYER=slayer_gargoyle
+ TAG.SUPER.SLAYER=slayer_daemon
+
+// TAG.FIREDAMAGE=0
+// TAG.COLDDAMAGE=0
+// TAG.POISONDAMAGE=0
+// TAG.ENERGYDAMAGE=0
+
+// MODAR={30 40}
+ RESFIRE={50 70}
+ RESCOLD={15 25}
+ RESPOISON={25 30}
+ RESENERGY={25 30}
+
+ FAME=3500
+ KARMA=-3500
+
+ STR={302 360}
+ DEX={76 95}
+ INT={81 105}
+ MAXHITS={186 212}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={40.1 80.0}
+ TACTICS={50.1 70.0}
+ MAGICRESISTANCE={70.1 85.0}
+ ANATOMY={0.0 0.0}
+
+ON=@NPCRESTOCK
+ ITEM=loot_gargoyle_enslaved
+ ITEM=add_loot_gargoyle_enslaved
+
+[TEMPLATE loot_gargoyle_enslaved]
+DEFNAME=loot_gargoyle_enslaved
+CATEGORY=NPC Loot Templates
+SUBSECTION=Gargoyles
+DESCRIPTION=Enslaved Gargoyle
+ITEM=i_gold,{250 300}
+ITEM={i_lvl_1_tmap 1 0 24}
+ITEM={i_gargole_pickaxe 1 0 19}
+
+[TEMPLATE add_loot_gargoyle_enslaved]
+DEFNAME=add_loot_gargoyle_enslaved
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Gargoyles
+DESCRIPTION=Enslaved Gargoyle
+ITEM=
+
+
+[CHARDEF 02F2]	//754
+DEFNAME=c_gargoyle_enforcer
+NAME=Gargoyle Enforcer
+CAN=mt_walk|mt_run|mt_usehands|mt_fly
+MOVERATE=100
+DAM=7,13
+ARMOR=40,50
+ICON=
+SOUND=
+RESOURCES=i_ribs_raw 1
+FOODTYPE=15 t_meat_raw
+//AVERSIONS=
+DESIRES=
+SHELTER=
+
+CATEGORY=Monsters
+SUBSECTION=Gargoyles
+DESCRIPTION=Gargoyle Enforcer
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=88.0
+ TAG.SLAYER=slayer_gargoyle
+ TAG.SUPER.SLAYER=slayer_daemon
+
+// TAG.FIREDAMAGE=25
+// TAG.COLDDAMAGE=0
+// TAG.POISONDAMAGE=0
+// TAG.ENERGYDAMAGE=25
+
+// MODAR={40 50}
+ RESFIRE={50 60}
+ RESCOLD={20 30}
+ RESPOISON={25 35}
+ RESENERGY={15 25}
+
+ FAME=5000
+ KARMA=-5000
+
+ STR={260 350}
+ DEX={76 95}
+ INT={81 125}
+ MAXHITS={182 185}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={80.1 90.0}
+ TACTICS={70.1 80.0}
+ MAGICRESISTANCE={120.1 130.0}
+ ANATOMY={70.1 80.0}
+ MAGERY={80.1 90.0}
+ EVALUATINGINTEL={70.0 100.0}
+ MEDITATION={70.1 100.0}
+
+ SPELLCIRCLES=3,7
+
+ON=@NPCRESTOCK
+ ITEM=loot_gargoyle_enforcer
+ ITEM=add_loot_gargoyle_enforcer
+
+[TEMPLATE loot_gargoyle_enforcer]
+DEFNAME=loot_gargoyle_enforcer
+CATEGORY=NPC Loot Templates
+SUBSECTION=Gargoyles
+DESCRIPTION=Gargoyle Enforcer
+ITEM=i_gold,{275 325}
+ITEM={i_gargole_pickaxe 1 0 19}
+ITEM=//medium level scroll
+ITEM=//Magic items
+
+[TEMPLATE add_loot_gargoyle_enforcer]
+DEFNAME=add_loot_gargoyle_enforcer
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Gargoyles
+DESCRIPTION=Gargoyle Enforcer
+ITEM=
+
+
+[CHARDEF 02F3]	//755
+DEFNAME=c_gargoyle_destroyer
+NAME=Gargoyle Detroyer
+CAN=mt_walk|mt_run|mt_usehands|mt_fly
+MOVERATE=100
+DAM=7,14
+ARMOR=40,50
+ICON=
+SOUND=
+RESOURCES=i_ribs_raw 1
+FOODTYPE=15 t_meat_raw
+//AVERSIONS=
+DESIRES=
+SHELTER=
+TEVENTS=e_ranged_assault_axe
+TEVENTS=e_immune_bard_skills
+
+CATEGORY=Monsters
+SUBSECTION=Gargoyles
+DESCRIPTION=Gargoyle Destroyer
+
+ON=@CREATE
+ NPC=brain_monster
+ COLOR=0
+
+ TAG.BARDING.DIFFICULTY=110.8
+ TAG.SLAYER=slayer_gargoyle
+ TAG.SUPER.SLAYER=slayer_abyss
+
+// TAG.FIREDAMAGE=0
+// TAG.COLDDAMAGE=0
+// TAG.POISONDAMAGE=0
+// TAG.ENERGYDAMAGE=0
+
+// MODAR={40 50}
+ RESFIRE={60 70}
+ RESCOLD={15 25}
+ RESPOISON={15 25}
+ RESENERGY={15 25}
+
+ FAME=10000
+ KARMA=-10000
+
+ STR={760 850}
+ DEX={102 150}
+ INT={152 200}
+ MAXHITS={482 485}
+ MAXSTAM=<DEX>
+ MAXMANA=<INT>
+
+ WRESTLING={90.1 100.0}
+ TACTICS={90.1 100.0}
+ MAGICRESISTANCE={120.1 160.0}
+ ANATOMY={50.5 100.0}
+ MAGERY={91.0 100.0}
+ EVALUATINGINTEL={91.0 100.0}
+ MEDITATION={91.0 100.0}
+
+ SPELLCIRCLES=3,7
+
+ON=@NPCRESTOCK
+ ITEM=loot_gargoyle_destroyer
+ ITEM=add_loot_gargoyle_destroyer
+
+[TEMPLATE loot_gargoyle_destroyer]
+DEFNAME=loot_gargoyle_destroyer
+CATEGORY=NPC Loot Templates
+SUBSECTION=Gargoyles
+DESCRIPTION=Destroyer Gargoyle
+ITEM=i_gold,{750 950}
+ITEM={i_gargole_pickaxe 1 0 19}
+ITEM=//medium level scroll
+ITEM=//2 gems
+ITEM=//magic items
+
+[TEMPLATE add_loot_gargoyle_destroyer]
+DEFNAME=add_loot_gargoyle_destroyer
+CATEGORY=NPC Loot Templates (Custom)
+SUBSECTION=Gargoyles
+DESCRIPTION=Destroyer Gargoyle
+ITEM=
+
+
+
+
