@@ -10,7 +10,6 @@
 // FILE LAST UPDATED: Thursday, September 8, 2005
 //
 VERSION=0.56b
-//i_arrow_equip is not i_fletcher_tools. Changed skillmake and resources
 
 [ITEMDEF 091a]
 DEFNAME=i_beehive
@@ -274,7 +273,7 @@ CATEGORY=Items by Professions
 SUBSECTION=Artists
 DESCRIPTION=Portrait
 SKILLMAKE=CARPENTRY 80.0, TAILORING 65.0, t_carpentry, t_sewing_kit
-DUPELIST=0ee8
+DUPELIST=0ec8
 
 [ITEMDEF 0ea0]
 //painting
@@ -473,11 +472,11 @@ CATEGORY=Items by Professions
 SUBSECTION=Artists
 DESCRIPTION=Painting
 SKILLMAKE=CARPENTRY 80.0, TAILORING 65.0, t_carpentry, t_sewing_kit
-DUPELIST=0ec9
+DUPELIST=0e9f
 
 [ITEMDEF 0ec9]
 //painting
-DUPEITEM=0ec8
+DUPEITEM=0ee7
 
 [ITEMDEF 0ee7]
 //portrait
@@ -488,6 +487,7 @@ SUBSECTION=Artists
 DESCRIPTION=Portrait
 RESOURCES=15 i_log,25 i_cloth
 SKILLMAKE=CARPENTRY 80.0, TAILORING 65.0, t_carpentry, t_sewing_kit
+DUPELIST=0ec9
 
 [ITEMDEF 0ee9]
 //clean bandages
@@ -844,11 +844,9 @@ DUPELIST=01021
 DUPEITEM=01020
 
 [ITEMDEF 01022]
-DEFNAME=i_fletcher_tools
-NAME=Fletcher's Tools
-RESOURCES=3 t_ingot
+DEFNAME=i_arrow_fletching
+RESOURCES=1 i_FEATHER
 WEIGHT=.1
-SKILLMAKE=TINKERING 35.0
 CATEGORY=Items by Professions
 SUBSECTION=Archers/Bowyers
 DESCRIPTION=Arrow Fletching Equip

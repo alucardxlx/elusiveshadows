@@ -1,6 +1,6 @@
 //Functions for this are in the core functions script.
 
-[EVENTS e_es_players]
+[EVENTS e_generic_players]
 ON=@LOGIN
 IF (!<tag.firstlogin> == 1)
  tag.regen_hits = 40

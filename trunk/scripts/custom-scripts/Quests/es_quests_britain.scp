@@ -229,7 +229,6 @@ DAM=6,14
 ARMOR=15,20
 RESOURCES=2 i_ribs_raw,2 i_fur_dark
 FOODTYPE=30 t_meat_raw
-SHELTER=r_dungeon,r_DARKNESS,r_spooky
 DESIRES=c_rat,c_a_rat_sewer,c_rat_giant,r_spooky
 AVERSIONS=t_TRAP
 
@@ -257,14 +256,13 @@ ON=@Create
  ANATOMY=0.0
 
 ON=@DEATH
-NEWLOOT=loot_giant_rat_mother
-NEWLOOT=add_loot_giant_rat_mother
+ NEWLOOT=loot_giant_rat_mother
 
 
 [TEMPLATE loot_giant_rat_mother]
 DEFNAME=loot_giant_rat_mother
-CATEGORY=Loot Templates - NPC
-SUBECTION=Vermin
+CATEGORY=NPC Loot Templates
+SUBECTION=Quest Creatures
 DESCRIPTION=Giant Rat Mother
 CONTAINER=i_backpack
 ITEM=i_gold,{250 325}
@@ -273,12 +271,7 @@ ITEM=random_jewel,{1 2}
 ITEM={i_cheese_cut 1 i_cheese_wheel 1 i_cheese_wedge 1 0 3}
 ITEM=random_food
 
-[TEMPLATE add_loot_giant_rat_mother]
-DEFNAME=add_loot_giant_rat_mother
-CATEGORY=Loot Templates - NPC (Custom)
-SUBECTION=Vermin
-DESCRIPTION=Giant Rat Mother
-ITEM=
+
 
 
 [SPAWN spawn_quest_giant_rat]
