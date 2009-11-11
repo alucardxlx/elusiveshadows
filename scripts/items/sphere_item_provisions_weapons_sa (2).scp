@@ -78,7 +78,7 @@ ON=@Create
 DUPEITEM=08FF
 
 
-[ITEMDEF 0900]
+[comment ITEMDEF 0900]
 DEFNAME=i_stone_war_sword
 NAME=Stone War Sword
 TYPE=
@@ -232,7 +232,7 @@ ON=@Create
 DUPEITEM=0905
 
 
-[ITEMDEF 0906]
+[comment ITEMDEF 0906]
 DEFNAME=i_serpentstone_staff
 NAME=Serpentstone Staff
 TYPE=
