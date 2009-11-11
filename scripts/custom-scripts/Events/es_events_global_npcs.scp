@@ -1,4 +1,4 @@
-[EVENTS e_es_npcs]
+[EVENTS e_generic_npcs]
 ON=@SpellEffect
  IF (!<IsPlayer>)
   IF (!<IsDamageSpell>)

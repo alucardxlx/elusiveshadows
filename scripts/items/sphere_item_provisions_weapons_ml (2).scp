@@ -10,15 +10,16 @@
 // FILE LAST UPDATED: Friday, January 20, 2005
 // By Makar & Blizzard
 
+[eof]
+
 [ITEMDEF 02d1e]
 DEFNAME=i_elven_composite_longbow
 Name=Elven Composite LongBow
 TYPE=T_WEAPON_BOW
-DAM=10,44
+DAM=19,22
 SKILL=Archery
 REQSTR=45
-//RANGE=2,10
-RANGE=1,10
+RANGE=2,10
 TWOHANDS=Y
 TDATA3=i_arrow
 TDATA4=i_arrow_x
@@ -33,17 +34,16 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Elven Composite LongBow
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d1f]
 DEFNAME=i_magical_shortbow
 Name=Magical Shortbow
 TYPE=T_WEAPON_BOW
-DAM=7,32
+DAM=14,16
 SKILL=Archery
 REQSTR=45
-//RANGE=2,10
-RANGE=1,10
+RANGE=2,10
 TWOHANDS=Y
 TDATA3=i_arrow
 TDATA4=i_arrow_x
@@ -58,13 +58,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Magical Shortbow
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d20]
 DEFNAME=i_Elven_Spellblade
 Name=Elven Spellblade
 TYPE=T_WEAPON_FENCE
-DAM=6,28
+DAM=12,14
 SKILL=Fencing
 REQSTR=35
 TWOHANDS=Y
@@ -79,13 +79,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Elven SpellBlade
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d21]
-DEFNAME=i_Assassin_Spike
+DEFNAME=i_sword_Assassin_Spike
 Name=Assassin Spike
 TYPE=T_WEAPON_FENCE
-DAM=5,24
+DAM=10,12
 SKILL=Fencing
 REQSTR=15
 SPEED=50
@@ -100,13 +100,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Assasins Spike
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d22]
-DEFNAME=i_leafblade
+DEFNAME=i_sword_leafblade
 Name=LeafBlade
 TYPE=T_WEAPON_FENCE
-DAM=7,30
+DAM=13,15
 SKILL=Fencing
 REQSTR=20
 TWOHANDS=N
@@ -124,12 +124,12 @@ ON=@Create
 HITPOINTS={50 60}
 
 [ITEMDEF 02d23]
-DEFNAME=i_war_cleaver
+DEFNAME=i_sword_warcleaver
 Name=War Cleaver
 SKILLMAKE=BLACKSMITHING 70.0
 RESOURCES=15 i_ingot_iron
 TYPE=T_WEAPON_FENCE
-DAM=5,22
+DAM=9,11
 SKILL=Fencing
 REQSTR=15
 TWOHANDS=N
@@ -142,13 +142,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=War Cleaver
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d24]
-DEFNAME=i_diamond_mace
+DEFNAME=i_mace_diamond
 Name=Diamond Mace
 TYPE=T_WEAPON_MACE_SHARP
-DAM=7,34
+DAM=14,17
 SKILL=Macefighting
 REQSTR=35
 TWOHANDS=N
@@ -163,13 +163,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Diamond Mace
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d25]
-DEFNAME=i_wild_staff
+DEFNAME=i_mace_Wildstaff
 Name=Wild Staff
 TYPE=T_WEAPON_MACE_STAFF
-DAM=5,24
+DAM=10,12
 SKILL=Macefighting
 REQSTR=15
 TWOHANDS=N
@@ -184,13 +184,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Wild Staff
 
 ON=@Create
- ITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d26]
 DEFNAME=i_Rune_Blade
 Name=Rune Blade
 TYPE=T_WEAPON_SWORD
-DAM=8,34
+DAM=15,17
 SKILL=Swordsmanship
 REQSTR=30
 TWOHANDS=Y
@@ -205,13 +205,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Rune Blade
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d27]
 DEFNAME=i_Radiant_Scimitar
 Name=Radiant Scimitar
 TYPE=T_WEAPON_SWORD
-DAM=6,28
+DAM=12,14
 SKILL=Swordsmanship
 REQSTR=20
 TWOHANDS=N
@@ -226,13 +226,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Radiant Scimitar
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d28]
 DEFNAME=i_Ornate_Axe
 Name=Ornate Axe
 TYPE=T_WEAPON_SWORD
-DAM=11,46
+DAM=21,23
 SKILL=Swordsmanship
 REQSTR=45
 TWOHANDS=Y
@@ -247,13 +247,13 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Ornate Axe
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d29]
 DEFNAME=i_elven_Machete
 Name=Elven Machete
 TYPE=T_WEAPON_SWORD
-DAM=7,30
+DAM=13,15
 SKILL=Swordsmanship
 REQSTR=20
 TWOHANDS=N
@@ -268,7 +268,7 @@ SUBSECTION=Mondain Legacy
 DESCRIPTION=Elven Machete
 
 ON=@Create
- HITPOINTS={50 60}
+HITPOINTS={50 60}
 
 [ITEMDEF 02d2a]
 DUPEITEM=02d1e
